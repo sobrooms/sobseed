@@ -39,7 +39,7 @@ public final class BanCommand implements CommandHandler {
     @Override
     public void execute(Player sender, Player targetPlayer, List<String> args) {
         int time = 2051190000;
-        String reason = "Reason not specified.";
+        String reason = "No reason specified.";
 
         switch (args.size()) {
             case 2:
