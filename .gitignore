@@ -40,15 +40,17 @@ tmp/
 .loadpath
 .recommenders
 
-# VSCode
+# Code editor stuff
 .vscode
+.fleet
+.idea
 
 # Grasscutter
 /cache
 /logs
 /language
 /languages
-
+/build
 /*.jar
 /*.sh
 

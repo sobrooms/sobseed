@@ -5,7 +5,7 @@
       "list": [
         {
           "ann_id": 1,
-          "title": "<strong>Welcome to Grasscutter!</strong>",
+          "title": "<strong>Welcome to SobSeedPS!</strong>",
           "subtitle": "Welcome!",
           "banner": "{{DISPATCH_PUBLIC}}/hk4e/announcement/assets/banner/1.jpg",
           "tag_icon": "{{DISPATCH_PUBLIC}}/hk4e/announcement/assets/tag_icon.png",
@@ -19,8 +19,8 @@
         },
         {
           "ann_id": 2,
-          "title": "<strong>How to use announcements</strong>",
-          "subtitle": "How to use announcements",
+          "title": "<strong>How to use sobnnouncements</strong>",
+          "subtitle": "How to use sobnnouncements",
           "banner": "{{DISPATCH_PUBLIC}}/hk4e/announcement/assets/banner/2.jpg",
           "tag_icon": "{{DISPATCH_PUBLIC}}/hk4e/announcement/assets/tag_icon.png",
           "type": 2,

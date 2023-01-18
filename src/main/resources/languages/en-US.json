@@ -97,18 +97,18 @@
     },
     "execution": {
       "usage_prefix": "Usage: ",
-      "player_exist_error": "Player not found.",
-      "player_offline_error": "Player is not online.",
-      "item_player_exist_error": "Invalid item or UID.",
-      "player_exist_offline_error": "Player not found or is not online.",
-      "argument_error": "Invalid arguments.",
-      "clear_target": "Target cleared.",
-      "set_target": "Subsequent commands will target @%s by default.",
-      "set_target_online": "@%s is online. Some commands may require an offline target.",
-      "set_target_offline": "@%s is offline. Some commands may require an online target.",
-      "need_target": "This command requires a target UID. Add a <@UID> argument or set a persistent target with /target @UID.",
-      "need_target_online": "This command requires an online target UID, but current target is offline. Add a different <@UID> argument or set a persistent target with /target @UID.",
-      "need_target_offline": "This command requires an offline target UID, but current target is online. Add a different <@UID> argument or set a persistent target with /target @UID."
+      "player_exist_error": "Player not found. Sob!",
+      "player_offline_error": "Player is not online. Sob!",
+      "item_player_exist_error": "Invalid item or UID. Sob!",
+      "player_exist_offline_error": "Player not found or is not online. Sob!",
+      "argument_error": "Invalid arguments. Sob!",
+      "clear_target": "Target cleared. Sob!",
+      "set_target": "Subsequent commands will target @%s by default. Sob!",
+      "set_target_online": "@%s is online. Some commands may require an offline target. Sob!",
+      "set_target_offline": "@%s is offline. Some commands may require an online target. Sob!",
+      "need_target": "This command requires a target UID. Add a <@UID> argument or set a persistent target with /target @UID. Sob!",
+      "need_target_online": "This command requires an online target UID, but current target is offline. Add a different <@UID> argument or set a persistent target with /target @UID. Sob!",
+      "need_target_offline": "This command requires an offline target UID, but current target is online. Add a different <@UID> argument or set a persistent target with /target @UID. Sob!"
     },
     "status": {
       "enabled": "Enabled",
@@ -117,44 +117,44 @@
       "success": "Success"
     },
     "account": {
-      "invalid": "Invalid UID.",
-      "exists": "An account with this username and/or UID already exists.",
-      "create": "Account created with UID %s.",
-      "delete": "Account deleted.",
-      "no_account": "Account not found.",
+      "invalid": "Sob!!! Invalid UID",
+      "exists": "An account with this username and/or UID already exists. Whatcha tryna do?",
+      "create": "Account created with UID %s. Sob!",
+      "delete": "Account deleted. Sob!",
+      "no_account": "Account not found. Sob!",
       "description": "Modify user accounts"
     },
     "announce": {
       "send_success": "Send an announcement successfully, you can revoke it by /a revoke %s.",
       "refresh_success": "Refresh announcement config file successfully. [Total %s]",
       "revoke_done": "Try to revoke announcement %s.",
-      "not_found": "Could not found announcement %s.",
+      "not_found": "Could not found announcement %s. Sob!",
       "description": "Send announcement to all online players, or manage server's announcement"
     },
     "clear": {
-      "weapons": "Cleared weapons for %s.",
-      "artifacts": "Cleared artifacts for %s.",
-      "materials": "Cleared materials for %s.",
-      "furniture": "Cleared furniture for %s.",
-      "displays": "Cleared displays for %s.",
-      "virtuals": "Cleared virtuals for %s.",
-      "everything": "Cleared everything for %s.",
+      "weapons": "Cleared weapons for %s. Cya weaps",
+      "artifacts": "Cleared artifacts for %s. Looks like yo chars gon be weak",
+      "materials": "Cleared materials for %s. Sob!",
+      "furniture": "Cleared furniture for %s. You can't live in a house without furniture...",
+      "displays": "Cleared displays for %s. Sob!",
+      "virtuals": "Cleared virtuals for %s. Sob!",
+      "everything": "Cleared everything for %s. Now you're poor.",
       "description": "Deletes unequipped unlocked items from your inventory. Defaults to 4* level 1 refinement 1 or lower, but can be set higher."
     },
     "coop": {
-      "success": "Summoned %s to %s's world.",
+      "success": "Spawned %s to %s's world.",
       "description": "Forces someone to join the world of others. If no one is targeted, it sends you into co-op mode anyway."
     },
     "enter_dungeon": {
-      "changed": "Changed to dungeon %s.",
-      "not_found_error": "Dungeon does not exist.",
-      "in_dungeon_error": "You are already in that dungeon.",
+      "changed": "Changed to dungeon %s. Sob!",
+      "not_found_error": "Dungeon does not exist...",
+      "in_dungeon_error": "You are already in that dungeon. You tryna reload the level or somethin'?",
       "description": "Enter a dungeon"
     },
     "give": {
       "usage_relic": "Usage: give <artifactID> [mainPropID] [<appendPropID>[,<times>]]... [lv<level 0-20>]",
-      "illegal_relic": "This artifactID belongs to a blacklisted range, it may not be the one you wanted.",
-      "given": "Given %s of %s to %s.",
+      "illegal_relic": "This artifactID belongs to a blacklisted range, it may not be the one you wanted. Skill issue and sob honestly",
+      "given": "Given %s of %s to user %s.",
       "given_with_level_and_refinement": "Given %s with level %s, refinement %s %s times to %s.",
       "given_level": "Given %s with level %s %s times to %s.",
       "given_avatar": "Given %s with level %s to %s.",
@@ -171,7 +171,7 @@
       "tip_need_permission": "Permission: ",
       "tip_need_no_permission": " None",
       "tip_permission_targeted": " (Permission %s is also required to use on other players)",
-      "warn_player_has_no_permission": "Notice: You do not have permission to run this command.",
+      "warn_player_has_no_permission": "Notice: You do not have permission to run this command. Skill issue tbh fix it",
       "description": "Sends the help message or shows information about a specified command"
     },
     "kick": {
@@ -180,18 +180,18 @@
       "description": "Kicks the specified player from the server (WIP)"
     },
     "killall": {
-      "scene_not_found_in_player_world": "Scene not found in player world.",
-      "kill_monsters_in_scene": "Killing %s monsters in scene %s.",
+      "scene_not_found_in_player_world": "Scene not found in player world. Sob!",
+      "kill_monsters_in_scene": "Killing %s monsters in scene %s. ThatVeganTeacher would be real mad",
       "description": "Kill all entities"
     },
     "killCharacter": {
-      "success": "Killed %s's current character.",
+      "success": "Killed %s's current character. Murderer!!",
       "description": "Kills the players current character"
     },
     "language": {
-      "current_language": "Current language is %s.",
-      "language_changed": "Language changed to %s.",
-      "language_not_found": "Currently, the server does not have that language.",
+      "current_language": "Your current language is %s.",
+      "language_changed": "Language changed to %s successfully.",
+      "language_not_found": "Currently, the server does not have that language. Skill issue!!",
       "description": "Display or change current language"
     },
     "list": {
@@ -201,19 +201,19 @@
     "permission": {
       "add": "Permission added.",
       "has_error": "They already have this permission!",
-      "remove": "Permission removed.",
-      "not_have_error": "They don't have this permission!",
-      "account_error": "The account cannot be found.",
+      "remove": "Permission removed. Sob!",
+      "not_have_error": "Whatcha doin'? They never had that permission",
+      "account_error": "That account cannot be found.",
       "description": "Grants or removes a permission for a user"
     },
     "position": {
-      "success": "Coordinates: %s, %s, %s\nRotation：%s, %s, %s\nScene ID: %s",
+      "success": "Your coordinates: %s, %s, %s\nRotation：%s, %s, %s\nScene ID: %s",
       "description": "Gets position and rotation information"
     },
     "quest": {
       "added": "Quest %s added.",
       "finished": "Finished quest %s.",
-      "not_found": "Quest not found.",
+      "not_found": "Quest not found. Sob and plead.",
       "invalid_id": "Invalid quest ID.",
       "description": "Add or finish quests"
     },
@@ -228,7 +228,7 @@
       "description": "Resets the constellation level on your current active character, you will need to relog after using the command to see any changes"
     },
     "resetShopLimit": {
-      "success": "Reset complete.",
+      "success": "Successfully reset shop limit. Genshin players go brrr brrr",
       "description": "Reset target player's shop refresh time"
     },
     "sendMail": {
@@ -236,10 +236,10 @@
       "user_not_exist": "The user with an ID of '%s' does not exist.",
       "start_composition": "Starting composition of message.\nPlease use '/sendmail <title>' to continue.\nYou can use '/sendmail stop' at any time.",
       "templates": "Mail templates coming soon implemented...",
-      "invalid_arguments": "Invalid arguments.",
+      "invalid_arguments": "Invalid arguments. SKILL ISSUE!!",
       "send_cancel": "Message sending cancelled.",
-      "send_done": "Message sent to user %s!",
-      "send_all_done": "Message sent to all users!",
+      "send_done": "Mail sent to user %s! Was that a love letter?",
+      "send_all_done": "Message sent to all users. Wonderhoy!",
       "not_composition_end": "Message composition not at final stage.\nPlease use '/sendmail %s' or '/sendmail stop' to cancel",
       "please_use": "Please use '/sendmail %s'",
       "set_title": "Message title set as '%s'.\nUse '/sendmail <content>' to continue.",
@@ -261,7 +261,7 @@
     "setConst": {
       "range_error": "Constellation level must be between 0 and 6.",
       "level_error": "Invalid constellation level.",
-      "fail": "Failed to set constellation.",
+      "fail": "Ah, finally got my own skill issues...",
       "failed_success": "Constellations for %s have been set to %s. Please reload scene to see changes.",
       "success": "Constellations for %s have been set to %s.",
       "successall": "Constellations for all characters have been set to %s.",
@@ -344,7 +344,7 @@
       "description": "Unlocks all open states for a player."
     },
     "unban": {
-      "success": "Successful.",
+      "success": "Successfully unbanned a user. Do you like them? Is that why you unbanned them?",
       "failure": "Failed, player not found.",
       "description": "Unban a player"
     }
@@ -364,7 +364,7 @@
   },
   "documentation": {
     "handbook": {
-      "title": "GM Handbook",
+      "title": "GM Handbook (good morning handbok :scream:)",
       "title_commands": "Commands",
       "title_avatars": "Avatars",
       "title_items": "Items",
@@ -398,6 +398,6 @@
 	  "enabling_plugin": "Enabling plugin: %s",
 	  "enabling_failed": "Failed to enable plugin: %s",
 	  "disabling_plugin": "Disabling plugin: %s",
-	  "disabling_failed": "Failed to disable plugin: %s"
+	  "disabling_failed": "I have skill issue and coulnd't disable the plugin: %s"
   }
 }

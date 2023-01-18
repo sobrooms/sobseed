@@ -4,7 +4,7 @@
 		"expeditionRewardDataList": [
 			{
 				"hourTime": 4,
-				"rewardMora": 0,
+				"rewardMora": 696969,
 				"expeditionRewardData": [
 					{
 						"itemId": 101001,
@@ -19,7 +19,7 @@
 			},
 			{
 				"hourTime": 8,
-				"rewardMora": 0,
+				"rewardMora": 696969,
 				"expeditionRewardData": [
 					{
 						"itemId": 101002,
@@ -34,7 +34,7 @@
 			},
 			{
 				"hourTime": 12,
-				"rewardMora": 0,
+				"rewardMora": 696969,
 				"expeditionRewardData": [
 					{
 						"itemId": 101002,
@@ -49,7 +49,7 @@
 			},
 			{
 				"hourTime": 20,
-				"rewardMora": 0,
+				"rewardMora": 1069420,
 				"expeditionRewardData": [
 					{
 						"itemId": 101002,
