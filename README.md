@@ -18,6 +18,8 @@
 * Spawning monsters via console
 * Inventory features (receiving items/characters, upgrading items/characters, etc)
 * Sob
+* Plead
+* virus
 
 ## Quick setup guide
 
