@@ -1,0 +1,49 @@
+[
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "LevelAbility_Quest_XiaoDungeonStageReady",
+            "abilityMixins": [
+                {
+                    "$type": "StageReadyMixin",
+                    "DLEFDCFBLDE": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "luaCallType": "SpecificGroup",
+                            "CallParamList": [
+                                201032010
+                            ],
+                            "funcName": "stage_ready",
+                            "LIOGECEPJAH": 0.0,
+                            "FDDPMCCJIKN": 0.0,
+                            "KNJMHMKNCKF": 0.0
+                        }
+                    ]
+                }
+            ],
+            "isDynamicAbility": true
+        }
+    },
+    {
+        "Default": {
+            "$type": "ConfigAbility",
+            "abilityName": "LevelAbility_Quest_ShougunDungeonStageReady",
+            "abilityMixins": [
+                {
+                    "$type": "StageReadyMixin",
+                    "DLEFDCFBLDE": [
+                        {
+                            "$type": "ServerLuaCall",
+                            "luaCallType": "FromGroup",
+                            "funcName": "EndlessBladeDecliningEnergy",
+                            "LIOGECEPJAH": 0.0,
+                            "FDDPMCCJIKN": 0.0,
+                            "KNJMHMKNCKF": 0.0
+                        }
+                    ]
+                }
+            ],
+            "isDynamicAbility": true
+        }
+    }
+]
