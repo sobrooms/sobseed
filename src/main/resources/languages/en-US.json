@@ -154,11 +154,11 @@
     "give": {
       "usage_relic": "Usage: give <artifactID> [mainPropID] [<appendPropID>[,<times>]]... [lv<level 0-20>]",
       "illegal_relic": "This artifactID belongs to a blacklisted range, it may not be the one you wanted. Skill issue and sob honestly",
-      "given": "Given %s of %s to user %s.",
-      "given_with_level_and_refinement": "Given %s with level %s, refinement %s %s times to %s.",
+      "given": "Given %s of %s to user %s. You should give %s primos or genesis crystals :pleading_face:",
+      "given_with_level_and_refinement": "Given %s with level %s, refinement %s %s times to %s. ",
       "given_level": "Given %s with level %s %s times to %s.",
       "given_avatar": "Given %s with level %s to %s.",
-      "giveall_success": "Successfully gave all items.",
+      "giveall_success": "Successfully gave all items. You're generous",
       "description": "Gives an item to you or the specified player. Can also give all weapons, avatars and/or materials, and can construct custom artifacts."
     },
     "heal": {
@@ -181,7 +181,7 @@
     },
     "killall": {
       "scene_not_found_in_player_world": "Scene not found in player world. Sob!",
-      "kill_monsters_in_scene": "Killing %s monsters in scene %s. ThatVeganTeacher would be real mad",
+      "kill_monsters_in_scene": "Killing %s monsters in scene %s. ThatVeganTeacher would be real mad...",
       "description": "Kill all entities"
     },
     "killCharacter": {
@@ -191,7 +191,7 @@
     "language": {
       "current_language": "Your current language is %s.",
       "language_changed": "Language changed to %s successfully.",
-      "language_not_found": "Currently, the server does not have that language. Skill issue!!",
+      "language_not_found": "Sorry bro, the server doesn't have that language (Skill issue!!)",
       "description": "Display or change current language"
     },
     "list": {
@@ -289,7 +289,7 @@
       "description": "Spawns an entity near you"
     },
     "stop": {
-      "success": "Server shutting down...",
+      "success": "Server shutting down...\nSee you, i guess",
       "description": "Stops the server"
     },
     "talent": {
@@ -334,9 +334,9 @@
       "description": "Changes weather ID and climate type. Weather IDs can be found in ./Resources/ExcelBinOutput/WeatherExcelConfigData.json.\nClimate types: sunny, cloudy, rain, thunderstorm, snow, mist"
     },
     "ban": {
-      "success": "Successful.",
+      "success": "Successfully banned %s. :sob:",
       "failure": "Failed, player not found.",
-      "invalid_time": "Unable to parse timestamp.",
+      "invalid_time": "Unable to parse timestamp... Sob!!",
       "description": "Ban a player"
     },
     "unlockall": {
@@ -398,6 +398,6 @@
 	  "enabling_plugin": "Enabling plugin: %s",
 	  "enabling_failed": "Failed to enable plugin: %s",
 	  "disabling_plugin": "Disabling plugin: %s",
-	  "disabling_failed": "I have skill issue and coulnd't disable the plugin: %s"
+	  "disabling_failed": "I have skill issue and couldn't disable the plugin: %s"
   }
 }

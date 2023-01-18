@@ -90,6 +90,9 @@ public class ConfigContainer {
 
         // UNUSED (potentially added later?)
         // public String dumps = "./dumps/";
+
+        // windy?
+        // public String windy = "./windy";
     }
 
     public static class Server {
@@ -167,7 +170,7 @@ public class ConfigContainer {
     public static class Dispatch {
         public Region[] regions = {};
 
-        public String defaultName = "Grasscutter";
+        public String defaultName = "SobseedPS";
 
         /* Controls whether http requests should be logged in console or not */
         public ServerDebugMode logRequests = ServerDebugMode.NONE;
@@ -254,19 +257,19 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a Grasscutter server.";
+        public String welcomeMessage = "Welcome to SobseedPS!";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
             public String title = "Welcome to Grasscutter!";
             public String content = """
                     Hi there!\r
-                    First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
+                    Welcome to SobseedPS! If you have any issues, please let us know so that we can help you! \r
                     \r
                     Check out our:\r
-                    <type="browser" text="Discord" href="https://discord.gg/T5vZU6UyeG"/>
+                    <type="browser" text="Discord" href="https://discord.gg/QPG3vBTr99"/>
                     """;
-            public String sender = "Lawnmower";
+            public String sender = "sobrooms";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
                     new emu.grasscutter.game.mail.Mail.MailItem(13509, 1, 1),
                     new emu.grasscutter.game.mail.Mail.MailItem(201, 99999, 1)
@@ -275,13 +278,13 @@ public class ConfigContainer {
     }
 
     public static class ConsoleAccount {
-        public int avatarId = 10000007;
+        public int avatarId = 11000011;
         public int nameCardId = 210001;
-        public int adventureRank = 1;
-        public int worldLevel = 0;
+        public int adventureRank = 60;
+        public int worldLevel = 7;
 
-        public String nickName = "Server";
-        public String signature = "Welcome to Grasscutter!";
+        public String nickName = "SobSeedPS Server";
+        public String signature = "Sob!";
     }
 
     public static class Files {
@@ -305,7 +308,7 @@ public class ConfigContainer {
         }
 
         public String Name = "os_usa";
-        public String Title = "Grasscutter";
+        public String Title = "SobseedPS";
         public String Ip = "127.0.0.1";
         public int Port = 22102;
     }
