@@ -17,6 +17,7 @@
 * Co-op *partially* works
 * Spawning monsters via console
 * Inventory features (receiving items/characters, upgrading items/characters, etc)
+* Sob
 
 ## Quick setup guide
 
