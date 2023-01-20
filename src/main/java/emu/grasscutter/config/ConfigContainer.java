@@ -257,11 +257,11 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to SobseedPS!";
+        public String welcomeMessage = "Sob!";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to Grasscutter!";
+            public String title = "Welcome to SobseedPS!";
             public String content = """
                     Hi there!\r
                     Welcome to SobseedPS! If you have any issues, please let us know so that we can help you! \r
