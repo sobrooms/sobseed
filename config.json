@@ -23,7 +23,7 @@
   "account": {
     "autoCreate": true,
     "EXPERIMENTAL_RealPassword": false,
-    "defaultPermissions": [*],
+    "defaultPermissions": ["*"],
     "maxPlayer": -1
   },
   "server": {
