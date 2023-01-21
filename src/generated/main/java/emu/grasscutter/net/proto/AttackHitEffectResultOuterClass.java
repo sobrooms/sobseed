@@ -37,16 +37,16 @@ public final class AttackHitEffectResultOuterClass {
     float getHitHaltTime();
 
     /**
-     * <code>uint32 Unk3300_LCKECJCKKJK = 8;</code>
-     * @return The unk3300LCKECJCKKJK.
+     * <code>uint32 hit_retreat_angle_compat = 8;</code>
+     * @return The hitRetreatAngleCompat.
      */
-    int getUnk3300LCKECJCKKJK();
+    int getHitRetreatAngleCompat();
 
     /**
-     * <code>uint32 Unk3300_KLNGDAMMFIF = 1;</code>
-     * @return The unk3300KLNGDAMMFIF.
+     * <code>uint32 hit_eff_level = 1;</code>
+     * @return The hitEffLevel.
      */
-    int getUnk3300KLNGDAMMFIF();
+    int getHitEffLevel();
 
     /**
      * <code>float retreat_strength = 3;</code>
@@ -101,7 +101,7 @@ public final class AttackHitEffectResultOuterClass {
               break;
             case 8: {
 
-              unk3300KLNGDAMMFIF_ = input.readUInt32();
+              hitEffLevel_ = input.readUInt32();
               break;
             }
             case 29: {
@@ -111,7 +111,7 @@ public final class AttackHitEffectResultOuterClass {
             }
             case 64: {
 
-              unk3300LCKECJCKKJK_ = input.readUInt32();
+              hitRetreatAngleCompat_ = input.readUInt32();
               break;
             }
             case 77: {
@@ -194,26 +194,26 @@ public final class AttackHitEffectResultOuterClass {
       return hitHaltTime_;
     }
 
-    public static final int UNK3300_LCKECJCKKJK_FIELD_NUMBER = 8;
-    private int unk3300LCKECJCKKJK_;
+    public static final int HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER = 8;
+    private int hitRetreatAngleCompat_;
     /**
-     * <code>uint32 Unk3300_LCKECJCKKJK = 8;</code>
-     * @return The unk3300LCKECJCKKJK.
+     * <code>uint32 hit_retreat_angle_compat = 8;</code>
+     * @return The hitRetreatAngleCompat.
      */
     @java.lang.Override
-    public int getUnk3300LCKECJCKKJK() {
-      return unk3300LCKECJCKKJK_;
+    public int getHitRetreatAngleCompat() {
+      return hitRetreatAngleCompat_;
     }
 
-    public static final int UNK3300_KLNGDAMMFIF_FIELD_NUMBER = 1;
-    private int unk3300KLNGDAMMFIF_;
+    public static final int HIT_EFF_LEVEL_FIELD_NUMBER = 1;
+    private int hitEffLevel_;
     /**
-     * <code>uint32 Unk3300_KLNGDAMMFIF = 1;</code>
-     * @return The unk3300KLNGDAMMFIF.
+     * <code>uint32 hit_eff_level = 1;</code>
+     * @return The hitEffLevel.
      */
     @java.lang.Override
-    public int getUnk3300KLNGDAMMFIF() {
-      return unk3300KLNGDAMMFIF_;
+    public int getHitEffLevel() {
+      return hitEffLevel_;
     }
 
     public static final int RETREAT_STRENGTH_FIELD_NUMBER = 3;
@@ -241,14 +241,14 @@ public final class AttackHitEffectResultOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300KLNGDAMMFIF_ != 0) {
-        output.writeUInt32(1, unk3300KLNGDAMMFIF_);
+      if (hitEffLevel_ != 0) {
+        output.writeUInt32(1, hitEffLevel_);
       }
       if (retreatStrength_ != 0F) {
         output.writeFloat(3, retreatStrength_);
       }
-      if (unk3300LCKECJCKKJK_ != 0) {
-        output.writeUInt32(8, unk3300LCKECJCKKJK_);
+      if (hitRetreatAngleCompat_ != 0) {
+        output.writeUInt32(8, hitRetreatAngleCompat_);
       }
       if (hitHaltTime_ != 0F) {
         output.writeFloat(9, hitHaltTime_);
@@ -268,17 +268,17 @@ public final class AttackHitEffectResultOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300KLNGDAMMFIF_ != 0) {
+      if (hitEffLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unk3300KLNGDAMMFIF_);
+          .computeUInt32Size(1, hitEffLevel_);
       }
       if (retreatStrength_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
           .computeFloatSize(3, retreatStrength_);
       }
-      if (unk3300LCKECJCKKJK_ != 0) {
+      if (hitRetreatAngleCompat_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, unk3300LCKECJCKKJK_);
+          .computeUInt32Size(8, hitRetreatAngleCompat_);
       }
       if (hitHaltTime_ != 0F) {
         size += com.google.protobuf.CodedOutputStream
@@ -316,10 +316,10 @@ public final class AttackHitEffectResultOuterClass {
       if (java.lang.Float.floatToIntBits(getHitHaltTime())
           != java.lang.Float.floatToIntBits(
               other.getHitHaltTime())) return false;
-      if (getUnk3300LCKECJCKKJK()
-          != other.getUnk3300LCKECJCKKJK()) return false;
-      if (getUnk3300KLNGDAMMFIF()
-          != other.getUnk3300KLNGDAMMFIF()) return false;
+      if (getHitRetreatAngleCompat()
+          != other.getHitRetreatAngleCompat()) return false;
+      if (getHitEffLevel()
+          != other.getHitEffLevel()) return false;
       if (java.lang.Float.floatToIntBits(getRetreatStrength())
           != java.lang.Float.floatToIntBits(
               other.getRetreatStrength())) return false;
@@ -343,10 +343,10 @@ public final class AttackHitEffectResultOuterClass {
       hash = (37 * hash) + HIT_HALT_TIME_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getHitHaltTime());
-      hash = (37 * hash) + UNK3300_LCKECJCKKJK_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300LCKECJCKKJK();
-      hash = (37 * hash) + UNK3300_KLNGDAMMFIF_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300KLNGDAMMFIF();
+      hash = (37 * hash) + HIT_RETREAT_ANGLE_COMPAT_FIELD_NUMBER;
+      hash = (53 * hash) + getHitRetreatAngleCompat();
+      hash = (37 * hash) + HIT_EFF_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getHitEffLevel();
       hash = (37 * hash) + RETREAT_STRENGTH_FIELD_NUMBER;
       hash = (53 * hash) + java.lang.Float.floatToIntBits(
           getRetreatStrength());
@@ -489,9 +489,9 @@ public final class AttackHitEffectResultOuterClass {
 
         hitHaltTime_ = 0F;
 
-        unk3300LCKECJCKKJK_ = 0;
+        hitRetreatAngleCompat_ = 0;
 
-        unk3300KLNGDAMMFIF_ = 0;
+        hitEffLevel_ = 0;
 
         retreatStrength_ = 0F;
 
@@ -524,8 +524,8 @@ public final class AttackHitEffectResultOuterClass {
         result.airStrength_ = airStrength_;
         result.hitHaltTimeScale_ = hitHaltTimeScale_;
         result.hitHaltTime_ = hitHaltTime_;
-        result.unk3300LCKECJCKKJK_ = unk3300LCKECJCKKJK_;
-        result.unk3300KLNGDAMMFIF_ = unk3300KLNGDAMMFIF_;
+        result.hitRetreatAngleCompat_ = hitRetreatAngleCompat_;
+        result.hitEffLevel_ = hitEffLevel_;
         result.retreatStrength_ = retreatStrength_;
         onBuilt();
         return result;
@@ -584,11 +584,11 @@ public final class AttackHitEffectResultOuterClass {
         if (other.getHitHaltTime() != 0F) {
           setHitHaltTime(other.getHitHaltTime());
         }
-        if (other.getUnk3300LCKECJCKKJK() != 0) {
-          setUnk3300LCKECJCKKJK(other.getUnk3300LCKECJCKKJK());
+        if (other.getHitRetreatAngleCompat() != 0) {
+          setHitRetreatAngleCompat(other.getHitRetreatAngleCompat());
         }
-        if (other.getUnk3300KLNGDAMMFIF() != 0) {
-          setUnk3300KLNGDAMMFIF(other.getUnk3300KLNGDAMMFIF());
+        if (other.getHitEffLevel() != 0) {
+          setHitEffLevel(other.getHitEffLevel());
         }
         if (other.getRetreatStrength() != 0F) {
           setRetreatStrength(other.getRetreatStrength());
@@ -715,64 +715,64 @@ public final class AttackHitEffectResultOuterClass {
         return this;
       }
 
-      private int unk3300LCKECJCKKJK_ ;
+      private int hitRetreatAngleCompat_ ;
       /**
-       * <code>uint32 Unk3300_LCKECJCKKJK = 8;</code>
-       * @return The unk3300LCKECJCKKJK.
+       * <code>uint32 hit_retreat_angle_compat = 8;</code>
+       * @return The hitRetreatAngleCompat.
        */
       @java.lang.Override
-      public int getUnk3300LCKECJCKKJK() {
-        return unk3300LCKECJCKKJK_;
+      public int getHitRetreatAngleCompat() {
+        return hitRetreatAngleCompat_;
       }
       /**
-       * <code>uint32 Unk3300_LCKECJCKKJK = 8;</code>
-       * @param value The unk3300LCKECJCKKJK to set.
+       * <code>uint32 hit_retreat_angle_compat = 8;</code>
+       * @param value The hitRetreatAngleCompat to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300LCKECJCKKJK(int value) {
+      public Builder setHitRetreatAngleCompat(int value) {
         
-        unk3300LCKECJCKKJK_ = value;
+        hitRetreatAngleCompat_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_LCKECJCKKJK = 8;</code>
+       * <code>uint32 hit_retreat_angle_compat = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300LCKECJCKKJK() {
+      public Builder clearHitRetreatAngleCompat() {
         
-        unk3300LCKECJCKKJK_ = 0;
+        hitRetreatAngleCompat_ = 0;
         onChanged();
         return this;
       }
 
-      private int unk3300KLNGDAMMFIF_ ;
+      private int hitEffLevel_ ;
       /**
-       * <code>uint32 Unk3300_KLNGDAMMFIF = 1;</code>
-       * @return The unk3300KLNGDAMMFIF.
+       * <code>uint32 hit_eff_level = 1;</code>
+       * @return The hitEffLevel.
        */
       @java.lang.Override
-      public int getUnk3300KLNGDAMMFIF() {
-        return unk3300KLNGDAMMFIF_;
+      public int getHitEffLevel() {
+        return hitEffLevel_;
       }
       /**
-       * <code>uint32 Unk3300_KLNGDAMMFIF = 1;</code>
-       * @param value The unk3300KLNGDAMMFIF to set.
+       * <code>uint32 hit_eff_level = 1;</code>
+       * @param value The hitEffLevel to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300KLNGDAMMFIF(int value) {
+      public Builder setHitEffLevel(int value) {
         
-        unk3300KLNGDAMMFIF_ = value;
+        hitEffLevel_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_KLNGDAMMFIF = 1;</code>
+       * <code>uint32 hit_eff_level = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300KLNGDAMMFIF() {
+      public Builder clearHitEffLevel() {
         
-        unk3300KLNGDAMMFIF_ = 0;
+        hitEffLevel_ = 0;
         onChanged();
         return this;
       }
@@ -874,13 +874,13 @@ public final class AttackHitEffectResultOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\033AttackHitEffectResult.proto\"\265\001\n\025Attack" +
+      "\n\033AttackHitEffectResult.proto\"\264\001\n\025Attack" +
       "HitEffectResult\022\024\n\014air_strength\030\r \001(\002\022\033\n" +
       "\023hit_halt_time_scale\030\n \001(\002\022\025\n\rhit_halt_t" +
-      "ime\030\t \001(\002\022\033\n\023Unk3300_LCKECJCKKJK\030\010 \001(\r\022\033" +
-      "\n\023Unk3300_KLNGDAMMFIF\030\001 \001(\r\022\030\n\020retreat_s" +
-      "trength\030\003 \001(\002B\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "ime\030\t \001(\002\022 \n\030hit_retreat_angle_compat\030\010 " +
+      "\001(\r\022\025\n\rhit_eff_level\030\001 \001(\r\022\030\n\020retreat_st" +
+      "rength\030\003 \001(\002B\033\n\031emu.grasscutter.net.prot" +
+      "ob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -891,7 +891,7 @@ public final class AttackHitEffectResultOuterClass {
     internal_static_AttackHitEffectResult_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AttackHitEffectResult_descriptor,
-        new java.lang.String[] { "AirStrength", "HitHaltTimeScale", "HitHaltTime", "Unk3300LCKECJCKKJK", "Unk3300KLNGDAMMFIF", "RetreatStrength", });
+        new java.lang.String[] { "AirStrength", "HitHaltTimeScale", "HitHaltTime", "HitRetreatAngleCompat", "HitEffLevel", "RetreatStrength", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

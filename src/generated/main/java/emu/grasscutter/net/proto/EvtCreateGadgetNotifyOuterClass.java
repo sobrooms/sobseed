@@ -51,10 +51,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getInitPosOrBuilder();
 
     /**
-     * <code>bool Unk3300_DLBIJFOONBA = 15;</code>
-     * @return The unk3300DLBIJFOONBA.
+     * <code>bool sight_group_with_owner = 15;</code>
+     * @return The sightGroupWithOwner.
      */
-    boolean getUnk3300DLBIJFOONBA();
+    boolean getSightGroupWithOwner();
 
     /**
      * <code>uint32 owner_entity_id = 2;</code>
@@ -103,10 +103,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getTargetLockPointIndex();
 
     /**
-     * <code>bool is_async_load = 1433;</code>
-     * @return The isAsyncLoad.
+     * <code>bool is_true_life_time_by_owner = 1433;</code>
+     * @return The isTrueLifeTimeByOwner.
      */
-    boolean getIsAsyncLoad();
+    boolean getIsTrueLifeTimeByOwner();
 
     /**
      * <code>uint32 camp_id = 10;</code>
@@ -115,10 +115,10 @@ public final class EvtCreateGadgetNotifyOuterClass {
     int getCampId();
 
     /**
-     * <code>bool Unk3300_EJNBIGLGMII = 8;</code>
-     * @return The unk3300EJNBIGLGMII.
+     * <code>bool is_async_load = 8;</code>
+     * @return The isAsyncLoad.
      */
-    boolean getUnk3300EJNBIGLGMII();
+    boolean getIsAsyncLoad();
 
     /**
      * <code>.Vector init_euler_angles = 12;</code>
@@ -275,7 +275,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
             }
             case 64: {
 
-              unk3300EJNBIGLGMII_ = input.readBool();
+              isAsyncLoad_ = input.readBool();
               break;
             }
             case 74: {
@@ -326,7 +326,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
             }
             case 120: {
 
-              unk3300DLBIJFOONBA_ = input.readBool();
+              sightGroupWithOwner_ = input.readBool();
               break;
             }
             case 3312: {
@@ -357,7 +357,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
             }
             case 11464: {
 
-              isAsyncLoad_ = input.readBool();
+              isTrueLifeTimeByOwner_ = input.readBool();
               break;
             }
             case 13216: {
@@ -473,15 +473,15 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return getInitPos();
     }
 
-    public static final int UNK3300_DLBIJFOONBA_FIELD_NUMBER = 15;
-    private boolean unk3300DLBIJFOONBA_;
+    public static final int SIGHT_GROUP_WITH_OWNER_FIELD_NUMBER = 15;
+    private boolean sightGroupWithOwner_;
     /**
-     * <code>bool Unk3300_DLBIJFOONBA = 15;</code>
-     * @return The unk3300DLBIJFOONBA.
+     * <code>bool sight_group_with_owner = 15;</code>
+     * @return The sightGroupWithOwner.
      */
     @java.lang.Override
-    public boolean getUnk3300DLBIJFOONBA() {
-      return unk3300DLBIJFOONBA_;
+    public boolean getSightGroupWithOwner() {
+      return sightGroupWithOwner_;
     }
 
     public static final int OWNER_ENTITY_ID_FIELD_NUMBER = 2;
@@ -564,15 +564,15 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return targetLockPointIndex_;
     }
 
-    public static final int IS_ASYNC_LOAD_FIELD_NUMBER = 1433;
-    private boolean isAsyncLoad_;
+    public static final int IS_TRUE_LIFE_TIME_BY_OWNER_FIELD_NUMBER = 1433;
+    private boolean isTrueLifeTimeByOwner_;
     /**
-     * <code>bool is_async_load = 1433;</code>
-     * @return The isAsyncLoad.
+     * <code>bool is_true_life_time_by_owner = 1433;</code>
+     * @return The isTrueLifeTimeByOwner.
      */
     @java.lang.Override
-    public boolean getIsAsyncLoad() {
-      return isAsyncLoad_;
+    public boolean getIsTrueLifeTimeByOwner() {
+      return isTrueLifeTimeByOwner_;
     }
 
     public static final int CAMP_ID_FIELD_NUMBER = 10;
@@ -586,15 +586,15 @@ public final class EvtCreateGadgetNotifyOuterClass {
       return campId_;
     }
 
-    public static final int UNK3300_EJNBIGLGMII_FIELD_NUMBER = 8;
-    private boolean unk3300EJNBIGLGMII_;
+    public static final int IS_ASYNC_LOAD_FIELD_NUMBER = 8;
+    private boolean isAsyncLoad_;
     /**
-     * <code>bool Unk3300_EJNBIGLGMII = 8;</code>
-     * @return The unk3300EJNBIGLGMII.
+     * <code>bool is_async_load = 8;</code>
+     * @return The isAsyncLoad.
      */
     @java.lang.Override
-    public boolean getUnk3300EJNBIGLGMII() {
-      return unk3300EJNBIGLGMII_;
+    public boolean getIsAsyncLoad() {
+      return isAsyncLoad_;
     }
 
     public static final int INIT_EULER_ANGLES_FIELD_NUMBER = 12;
@@ -736,8 +736,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
       if (guid_ != 0L) {
         output.writeUInt64(7, guid_);
       }
-      if (unk3300EJNBIGLGMII_ != false) {
-        output.writeBool(8, unk3300EJNBIGLGMII_);
+      if (isAsyncLoad_ != false) {
+        output.writeBool(8, isAsyncLoad_);
       }
       if (initPos_ != null) {
         output.writeMessage(9, getInitPos());
@@ -757,8 +757,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
       if (configId_ != 0) {
         output.writeUInt32(14, configId_);
       }
-      if (unk3300DLBIJFOONBA_ != false) {
-        output.writeBool(15, unk3300DLBIJFOONBA_);
+      if (sightGroupWithOwner_ != false) {
+        output.writeBool(15, sightGroupWithOwner_);
       }
       if (getTargetLockPointIndexListList().size() > 0) {
         output.writeUInt32NoTag(3314);
@@ -770,8 +770,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
       if (isPeerIdFromPlayer_ != false) {
         output.writeBool(609, isPeerIdFromPlayer_);
       }
-      if (isAsyncLoad_ != false) {
-        output.writeBool(1433, isAsyncLoad_);
+      if (isTrueLifeTimeByOwner_ != false) {
+        output.writeBool(1433, isTrueLifeTimeByOwner_);
       }
       if (getTargetEntityIdListList().size() > 0) {
         output.writeUInt32NoTag(13218);
@@ -817,9 +817,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(7, guid_);
       }
-      if (unk3300EJNBIGLGMII_ != false) {
+      if (isAsyncLoad_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, unk3300EJNBIGLGMII_);
+          .computeBoolSize(8, isAsyncLoad_);
       }
       if (initPos_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -845,9 +845,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(14, configId_);
       }
-      if (unk3300DLBIJFOONBA_ != false) {
+      if (sightGroupWithOwner_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, unk3300DLBIJFOONBA_);
+          .computeBoolSize(15, sightGroupWithOwner_);
       }
       {
         int dataSize = 0;
@@ -867,9 +867,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(609, isPeerIdFromPlayer_);
       }
-      if (isAsyncLoad_ != false) {
+      if (isTrueLifeTimeByOwner_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(1433, isAsyncLoad_);
+          .computeBoolSize(1433, isTrueLifeTimeByOwner_);
       }
       {
         int dataSize = 0;
@@ -907,8 +907,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (!getInitPos()
             .equals(other.getInitPos())) return false;
       }
-      if (getUnk3300DLBIJFOONBA()
-          != other.getUnk3300DLBIJFOONBA()) return false;
+      if (getSightGroupWithOwner()
+          != other.getSightGroupWithOwner()) return false;
       if (getOwnerEntityId()
           != other.getOwnerEntityId()) return false;
       if (forwardType_ != other.forwardType_) return false;
@@ -918,12 +918,12 @@ public final class EvtCreateGadgetNotifyOuterClass {
           != other.getPropOwnerEntityId()) return false;
       if (getTargetLockPointIndex()
           != other.getTargetLockPointIndex()) return false;
-      if (getIsAsyncLoad()
-          != other.getIsAsyncLoad()) return false;
+      if (getIsTrueLifeTimeByOwner()
+          != other.getIsTrueLifeTimeByOwner()) return false;
       if (getCampId()
           != other.getCampId()) return false;
-      if (getUnk3300EJNBIGLGMII()
-          != other.getUnk3300EJNBIGLGMII()) return false;
+      if (getIsAsyncLoad()
+          != other.getIsAsyncLoad()) return false;
       if (hasInitEulerAngles() != other.hasInitEulerAngles()) return false;
       if (hasInitEulerAngles()) {
         if (!getInitEulerAngles()
@@ -962,9 +962,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         hash = (37 * hash) + INIT_POS_FIELD_NUMBER;
         hash = (53 * hash) + getInitPos().hashCode();
       }
-      hash = (37 * hash) + UNK3300_DLBIJFOONBA_FIELD_NUMBER;
+      hash = (37 * hash) + SIGHT_GROUP_WITH_OWNER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300DLBIJFOONBA());
+          getSightGroupWithOwner());
       hash = (37 * hash) + OWNER_ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getOwnerEntityId();
       hash = (37 * hash) + FORWARD_TYPE_FIELD_NUMBER;
@@ -977,14 +977,14 @@ public final class EvtCreateGadgetNotifyOuterClass {
       hash = (53 * hash) + getPropOwnerEntityId();
       hash = (37 * hash) + TARGET_LOCK_POINT_INDEX_FIELD_NUMBER;
       hash = (53 * hash) + getTargetLockPointIndex();
+      hash = (37 * hash) + IS_TRUE_LIFE_TIME_BY_OWNER_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsTrueLifeTimeByOwner());
+      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getCampId();
       hash = (37 * hash) + IS_ASYNC_LOAD_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsAsyncLoad());
-      hash = (37 * hash) + CAMP_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getCampId();
-      hash = (37 * hash) + UNK3300_EJNBIGLGMII_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300EJNBIGLGMII());
       if (hasInitEulerAngles()) {
         hash = (37 * hash) + INIT_EULER_ANGLES_FIELD_NUMBER;
         hash = (53 * hash) + getInitEulerAngles().hashCode();
@@ -1157,7 +1157,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
           initPos_ = null;
           initPosBuilder_ = null;
         }
-        unk3300DLBIJFOONBA_ = false;
+        sightGroupWithOwner_ = false;
 
         ownerEntityId_ = 0;
 
@@ -1169,11 +1169,11 @@ public final class EvtCreateGadgetNotifyOuterClass {
 
         targetLockPointIndex_ = 0;
 
-        isAsyncLoad_ = false;
+        isTrueLifeTimeByOwner_ = false;
 
         campId_ = 0;
 
-        unk3300EJNBIGLGMII_ = false;
+        isAsyncLoad_ = false;
 
         if (initEulerAnglesBuilder_ == null) {
           initEulerAngles_ = null;
@@ -1232,7 +1232,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
         } else {
           result.initPos_ = initPosBuilder_.build();
         }
-        result.unk3300DLBIJFOONBA_ = unk3300DLBIJFOONBA_;
+        result.sightGroupWithOwner_ = sightGroupWithOwner_;
         result.ownerEntityId_ = ownerEntityId_;
         result.forwardType_ = forwardType_;
         if (((bitField0_ & 0x00000002) != 0)) {
@@ -1242,9 +1242,9 @@ public final class EvtCreateGadgetNotifyOuterClass {
         result.targetLockPointIndexList_ = targetLockPointIndexList_;
         result.propOwnerEntityId_ = propOwnerEntityId_;
         result.targetLockPointIndex_ = targetLockPointIndex_;
-        result.isAsyncLoad_ = isAsyncLoad_;
+        result.isTrueLifeTimeByOwner_ = isTrueLifeTimeByOwner_;
         result.campId_ = campId_;
-        result.unk3300EJNBIGLGMII_ = unk3300EJNBIGLGMII_;
+        result.isAsyncLoad_ = isAsyncLoad_;
         if (initEulerAnglesBuilder_ == null) {
           result.initEulerAngles_ = initEulerAngles_;
         } else {
@@ -1318,8 +1318,8 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (other.hasInitPos()) {
           mergeInitPos(other.getInitPos());
         }
-        if (other.getUnk3300DLBIJFOONBA() != false) {
-          setUnk3300DLBIJFOONBA(other.getUnk3300DLBIJFOONBA());
+        if (other.getSightGroupWithOwner() != false) {
+          setSightGroupWithOwner(other.getSightGroupWithOwner());
         }
         if (other.getOwnerEntityId() != 0) {
           setOwnerEntityId(other.getOwnerEntityId());
@@ -1343,14 +1343,14 @@ public final class EvtCreateGadgetNotifyOuterClass {
         if (other.getTargetLockPointIndex() != 0) {
           setTargetLockPointIndex(other.getTargetLockPointIndex());
         }
-        if (other.getIsAsyncLoad() != false) {
-          setIsAsyncLoad(other.getIsAsyncLoad());
+        if (other.getIsTrueLifeTimeByOwner() != false) {
+          setIsTrueLifeTimeByOwner(other.getIsTrueLifeTimeByOwner());
         }
         if (other.getCampId() != 0) {
           setCampId(other.getCampId());
         }
-        if (other.getUnk3300EJNBIGLGMII() != false) {
-          setUnk3300EJNBIGLGMII(other.getUnk3300EJNBIGLGMII());
+        if (other.getIsAsyncLoad() != false) {
+          setIsAsyncLoad(other.getIsAsyncLoad());
         }
         if (other.hasInitEulerAngles()) {
           mergeInitEulerAngles(other.getInitEulerAngles());
@@ -1604,33 +1604,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return initPosBuilder_;
       }
 
-      private boolean unk3300DLBIJFOONBA_ ;
+      private boolean sightGroupWithOwner_ ;
       /**
-       * <code>bool Unk3300_DLBIJFOONBA = 15;</code>
-       * @return The unk3300DLBIJFOONBA.
+       * <code>bool sight_group_with_owner = 15;</code>
+       * @return The sightGroupWithOwner.
        */
       @java.lang.Override
-      public boolean getUnk3300DLBIJFOONBA() {
-        return unk3300DLBIJFOONBA_;
+      public boolean getSightGroupWithOwner() {
+        return sightGroupWithOwner_;
       }
       /**
-       * <code>bool Unk3300_DLBIJFOONBA = 15;</code>
-       * @param value The unk3300DLBIJFOONBA to set.
+       * <code>bool sight_group_with_owner = 15;</code>
+       * @param value The sightGroupWithOwner to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300DLBIJFOONBA(boolean value) {
+      public Builder setSightGroupWithOwner(boolean value) {
         
-        unk3300DLBIJFOONBA_ = value;
+        sightGroupWithOwner_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_DLBIJFOONBA = 15;</code>
+       * <code>bool sight_group_with_owner = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300DLBIJFOONBA() {
+      public Builder clearSightGroupWithOwner() {
         
-        unk3300DLBIJFOONBA_ = false;
+        sightGroupWithOwner_ = false;
         onChanged();
         return this;
       }
@@ -1861,33 +1861,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private boolean isAsyncLoad_ ;
+      private boolean isTrueLifeTimeByOwner_ ;
       /**
-       * <code>bool is_async_load = 1433;</code>
-       * @return The isAsyncLoad.
+       * <code>bool is_true_life_time_by_owner = 1433;</code>
+       * @return The isTrueLifeTimeByOwner.
        */
       @java.lang.Override
-      public boolean getIsAsyncLoad() {
-        return isAsyncLoad_;
+      public boolean getIsTrueLifeTimeByOwner() {
+        return isTrueLifeTimeByOwner_;
       }
       /**
-       * <code>bool is_async_load = 1433;</code>
-       * @param value The isAsyncLoad to set.
+       * <code>bool is_true_life_time_by_owner = 1433;</code>
+       * @param value The isTrueLifeTimeByOwner to set.
        * @return This builder for chaining.
        */
-      public Builder setIsAsyncLoad(boolean value) {
+      public Builder setIsTrueLifeTimeByOwner(boolean value) {
         
-        isAsyncLoad_ = value;
+        isTrueLifeTimeByOwner_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool is_async_load = 1433;</code>
+       * <code>bool is_true_life_time_by_owner = 1433;</code>
        * @return This builder for chaining.
        */
-      public Builder clearIsAsyncLoad() {
+      public Builder clearIsTrueLifeTimeByOwner() {
         
-        isAsyncLoad_ = false;
+        isTrueLifeTimeByOwner_ = false;
         onChanged();
         return this;
       }
@@ -1923,33 +1923,33 @@ public final class EvtCreateGadgetNotifyOuterClass {
         return this;
       }
 
-      private boolean unk3300EJNBIGLGMII_ ;
+      private boolean isAsyncLoad_ ;
       /**
-       * <code>bool Unk3300_EJNBIGLGMII = 8;</code>
-       * @return The unk3300EJNBIGLGMII.
+       * <code>bool is_async_load = 8;</code>
+       * @return The isAsyncLoad.
        */
       @java.lang.Override
-      public boolean getUnk3300EJNBIGLGMII() {
-        return unk3300EJNBIGLGMII_;
+      public boolean getIsAsyncLoad() {
+        return isAsyncLoad_;
       }
       /**
-       * <code>bool Unk3300_EJNBIGLGMII = 8;</code>
-       * @param value The unk3300EJNBIGLGMII to set.
+       * <code>bool is_async_load = 8;</code>
+       * @param value The isAsyncLoad to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300EJNBIGLGMII(boolean value) {
+      public Builder setIsAsyncLoad(boolean value) {
         
-        unk3300EJNBIGLGMII_ = value;
+        isAsyncLoad_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_EJNBIGLGMII = 8;</code>
+       * <code>bool is_async_load = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300EJNBIGLGMII() {
+      public Builder clearIsAsyncLoad() {
         
-        unk3300EJNBIGLGMII_ = false;
+        isAsyncLoad_ = false;
         onChanged();
         return this;
       }
@@ -2357,21 +2357,21 @@ public final class EvtCreateGadgetNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033EvtCreateGadgetNotify.proto\032\021ForwardTy" +
-      "pe.proto\032\014Vector.proto\"\217\004\n\025EvtCreateGadg" +
+      "pe.proto\032\014Vector.proto\"\231\004\n\025EvtCreateGadg" +
       "etNotify\022\036\n\025target_entity_id_list\030\364\014 \003(\r" +
-      "\022\031\n\010init_pos\030\t \001(\0132\007.Vector\022\033\n\023Unk3300_D" +
-      "LBIJFOONBA\030\017 \001(\010\022\027\n\017owner_entity_id\030\002 \001(" +
-      "\r\022\"\n\014forward_type\030\003 \001(\0162\014.ForwardType\022%\n" +
-      "\034target_lock_point_index_list\030\236\003 \003(\r\022\034\n\024" +
-      "prop_owner_entity_id\030\006 \001(\r\022\037\n\027target_loc" +
-      "k_point_index\030\004 \001(\r\022\026\n\ris_async_load\030\231\013 " +
-      "\001(\010\022\017\n\007camp_id\030\n \001(\r\022\033\n\023Unk3300_EJNBIGLG" +
-      "MII\030\010 \001(\010\022\"\n\021init_euler_angles\030\014 \001(\0132\007.V" +
-      "ector\022\037\n\026is_peer_id_from_player\030\341\004 \001(\010\022\017" +
-      "\n\007room_id\030\005 \001(\r\022\021\n\tconfig_id\030\016 \001(\r\022\021\n\tca" +
-      "mp_type\030\r \001(\r\022\014\n\004guid\030\007 \001(\004\022\021\n\tentity_id" +
-      "\030\001 \001(\r\022\030\n\020target_entity_id\030\013 \001(\rB\033\n\031emu." +
-      "grasscutter.net.protob\006proto3"
+      "\022\031\n\010init_pos\030\t \001(\0132\007.Vector\022\036\n\026sight_gro" +
+      "up_with_owner\030\017 \001(\010\022\027\n\017owner_entity_id\030\002" +
+      " \001(\r\022\"\n\014forward_type\030\003 \001(\0162\014.ForwardType" +
+      "\022%\n\034target_lock_point_index_list\030\236\003 \003(\r\022" +
+      "\034\n\024prop_owner_entity_id\030\006 \001(\r\022\037\n\027target_" +
+      "lock_point_index\030\004 \001(\r\022#\n\032is_true_life_t" +
+      "ime_by_owner\030\231\013 \001(\010\022\017\n\007camp_id\030\n \001(\r\022\025\n\r" +
+      "is_async_load\030\010 \001(\010\022\"\n\021init_euler_angles" +
+      "\030\014 \001(\0132\007.Vector\022\037\n\026is_peer_id_from_playe" +
+      "r\030\341\004 \001(\010\022\017\n\007room_id\030\005 \001(\r\022\021\n\tconfig_id\030\016" +
+      " \001(\r\022\021\n\tcamp_type\030\r \001(\r\022\014\n\004guid\030\007 \001(\004\022\021\n" +
+      "\tentity_id\030\001 \001(\r\022\030\n\020target_entity_id\030\013 \001" +
+      "(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -2384,7 +2384,7 @@ public final class EvtCreateGadgetNotifyOuterClass {
     internal_static_EvtCreateGadgetNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_EvtCreateGadgetNotify_descriptor,
-        new java.lang.String[] { "TargetEntityIdList", "InitPos", "Unk3300DLBIJFOONBA", "OwnerEntityId", "ForwardType", "TargetLockPointIndexList", "PropOwnerEntityId", "TargetLockPointIndex", "IsAsyncLoad", "CampId", "Unk3300EJNBIGLGMII", "InitEulerAngles", "IsPeerIdFromPlayer", "RoomId", "ConfigId", "CampType", "Guid", "EntityId", "TargetEntityId", });
+        new java.lang.String[] { "TargetEntityIdList", "InitPos", "SightGroupWithOwner", "OwnerEntityId", "ForwardType", "TargetLockPointIndexList", "PropOwnerEntityId", "TargetLockPointIndex", "IsTrueLifeTimeByOwner", "CampId", "IsAsyncLoad", "InitEulerAngles", "IsPeerIdFromPlayer", "RoomId", "ConfigId", "CampType", "Guid", "EntityId", "TargetEntityId", });
     emu.grasscutter.net.proto.ForwardTypeOuterClass.getDescriptor();
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }

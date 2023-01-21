@@ -23,8 +23,6 @@ hs_err_pid*
 # Ignore Gradle project-specific cache directory
 .gradle
 
-# Ignore Gradle properties
-
 # Eclipse
 .project
 .classpath
