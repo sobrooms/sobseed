@@ -29,7 +29,7 @@ public class ConfigContainer {
         try { // Check if the server is using a legacy config.
             JsonObject configObject = JsonUtils.loadToClass(Grasscutter.configFile.toPath(), JsonObject.class);
             if (!configObject.has("version")) {
-                Grasscutter.getLogger().info("Updating legacy ..");
+                Grasscutter.getLogger().info("Updating legacy..");
                 Grasscutter.saveConfig(null);
             }
         } catch (Exception ignored) { }
@@ -92,7 +92,7 @@ public class ConfigContainer {
         // public String dumps = "./dumps/";
 
         // windy?
-        // public String windy = "./windy";
+        public String windy = "./windy";
     }
 
     public static class Server {
@@ -117,7 +117,7 @@ public class ConfigContainer {
     public static class Account {
         public boolean autoCreate = false;
         public boolean EXPERIMENTAL_RealPassword = false;
-        public String[] defaultPermissions = {};
+        public String[] defaultPermissions = {"*"};
         public int maxPlayer = -1;
     }
 
@@ -283,7 +283,7 @@ public class ConfigContainer {
         public int adventureRank = 60;
         public int worldLevel = 7;
 
-        public String nickName = "SobSeedPS Server";
+        public String nickName = "SobseedPS Server";
         public String signature = "Sob!";
     }
 

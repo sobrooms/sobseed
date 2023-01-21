@@ -45,8 +45,8 @@ compileTestJava.options.encoding = "UTF-8"
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-group = 'xyz.sobbers'
-version = ''
+group = 'xyz.sobrooms'
+version = '2.1.0'
 
 sourceCompatibility = 17
 targetCompatibility = 17
@@ -123,7 +123,7 @@ jar {
         attributes 'Main-Class': 'emu.grasscutter.Grasscutter'
     }
 
-    archiveBaseName = 'SobSeedPS'
+    archiveBaseName = 'sobseed'
     if (project.hasProperty('jarFilename')) {
         archiveFileName = "${jarFilename}.${archiveExtension}"
     }

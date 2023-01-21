@@ -194,7 +194,7 @@ public final class Grasscutter {
     public static void loadConfig() {
         // Check if config.json exists. If not, we generate a new config.
         if (!configFile.exists()) {
-            getLogger().info("config.json could not be found. Generating a default configuration ...");
+            getLogger().info("config.json could not be found. Generating a default configuration file..");
             config = new ConfigContainer();
             Grasscutter.saveConfig(config);
             return;

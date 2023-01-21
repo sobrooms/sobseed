@@ -2,7 +2,7 @@
   "messages": {
     "game": {
       "address_bind": "Game Server started at \u001B[1m\u001B[33m%s:%s\u001B[0m",
-      "port_bind": "Game Server started on port %s",
+      "port_bind": "Game server started on port %s",
       "connect": "Client connected from %s",
       "disconnect": "Client disconnected from %s",
       "game_update_error": "An error occurred during game update.",
@@ -49,17 +49,17 @@
       "router_error": "[Dispatch] Unable to attach router."
     },
     "status": {
-      "free_software": "Grasscutter is FREE software. If you have paid for this, you may have been scammed. Homepage: https://github.com/Grasscutters/Grasscutter",
-      "starting": "Starting Grasscutter...",
+      "free_software": "Grasscutter/SobseedPS is FREE software. If you have paid for this, you may have been scammed. Homepage: https://github.com/Grasscutters/Grasscutter / https://github.com/sobrooms/sobseed (sobseed is a private repo)",
+      "starting": "Starting SobseedPS...",
       "shutdown": "Shutting down...",
       "done": "Done! For help, type \"help\"",
       "error": "An error occurred.",
-      "welcome": "Welcome to Grasscutter!",
+      "welcome": "Welcome to SobseedPS!",
       "run_mode_error": "Invalid server run mode: %s.",
       "run_mode_help": "Server run mode must be 'HYBRID', 'DISPATCH_ONLY', or 'GAME_ONLY'. Unable to start Grasscutter...",
       "create_resources": "Creating resources folder...",
-      "resources_error": "Place a copy of 'BinOutput' and 'ExcelBinOutput' in the resources folder.",
-      "version": "Grasscutter version: %s-%s",
+      "resources_error": "Please place a copy of 'BinOutput' and 'ExcelBinOutput' in the resources folder.",
+      "version": "SobseedPS version: %s-%s",
       "game_version": "Game version: %s",
       "resources": {
         "loading": "Loading resources...",
@@ -347,6 +347,9 @@
       "success": "Successfully unbanned a user. Do you like them? Is that why you unbanned them?",
       "failure": "Failed, player not found.",
       "description": "Unban a player"
+    },
+    "windy": {
+      "description": "run a .luac file"
     }
   },
   "gacha": {

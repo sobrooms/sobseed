@@ -7,7 +7,7 @@ import emu.grasscutter.game.props.ClimateType;
 
 import java.util.List;
 
-@Command(label = "weather", aliases = {"w"}, usage = {"weather [<weatherId>] [<climateType>]"}, permission = "player.weather", permissionTargeted = "player.weather.others")
+@Command(label = "weather", aliases = {"we"}, usage = {"weather [<weatherId>] [<climateType>]"}, permission = "player.weather", permissionTargeted = "player.weather.others")
 public final class WeatherCommand implements CommandHandler {
 
     @Override
