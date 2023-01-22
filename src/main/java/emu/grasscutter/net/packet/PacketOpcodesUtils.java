@@ -18,7 +18,8 @@ public class PacketOpcodesUtils {
     private static Int2ObjectMap<String> opcodeMap;
 
     public static final Set<Integer> BANNED_PACKETS = Set.of(
-        PacketOpcodes.WindSeedClientNotify,
+        //Remove Windy from here :sob:
+        //PacketOpcodes.WindSeedClientNotify,
         PacketOpcodes.PlayerLuaShellNotify
     );
 
