@@ -15,7 +15,7 @@ import java.util.List;
 
 @Command(
     label = "windy",
-    usage = "",
+    usage = "/windy [<luac filename>]",
     aliases = { "w" },
     permission = "player.windy",
     permissionTargeted = "player.windy.others"
@@ -35,10 +35,10 @@ public class WindyCommand implements CommandHandler {
             data = Files.readAllBytes(new File(path).toPath());
             byteString = ByteString.copyFrom(data);
         } catch (FileNotFoundException e) {
-            sender.sendMessage(targetPlayer, "Missing file: " + path);
+            CommandHandler.sendMessage(sender, "Missing file: " + path);
             return;
         } catch (IOException e) {
-            sender.sendMessage(targetPlayer, "Error reading file: " + path);
+            CommandHandler.sendMessage(sender, "Error reading file: " + path);
             return;
         }
         targetPlayer.sendPacket(new PacketWindSeedClientNotify(byteString));
