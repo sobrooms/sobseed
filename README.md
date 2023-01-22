@@ -12,4 +12,4 @@ find the latest version in the [releases](https://github.com/sobrooms/sobseed/re
 * [mangorifo](https://github.com/mangorifo) - *:sob::pleading_face: creator of the project*
 * [Moistcrafter](https://github.com/Moistcrafter) - *sob (contributed)*
 * [NickTheHuy](https://github.com/NickTheHuy) - *sob (contributed)*
-* [Penelopeep](https://github.com/Penelopeep)
+* [Penelopeep](https://github.com/Penelopeep) - *sob (contributed)*
