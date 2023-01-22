@@ -283,6 +283,9 @@
       "unlocked": "%s のロックが解除されました。",
       "unlocked_for": "%s の %s がロック解除されました。"
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "%s 体の %s をスポーンさせました｡",
       "limit_reached": "シーンのスポーン上限に達しました。 代わりに %s 体のエンティティをスポーンしています。",

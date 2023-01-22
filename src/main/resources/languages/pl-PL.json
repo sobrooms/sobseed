@@ -283,6 +283,9 @@
       "unlocked": "%s oblokowana.",
       "unlocked_for": "%s odblokowano dla %s."
     },
+    "sob":{
+      "description": "sob ale po polsku bo mogę"
+    },
     "spawn": {
       "success": "Stworzono %s obiektów o ID %s.",
       "limit_reached": "Osiągnięto maksymalną ilość obiektów w scenie. Dodane zostaną tylko %s.",

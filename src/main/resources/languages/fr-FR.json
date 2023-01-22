@@ -283,6 +283,9 @@
       "unlocked": "%s déverrouillé.",
       "unlocked_for": "%s de %s déverrouillé."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": " %s %s sont apparu.",
       "limit_reached": "La limite d'apparition de la scène est atteinte. Apparition de %s entités à la place.",

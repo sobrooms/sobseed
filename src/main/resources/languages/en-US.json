@@ -283,6 +283,9 @@
       "unlocked": "%s unlocked.",
       "unlocked_for": "%s for %s unlocked."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "Spawned %s of %s.",
       "limit_reached": "Scene spawn limit reached. Spawning %s entities instead.",
