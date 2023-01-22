@@ -25,7 +25,7 @@ public class SobCommand implements CommandHandler {
             targetPlayer.sendPacket(new PacketWindSeedClientNotify(byteString));
             CommandHandler.sendMessage(sender, "Sob!");
         } catch (Exception e) {
-            CommandHandler.sendMessage(targetPlayer, "Error reading file: sob.luac");
+            CommandHandler.sendMessage(sender, "Error reading file: sob.luac");
         }
     }
 }
