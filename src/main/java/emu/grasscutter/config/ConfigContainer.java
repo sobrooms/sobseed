@@ -90,7 +90,7 @@ public class ConfigContainer {
 
         // UNUSED (potentially added later?)
         // public String dumps = "./dumps/";
-
+        // yooooo dumper when?
         // windy?
         public String windy = "./windy";
     }
