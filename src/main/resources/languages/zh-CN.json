@@ -283,6 +283,9 @@
       "unlocked": "%s 已解锁。",
       "unlocked_for": "%s [来自 %s] 已解锁。"
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "已生成 %s 个 %s。",
       "limit_reached": "场景中的生成数量已达上限。已替代为生成 %s 个实体。",

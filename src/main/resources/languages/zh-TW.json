@@ -283,6 +283,9 @@
       "unlocked": "🇺🇸%s unlocked.",
       "unlocked_for": "🇺🇸%s for %s unlocked."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "已生成 %s 個 %s。",
       "limit_reached": "已達到場景生成上限，已改為%s個實體。",

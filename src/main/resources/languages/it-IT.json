@@ -282,6 +282,9 @@
           "unlocked": "%s sbloccato.",
           "unlocked_for": "%s per %s sbloccato."
         },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "Evocati %s di %s.",
       "limit_reached": "Limite di evocazione della scena raggiunto. Generazione invece di %s entità.",

@@ -283,6 +283,9 @@
       "unlocked": "🇺🇸%s unlocked.",
       "unlocked_for": "🇺🇸%s for %s unlocked."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "A generat %s de %s.",
       "limit_reached": "Limita de reproducere a scenei a fost atinsă. În schimb, se generează %s de entități.",

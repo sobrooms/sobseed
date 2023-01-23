@@ -283,6 +283,9 @@
       "unlocked": "%s desfijado.",
       "unlocked_for": "%s para %s desfijado."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": "Generados %s de %s.",
       "limit_reached": "Se ha alcanzado el límite de generaciones en el escenario. Generando %s entidades en su lugar.",

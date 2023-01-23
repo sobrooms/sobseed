@@ -283,6 +283,9 @@
       "unlocked": "%s 잠금해제됨.",
       "unlocked_for": "%s의 %s 잠금이 해제됩니다."
     },
+    "sob":{
+      "description": "sob"
+    },
     "spawn": {
       "success": " %s 개의 %s 를 소환하는데 성공했습니다.",
       "limit_reached": "scene당 소환 엔티티 한계입니다. 대신 %s 개의 엔티티를 소환합니다.",
