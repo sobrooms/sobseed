@@ -154,7 +154,7 @@
     "give": {
       "usage_relic": "Usage: give <artifactID> [mainPropID] [<appendPropID>[,<times>]]... [lv<level 0-20>]",
       "illegal_relic": "This artifactID belongs to a blacklisted range, it may not be the one you wanted. Skill issue and sob honestly",
-      "given": "Given %s of %s to user %s. You should give %s primos or genesis crystals :pleading_face:",
+      "given": "Gave that item. You should give primos or genesis crystals :pleading_face:",
       "given_with_level_and_refinement": "Given %s with level %s, refinement %s %s times to %s. ",
       "given_level": "Given %s with level %s %s times to %s.",
       "given_avatar": "Given %s with level %s to %s.",

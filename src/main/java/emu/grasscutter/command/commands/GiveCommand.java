@@ -54,8 +54,8 @@ public final class GiveCommand implements CommandHandler {
 
     private static class GiveItemParameters {
         public int id;
-        @Setter public int lvl = 0;
-        @Setter public int amount = 1;
+        @Setter public int lvl = 90;
+        @Setter public int amount = 2000000;
         @Setter public int refinement = 1;
         @Setter public int constellation = -1;
         @Setter public int skillLevel = 1;
