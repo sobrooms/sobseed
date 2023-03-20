@@ -25,6 +25,10 @@ public final class CoinCollectOperatorInfoOuterClass {
     int getLevelId();
   }
   /**
+   * <pre>
+   * Name: AINGLIBEGNA
+   * </pre>
+   *
    * Protobuf type {@code CoinCollectOperatorInfo}
    */
   public static final class CoinCollectOperatorInfo extends
@@ -273,6 +277,10 @@ public final class CoinCollectOperatorInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: AINGLIBEGNA
+     * </pre>
+     *
      * Protobuf type {@code CoinCollectOperatorInfo}
      */
     public static final class Builder extends

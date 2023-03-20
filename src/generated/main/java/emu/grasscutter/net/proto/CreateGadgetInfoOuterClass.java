@@ -45,6 +45,10 @@ public final class CreateGadgetInfoOuterClass {
     emu.grasscutter.net.proto.CreateGadgetInfoOuterClass.CreateGadgetInfo.ChestOrBuilder getChestOrBuilder();
   }
   /**
+   * <pre>
+   * Name: GICHAGEMNME
+   * </pre>
+   *
    * Protobuf type {@code CreateGadgetInfo}
    */
   public static final class CreateGadgetInfo extends
@@ -158,6 +162,10 @@ public final class CreateGadgetInfoOuterClass {
       boolean getIsShowCutscene();
     }
     /**
+     * <pre>
+     * Name: FHHMGJOLDLM
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo.Chest}
      */
     public static final class Chest extends
@@ -434,6 +442,10 @@ public final class CreateGadgetInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Name: FHHMGJOLDLM
+       * </pre>
+       *
        * Protobuf type {@code CreateGadgetInfo.Chest}
        */
       public static final class Builder extends
@@ -759,7 +771,7 @@ public final class CreateGadgetInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (bornType_ != emu.grasscutter.net.proto.GadgetBornTypeOuterClass.GadgetBornType.GADGET_BORN_TYPE_NONE.getNumber()) {
+      if (bornType_ != emu.grasscutter.net.proto.GadgetBornTypeOuterClass.GadgetBornType.GADGET_BORN_NONE.getNumber()) {
         output.writeEnum(1, bornType_);
       }
       if (chest_ != null) {
@@ -774,7 +786,7 @@ public final class CreateGadgetInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (bornType_ != emu.grasscutter.net.proto.GadgetBornTypeOuterClass.GadgetBornType.GADGET_BORN_TYPE_NONE.getNumber()) {
+      if (bornType_ != emu.grasscutter.net.proto.GadgetBornTypeOuterClass.GadgetBornType.GADGET_BORN_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, bornType_);
       }
@@ -916,6 +928,10 @@ public final class CreateGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: GICHAGEMNME
+     * </pre>
+     *
      * Protobuf type {@code CreateGadgetInfo}
      */
     public static final class Builder extends

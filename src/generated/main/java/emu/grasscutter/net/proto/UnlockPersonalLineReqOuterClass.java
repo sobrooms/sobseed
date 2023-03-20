@@ -19,21 +19,15 @@ public final class UnlockPersonalLineReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 personal_line_id = 4;</code>
+     * <code>uint32 personal_line_id = 1;</code>
      * @return The personalLineId.
      */
     int getPersonalLineId();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 415;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: JFKNDGLGOPN
+   * CmdId: 405
    * </pre>
    *
    * Protobuf type {@code UnlockPersonalLineReq}
@@ -80,7 +74,7 @@ public final class UnlockPersonalLineReqOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 8: {
 
               personalLineId_ = input.readUInt32();
               break;
@@ -117,10 +111,10 @@ public final class UnlockPersonalLineReqOuterClass {
               emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.class, emu.grasscutter.net.proto.UnlockPersonalLineReqOuterClass.UnlockPersonalLineReq.Builder.class);
     }
 
-    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 4;
+    public static final int PERSONAL_LINE_ID_FIELD_NUMBER = 1;
     private int personalLineId_;
     /**
-     * <code>uint32 personal_line_id = 4;</code>
+     * <code>uint32 personal_line_id = 1;</code>
      * @return The personalLineId.
      */
     @java.lang.Override
@@ -143,7 +137,7 @@ public final class UnlockPersonalLineReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (personalLineId_ != 0) {
-        output.writeUInt32(4, personalLineId_);
+        output.writeUInt32(1, personalLineId_);
       }
       unknownFields.writeTo(output);
     }
@@ -156,7 +150,7 @@ public final class UnlockPersonalLineReqOuterClass {
       size = 0;
       if (personalLineId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, personalLineId_);
+          .computeUInt32Size(1, personalLineId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -285,14 +279,8 @@ public final class UnlockPersonalLineReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 415;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: JFKNDGLGOPN
+     * CmdId: 405
      * </pre>
      *
      * Protobuf type {@code UnlockPersonalLineReq}
@@ -443,7 +431,7 @@ public final class UnlockPersonalLineReqOuterClass {
 
       private int personalLineId_ ;
       /**
-       * <code>uint32 personal_line_id = 4;</code>
+       * <code>uint32 personal_line_id = 1;</code>
        * @return The personalLineId.
        */
       @java.lang.Override
@@ -451,7 +439,7 @@ public final class UnlockPersonalLineReqOuterClass {
         return personalLineId_;
       }
       /**
-       * <code>uint32 personal_line_id = 4;</code>
+       * <code>uint32 personal_line_id = 1;</code>
        * @param value The personalLineId to set.
        * @return This builder for chaining.
        */
@@ -462,7 +450,7 @@ public final class UnlockPersonalLineReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 personal_line_id = 4;</code>
+       * <code>uint32 personal_line_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearPersonalLineId() {
@@ -539,7 +527,7 @@ public final class UnlockPersonalLineReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033UnlockPersonalLineReq.proto\"1\n\025UnlockP" +
-      "ersonalLineReq\022\030\n\020personal_line_id\030\004 \001(\r" +
+      "ersonalLineReq\022\030\n\020personal_line_id\030\001 \001(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

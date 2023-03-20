@@ -15,29 +15,33 @@ public final class InterOpTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Name: JHPFIBBFMME
+   * </pre>
+   *
    * Protobuf enum {@code InterOpType}
    */
   public enum InterOpType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>INTER_OP_TYPE_FINISH = 0;</code>
+     * <code>INTER_OP_FINISH = 0;</code>
      */
-    INTER_OP_TYPE_FINISH(0),
+    INTER_OP_FINISH(0),
     /**
-     * <code>INTER_OP_TYPE_START = 1;</code>
+     * <code>INTER_OP_START = 1;</code>
      */
-    INTER_OP_TYPE_START(1),
+    INTER_OP_START(1),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>INTER_OP_TYPE_FINISH = 0;</code>
+     * <code>INTER_OP_FINISH = 0;</code>
      */
-    public static final int INTER_OP_TYPE_FINISH_VALUE = 0;
+    public static final int INTER_OP_FINISH_VALUE = 0;
     /**
-     * <code>INTER_OP_TYPE_START = 1;</code>
+     * <code>INTER_OP_START = 1;</code>
      */
-    public static final int INTER_OP_TYPE_START_VALUE = 1;
+    public static final int INTER_OP_START_VALUE = 1;
 
 
     public final int getNumber() {
@@ -64,8 +68,8 @@ public final class InterOpTypeOuterClass {
      */
     public static InterOpType forNumber(int value) {
       switch (value) {
-        case 0: return INTER_OP_TYPE_FINISH;
-        case 1: return INTER_OP_TYPE_START;
+        case 0: return INTER_OP_FINISH;
+        case 1: return INTER_OP_START;
         default: return null;
       }
     }
@@ -131,10 +135,9 @@ public final class InterOpTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021InterOpType.proto*@\n\013InterOpType\022\030\n\024IN" +
-      "TER_OP_TYPE_FINISH\020\000\022\027\n\023INTER_OP_TYPE_ST" +
-      "ART\020\001B\033\n\031emu.grasscutter.net.protob\006prot" +
-      "o3"
+      "\n\021InterOpType.proto*6\n\013InterOpType\022\023\n\017IN" +
+      "TER_OP_FINISH\020\000\022\022\n\016INTER_OP_START\020\001B\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

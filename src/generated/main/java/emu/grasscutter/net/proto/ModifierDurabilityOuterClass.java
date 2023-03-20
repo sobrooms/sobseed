@@ -31,6 +31,10 @@ public final class ModifierDurabilityOuterClass {
     float getRemainingDurability();
   }
   /**
+   * <pre>
+   * Name: LGJFDLLGBOO
+   * </pre>
+   *
    * Protobuf type {@code ModifierDurability}
    */
   public static final class ModifierDurability extends
@@ -310,6 +314,10 @@ public final class ModifierDurabilityOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: LGJFDLLGBOO
+     * </pre>
+     *
      * Protobuf type {@code ModifierDurability}
      */
     public static final class Builder extends

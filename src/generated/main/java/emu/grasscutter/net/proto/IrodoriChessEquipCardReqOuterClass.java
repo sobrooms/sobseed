@@ -19,33 +19,27 @@ public final class IrodoriChessEquipCardReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_hard_map = 8;</code>
+     * <code>bool is_hard_map = 13;</code>
      * @return The isHardMap.
      */
     boolean getIsHardMap();
 
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     int getLevelId();
 
     /**
-     * <code>uint32 card_id = 3;</code>
+     * <code>uint32 card_id = 14;</code>
      * @return The cardId.
      */
     int getCardId();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 8766;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: OCHFJBOGAOP
+   * CmdId: 8511
    * </pre>
    *
    * Protobuf type {@code IrodoriChessEquipCardReq}
@@ -92,19 +86,19 @@ public final class IrodoriChessEquipCardReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 56: {
 
               levelId_ = input.readUInt32();
               break;
             }
-            case 24: {
-
-              cardId_ = input.readUInt32();
-              break;
-            }
-            case 64: {
+            case 104: {
 
               isHardMap_ = input.readBool();
+              break;
+            }
+            case 112: {
+
+              cardId_ = input.readUInt32();
               break;
             }
             default: {
@@ -139,10 +133,10 @@ public final class IrodoriChessEquipCardReqOuterClass {
               emu.grasscutter.net.proto.IrodoriChessEquipCardReqOuterClass.IrodoriChessEquipCardReq.class, emu.grasscutter.net.proto.IrodoriChessEquipCardReqOuterClass.IrodoriChessEquipCardReq.Builder.class);
     }
 
-    public static final int IS_HARD_MAP_FIELD_NUMBER = 8;
+    public static final int IS_HARD_MAP_FIELD_NUMBER = 13;
     private boolean isHardMap_;
     /**
-     * <code>bool is_hard_map = 8;</code>
+     * <code>bool is_hard_map = 13;</code>
      * @return The isHardMap.
      */
     @java.lang.Override
@@ -150,10 +144,10 @@ public final class IrodoriChessEquipCardReqOuterClass {
       return isHardMap_;
     }
 
-    public static final int LEVEL_ID_FIELD_NUMBER = 1;
+    public static final int LEVEL_ID_FIELD_NUMBER = 7;
     private int levelId_;
     /**
-     * <code>uint32 level_id = 1;</code>
+     * <code>uint32 level_id = 7;</code>
      * @return The levelId.
      */
     @java.lang.Override
@@ -161,10 +155,10 @@ public final class IrodoriChessEquipCardReqOuterClass {
       return levelId_;
     }
 
-    public static final int CARD_ID_FIELD_NUMBER = 3;
+    public static final int CARD_ID_FIELD_NUMBER = 14;
     private int cardId_;
     /**
-     * <code>uint32 card_id = 3;</code>
+     * <code>uint32 card_id = 14;</code>
      * @return The cardId.
      */
     @java.lang.Override
@@ -187,13 +181,13 @@ public final class IrodoriChessEquipCardReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (levelId_ != 0) {
-        output.writeUInt32(1, levelId_);
-      }
-      if (cardId_ != 0) {
-        output.writeUInt32(3, cardId_);
+        output.writeUInt32(7, levelId_);
       }
       if (isHardMap_ != false) {
-        output.writeBool(8, isHardMap_);
+        output.writeBool(13, isHardMap_);
+      }
+      if (cardId_ != 0) {
+        output.writeUInt32(14, cardId_);
       }
       unknownFields.writeTo(output);
     }
@@ -206,15 +200,15 @@ public final class IrodoriChessEquipCardReqOuterClass {
       size = 0;
       if (levelId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, levelId_);
-      }
-      if (cardId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, cardId_);
+          .computeUInt32Size(7, levelId_);
       }
       if (isHardMap_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isHardMap_);
+          .computeBoolSize(13, isHardMap_);
+      }
+      if (cardId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, cardId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,14 +346,8 @@ public final class IrodoriChessEquipCardReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 8766;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: OCHFJBOGAOP
+     * CmdId: 8511
      * </pre>
      *
      * Protobuf type {@code IrodoriChessEquipCardReq}
@@ -522,7 +510,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
 
       private boolean isHardMap_ ;
       /**
-       * <code>bool is_hard_map = 8;</code>
+       * <code>bool is_hard_map = 13;</code>
        * @return The isHardMap.
        */
       @java.lang.Override
@@ -530,7 +518,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return isHardMap_;
       }
       /**
-       * <code>bool is_hard_map = 8;</code>
+       * <code>bool is_hard_map = 13;</code>
        * @param value The isHardMap to set.
        * @return This builder for chaining.
        */
@@ -541,7 +529,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return this;
       }
       /**
-       * <code>bool is_hard_map = 8;</code>
+       * <code>bool is_hard_map = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsHardMap() {
@@ -553,7 +541,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
 
       private int levelId_ ;
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return The levelId.
        */
       @java.lang.Override
@@ -561,7 +549,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return levelId_;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 7;</code>
        * @param value The levelId to set.
        * @return This builder for chaining.
        */
@@ -572,7 +560,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 level_id = 1;</code>
+       * <code>uint32 level_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLevelId() {
@@ -584,7 +572,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
 
       private int cardId_ ;
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 14;</code>
        * @return The cardId.
        */
       @java.lang.Override
@@ -592,7 +580,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return cardId_;
       }
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 14;</code>
        * @param value The cardId to set.
        * @return This builder for chaining.
        */
@@ -603,7 +591,7 @@ public final class IrodoriChessEquipCardReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 card_id = 3;</code>
+       * <code>uint32 card_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearCardId() {
@@ -680,8 +668,8 @@ public final class IrodoriChessEquipCardReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036IrodoriChessEquipCardReq.proto\"R\n\030Irod" +
-      "oriChessEquipCardReq\022\023\n\013is_hard_map\030\010 \001(" +
-      "\010\022\020\n\010level_id\030\001 \001(\r\022\017\n\007card_id\030\003 \001(\rB\033\n\031" +
+      "oriChessEquipCardReq\022\023\n\013is_hard_map\030\r \001(" +
+      "\010\022\020\n\010level_id\030\007 \001(\r\022\017\n\007card_id\030\016 \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

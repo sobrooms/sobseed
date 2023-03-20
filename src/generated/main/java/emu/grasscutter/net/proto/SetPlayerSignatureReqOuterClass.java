@@ -32,14 +32,8 @@ public final class SetPlayerSignatureReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4025;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: BOLIJBHHIAA
+   * CmdId: 4029
    * </pre>
    *
    * Protobuf type {@code SetPlayerSignatureReq}
@@ -177,7 +171,7 @@ public final class SetPlayerSignatureReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 15, signature_);
       }
       unknownFields.writeTo(output);
@@ -189,7 +183,7 @@ public final class SetPlayerSignatureReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, signature_);
       }
       size += unknownFields.getSerializedSize();
@@ -319,14 +313,8 @@ public final class SetPlayerSignatureReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4025;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: BOLIJBHHIAA
+     * CmdId: 4029
      * </pre>
      *
      * Protobuf type {@code SetPlayerSignatureReq}

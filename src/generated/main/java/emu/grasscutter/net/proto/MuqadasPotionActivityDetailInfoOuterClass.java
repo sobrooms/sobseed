@@ -43,6 +43,10 @@ public final class MuqadasPotionActivityDetailInfoOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Name: MLIOFGMAFPP
+   * </pre>
+   *
    * Protobuf type {@code MuqadasPotionActivityDetailInfo}
    */
   public static final class MuqadasPotionActivityDetailInfo extends
@@ -331,6 +335,10 @@ public final class MuqadasPotionActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: MLIOFGMAFPP
+     * </pre>
+     *
      * Protobuf type {@code MuqadasPotionActivityDetailInfo}
      */
     public static final class Builder extends

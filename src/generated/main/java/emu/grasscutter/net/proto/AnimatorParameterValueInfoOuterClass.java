@@ -26,31 +26,16 @@ public final class AnimatorParameterValueInfoOuterClass {
 
     /**
      * <code>int32 int_val = 2;</code>
-     * @return Whether the intVal field is set.
-     */
-    boolean hasIntVal();
-    /**
-     * <code>int32 int_val = 2;</code>
      * @return The intVal.
      */
     int getIntVal();
 
     /**
      * <code>float float_val = 3;</code>
-     * @return Whether the floatVal field is set.
-     */
-    boolean hasFloatVal();
-    /**
-     * <code>float float_val = 3;</code>
      * @return The floatVal.
      */
     float getFloatVal();
 
-    /**
-     * <code>bool bool_val = 4;</code>
-     * @return Whether the boolVal field is set.
-     */
-    boolean hasBoolVal();
     /**
      * <code>bool bool_val = 4;</code>
      * @return The boolVal.
@@ -60,6 +45,10 @@ public final class AnimatorParameterValueInfoOuterClass {
     public emu.grasscutter.net.proto.AnimatorParameterValueInfoOuterClass.AnimatorParameterValueInfo.ParaValCase getParaValCase();
   }
   /**
+   * <pre>
+   * Name: NNHECDNAAAO
+   * </pre>
+   *
    * Protobuf type {@code AnimatorParameterValueInfo}
    */
   public static final class AnimatorParameterValueInfo extends
@@ -213,14 +202,6 @@ public final class AnimatorParameterValueInfoOuterClass {
     public static final int INT_VAL_FIELD_NUMBER = 2;
     /**
      * <code>int32 int_val = 2;</code>
-     * @return Whether the intVal field is set.
-     */
-    @java.lang.Override
-    public boolean hasIntVal() {
-      return paraValCase_ == 2;
-    }
-    /**
-     * <code>int32 int_val = 2;</code>
      * @return The intVal.
      */
     @java.lang.Override
@@ -234,14 +215,6 @@ public final class AnimatorParameterValueInfoOuterClass {
     public static final int FLOAT_VAL_FIELD_NUMBER = 3;
     /**
      * <code>float float_val = 3;</code>
-     * @return Whether the floatVal field is set.
-     */
-    @java.lang.Override
-    public boolean hasFloatVal() {
-      return paraValCase_ == 3;
-    }
-    /**
-     * <code>float float_val = 3;</code>
      * @return The floatVal.
      */
     @java.lang.Override
@@ -253,14 +226,6 @@ public final class AnimatorParameterValueInfoOuterClass {
     }
 
     public static final int BOOL_VAL_FIELD_NUMBER = 4;
-    /**
-     * <code>bool bool_val = 4;</code>
-     * @return Whether the boolVal field is set.
-     */
-    @java.lang.Override
-    public boolean hasBoolVal() {
-      return paraValCase_ == 4;
-    }
     /**
      * <code>bool bool_val = 4;</code>
      * @return The boolVal.
@@ -492,6 +457,10 @@ public final class AnimatorParameterValueInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: NNHECDNAAAO
+     * </pre>
+     *
      * Protobuf type {@code AnimatorParameterValueInfo}
      */
     public static final class Builder extends
@@ -715,13 +684,6 @@ public final class AnimatorParameterValueInfoOuterClass {
 
       /**
        * <code>int32 int_val = 2;</code>
-       * @return Whether the intVal field is set.
-       */
-      public boolean hasIntVal() {
-        return paraValCase_ == 2;
-      }
-      /**
-       * <code>int32 int_val = 2;</code>
        * @return The intVal.
        */
       public int getIntVal() {
@@ -756,13 +718,6 @@ public final class AnimatorParameterValueInfoOuterClass {
 
       /**
        * <code>float float_val = 3;</code>
-       * @return Whether the floatVal field is set.
-       */
-      public boolean hasFloatVal() {
-        return paraValCase_ == 3;
-      }
-      /**
-       * <code>float float_val = 3;</code>
        * @return The floatVal.
        */
       public float getFloatVal() {
@@ -795,13 +750,6 @@ public final class AnimatorParameterValueInfoOuterClass {
         return this;
       }
 
-      /**
-       * <code>bool bool_val = 4;</code>
-       * @return Whether the boolVal field is set.
-       */
-      public boolean hasBoolVal() {
-        return paraValCase_ == 4;
-      }
       /**
        * <code>bool bool_val = 4;</code>
        * @return The boolVal.
@@ -902,11 +850,11 @@ public final class AnimatorParameterValueInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n AnimatorParameterValueInfo.proto\"w\n\032An" +
+      "\n AnimatorParameterValueInfo.proto\"v\n\032An" +
       "imatorParameterValueInfo\022\021\n\tpara_type\030\001 " +
       "\001(\r\022\021\n\007int_val\030\002 \001(\005H\000\022\023\n\tfloat_val\030\003 \001(" +
-      "\002H\000\022\022\n\010bool_val\030\004 \001(\010H\000B\n\n\010para_valB\033\n\031e" +
-      "mu.grasscutter.net.protob\006proto3"
+      "\002H\000\022\022\n\010bool_val\030\004 \001(\010H\000B\t\n\007paraValB\033\n\031em" +
+      "u.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

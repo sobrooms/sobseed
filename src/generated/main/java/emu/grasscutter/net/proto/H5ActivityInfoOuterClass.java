@@ -19,66 +19,70 @@ public final class H5ActivityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>uint32 begin_time = 15;</code>
+     * @return The beginTime.
+     */
+    int getBeginTime();
+
+    /**
      * <code>bool is_entrance_open = 2;</code>
      * @return The isEntranceOpen.
      */
     boolean getIsEntranceOpen();
 
     /**
-     * <code>uint32 Unk3300_OBKEBDCKHJF = 1;</code>
-     * @return The unk3300OBKEBDCKHJF.
-     */
-    int getUnk3300OBKEBDCKHJF();
-
-    /**
-     * <code>uint32 Unk3300_DMBNFECAKBH = 14;</code>
-     * @return The unk3300DMBNFECAKBH.
-     */
-    int getUnk3300DMBNFECAKBH();
-
-    /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
-     */
-    int getContentCloseTime();
-
-    /**
-     * <code>string url = 3;</code>
-     * @return The url.
-     */
-    java.lang.String getUrl();
-    /**
-     * <code>string url = 3;</code>
-     * @return The bytes for url.
-     */
-    com.google.protobuf.ByteString
-        getUrlBytes();
-
-    /**
-     * <code>string prefab_path = 15;</code>
+     * <code>string prefab_path = 14;</code>
      * @return The prefabPath.
      */
     java.lang.String getPrefabPath();
     /**
-     * <code>string prefab_path = 15;</code>
+     * <code>string prefab_path = 14;</code>
      * @return The bytes for prefabPath.
      */
     com.google.protobuf.ByteString
         getPrefabPathBytes();
 
     /**
-     * <code>uint32 begin_time = 5;</code>
-     * @return The beginTime.
+     * <code>string url = 12;</code>
+     * @return The url.
      */
-    int getBeginTime();
+    java.lang.String getUrl();
+    /**
+     * <code>string url = 12;</code>
+     * @return The bytes for url.
+     */
+    com.google.protobuf.ByteString
+        getUrlBytes();
 
     /**
      * <code>uint32 end_time = 7;</code>
      * @return The endTime.
      */
     int getEndTime();
+
+    /**
+     * <code>uint32 PEKFGOHFPIB = 6;</code>
+     * @return The pEKFGOHFPIB.
+     */
+    int getPEKFGOHFPIB();
+
+    /**
+     * <code>uint32 PICPEBDGGAO = 10;</code>
+     * @return The pICPEBDGGAO.
+     */
+    int getPICPEBDGGAO();
+
+    /**
+     * <code>uint32 content_close_time = 4;</code>
+     * @return The contentCloseTime.
+     */
+    int getContentCloseTime();
   }
   /**
+   * <pre>
+   * Name: IJOOGAIOODO
+   * </pre>
+   *
    * Protobuf type {@code H5ActivityInfo}
    */
   public static final class H5ActivityInfo extends
@@ -91,8 +95,8 @@ public final class H5ActivityInfoOuterClass {
       super(builder);
     }
     private H5ActivityInfo() {
-      url_ = "";
       prefabPath_ = "";
+      url_ = "";
     }
 
     @java.lang.Override
@@ -125,20 +129,9 @@ public final class H5ActivityInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              unk3300OBKEBDCKHJF_ = input.readUInt32();
-              break;
-            }
             case 16: {
 
               isEntranceOpen_ = input.readBool();
-              break;
-            }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              url_ = s;
               break;
             }
             case 32: {
@@ -146,9 +139,9 @@ public final class H5ActivityInfoOuterClass {
               contentCloseTime_ = input.readUInt32();
               break;
             }
-            case 40: {
+            case 48: {
 
-              beginTime_ = input.readUInt32();
+              pEKFGOHFPIB_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -156,15 +149,26 @@ public final class H5ActivityInfoOuterClass {
               endTime_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 80: {
 
-              unk3300DMBNFECAKBH_ = input.readUInt32();
+              pICPEBDGGAO_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 98: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              url_ = s;
+              break;
+            }
+            case 114: {
               java.lang.String s = input.readStringRequireUtf8();
 
               prefabPath_ = s;
+              break;
+            }
+            case 120: {
+
+              beginTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -199,6 +203,17 @@ public final class H5ActivityInfoOuterClass {
               emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.class, emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.Builder.class);
     }
 
+    public static final int BEGIN_TIME_FIELD_NUMBER = 15;
+    private int beginTime_;
+    /**
+     * <code>uint32 begin_time = 15;</code>
+     * @return The beginTime.
+     */
+    @java.lang.Override
+    public int getBeginTime() {
+      return beginTime_;
+    }
+
     public static final int IS_ENTRANCE_OPEN_FIELD_NUMBER = 2;
     private boolean isEntranceOpen_;
     /**
@@ -210,81 +225,10 @@ public final class H5ActivityInfoOuterClass {
       return isEntranceOpen_;
     }
 
-    public static final int UNK3300_OBKEBDCKHJF_FIELD_NUMBER = 1;
-    private int unk3300OBKEBDCKHJF_;
-    /**
-     * <code>uint32 Unk3300_OBKEBDCKHJF = 1;</code>
-     * @return The unk3300OBKEBDCKHJF.
-     */
-    @java.lang.Override
-    public int getUnk3300OBKEBDCKHJF() {
-      return unk3300OBKEBDCKHJF_;
-    }
-
-    public static final int UNK3300_DMBNFECAKBH_FIELD_NUMBER = 14;
-    private int unk3300DMBNFECAKBH_;
-    /**
-     * <code>uint32 Unk3300_DMBNFECAKBH = 14;</code>
-     * @return The unk3300DMBNFECAKBH.
-     */
-    @java.lang.Override
-    public int getUnk3300DMBNFECAKBH() {
-      return unk3300DMBNFECAKBH_;
-    }
-
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 4;
-    private int contentCloseTime_;
-    /**
-     * <code>uint32 content_close_time = 4;</code>
-     * @return The contentCloseTime.
-     */
-    @java.lang.Override
-    public int getContentCloseTime() {
-      return contentCloseTime_;
-    }
-
-    public static final int URL_FIELD_NUMBER = 3;
-    private volatile java.lang.Object url_;
-    /**
-     * <code>string url = 3;</code>
-     * @return The url.
-     */
-    @java.lang.Override
-    public java.lang.String getUrl() {
-      java.lang.Object ref = url_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        url_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string url = 3;</code>
-     * @return The bytes for url.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getUrlBytes() {
-      java.lang.Object ref = url_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        url_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int PREFAB_PATH_FIELD_NUMBER = 15;
+    public static final int PREFAB_PATH_FIELD_NUMBER = 14;
     private volatile java.lang.Object prefabPath_;
     /**
-     * <code>string prefab_path = 15;</code>
+     * <code>string prefab_path = 14;</code>
      * @return The prefabPath.
      */
     @java.lang.Override
@@ -301,7 +245,7 @@ public final class H5ActivityInfoOuterClass {
       }
     }
     /**
-     * <code>string prefab_path = 15;</code>
+     * <code>string prefab_path = 14;</code>
      * @return The bytes for prefabPath.
      */
     @java.lang.Override
@@ -319,15 +263,42 @@ public final class H5ActivityInfoOuterClass {
       }
     }
 
-    public static final int BEGIN_TIME_FIELD_NUMBER = 5;
-    private int beginTime_;
+    public static final int URL_FIELD_NUMBER = 12;
+    private volatile java.lang.Object url_;
     /**
-     * <code>uint32 begin_time = 5;</code>
-     * @return The beginTime.
+     * <code>string url = 12;</code>
+     * @return The url.
      */
     @java.lang.Override
-    public int getBeginTime() {
-      return beginTime_;
+    public java.lang.String getUrl() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        url_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string url = 12;</code>
+     * @return The bytes for url.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getUrlBytes() {
+      java.lang.Object ref = url_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        url_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
     }
 
     public static final int END_TIME_FIELD_NUMBER = 7;
@@ -339,6 +310,39 @@ public final class H5ActivityInfoOuterClass {
     @java.lang.Override
     public int getEndTime() {
       return endTime_;
+    }
+
+    public static final int PEKFGOHFPIB_FIELD_NUMBER = 6;
+    private int pEKFGOHFPIB_;
+    /**
+     * <code>uint32 PEKFGOHFPIB = 6;</code>
+     * @return The pEKFGOHFPIB.
+     */
+    @java.lang.Override
+    public int getPEKFGOHFPIB() {
+      return pEKFGOHFPIB_;
+    }
+
+    public static final int PICPEBDGGAO_FIELD_NUMBER = 10;
+    private int pICPEBDGGAO_;
+    /**
+     * <code>uint32 PICPEBDGGAO = 10;</code>
+     * @return The pICPEBDGGAO.
+     */
+    @java.lang.Override
+    public int getPICPEBDGGAO() {
+      return pICPEBDGGAO_;
+    }
+
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 4;
+    private int contentCloseTime_;
+    /**
+     * <code>uint32 content_close_time = 4;</code>
+     * @return The contentCloseTime.
+     */
+    @java.lang.Override
+    public int getContentCloseTime() {
+      return contentCloseTime_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -355,29 +359,29 @@ public final class H5ActivityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (unk3300OBKEBDCKHJF_ != 0) {
-        output.writeUInt32(1, unk3300OBKEBDCKHJF_);
-      }
       if (isEntranceOpen_ != false) {
         output.writeBool(2, isEntranceOpen_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, url_);
       }
       if (contentCloseTime_ != 0) {
         output.writeUInt32(4, contentCloseTime_);
       }
-      if (beginTime_ != 0) {
-        output.writeUInt32(5, beginTime_);
+      if (pEKFGOHFPIB_ != 0) {
+        output.writeUInt32(6, pEKFGOHFPIB_);
       }
       if (endTime_ != 0) {
         output.writeUInt32(7, endTime_);
       }
-      if (unk3300DMBNFECAKBH_ != 0) {
-        output.writeUInt32(14, unk3300DMBNFECAKBH_);
+      if (pICPEBDGGAO_ != 0) {
+        output.writeUInt32(10, pICPEBDGGAO_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(prefabPath_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, prefabPath_);
+      if (!getUrlBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 12, url_);
+      }
+      if (!getPrefabPathBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 14, prefabPath_);
+      }
+      if (beginTime_ != 0) {
+        output.writeUInt32(15, beginTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -388,35 +392,35 @@ public final class H5ActivityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (unk3300OBKEBDCKHJF_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, unk3300OBKEBDCKHJF_);
-      }
       if (isEntranceOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isEntranceOpen_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, url_);
       }
       if (contentCloseTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, contentCloseTime_);
       }
-      if (beginTime_ != 0) {
+      if (pEKFGOHFPIB_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, beginTime_);
+          .computeUInt32Size(6, pEKFGOHFPIB_);
       }
       if (endTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, endTime_);
       }
-      if (unk3300DMBNFECAKBH_ != 0) {
+      if (pICPEBDGGAO_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, unk3300DMBNFECAKBH_);
+          .computeUInt32Size(10, pICPEBDGGAO_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(prefabPath_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, prefabPath_);
+      if (!getUrlBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, url_);
+      }
+      if (!getPrefabPathBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, prefabPath_);
+      }
+      if (beginTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, beginTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -433,22 +437,22 @@ public final class H5ActivityInfoOuterClass {
       }
       emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo other = (emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo) obj;
 
-      if (getIsEntranceOpen()
-          != other.getIsEntranceOpen()) return false;
-      if (getUnk3300OBKEBDCKHJF()
-          != other.getUnk3300OBKEBDCKHJF()) return false;
-      if (getUnk3300DMBNFECAKBH()
-          != other.getUnk3300DMBNFECAKBH()) return false;
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
-      if (!getUrl()
-          .equals(other.getUrl())) return false;
-      if (!getPrefabPath()
-          .equals(other.getPrefabPath())) return false;
       if (getBeginTime()
           != other.getBeginTime()) return false;
+      if (getIsEntranceOpen()
+          != other.getIsEntranceOpen()) return false;
+      if (!getPrefabPath()
+          .equals(other.getPrefabPath())) return false;
+      if (!getUrl()
+          .equals(other.getUrl())) return false;
       if (getEndTime()
           != other.getEndTime()) return false;
+      if (getPEKFGOHFPIB()
+          != other.getPEKFGOHFPIB()) return false;
+      if (getPICPEBDGGAO()
+          != other.getPICPEBDGGAO()) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -460,23 +464,23 @@ public final class H5ActivityInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getBeginTime();
       hash = (37 * hash) + IS_ENTRANCE_OPEN_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEntranceOpen());
-      hash = (37 * hash) + UNK3300_OBKEBDCKHJF_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300OBKEBDCKHJF();
-      hash = (37 * hash) + UNK3300_DMBNFECAKBH_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300DMBNFECAKBH();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
-      hash = (37 * hash) + URL_FIELD_NUMBER;
-      hash = (53 * hash) + getUrl().hashCode();
       hash = (37 * hash) + PREFAB_PATH_FIELD_NUMBER;
       hash = (53 * hash) + getPrefabPath().hashCode();
-      hash = (37 * hash) + BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getBeginTime();
+      hash = (37 * hash) + URL_FIELD_NUMBER;
+      hash = (53 * hash) + getUrl().hashCode();
       hash = (37 * hash) + END_TIME_FIELD_NUMBER;
       hash = (53 * hash) + getEndTime();
+      hash = (37 * hash) + PEKFGOHFPIB_FIELD_NUMBER;
+      hash = (53 * hash) + getPEKFGOHFPIB();
+      hash = (37 * hash) + PICPEBDGGAO_FIELD_NUMBER;
+      hash = (53 * hash) + getPICPEBDGGAO();
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -573,6 +577,10 @@ public final class H5ActivityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: IJOOGAIOODO
+     * </pre>
+     *
      * Protobuf type {@code H5ActivityInfo}
      */
     public static final class Builder extends
@@ -610,21 +618,21 @@ public final class H5ActivityInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        beginTime_ = 0;
+
         isEntranceOpen_ = false;
-
-        unk3300OBKEBDCKHJF_ = 0;
-
-        unk3300DMBNFECAKBH_ = 0;
-
-        contentCloseTime_ = 0;
-
-        url_ = "";
 
         prefabPath_ = "";
 
-        beginTime_ = 0;
+        url_ = "";
 
         endTime_ = 0;
+
+        pEKFGOHFPIB_ = 0;
+
+        pICPEBDGGAO_ = 0;
+
+        contentCloseTime_ = 0;
 
         return this;
       }
@@ -652,14 +660,14 @@ public final class H5ActivityInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo buildPartial() {
         emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo result = new emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo(this);
-        result.isEntranceOpen_ = isEntranceOpen_;
-        result.unk3300OBKEBDCKHJF_ = unk3300OBKEBDCKHJF_;
-        result.unk3300DMBNFECAKBH_ = unk3300DMBNFECAKBH_;
-        result.contentCloseTime_ = contentCloseTime_;
-        result.url_ = url_;
-        result.prefabPath_ = prefabPath_;
         result.beginTime_ = beginTime_;
+        result.isEntranceOpen_ = isEntranceOpen_;
+        result.prefabPath_ = prefabPath_;
+        result.url_ = url_;
         result.endTime_ = endTime_;
+        result.pEKFGOHFPIB_ = pEKFGOHFPIB_;
+        result.pICPEBDGGAO_ = pICPEBDGGAO_;
+        result.contentCloseTime_ = contentCloseTime_;
         onBuilt();
         return result;
       }
@@ -708,31 +716,31 @@ public final class H5ActivityInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo other) {
         if (other == emu.grasscutter.net.proto.H5ActivityInfoOuterClass.H5ActivityInfo.getDefaultInstance()) return this;
+        if (other.getBeginTime() != 0) {
+          setBeginTime(other.getBeginTime());
+        }
         if (other.getIsEntranceOpen() != false) {
           setIsEntranceOpen(other.getIsEntranceOpen());
-        }
-        if (other.getUnk3300OBKEBDCKHJF() != 0) {
-          setUnk3300OBKEBDCKHJF(other.getUnk3300OBKEBDCKHJF());
-        }
-        if (other.getUnk3300DMBNFECAKBH() != 0) {
-          setUnk3300DMBNFECAKBH(other.getUnk3300DMBNFECAKBH());
-        }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
-        }
-        if (!other.getUrl().isEmpty()) {
-          url_ = other.url_;
-          onChanged();
         }
         if (!other.getPrefabPath().isEmpty()) {
           prefabPath_ = other.prefabPath_;
           onChanged();
         }
-        if (other.getBeginTime() != 0) {
-          setBeginTime(other.getBeginTime());
+        if (!other.getUrl().isEmpty()) {
+          url_ = other.url_;
+          onChanged();
         }
         if (other.getEndTime() != 0) {
           setEndTime(other.getEndTime());
+        }
+        if (other.getPEKFGOHFPIB() != 0) {
+          setPEKFGOHFPIB(other.getPEKFGOHFPIB());
+        }
+        if (other.getPICPEBDGGAO() != 0) {
+          setPICPEBDGGAO(other.getPICPEBDGGAO());
+        }
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -760,6 +768,37 @@ public final class H5ActivityInfoOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private int beginTime_ ;
+      /**
+       * <code>uint32 begin_time = 15;</code>
+       * @return The beginTime.
+       */
+      @java.lang.Override
+      public int getBeginTime() {
+        return beginTime_;
+      }
+      /**
+       * <code>uint32 begin_time = 15;</code>
+       * @param value The beginTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBeginTime(int value) {
+        
+        beginTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 begin_time = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBeginTime() {
+        
+        beginTime_ = 0;
+        onChanged();
         return this;
       }
 
@@ -794,178 +833,9 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
-      private int unk3300OBKEBDCKHJF_ ;
-      /**
-       * <code>uint32 Unk3300_OBKEBDCKHJF = 1;</code>
-       * @return The unk3300OBKEBDCKHJF.
-       */
-      @java.lang.Override
-      public int getUnk3300OBKEBDCKHJF() {
-        return unk3300OBKEBDCKHJF_;
-      }
-      /**
-       * <code>uint32 Unk3300_OBKEBDCKHJF = 1;</code>
-       * @param value The unk3300OBKEBDCKHJF to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300OBKEBDCKHJF(int value) {
-        
-        unk3300OBKEBDCKHJF_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3300_OBKEBDCKHJF = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300OBKEBDCKHJF() {
-        
-        unk3300OBKEBDCKHJF_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int unk3300DMBNFECAKBH_ ;
-      /**
-       * <code>uint32 Unk3300_DMBNFECAKBH = 14;</code>
-       * @return The unk3300DMBNFECAKBH.
-       */
-      @java.lang.Override
-      public int getUnk3300DMBNFECAKBH() {
-        return unk3300DMBNFECAKBH_;
-      }
-      /**
-       * <code>uint32 Unk3300_DMBNFECAKBH = 14;</code>
-       * @param value The unk3300DMBNFECAKBH to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300DMBNFECAKBH(int value) {
-        
-        unk3300DMBNFECAKBH_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3300_DMBNFECAKBH = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300DMBNFECAKBH() {
-        
-        unk3300DMBNFECAKBH_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int contentCloseTime_ ;
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @return The contentCloseTime.
-       */
-      @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
-      }
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @param value The contentCloseTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentCloseTime(int value) {
-        
-        contentCloseTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 content_close_time = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object url_ = "";
-      /**
-       * <code>string url = 3;</code>
-       * @return The url.
-       */
-      public java.lang.String getUrl() {
-        java.lang.Object ref = url_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          url_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string url = 3;</code>
-       * @return The bytes for url.
-       */
-      public com.google.protobuf.ByteString
-          getUrlBytes() {
-        java.lang.Object ref = url_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          url_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string url = 3;</code>
-       * @param value The url to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUrl(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        url_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string url = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUrl() {
-        
-        url_ = getDefaultInstance().getUrl();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string url = 3;</code>
-       * @param value The bytes for url to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUrlBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        url_ = value;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object prefabPath_ = "";
       /**
-       * <code>string prefab_path = 15;</code>
+       * <code>string prefab_path = 14;</code>
        * @return The prefabPath.
        */
       public java.lang.String getPrefabPath() {
@@ -981,7 +851,7 @@ public final class H5ActivityInfoOuterClass {
         }
       }
       /**
-       * <code>string prefab_path = 15;</code>
+       * <code>string prefab_path = 14;</code>
        * @return The bytes for prefabPath.
        */
       public com.google.protobuf.ByteString
@@ -998,7 +868,7 @@ public final class H5ActivityInfoOuterClass {
         }
       }
       /**
-       * <code>string prefab_path = 15;</code>
+       * <code>string prefab_path = 14;</code>
        * @param value The prefabPath to set.
        * @return This builder for chaining.
        */
@@ -1013,7 +883,7 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>string prefab_path = 15;</code>
+       * <code>string prefab_path = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearPrefabPath() {
@@ -1023,7 +893,7 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
       /**
-       * <code>string prefab_path = 15;</code>
+       * <code>string prefab_path = 14;</code>
        * @param value The bytes for prefabPath to set.
        * @return This builder for chaining.
        */
@@ -1039,33 +909,78 @@ public final class H5ActivityInfoOuterClass {
         return this;
       }
 
-      private int beginTime_ ;
+      private java.lang.Object url_ = "";
       /**
-       * <code>uint32 begin_time = 5;</code>
-       * @return The beginTime.
+       * <code>string url = 12;</code>
+       * @return The url.
        */
-      @java.lang.Override
-      public int getBeginTime() {
-        return beginTime_;
+      public java.lang.String getUrl() {
+        java.lang.Object ref = url_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          url_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>uint32 begin_time = 5;</code>
-       * @param value The beginTime to set.
+       * <code>string url = 12;</code>
+       * @return The bytes for url.
+       */
+      public com.google.protobuf.ByteString
+          getUrlBytes() {
+        java.lang.Object ref = url_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          url_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string url = 12;</code>
+       * @param value The url to set.
        * @return This builder for chaining.
        */
-      public Builder setBeginTime(int value) {
-        
-        beginTime_ = value;
+      public Builder setUrl(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        url_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 begin_time = 5;</code>
+       * <code>string url = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearBeginTime() {
+      public Builder clearUrl() {
         
-        beginTime_ = 0;
+        url_ = getDefaultInstance().getUrl();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string url = 12;</code>
+       * @param value The bytes for url to set.
+       * @return This builder for chaining.
+       */
+      public Builder setUrlBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        url_ = value;
         onChanged();
         return this;
       }
@@ -1097,6 +1012,99 @@ public final class H5ActivityInfoOuterClass {
       public Builder clearEndTime() {
         
         endTime_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pEKFGOHFPIB_ ;
+      /**
+       * <code>uint32 PEKFGOHFPIB = 6;</code>
+       * @return The pEKFGOHFPIB.
+       */
+      @java.lang.Override
+      public int getPEKFGOHFPIB() {
+        return pEKFGOHFPIB_;
+      }
+      /**
+       * <code>uint32 PEKFGOHFPIB = 6;</code>
+       * @param value The pEKFGOHFPIB to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPEKFGOHFPIB(int value) {
+        
+        pEKFGOHFPIB_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PEKFGOHFPIB = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPEKFGOHFPIB() {
+        
+        pEKFGOHFPIB_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int pICPEBDGGAO_ ;
+      /**
+       * <code>uint32 PICPEBDGGAO = 10;</code>
+       * @return The pICPEBDGGAO.
+       */
+      @java.lang.Override
+      public int getPICPEBDGGAO() {
+        return pICPEBDGGAO_;
+      }
+      /**
+       * <code>uint32 PICPEBDGGAO = 10;</code>
+       * @param value The pICPEBDGGAO to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPICPEBDGGAO(int value) {
+        
+        pICPEBDGGAO_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PICPEBDGGAO = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPICPEBDGGAO() {
+        
+        pICPEBDGGAO_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int contentCloseTime_ ;
+      /**
+       * <code>uint32 content_close_time = 4;</code>
+       * @return The contentCloseTime.
+       */
+      @java.lang.Override
+      public int getContentCloseTime() {
+        return contentCloseTime_;
+      }
+      /**
+       * <code>uint32 content_close_time = 4;</code>
+       * @param value The contentCloseTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentCloseTime(int value) {
+        
+        contentCloseTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 content_close_time = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContentCloseTime() {
+        
+        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
@@ -1167,13 +1175,13 @@ public final class H5ActivityInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024H5ActivityInfo.proto\"\310\001\n\016H5ActivityInf" +
-      "o\022\030\n\020is_entrance_open\030\002 \001(\010\022\033\n\023Unk3300_O" +
-      "BKEBDCKHJF\030\001 \001(\r\022\033\n\023Unk3300_DMBNFECAKBH\030" +
-      "\016 \001(\r\022\032\n\022content_close_time\030\004 \001(\r\022\013\n\003url" +
-      "\030\003 \001(\t\022\023\n\013prefab_path\030\017 \001(\t\022\022\n\nbegin_tim" +
-      "e\030\005 \001(\r\022\020\n\010end_time\030\007 \001(\rB\033\n\031emu.grasscu" +
-      "tter.net.protob\006proto3"
+      "\n\024H5ActivityInfo.proto\"\270\001\n\016H5ActivityInf" +
+      "o\022\022\n\nbegin_time\030\017 \001(\r\022\030\n\020is_entrance_ope" +
+      "n\030\002 \001(\010\022\023\n\013prefab_path\030\016 \001(\t\022\013\n\003url\030\014 \001(" +
+      "\t\022\020\n\010end_time\030\007 \001(\r\022\023\n\013PEKFGOHFPIB\030\006 \001(\r" +
+      "\022\023\n\013PICPEBDGGAO\030\n \001(\r\022\032\n\022content_close_t" +
+      "ime\030\004 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1184,7 +1192,7 @@ public final class H5ActivityInfoOuterClass {
     internal_static_H5ActivityInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_H5ActivityInfo_descriptor,
-        new java.lang.String[] { "IsEntranceOpen", "Unk3300OBKEBDCKHJF", "Unk3300DMBNFECAKBH", "ContentCloseTime", "Url", "PrefabPath", "BeginTime", "EndTime", });
+        new java.lang.String[] { "BeginTime", "IsEntranceOpen", "PrefabPath", "Url", "EndTime", "PEKFGOHFPIB", "PICPEBDGGAO", "ContentCloseTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

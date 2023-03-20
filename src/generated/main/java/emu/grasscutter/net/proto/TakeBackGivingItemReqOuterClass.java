@@ -26,14 +26,8 @@ public final class TakeBackGivingItemReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 128;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: BFIJDKCMHDM
+   * CmdId: 152
    * </pre>
    *
    * Protobuf type {@code TakeBackGivingItemReq}
@@ -285,14 +279,8 @@ public final class TakeBackGivingItemReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 128;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: BFIJDKCMHDM
+     * CmdId: 152
      * </pre>
      *
      * Protobuf type {@code TakeBackGivingItemReq}

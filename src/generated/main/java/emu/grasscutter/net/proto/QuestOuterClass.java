@@ -118,10 +118,18 @@ public final class QuestOuterClass {
     int getFailProgressList(int index);
 
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     int getLackedNpcMapCount();
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     boolean containsLackedNpcMap(
@@ -133,11 +141,19 @@ public final class QuestOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedNpcMap();
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedNpcMapMap();
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
 
@@ -145,6 +161,10 @@ public final class QuestOuterClass {
         int key,
         int defaultValue);
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
 
@@ -169,10 +189,18 @@ public final class QuestOuterClass {
     int getLackedPlaceList(int index);
 
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     int getLackedPlaceMapCount();
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     boolean containsLackedPlaceMap(
@@ -184,11 +212,19 @@ public final class QuestOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedPlaceMap();
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedPlaceMapMap();
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
 
@@ -196,6 +232,10 @@ public final class QuestOuterClass {
         int key,
         int defaultValue);
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
 
@@ -203,6 +243,10 @@ public final class QuestOuterClass {
         int key);
   }
   /**
+   * <pre>
+   * Name: IBPHKCENHNF
+   * </pre>
+   *
    * Protobuf type {@code Quest}
    */
   public static final class Quest extends
@@ -659,6 +703,10 @@ public final class QuestOuterClass {
       return internalGetLackedNpcMap().getMap().size();
     }
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
 
@@ -677,6 +725,10 @@ public final class QuestOuterClass {
       return getLackedNpcMapMap();
     }
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     @java.lang.Override
@@ -685,6 +737,10 @@ public final class QuestOuterClass {
       return internalGetLackedNpcMap().getMap();
     }
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     @java.lang.Override
@@ -698,6 +754,10 @@ public final class QuestOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     * NCPOOIMAKMO
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
      */
     @java.lang.Override
@@ -768,6 +828,10 @@ public final class QuestOuterClass {
       return internalGetLackedPlaceMap().getMap().size();
     }
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
 
@@ -786,6 +850,10 @@ public final class QuestOuterClass {
       return getLackedPlaceMapMap();
     }
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     @java.lang.Override
@@ -794,6 +862,10 @@ public final class QuestOuterClass {
       return internalGetLackedPlaceMap().getMap();
     }
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     @java.lang.Override
@@ -807,6 +879,10 @@ public final class QuestOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
+     * <pre>
+     * OCDJABANKIH
+     * </pre>
+     *
      * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
      */
     @java.lang.Override
@@ -1209,6 +1285,10 @@ public final class QuestOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: IBPHKCENHNF
+     * </pre>
+     *
      * Protobuf type {@code Quest}
      */
     public static final class Builder extends
@@ -2015,6 +2095,10 @@ public final class QuestOuterClass {
         return internalGetLackedNpcMap().getMap().size();
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
 
@@ -2033,6 +2117,10 @@ public final class QuestOuterClass {
         return getLackedNpcMapMap();
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
       @java.lang.Override
@@ -2041,6 +2129,10 @@ public final class QuestOuterClass {
         return internalGetLackedNpcMap().getMap();
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
       @java.lang.Override
@@ -2054,6 +2146,10 @@ public final class QuestOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
       @java.lang.Override
@@ -2075,6 +2171,10 @@ public final class QuestOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
 
@@ -2094,6 +2194,10 @@ public final class QuestOuterClass {
         return internalGetMutableLackedNpcMap().getMutableMap();
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
       public Builder putLackedNpcMap(
@@ -2106,6 +2210,10 @@ public final class QuestOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * NCPOOIMAKMO
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 13;</code>
        */
 
@@ -2222,6 +2330,10 @@ public final class QuestOuterClass {
         return internalGetLackedPlaceMap().getMap().size();
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
 
@@ -2240,6 +2352,10 @@ public final class QuestOuterClass {
         return getLackedPlaceMapMap();
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
       @java.lang.Override
@@ -2248,6 +2364,10 @@ public final class QuestOuterClass {
         return internalGetLackedPlaceMap().getMap();
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
       @java.lang.Override
@@ -2261,6 +2381,10 @@ public final class QuestOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
       @java.lang.Override
@@ -2282,6 +2406,10 @@ public final class QuestOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
 
@@ -2301,6 +2429,10 @@ public final class QuestOuterClass {
         return internalGetMutableLackedPlaceMap().getMutableMap();
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
       public Builder putLackedPlaceMap(
@@ -2313,6 +2445,10 @@ public final class QuestOuterClass {
         return this;
       }
       /**
+       * <pre>
+       * OCDJABANKIH
+       * </pre>
+       *
        * <code>map&lt;uint32, uint32&gt; lacked_place_map = 15;</code>
        */
 

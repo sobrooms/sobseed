@@ -19,21 +19,15 @@ public final class GetActivityShopSheetInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 shop_type = 10;</code>
+     * <code>uint32 shop_type = 7;</code>
      * @return The shopType.
      */
     int getShopType();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 761;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: FDPHAHHAKNI
+   * CmdId: 772
    * </pre>
    *
    * Protobuf type {@code GetActivityShopSheetInfoReq}
@@ -80,7 +74,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
+            case 56: {
 
               shopType_ = input.readUInt32();
               break;
@@ -117,10 +111,10 @@ public final class GetActivityShopSheetInfoReqOuterClass {
               emu.grasscutter.net.proto.GetActivityShopSheetInfoReqOuterClass.GetActivityShopSheetInfoReq.class, emu.grasscutter.net.proto.GetActivityShopSheetInfoReqOuterClass.GetActivityShopSheetInfoReq.Builder.class);
     }
 
-    public static final int SHOP_TYPE_FIELD_NUMBER = 10;
+    public static final int SHOP_TYPE_FIELD_NUMBER = 7;
     private int shopType_;
     /**
-     * <code>uint32 shop_type = 10;</code>
+     * <code>uint32 shop_type = 7;</code>
      * @return The shopType.
      */
     @java.lang.Override
@@ -143,7 +137,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (shopType_ != 0) {
-        output.writeUInt32(10, shopType_);
+        output.writeUInt32(7, shopType_);
       }
       unknownFields.writeTo(output);
     }
@@ -156,7 +150,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
       size = 0;
       if (shopType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, shopType_);
+          .computeUInt32Size(7, shopType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -285,14 +279,8 @@ public final class GetActivityShopSheetInfoReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 761;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: FDPHAHHAKNI
+     * CmdId: 772
      * </pre>
      *
      * Protobuf type {@code GetActivityShopSheetInfoReq}
@@ -443,7 +431,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
 
       private int shopType_ ;
       /**
-       * <code>uint32 shop_type = 10;</code>
+       * <code>uint32 shop_type = 7;</code>
        * @return The shopType.
        */
       @java.lang.Override
@@ -451,7 +439,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
         return shopType_;
       }
       /**
-       * <code>uint32 shop_type = 10;</code>
+       * <code>uint32 shop_type = 7;</code>
        * @param value The shopType to set.
        * @return This builder for chaining.
        */
@@ -462,7 +450,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 shop_type = 10;</code>
+       * <code>uint32 shop_type = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearShopType() {
@@ -540,7 +528,7 @@ public final class GetActivityShopSheetInfoReqOuterClass {
     java.lang.String[] descriptorData = {
       "\n!GetActivityShopSheetInfoReq.proto\"0\n\033G" +
       "etActivityShopSheetInfoReq\022\021\n\tshop_type\030" +
-      "\n \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "\007 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

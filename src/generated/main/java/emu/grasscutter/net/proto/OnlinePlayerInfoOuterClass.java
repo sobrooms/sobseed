@@ -146,6 +146,10 @@ public final class OnlinePlayerInfoOuterClass {
         getPsnIdBytes();
   }
   /**
+   * <pre>
+   * Name: DFNGPIGNBJJ
+   * </pre>
+   *
    * Protobuf type {@code OnlinePlayerInfo}
    */
   public static final class OnlinePlayerInfo extends
@@ -635,7 +639,7 @@ public final class OnlinePlayerInfoOuterClass {
       if (uid_ != 0) {
         output.writeUInt32(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
       if (playerLevel_ != 0) {
@@ -644,7 +648,7 @@ public final class OnlinePlayerInfoOuterClass {
       if (avatarId_ != 0) {
         output.writeUInt32(4, avatarId_);
       }
-      if (mpSettingType_ != emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType.MP_SETTING_TYPE_NO_ENTER.getNumber()) {
+      if (mpSettingType_ != emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType.MP_SETTING_NO_ENTER.getNumber()) {
         output.writeEnum(5, mpSettingType_);
       }
       if (curPlayerNumInWorld_ != 0) {
@@ -653,7 +657,7 @@ public final class OnlinePlayerInfoOuterClass {
       if (worldLevel_ != 0) {
         output.writeUInt32(7, worldLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 8, onlineId_);
       }
       if (nameCardId_ != 0) {
@@ -666,13 +670,13 @@ public final class OnlinePlayerInfoOuterClass {
       for (int i = 0; i < blacklistUidList_.size(); i++) {
         output.writeUInt32NoTag(blacklistUidList_.getInt(i));
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, signature_);
       }
       if (profilePicture_ != null) {
         output.writeMessage(12, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+      if (!getPsnIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 13, psnId_);
       }
       unknownFields.writeTo(output);
@@ -688,7 +692,7 @@ public final class OnlinePlayerInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
       if (playerLevel_ != 0) {
@@ -699,7 +703,7 @@ public final class OnlinePlayerInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, avatarId_);
       }
-      if (mpSettingType_ != emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType.MP_SETTING_TYPE_NO_ENTER.getNumber()) {
+      if (mpSettingType_ != emu.grasscutter.net.proto.MpSettingTypeOuterClass.MpSettingType.MP_SETTING_NO_ENTER.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(5, mpSettingType_);
       }
@@ -711,7 +715,7 @@ public final class OnlinePlayerInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, worldLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, onlineId_);
       }
       if (nameCardId_ != 0) {
@@ -732,14 +736,14 @@ public final class OnlinePlayerInfoOuterClass {
         }
         blacklistUidListMemoizedSerializedSize = dataSize;
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, signature_);
       }
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(12, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
+      if (!getPsnIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, psnId_);
       }
       size += unknownFields.getSerializedSize();
@@ -922,6 +926,10 @@ public final class OnlinePlayerInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: DFNGPIGNBJJ
+     * </pre>
+     *
      * Protobuf type {@code OnlinePlayerInfo}
      */
     public static final class Builder extends

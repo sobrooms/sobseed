@@ -58,6 +58,10 @@ public final class SceneFishInfoOuterClass {
     int getLastShockTime();
   }
   /**
+   * <pre>
+   * Name: PBOJPLIHGGO
+   * </pre>
+   *
    * Protobuf type {@code SceneFishInfo}
    */
   public static final class SceneFishInfo extends
@@ -442,6 +446,10 @@ public final class SceneFishInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: PBOJPLIHGGO
+     * </pre>
+     *
      * Protobuf type {@code SceneFishInfo}
      */
     public static final class Builder extends

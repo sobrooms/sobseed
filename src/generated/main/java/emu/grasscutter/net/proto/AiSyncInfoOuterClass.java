@@ -19,24 +19,28 @@ public final class AiSyncInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 entity_id = 2;</code>
+     * <code>uint32 entity_id = 10;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>bool has_path_to_target = 4;</code>
-     * @return The hasPathToTarget.
+     * <code>bool CJIBIGJNKKE = 6;</code>
+     * @return The cJIBIGJNKKE.
      */
-    boolean getHasPathToTarget();
+    boolean getCJIBIGJNKKE();
 
     /**
-     * <code>bool Unk3300_EBICCLLGICG = 14;</code>
-     * @return The unk3300EBICCLLGICG.
+     * <code>bool OOJFENIJJDB = 8;</code>
+     * @return The oOJFENIJJDB.
      */
-    boolean getUnk3300EBICCLLGICG();
+    boolean getOOJFENIJJDB();
   }
   /**
+   * <pre>
+   * Name: FCJLAGHOIFC
+   * </pre>
+   *
    * Protobuf type {@code AiSyncInfo}
    */
   public static final class AiSyncInfo extends
@@ -81,19 +85,19 @@ public final class AiSyncInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 48: {
+
+              cJIBIGJNKKE_ = input.readBool();
+              break;
+            }
+            case 64: {
+
+              oOJFENIJJDB_ = input.readBool();
+              break;
+            }
+            case 80: {
 
               entityId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              hasPathToTarget_ = input.readBool();
-              break;
-            }
-            case 112: {
-
-              unk3300EBICCLLGICG_ = input.readBool();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class AiSyncInfoOuterClass {
               emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.class, emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo.Builder.class);
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 2;
+    public static final int ENTITY_ID_FIELD_NUMBER = 10;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 2;</code>
+     * <code>uint32 entity_id = 10;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -139,26 +143,26 @@ public final class AiSyncInfoOuterClass {
       return entityId_;
     }
 
-    public static final int HAS_PATH_TO_TARGET_FIELD_NUMBER = 4;
-    private boolean hasPathToTarget_;
+    public static final int CJIBIGJNKKE_FIELD_NUMBER = 6;
+    private boolean cJIBIGJNKKE_;
     /**
-     * <code>bool has_path_to_target = 4;</code>
-     * @return The hasPathToTarget.
+     * <code>bool CJIBIGJNKKE = 6;</code>
+     * @return The cJIBIGJNKKE.
      */
     @java.lang.Override
-    public boolean getHasPathToTarget() {
-      return hasPathToTarget_;
+    public boolean getCJIBIGJNKKE() {
+      return cJIBIGJNKKE_;
     }
 
-    public static final int UNK3300_EBICCLLGICG_FIELD_NUMBER = 14;
-    private boolean unk3300EBICCLLGICG_;
+    public static final int OOJFENIJJDB_FIELD_NUMBER = 8;
+    private boolean oOJFENIJJDB_;
     /**
-     * <code>bool Unk3300_EBICCLLGICG = 14;</code>
-     * @return The unk3300EBICCLLGICG.
+     * <code>bool OOJFENIJJDB = 8;</code>
+     * @return The oOJFENIJJDB.
      */
     @java.lang.Override
-    public boolean getUnk3300EBICCLLGICG() {
-      return unk3300EBICCLLGICG_;
+    public boolean getOOJFENIJJDB() {
+      return oOJFENIJJDB_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -175,14 +179,14 @@ public final class AiSyncInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (cJIBIGJNKKE_ != false) {
+        output.writeBool(6, cJIBIGJNKKE_);
+      }
+      if (oOJFENIJJDB_ != false) {
+        output.writeBool(8, oOJFENIJJDB_);
+      }
       if (entityId_ != 0) {
-        output.writeUInt32(2, entityId_);
-      }
-      if (hasPathToTarget_ != false) {
-        output.writeBool(4, hasPathToTarget_);
-      }
-      if (unk3300EBICCLLGICG_ != false) {
-        output.writeBool(14, unk3300EBICCLLGICG_);
+        output.writeUInt32(10, entityId_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class AiSyncInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (cJIBIGJNKKE_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(6, cJIBIGJNKKE_);
+      }
+      if (oOJFENIJJDB_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, oOJFENIJJDB_);
+      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, entityId_);
-      }
-      if (hasPathToTarget_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, hasPathToTarget_);
-      }
-      if (unk3300EBICCLLGICG_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(14, unk3300EBICCLLGICG_);
+          .computeUInt32Size(10, entityId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -222,10 +226,10 @@ public final class AiSyncInfoOuterClass {
 
       if (getEntityId()
           != other.getEntityId()) return false;
-      if (getHasPathToTarget()
-          != other.getHasPathToTarget()) return false;
-      if (getUnk3300EBICCLLGICG()
-          != other.getUnk3300EBICCLLGICG()) return false;
+      if (getCJIBIGJNKKE()
+          != other.getCJIBIGJNKKE()) return false;
+      if (getOOJFENIJJDB()
+          != other.getOOJFENIJJDB()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -239,12 +243,12 @@ public final class AiSyncInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
-      hash = (37 * hash) + HAS_PATH_TO_TARGET_FIELD_NUMBER;
+      hash = (37 * hash) + CJIBIGJNKKE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getHasPathToTarget());
-      hash = (37 * hash) + UNK3300_EBICCLLGICG_FIELD_NUMBER;
+          getCJIBIGJNKKE());
+      hash = (37 * hash) + OOJFENIJJDB_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getUnk3300EBICCLLGICG());
+          getOOJFENIJJDB());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -341,6 +345,10 @@ public final class AiSyncInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FCJLAGHOIFC
+     * </pre>
+     *
      * Protobuf type {@code AiSyncInfo}
      */
     public static final class Builder extends
@@ -380,9 +388,9 @@ public final class AiSyncInfoOuterClass {
         super.clear();
         entityId_ = 0;
 
-        hasPathToTarget_ = false;
+        cJIBIGJNKKE_ = false;
 
-        unk3300EBICCLLGICG_ = false;
+        oOJFENIJJDB_ = false;
 
         return this;
       }
@@ -411,8 +419,8 @@ public final class AiSyncInfoOuterClass {
       public emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo buildPartial() {
         emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo result = new emu.grasscutter.net.proto.AiSyncInfoOuterClass.AiSyncInfo(this);
         result.entityId_ = entityId_;
-        result.hasPathToTarget_ = hasPathToTarget_;
-        result.unk3300EBICCLLGICG_ = unk3300EBICCLLGICG_;
+        result.cJIBIGJNKKE_ = cJIBIGJNKKE_;
+        result.oOJFENIJJDB_ = oOJFENIJJDB_;
         onBuilt();
         return result;
       }
@@ -464,11 +472,11 @@ public final class AiSyncInfoOuterClass {
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
         }
-        if (other.getHasPathToTarget() != false) {
-          setHasPathToTarget(other.getHasPathToTarget());
+        if (other.getCJIBIGJNKKE() != false) {
+          setCJIBIGJNKKE(other.getCJIBIGJNKKE());
         }
-        if (other.getUnk3300EBICCLLGICG() != false) {
-          setUnk3300EBICCLLGICG(other.getUnk3300EBICCLLGICG());
+        if (other.getOOJFENIJJDB() != false) {
+          setOOJFENIJJDB(other.getOOJFENIJJDB());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -501,7 +509,7 @@ public final class AiSyncInfoOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 10;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -509,7 +517,7 @@ public final class AiSyncInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 10;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +528,7 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 2;</code>
+       * <code>uint32 entity_id = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -530,64 +538,64 @@ public final class AiSyncInfoOuterClass {
         return this;
       }
 
-      private boolean hasPathToTarget_ ;
+      private boolean cJIBIGJNKKE_ ;
       /**
-       * <code>bool has_path_to_target = 4;</code>
-       * @return The hasPathToTarget.
+       * <code>bool CJIBIGJNKKE = 6;</code>
+       * @return The cJIBIGJNKKE.
        */
       @java.lang.Override
-      public boolean getHasPathToTarget() {
-        return hasPathToTarget_;
+      public boolean getCJIBIGJNKKE() {
+        return cJIBIGJNKKE_;
       }
       /**
-       * <code>bool has_path_to_target = 4;</code>
-       * @param value The hasPathToTarget to set.
+       * <code>bool CJIBIGJNKKE = 6;</code>
+       * @param value The cJIBIGJNKKE to set.
        * @return This builder for chaining.
        */
-      public Builder setHasPathToTarget(boolean value) {
+      public Builder setCJIBIGJNKKE(boolean value) {
         
-        hasPathToTarget_ = value;
+        cJIBIGJNKKE_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool has_path_to_target = 4;</code>
+       * <code>bool CJIBIGJNKKE = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearHasPathToTarget() {
+      public Builder clearCJIBIGJNKKE() {
         
-        hasPathToTarget_ = false;
+        cJIBIGJNKKE_ = false;
         onChanged();
         return this;
       }
 
-      private boolean unk3300EBICCLLGICG_ ;
+      private boolean oOJFENIJJDB_ ;
       /**
-       * <code>bool Unk3300_EBICCLLGICG = 14;</code>
-       * @return The unk3300EBICCLLGICG.
+       * <code>bool OOJFENIJJDB = 8;</code>
+       * @return The oOJFENIJJDB.
        */
       @java.lang.Override
-      public boolean getUnk3300EBICCLLGICG() {
-        return unk3300EBICCLLGICG_;
+      public boolean getOOJFENIJJDB() {
+        return oOJFENIJJDB_;
       }
       /**
-       * <code>bool Unk3300_EBICCLLGICG = 14;</code>
-       * @param value The unk3300EBICCLLGICG to set.
+       * <code>bool OOJFENIJJDB = 8;</code>
+       * @param value The oOJFENIJJDB to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300EBICCLLGICG(boolean value) {
+      public Builder setOOJFENIJJDB(boolean value) {
         
-        unk3300EBICCLLGICG_ = value;
+        oOJFENIJJDB_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>bool Unk3300_EBICCLLGICG = 14;</code>
+       * <code>bool OOJFENIJJDB = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300EBICCLLGICG() {
+      public Builder clearOOJFENIJJDB() {
         
-        unk3300EBICCLLGICG_ = false;
+        oOJFENIJJDB_ = false;
         onChanged();
         return this;
       }
@@ -658,10 +666,10 @@ public final class AiSyncInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020AiSyncInfo.proto\"X\n\nAiSyncInfo\022\021\n\tenti" +
-      "ty_id\030\002 \001(\r\022\032\n\022has_path_to_target\030\004 \001(\010\022" +
-      "\033\n\023Unk3300_EBICCLLGICG\030\016 \001(\010B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\020AiSyncInfo.proto\"I\n\nAiSyncInfo\022\021\n\tenti" +
+      "ty_id\030\n \001(\r\022\023\n\013CJIBIGJNKKE\030\006 \001(\010\022\023\n\013OOJF" +
+      "ENIJJDB\030\010 \001(\010B\033\n\031emu.grasscutter.net.pro" +
+      "tob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -672,7 +680,7 @@ public final class AiSyncInfoOuterClass {
     internal_static_AiSyncInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AiSyncInfo_descriptor,
-        new java.lang.String[] { "EntityId", "HasPathToTarget", "Unk3300EBICCLLGICG", });
+        new java.lang.String[] { "EntityId", "CJIBIGJNKKE", "OOJFENIJJDB", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

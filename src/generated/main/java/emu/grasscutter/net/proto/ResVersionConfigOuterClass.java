@@ -91,6 +91,10 @@ public final class ResVersionConfigOuterClass {
         getNextScriptVersionBytes();
   }
   /**
+   * <pre>
+   * Name: KJGMEKEGPNF
+   * </pre>
+   *
    * Protobuf type {@code ResVersionConfig}
    */
   public static final class ResVersionConfig extends
@@ -444,19 +448,19 @@ public final class ResVersionConfigOuterClass {
       if (relogin_ != false) {
         output.writeBool(2, relogin_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(md5_)) {
+      if (!getMd5Bytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, md5_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(releaseTotalSize_)) {
+      if (!getReleaseTotalSizeBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, releaseTotalSize_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(versionSuffix_)) {
+      if (!getVersionSuffixBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, versionSuffix_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(branch_)) {
+      if (!getBranchBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, branch_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextScriptVersion_)) {
+      if (!getNextScriptVersionBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 7, nextScriptVersion_);
       }
       unknownFields.writeTo(output);
@@ -476,19 +480,19 @@ public final class ResVersionConfigOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, relogin_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(md5_)) {
+      if (!getMd5Bytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, md5_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(releaseTotalSize_)) {
+      if (!getReleaseTotalSizeBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, releaseTotalSize_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(versionSuffix_)) {
+      if (!getVersionSuffixBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, versionSuffix_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(branch_)) {
+      if (!getBranchBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, branch_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nextScriptVersion_)) {
+      if (!getNextScriptVersionBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, nextScriptVersion_);
       }
       size += unknownFields.getSerializedSize();
@@ -642,6 +646,10 @@ public final class ResVersionConfigOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: KJGMEKEGPNF
+     * </pre>
+     *
      * Protobuf type {@code ResVersionConfig}
      */
     public static final class Builder extends

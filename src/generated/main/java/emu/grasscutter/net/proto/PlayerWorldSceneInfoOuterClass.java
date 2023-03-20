@@ -19,7 +19,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_locked = 3;</code>
+     * <code>bool is_locked = 6;</code>
      * @return The isLocked.
      */
     boolean getIsLocked();
@@ -31,23 +31,27 @@ public final class PlayerWorldSceneInfoOuterClass {
     int getSceneId();
 
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @return A list containing the sceneTagIdList.
      */
     java.util.List<java.lang.Integer> getSceneTagIdListList();
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @return The count of sceneTagIdList.
      */
     int getSceneTagIdListCount();
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
      */
     int getSceneTagIdList(int index);
   }
   /**
+   * <pre>
+   * Name: PLKBIMJHCOK
+   * </pre>
+   *
    * Protobuf type {@code PlayerWorldSceneInfo}
    */
   public static final class PlayerWorldSceneInfo extends
@@ -94,17 +98,12 @@ public final class PlayerWorldSceneInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 48: {
 
               isLocked_ = input.readBool();
               break;
             }
-            case 64: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 sceneTagIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -112,7 +111,7 @@ public final class PlayerWorldSceneInfoOuterClass {
               sceneTagIdList_.addInt(input.readUInt32());
               break;
             }
-            case 90: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -123,6 +122,11 @@ public final class PlayerWorldSceneInfoOuterClass {
                 sceneTagIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 64: {
+
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +164,10 @@ public final class PlayerWorldSceneInfoOuterClass {
               emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.class, emu.grasscutter.net.proto.PlayerWorldSceneInfoOuterClass.PlayerWorldSceneInfo.Builder.class);
     }
 
-    public static final int IS_LOCKED_FIELD_NUMBER = 3;
+    public static final int IS_LOCKED_FIELD_NUMBER = 6;
     private boolean isLocked_;
     /**
-     * <code>bool is_locked = 3;</code>
+     * <code>bool is_locked = 6;</code>
      * @return The isLocked.
      */
     @java.lang.Override
@@ -182,10 +186,10 @@ public final class PlayerWorldSceneInfoOuterClass {
       return sceneId_;
     }
 
-    public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 11;
+    public static final int SCENE_TAG_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList sceneTagIdList_;
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @return A list containing the sceneTagIdList.
      */
     @java.lang.Override
@@ -194,14 +198,14 @@ public final class PlayerWorldSceneInfoOuterClass {
       return sceneTagIdList_;
     }
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @return The count of sceneTagIdList.
      */
     public int getSceneTagIdListCount() {
       return sceneTagIdList_.size();
     }
     /**
-     * <code>repeated uint32 scene_tag_id_list = 11;</code>
+     * <code>repeated uint32 scene_tag_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The sceneTagIdList at the given index.
      */
@@ -226,17 +230,17 @@ public final class PlayerWorldSceneInfoOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (isLocked_ != false) {
-        output.writeBool(3, isLocked_);
-      }
-      if (sceneId_ != 0) {
-        output.writeUInt32(8, sceneId_);
+        output.writeBool(6, isLocked_);
       }
       if (getSceneTagIdListList().size() > 0) {
-        output.writeUInt32NoTag(90);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(sceneTagIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < sceneTagIdList_.size(); i++) {
         output.writeUInt32NoTag(sceneTagIdList_.getInt(i));
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(8, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -249,11 +253,7 @@ public final class PlayerWorldSceneInfoOuterClass {
       size = 0;
       if (isLocked_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isLocked_);
-      }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, sceneId_);
+          .computeBoolSize(6, isLocked_);
       }
       {
         int dataSize = 0;
@@ -268,6 +268,10 @@ public final class PlayerWorldSceneInfoOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         sceneTagIdListMemoizedSerializedSize = dataSize;
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -406,6 +410,10 @@ public final class PlayerWorldSceneInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: PLKBIMJHCOK
+     * </pre>
+     *
      * Protobuf type {@code PlayerWorldSceneInfo}
      */
     public static final class Builder extends
@@ -579,7 +587,7 @@ public final class PlayerWorldSceneInfoOuterClass {
 
       private boolean isLocked_ ;
       /**
-       * <code>bool is_locked = 3;</code>
+       * <code>bool is_locked = 6;</code>
        * @return The isLocked.
        */
       @java.lang.Override
@@ -587,7 +595,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return isLocked_;
       }
       /**
-       * <code>bool is_locked = 3;</code>
+       * <code>bool is_locked = 6;</code>
        * @param value The isLocked to set.
        * @return This builder for chaining.
        */
@@ -598,7 +606,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_locked = 3;</code>
+       * <code>bool is_locked = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsLocked() {
@@ -647,7 +655,7 @@ public final class PlayerWorldSceneInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @return A list containing the sceneTagIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -656,14 +664,14 @@ public final class PlayerWorldSceneInfoOuterClass {
                  java.util.Collections.unmodifiableList(sceneTagIdList_) : sceneTagIdList_;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @return The count of sceneTagIdList.
        */
       public int getSceneTagIdListCount() {
         return sceneTagIdList_.size();
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The sceneTagIdList at the given index.
        */
@@ -671,7 +679,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return sceneTagIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The sceneTagIdList to set.
        * @return This builder for chaining.
@@ -684,7 +692,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @param value The sceneTagIdList to add.
        * @return This builder for chaining.
        */
@@ -695,7 +703,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @param values The sceneTagIdList to add.
        * @return This builder for chaining.
        */
@@ -708,7 +716,7 @@ public final class PlayerWorldSceneInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 scene_tag_id_list = 11;</code>
+       * <code>repeated uint32 scene_tag_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTagIdList() {
@@ -785,8 +793,8 @@ public final class PlayerWorldSceneInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032PlayerWorldSceneInfo.proto\"V\n\024PlayerWo" +
-      "rldSceneInfo\022\021\n\tis_locked\030\003 \001(\010\022\020\n\010scene" +
-      "_id\030\010 \001(\r\022\031\n\021scene_tag_id_list\030\013 \003(\rB\033\n\031" +
+      "rldSceneInfo\022\021\n\tis_locked\030\006 \001(\010\022\020\n\010scene" +
+      "_id\030\010 \001(\r\022\031\n\021scene_tag_id_list\030\007 \003(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

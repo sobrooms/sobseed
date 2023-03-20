@@ -19,37 +19,32 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_all = 4;</code>
-     * @return The isAll.
-     */
-    boolean getIsAll();
-
-    /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @return A list containing the furnitureIdList.
      */
     java.util.List<java.lang.Integer> getFurnitureIdListList();
     /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @return The count of furnitureIdList.
      */
     int getFurnitureIdListCount();
     /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The furnitureIdList at the given index.
      */
     int getFurnitureIdList(int index);
+
+    /**
+     * <code>bool is_all = 7;</code>
+     * @return The isAll.
+     */
+    boolean getIsAll();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4716;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: ELEKPDNEEFC
+   * CmdId: 4481
    * </pre>
    *
    * Protobuf type {@code UnlockedFurnitureFormulaDataNotify}
@@ -98,7 +93,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 furnitureIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +101,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
               furnitureIdList_.addInt(input.readUInt32());
               break;
             }
-            case 18: {
+            case 26: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -119,7 +114,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 32: {
+            case 56: {
 
               isAll_ = input.readBool();
               break;
@@ -159,21 +154,10 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
               emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify.class, emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify.Builder.class);
     }
 
-    public static final int IS_ALL_FIELD_NUMBER = 4;
-    private boolean isAll_;
-    /**
-     * <code>bool is_all = 4;</code>
-     * @return The isAll.
-     */
-    @java.lang.Override
-    public boolean getIsAll() {
-      return isAll_;
-    }
-
-    public static final int FURNITURE_ID_LIST_FIELD_NUMBER = 2;
+    public static final int FURNITURE_ID_LIST_FIELD_NUMBER = 3;
     private com.google.protobuf.Internal.IntList furnitureIdList_;
     /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @return A list containing the furnitureIdList.
      */
     @java.lang.Override
@@ -182,14 +166,14 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       return furnitureIdList_;
     }
     /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @return The count of furnitureIdList.
      */
     public int getFurnitureIdListCount() {
       return furnitureIdList_.size();
     }
     /**
-     * <code>repeated uint32 furniture_id_list = 2;</code>
+     * <code>repeated uint32 furniture_id_list = 3;</code>
      * @param index The index of the element to return.
      * @return The furnitureIdList at the given index.
      */
@@ -197,6 +181,17 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       return furnitureIdList_.getInt(index);
     }
     private int furnitureIdListMemoizedSerializedSize = -1;
+
+    public static final int IS_ALL_FIELD_NUMBER = 7;
+    private boolean isAll_;
+    /**
+     * <code>bool is_all = 7;</code>
+     * @return The isAll.
+     */
+    @java.lang.Override
+    public boolean getIsAll() {
+      return isAll_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -214,14 +209,14 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (getFurnitureIdListList().size() > 0) {
-        output.writeUInt32NoTag(18);
+        output.writeUInt32NoTag(26);
         output.writeUInt32NoTag(furnitureIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < furnitureIdList_.size(); i++) {
         output.writeUInt32NoTag(furnitureIdList_.getInt(i));
       }
       if (isAll_ != false) {
-        output.writeBool(4, isAll_);
+        output.writeBool(7, isAll_);
       }
       unknownFields.writeTo(output);
     }
@@ -248,7 +243,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       }
       if (isAll_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isAll_);
+          .computeBoolSize(7, isAll_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -265,10 +260,10 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       }
       emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify other = (emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify) obj;
 
-      if (getIsAll()
-          != other.getIsAll()) return false;
       if (!getFurnitureIdListList()
           .equals(other.getFurnitureIdListList())) return false;
+      if (getIsAll()
+          != other.getIsAll()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -280,13 +275,13 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_ALL_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsAll());
       if (getFurnitureIdListCount() > 0) {
         hash = (37 * hash) + FURNITURE_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFurnitureIdListList().hashCode();
       }
+      hash = (37 * hash) + IS_ALL_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsAll());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -384,13 +379,8 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4716;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: ELEKPDNEEFC
+     * CmdId: 4481
      * </pre>
      *
      * Protobuf type {@code UnlockedFurnitureFormulaDataNotify}
@@ -430,10 +420,10 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isAll_ = false;
-
         furnitureIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        isAll_ = false;
+
         return this;
       }
 
@@ -461,12 +451,12 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       public emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify buildPartial() {
         emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify result = new emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify(this);
         int from_bitField0_ = bitField0_;
-        result.isAll_ = isAll_;
         if (((bitField0_ & 0x00000001) != 0)) {
           furnitureIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.furnitureIdList_ = furnitureIdList_;
+        result.isAll_ = isAll_;
         onBuilt();
         return result;
       }
@@ -515,9 +505,6 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify other) {
         if (other == emu.grasscutter.net.proto.UnlockedFurnitureFormulaDataNotifyOuterClass.UnlockedFurnitureFormulaDataNotify.getDefaultInstance()) return this;
-        if (other.getIsAll() != false) {
-          setIsAll(other.getIsAll());
-        }
         if (!other.furnitureIdList_.isEmpty()) {
           if (furnitureIdList_.isEmpty()) {
             furnitureIdList_ = other.furnitureIdList_;
@@ -527,6 +514,9 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
             furnitureIdList_.addAll(other.furnitureIdList_);
           }
           onChanged();
+        }
+        if (other.getIsAll() != false) {
+          setIsAll(other.getIsAll());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -558,37 +548,6 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean isAll_ ;
-      /**
-       * <code>bool is_all = 4;</code>
-       * @return The isAll.
-       */
-      @java.lang.Override
-      public boolean getIsAll() {
-        return isAll_;
-      }
-      /**
-       * <code>bool is_all = 4;</code>
-       * @param value The isAll to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsAll(boolean value) {
-        
-        isAll_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_all = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsAll() {
-        
-        isAll_ = false;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList furnitureIdList_ = emptyIntList();
       private void ensureFurnitureIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -597,7 +556,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @return A list containing the furnitureIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -606,14 +565,14 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(furnitureIdList_) : furnitureIdList_;
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @return The count of furnitureIdList.
        */
       public int getFurnitureIdListCount() {
         return furnitureIdList_.size();
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @param index The index of the element to return.
        * @return The furnitureIdList at the given index.
        */
@@ -621,7 +580,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
         return furnitureIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @param index The index to set the value at.
        * @param value The furnitureIdList to set.
        * @return This builder for chaining.
@@ -634,7 +593,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @param value The furnitureIdList to add.
        * @return This builder for chaining.
        */
@@ -645,7 +604,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @param values The furnitureIdList to add.
        * @return This builder for chaining.
        */
@@ -658,12 +617,43 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 furniture_id_list = 2;</code>
+       * <code>repeated uint32 furniture_id_list = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearFurnitureIdList() {
         furnitureIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private boolean isAll_ ;
+      /**
+       * <code>bool is_all = 7;</code>
+       * @return The isAll.
+       */
+      @java.lang.Override
+      public boolean getIsAll() {
+        return isAll_;
+      }
+      /**
+       * <code>bool is_all = 7;</code>
+       * @param value The isAll to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsAll(boolean value) {
+        
+        isAll_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_all = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsAll() {
+        
+        isAll_ = false;
         onChanged();
         return this;
       }
@@ -736,8 +726,8 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n(UnlockedFurnitureFormulaDataNotify.pro" +
       "to\"O\n\"UnlockedFurnitureFormulaDataNotify" +
-      "\022\016\n\006is_all\030\004 \001(\010\022\031\n\021furniture_id_list\030\002 " +
-      "\003(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\022\031\n\021furniture_id_list\030\003 \003(\r\022\016\n\006is_all\030\007 " +
+      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -748,7 +738,7 @@ public final class UnlockedFurnitureFormulaDataNotifyOuterClass {
     internal_static_UnlockedFurnitureFormulaDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UnlockedFurnitureFormulaDataNotify_descriptor,
-        new java.lang.String[] { "IsAll", "FurnitureIdList", });
+        new java.lang.String[] { "FurnitureIdList", "IsAll", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

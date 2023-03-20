@@ -259,8 +259,24 @@ public final class SocialDetailOuterClass {
      * <code>.ProfilePicture profile_picture = 25;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
+
+    /**
+     * <code>string ip_code = 26;</code>
+     * @return The ipCode.
+     */
+    java.lang.String getIpCode();
+    /**
+     * <code>string ip_code = 26;</code>
+     * @return The bytes for ipCode.
+     */
+    com.google.protobuf.ByteString
+        getIpCodeBytes();
   }
   /**
+   * <pre>
+   * Name: BNOIABMAJCB
+   * </pre>
+   *
    * Protobuf type {@code SocialDetail}
    */
   public static final class SocialDetail extends
@@ -282,6 +298,7 @@ public final class SocialDetailOuterClass {
       showAvatarInfoList_ = java.util.Collections.emptyList();
       showNameCardIdList_ = emptyIntList();
       friendEnterHomeOption_ = 0;
+      ipCode_ = "";
     }
 
     @java.lang.Override
@@ -496,6 +513,12 @@ public final class SocialDetailOuterClass {
                 profilePicture_ = subBuilder.buildPartial();
               }
 
+              break;
+            }
+            case 210: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              ipCode_ = s;
               break;
             }
             default: {
@@ -1031,6 +1054,44 @@ public final class SocialDetailOuterClass {
       return getProfilePicture();
     }
 
+    public static final int IP_CODE_FIELD_NUMBER = 26;
+    private volatile java.lang.Object ipCode_;
+    /**
+     * <code>string ip_code = 26;</code>
+     * @return The ipCode.
+     */
+    @java.lang.Override
+    public java.lang.String getIpCode() {
+      java.lang.Object ref = ipCode_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        ipCode_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string ip_code = 26;</code>
+     * @return The bytes for ipCode.
+     */
+    @java.lang.Override
+    public com.google.protobuf.ByteString
+        getIpCodeBytes() {
+      java.lang.Object ref = ipCode_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        ipCode_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -1049,7 +1110,7 @@ public final class SocialDetailOuterClass {
       if (uid_ != 0) {
         output.writeUInt32(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
       if (level_ != 0) {
@@ -1058,7 +1119,7 @@ public final class SocialDetailOuterClass {
       if (avatarId_ != 0) {
         output.writeUInt32(4, avatarId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 5, signature_);
       }
       if (birthday_ != null) {
@@ -1074,7 +1135,7 @@ public final class SocialDetailOuterClass {
       for (int i = 0; i < reservedList_.size(); i++) {
         output.writeUInt32NoTag(reservedList_.getInt(i));
       }
-      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_ONLINE_STATE_DISCONNECT.getNumber()) {
+      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_DISCONNECT.getNumber()) {
         output.writeEnum(9, onlineState_);
       }
       if (param_ != 0) {
@@ -1086,7 +1147,7 @@ public final class SocialDetailOuterClass {
       if (isMpModeAvailable_ != false) {
         output.writeBool(12, isMpModeAvailable_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 13, onlineId_);
       }
       if (nameCardId_ != 0) {
@@ -1098,7 +1159,7 @@ public final class SocialDetailOuterClass {
       if (isChatNoDisturb_ != false) {
         output.writeBool(16, isChatNoDisturb_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+      if (!getRemarkNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 17, remarkName_);
       }
       if (finishAchievementNum_ != 0) {
@@ -1129,6 +1190,9 @@ public final class SocialDetailOuterClass {
       if (profilePicture_ != null) {
         output.writeMessage(25, getProfilePicture());
       }
+      if (!getIpCodeBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 26, ipCode_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -1142,7 +1206,7 @@ public final class SocialDetailOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
       if (level_ != 0) {
@@ -1153,7 +1217,7 @@ public final class SocialDetailOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(4, avatarId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, signature_);
       }
       if (birthday_ != null) {
@@ -1178,7 +1242,7 @@ public final class SocialDetailOuterClass {
         }
         reservedListMemoizedSerializedSize = dataSize;
       }
-      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_ONLINE_STATE_DISCONNECT.getNumber()) {
+      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_DISCONNECT.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(9, onlineState_);
       }
@@ -1194,7 +1258,7 @@ public final class SocialDetailOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(12, isMpModeAvailable_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, onlineId_);
       }
       if (nameCardId_ != 0) {
@@ -1209,7 +1273,7 @@ public final class SocialDetailOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(16, isChatNoDisturb_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+      if (!getRemarkNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(17, remarkName_);
       }
       if (finishAchievementNum_ != 0) {
@@ -1253,6 +1317,9 @@ public final class SocialDetailOuterClass {
       if (profilePicture_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(25, getProfilePicture());
+      }
+      if (!getIpCodeBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(26, ipCode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1323,6 +1390,8 @@ public final class SocialDetailOuterClass {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
+      if (!getIpCode()
+          .equals(other.getIpCode())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1399,6 +1468,8 @@ public final class SocialDetailOuterClass {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
+      hash = (37 * hash) + IP_CODE_FIELD_NUMBER;
+      hash = (53 * hash) + getIpCode().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1495,6 +1566,10 @@ public final class SocialDetailOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BNOIABMAJCB
+     * </pre>
+     *
      * Protobuf type {@code SocialDetail}
      */
     public static final class Builder extends
@@ -1595,6 +1670,8 @@ public final class SocialDetailOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
+        ipCode_ = "";
+
         return this;
       }
 
@@ -1671,6 +1748,7 @@ public final class SocialDetailOuterClass {
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
+        result.ipCode_ = ipCode_;
         onBuilt();
         return result;
       }
@@ -1834,6 +1912,10 @@ public final class SocialDetailOuterClass {
         }
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
+        }
+        if (!other.getIpCode().isEmpty()) {
+          ipCode_ = other.ipCode_;
+          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -3346,6 +3428,82 @@ public final class SocialDetailOuterClass {
         }
         return profilePictureBuilder_;
       }
+
+      private java.lang.Object ipCode_ = "";
+      /**
+       * <code>string ip_code = 26;</code>
+       * @return The ipCode.
+       */
+      public java.lang.String getIpCode() {
+        java.lang.Object ref = ipCode_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          ipCode_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string ip_code = 26;</code>
+       * @return The bytes for ipCode.
+       */
+      public com.google.protobuf.ByteString
+          getIpCodeBytes() {
+        java.lang.Object ref = ipCode_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          ipCode_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string ip_code = 26;</code>
+       * @param value The ipCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIpCode(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        ipCode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string ip_code = 26;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIpCode() {
+        
+        ipCode_ = getDefaultInstance().getIpCode();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string ip_code = 26;</code>
+       * @param value The bytes for ipCode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIpCodeBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        ipCode_ = value;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -3416,7 +3574,7 @@ public final class SocialDetailOuterClass {
       "\n\022SocialDetail.proto\032\016Birthday.proto\032\033Fr" +
       "iendEnterHomeOption.proto\032\027FriendOnlineS" +
       "tate.proto\032\024ProfilePicture.proto\032\032Social" +
-      "ShowAvatarInfo.proto\"\260\005\n\014SocialDetail\022\013\n" +
+      "ShowAvatarInfo.proto\"\301\005\n\014SocialDetail\022\013\n" +
       "\003uid\030\001 \001(\r\022\020\n\010nickname\030\002 \001(\t\022\r\n\005level\030\003 " +
       "\001(\r\022\021\n\tavatar_id\030\004 \001(\r\022\021\n\tsignature\030\005 \001(" +
       "\t\022\033\n\010birthday\030\006 \001(\0132\t.Birthday\022\023\n\013world_" +
@@ -3433,8 +3591,9 @@ public final class SocialDetailOuterClass {
       "ocialShowAvatarInfo\022\036\n\026show_name_card_id" +
       "_list\030\027 \003(\r\0228\n\030friend_enter_home_option\030" +
       "\030 \001(\0162\026.FriendEnterHomeOption\022(\n\017profile" +
-      "_picture\030\031 \001(\0132\017.ProfilePictureB\033\n\031emu.g" +
-      "rasscutter.net.protob\006proto3"
+      "_picture\030\031 \001(\0132\017.ProfilePicture\022\017\n\007ip_co" +
+      "de\030\032 \001(\tB\033\n\031emu.grasscutter.net.protob\006p" +
+      "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -3450,7 +3609,7 @@ public final class SocialDetailOuterClass {
     internal_static_SocialDetail_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SocialDetail_descriptor,
-        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "Signature", "Birthday", "WorldLevel", "ReservedList", "OnlineState", "Param", "IsFriend", "IsMpModeAvailable", "OnlineId", "NameCardId", "IsInBlacklist", "IsChatNoDisturb", "RemarkName", "FinishAchievementNum", "TowerFloorIndex", "TowerLevelIndex", "IsShowAvatar", "ShowAvatarInfoList", "ShowNameCardIdList", "FriendEnterHomeOption", "ProfilePicture", });
+        new java.lang.String[] { "Uid", "Nickname", "Level", "AvatarId", "Signature", "Birthday", "WorldLevel", "ReservedList", "OnlineState", "Param", "IsFriend", "IsMpModeAvailable", "OnlineId", "NameCardId", "IsInBlacklist", "IsChatNoDisturb", "RemarkName", "FinishAchievementNum", "TowerFloorIndex", "TowerLevelIndex", "IsShowAvatar", "ShowAvatarInfoList", "ShowNameCardIdList", "FriendEnterHomeOption", "ProfilePicture", "IpCode", });
     emu.grasscutter.net.proto.BirthdayOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FriendEnterHomeOptionOuterClass.getDescriptor();
     emu.grasscutter.net.proto.FriendOnlineStateOuterClass.getDescriptor();

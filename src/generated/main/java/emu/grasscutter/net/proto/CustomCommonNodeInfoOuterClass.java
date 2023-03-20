@@ -43,6 +43,10 @@ public final class CustomCommonNodeInfoOuterClass {
         getSlotIdentifierBytes();
   }
   /**
+   * <pre>
+   * Name: NLBMAKMGHOE
+   * </pre>
+   *
    * Protobuf type {@code CustomCommonNodeInfo}
    */
   public static final class CustomCommonNodeInfo extends
@@ -216,7 +220,7 @@ public final class CustomCommonNodeInfoOuterClass {
       if (configId_ != 0) {
         output.writeUInt32(2, configId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(slotIdentifier_)) {
+      if (!getSlotIdentifierBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, slotIdentifier_);
       }
       unknownFields.writeTo(output);
@@ -236,7 +240,7 @@ public final class CustomCommonNodeInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, configId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(slotIdentifier_)) {
+      if (!getSlotIdentifierBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, slotIdentifier_);
       }
       size += unknownFields.getSerializedSize();
@@ -373,6 +377,10 @@ public final class CustomCommonNodeInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: NLBMAKMGHOE
+     * </pre>
+     *
      * Protobuf type {@code CustomCommonNodeInfo}
      */
     public static final class Builder extends

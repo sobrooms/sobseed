@@ -19,45 +19,11 @@ public final class GetQuestLackingResourceRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    int getLackedPlaceMapCount();
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    boolean containsLackedPlaceMap(
-        int key);
-    /**
-     * Use {@link #getLackedPlaceMapMap()} instead.
-     */
-    @java.lang.Deprecated
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLackedPlaceMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    java.util.Map<java.lang.Integer, java.lang.Integer>
-    getLackedPlaceMapMap();
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-
-    int getLackedPlaceMapOrDefault(
-        int key,
-        int defaultValue);
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-
-    int getLackedPlaceMapOrThrow(
-        int key);
-
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     int getLackedNpcMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     boolean containsLackedNpcMap(
         int key);
@@ -68,79 +34,108 @@ public final class GetQuestLackingResourceRspOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedNpcMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getLackedNpcMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
 
     int getLackedNpcMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
 
     int getLackedNpcMapOrThrow(
         int key);
 
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
-     * @return A list containing the lackedPlaceList.
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+     * @return A list containing the kPIKFCDPMMM.
      */
-    java.util.List<java.lang.Integer> getLackedPlaceListList();
+    java.util.List<java.lang.Integer> getKPIKFCDPMMMList();
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
-     * @return The count of lackedPlaceList.
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+     * @return The count of kPIKFCDPMMM.
      */
-    int getLackedPlaceListCount();
+    int getKPIKFCDPMMMCount();
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
      * @param index The index of the element to return.
-     * @return The lackedPlaceList at the given index.
+     * @return The kPIKFCDPMMM at the given index.
      */
-    int getLackedPlaceList(int index);
+    int getKPIKFCDPMMM(int index);
 
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 8;</code>
      * @return The questId.
      */
     int getQuestId();
 
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
-     * @return A list containing the lackedNpcList.
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
      */
-    java.util.List<java.lang.Integer> getLackedNpcListList();
+    int getLackedPlaceMapCount();
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
-     * @return The count of lackedNpcList.
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
      */
-    int getLackedNpcListCount();
+    boolean containsLackedPlaceMap(
+        int key);
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
+     * Use {@link #getLackedPlaceMapMap()} instead.
+     */
+    @java.lang.Deprecated
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getLackedPlaceMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+    java.util.Map<java.lang.Integer, java.lang.Integer>
+    getLackedPlaceMapMap();
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+
+    int getLackedPlaceMapOrDefault(
+        int key,
+        int defaultValue);
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+
+    int getLackedPlaceMapOrThrow(
+        int key);
+
+    /**
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+     * @return A list containing the dMLOPDKLBMF.
+     */
+    java.util.List<java.lang.Integer> getDMLOPDKLBMFList();
+    /**
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+     * @return The count of dMLOPDKLBMF.
+     */
+    int getDMLOPDKLBMFCount();
+    /**
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
      * @param index The index of the element to return.
-     * @return The lackedNpcList at the given index.
+     * @return The dMLOPDKLBMF at the given index.
      */
-    int getLackedNpcList(int index);
+    int getDMLOPDKLBMF(int index);
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 424;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: OFAJEECKBCP
+   * CmdId: 411
    * </pre>
    *
    * Protobuf type {@code GetQuestLackingResourceRsp}
@@ -155,8 +150,8 @@ public final class GetQuestLackingResourceRspOuterClass {
       super(builder);
     }
     private GetQuestLackingResourceRsp() {
-      lackedPlaceList_ = emptyIntList();
-      lackedNpcList_ = emptyIntList();
+      kPIKFCDPMMM_ = emptyIntList();
+      dMLOPDKLBMF_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -190,11 +185,32 @@ public final class GetQuestLackingResourceRspOuterClass {
             case 0:
               done = true;
               break;
-            case 18: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 32: {
+              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                dMLOPDKLBMF_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              dMLOPDKLBMF_.addInt(input.readUInt32());
+              break;
+            }
+            case 34: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
+                dMLOPDKLBMF_ = newIntList();
+                mutable_bitField0_ |= 0x00000008;
+              }
+              while (input.getBytesUntilLimit() > 0) {
+                dMLOPDKLBMF_.addInt(input.readUInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 42: {
+              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
                 lackedPlaceMap_ = com.google.protobuf.MapField.newMapField(
                     LackedPlaceMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000004;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               lackedPlaceMap__ = input.readMessage(
@@ -203,21 +219,11 @@ public final class GetQuestLackingResourceRspOuterClass {
                   lackedPlaceMap__.getKey(), lackedPlaceMap__.getValue());
               break;
             }
-            case 24: {
-
-              questId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 58: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 lackedNpcMap_ = com.google.protobuf.MapField.newMapField(
                     LackedNpcMapDefaultEntryHolder.defaultEntry);
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
               lackedNpcMap__ = input.readMessage(
@@ -226,44 +232,33 @@ public final class GetQuestLackingResourceRspOuterClass {
                   lackedNpcMap__.getKey(), lackedNpcMap__.getValue());
               break;
             }
-            case 88: {
-              if (!((mutable_bitField0_ & 0x00000004) != 0)) {
-                lackedPlaceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              lackedPlaceList_.addInt(input.readUInt32());
-              break;
-            }
-            case 90: {
-              int length = input.readRawVarint32();
-              int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000004) != 0) && input.getBytesUntilLimit() > 0) {
-                lackedPlaceList_ = newIntList();
-                mutable_bitField0_ |= 0x00000004;
-              }
-              while (input.getBytesUntilLimit() > 0) {
-                lackedPlaceList_.addInt(input.readUInt32());
-              }
-              input.popLimit(limit);
+            case 64: {
+
+              questId_ = input.readUInt32();
               break;
             }
             case 112: {
-              if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                lackedNpcList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
-              }
-              lackedNpcList_.addInt(input.readUInt32());
+
+              retcode_ = input.readInt32();
               break;
             }
-            case 114: {
+            case 120: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                kPIKFCDPMMM_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
+              }
+              kPIKFCDPMMM_.addInt(input.readUInt32());
+              break;
+            }
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                lackedNpcList_ = newIntList();
-                mutable_bitField0_ |= 0x00000008;
+              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+                kPIKFCDPMMM_ = newIntList();
+                mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                lackedNpcList_.addInt(input.readUInt32());
+                kPIKFCDPMMM_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -283,11 +278,11 @@ public final class GetQuestLackingResourceRspOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000004) != 0)) {
-          lackedPlaceList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          lackedNpcList_.makeImmutable(); // C
+          dMLOPDKLBMF_.makeImmutable(); // C
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          kPIKFCDPMMM_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -303,10 +298,10 @@ public final class GetQuestLackingResourceRspOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 2:
-          return internalGetLackedPlaceMap();
-        case 7:
+        case 6:
           return internalGetLackedNpcMap();
+        case 5:
+          return internalGetLackedPlaceMap();
         default:
           throw new RuntimeException(
               "Invalid map field number: " + number);
@@ -320,88 +315,7 @@ public final class GetQuestLackingResourceRspOuterClass {
               emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.class, emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.Builder.class);
     }
 
-    public static final int LACKED_PLACE_MAP_FIELD_NUMBER = 2;
-    private static final class LackedPlaceMapDefaultEntryHolder {
-      static final com.google.protobuf.MapEntry<
-          java.lang.Integer, java.lang.Integer> defaultEntry =
-              com.google.protobuf.MapEntry
-              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
-                  emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor, 
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0,
-                  com.google.protobuf.WireFormat.FieldType.UINT32,
-                  0);
-    }
-    private com.google.protobuf.MapField<
-        java.lang.Integer, java.lang.Integer> lackedPlaceMap_;
-    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-    internalGetLackedPlaceMap() {
-      if (lackedPlaceMap_ == null) {
-        return com.google.protobuf.MapField.emptyMapField(
-            LackedPlaceMapDefaultEntryHolder.defaultEntry);
-      }
-      return lackedPlaceMap_;
-    }
-
-    public int getLackedPlaceMapCount() {
-      return internalGetLackedPlaceMap().getMap().size();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-
-    @java.lang.Override
-    public boolean containsLackedPlaceMap(
-        int key) {
-      
-      return internalGetLackedPlaceMap().getMap().containsKey(key);
-    }
-    /**
-     * Use {@link #getLackedPlaceMapMap()} instead.
-     */
-    @java.lang.Override
-    @java.lang.Deprecated
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMap() {
-      return getLackedPlaceMapMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    @java.lang.Override
-
-    public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMapMap() {
-      return internalGetLackedPlaceMap().getMap();
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    @java.lang.Override
-
-    public int getLackedPlaceMapOrDefault(
-        int key,
-        int defaultValue) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLackedPlaceMap().getMap();
-      return map.containsKey(key) ? map.get(key) : defaultValue;
-    }
-    /**
-     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-     */
-    @java.lang.Override
-
-    public int getLackedPlaceMapOrThrow(
-        int key) {
-      
-      java.util.Map<java.lang.Integer, java.lang.Integer> map =
-          internalGetLackedPlaceMap().getMap();
-      if (!map.containsKey(key)) {
-        throw new java.lang.IllegalArgumentException();
-      }
-      return map.get(key);
-    }
-
-    public static final int LACKED_NPC_MAP_FIELD_NUMBER = 7;
+    public static final int LACKED_NPC_MAP_FIELD_NUMBER = 6;
     private static final class LackedNpcMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -428,7 +342,7 @@ public final class GetQuestLackingResourceRspOuterClass {
       return internalGetLackedNpcMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
 
     @java.lang.Override
@@ -446,7 +360,7 @@ public final class GetQuestLackingResourceRspOuterClass {
       return getLackedNpcMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     @java.lang.Override
 
@@ -454,7 +368,7 @@ public final class GetQuestLackingResourceRspOuterClass {
       return internalGetLackedNpcMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     @java.lang.Override
 
@@ -467,7 +381,7 @@ public final class GetQuestLackingResourceRspOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+     * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
      */
     @java.lang.Override
 
@@ -482,38 +396,38 @@ public final class GetQuestLackingResourceRspOuterClass {
       return map.get(key);
     }
 
-    public static final int LACKED_PLACE_LIST_FIELD_NUMBER = 11;
-    private com.google.protobuf.Internal.IntList lackedPlaceList_;
+    public static final int KPIKFCDPMMM_FIELD_NUMBER = 15;
+    private com.google.protobuf.Internal.IntList kPIKFCDPMMM_;
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
-     * @return A list containing the lackedPlaceList.
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+     * @return A list containing the kPIKFCDPMMM.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getLackedPlaceListList() {
-      return lackedPlaceList_;
+        getKPIKFCDPMMMList() {
+      return kPIKFCDPMMM_;
     }
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
-     * @return The count of lackedPlaceList.
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+     * @return The count of kPIKFCDPMMM.
      */
-    public int getLackedPlaceListCount() {
-      return lackedPlaceList_.size();
+    public int getKPIKFCDPMMMCount() {
+      return kPIKFCDPMMM_.size();
     }
     /**
-     * <code>repeated uint32 lacked_place_list = 11;</code>
+     * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
      * @param index The index of the element to return.
-     * @return The lackedPlaceList at the given index.
+     * @return The kPIKFCDPMMM at the given index.
      */
-    public int getLackedPlaceList(int index) {
-      return lackedPlaceList_.getInt(index);
+    public int getKPIKFCDPMMM(int index) {
+      return kPIKFCDPMMM_.getInt(index);
     }
-    private int lackedPlaceListMemoizedSerializedSize = -1;
+    private int kPIKFCDPMMMMemoizedSerializedSize = -1;
 
-    public static final int QUEST_ID_FIELD_NUMBER = 3;
+    public static final int QUEST_ID_FIELD_NUMBER = 8;
     private int questId_;
     /**
-     * <code>uint32 quest_id = 3;</code>
+     * <code>uint32 quest_id = 8;</code>
      * @return The questId.
      */
     @java.lang.Override
@@ -521,10 +435,10 @@ public final class GetQuestLackingResourceRspOuterClass {
       return questId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 6;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 6;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -532,33 +446,114 @@ public final class GetQuestLackingResourceRspOuterClass {
       return retcode_;
     }
 
-    public static final int LACKED_NPC_LIST_FIELD_NUMBER = 14;
-    private com.google.protobuf.Internal.IntList lackedNpcList_;
+    public static final int LACKED_PLACE_MAP_FIELD_NUMBER = 5;
+    private static final class LackedPlaceMapDefaultEntryHolder {
+      static final com.google.protobuf.MapEntry<
+          java.lang.Integer, java.lang.Integer> defaultEntry =
+              com.google.protobuf.MapEntry
+              .<java.lang.Integer, java.lang.Integer>newDefaultInstance(
+                  emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor, 
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0,
+                  com.google.protobuf.WireFormat.FieldType.UINT32,
+                  0);
+    }
+    private com.google.protobuf.MapField<
+        java.lang.Integer, java.lang.Integer> lackedPlaceMap_;
+    private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+    internalGetLackedPlaceMap() {
+      if (lackedPlaceMap_ == null) {
+        return com.google.protobuf.MapField.emptyMapField(
+            LackedPlaceMapDefaultEntryHolder.defaultEntry);
+      }
+      return lackedPlaceMap_;
+    }
+
+    public int getLackedPlaceMapCount() {
+      return internalGetLackedPlaceMap().getMap().size();
+    }
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
-     * @return A list containing the lackedNpcList.
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+
+    @java.lang.Override
+    public boolean containsLackedPlaceMap(
+        int key) {
+      
+      return internalGetLackedPlaceMap().getMap().containsKey(key);
+    }
+    /**
+     * Use {@link #getLackedPlaceMapMap()} instead.
+     */
+    @java.lang.Override
+    @java.lang.Deprecated
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMap() {
+      return getLackedPlaceMapMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMapMap() {
+      return internalGetLackedPlaceMap().getMap();
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getLackedPlaceMapOrDefault(
+        int key,
+        int defaultValue) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetLackedPlaceMap().getMap();
+      return map.containsKey(key) ? map.get(key) : defaultValue;
+    }
+    /**
+     * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+     */
+    @java.lang.Override
+
+    public int getLackedPlaceMapOrThrow(
+        int key) {
+      
+      java.util.Map<java.lang.Integer, java.lang.Integer> map =
+          internalGetLackedPlaceMap().getMap();
+      if (!map.containsKey(key)) {
+        throw new java.lang.IllegalArgumentException();
+      }
+      return map.get(key);
+    }
+
+    public static final int DMLOPDKLBMF_FIELD_NUMBER = 4;
+    private com.google.protobuf.Internal.IntList dMLOPDKLBMF_;
+    /**
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+     * @return A list containing the dMLOPDKLBMF.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getLackedNpcListList() {
-      return lackedNpcList_;
+        getDMLOPDKLBMFList() {
+      return dMLOPDKLBMF_;
     }
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
-     * @return The count of lackedNpcList.
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+     * @return The count of dMLOPDKLBMF.
      */
-    public int getLackedNpcListCount() {
-      return lackedNpcList_.size();
+    public int getDMLOPDKLBMFCount() {
+      return dMLOPDKLBMF_.size();
     }
     /**
-     * <code>repeated uint32 lacked_npc_list = 14;</code>
+     * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
      * @param index The index of the element to return.
-     * @return The lackedNpcList at the given index.
+     * @return The dMLOPDKLBMF at the given index.
      */
-    public int getLackedNpcList(int index) {
-      return lackedNpcList_.getInt(index);
+    public int getDMLOPDKLBMF(int index) {
+      return dMLOPDKLBMF_.getInt(index);
     }
-    private int lackedNpcListMemoizedSerializedSize = -1;
+    private int dMLOPDKLBMFMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -575,37 +570,37 @@ public final class GetQuestLackingResourceRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (getDMLOPDKLBMFList().size() > 0) {
+        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(dMLOPDKLBMFMemoizedSerializedSize);
+      }
+      for (int i = 0; i < dMLOPDKLBMF_.size(); i++) {
+        output.writeUInt32NoTag(dMLOPDKLBMF_.getInt(i));
+      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetLackedPlaceMap(),
           LackedPlaceMapDefaultEntryHolder.defaultEntry,
-          2);
-      if (questId_ != 0) {
-        output.writeUInt32(3, questId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(6, retcode_);
-      }
+          5);
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetLackedNpcMap(),
           LackedNpcMapDefaultEntryHolder.defaultEntry,
-          7);
-      if (getLackedPlaceListList().size() > 0) {
-        output.writeUInt32NoTag(90);
-        output.writeUInt32NoTag(lackedPlaceListMemoizedSerializedSize);
+          6);
+      if (questId_ != 0) {
+        output.writeUInt32(8, questId_);
       }
-      for (int i = 0; i < lackedPlaceList_.size(); i++) {
-        output.writeUInt32NoTag(lackedPlaceList_.getInt(i));
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
-      if (getLackedNpcListList().size() > 0) {
-        output.writeUInt32NoTag(114);
-        output.writeUInt32NoTag(lackedNpcListMemoizedSerializedSize);
+      if (getKPIKFCDPMMMList().size() > 0) {
+        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(kPIKFCDPMMMMemoizedSerializedSize);
       }
-      for (int i = 0; i < lackedNpcList_.size(); i++) {
-        output.writeUInt32NoTag(lackedNpcList_.getInt(i));
+      for (int i = 0; i < kPIKFCDPMMM_.size(); i++) {
+        output.writeUInt32NoTag(kPIKFCDPMMM_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -616,6 +611,20 @@ public final class GetQuestLackingResourceRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      {
+        int dataSize = 0;
+        for (int i = 0; i < dMLOPDKLBMF_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeUInt32SizeNoTag(dMLOPDKLBMF_.getInt(i));
+        }
+        size += dataSize;
+        if (!getDMLOPDKLBMFList().isEmpty()) {
+          size += 1;
+          size += com.google.protobuf.CodedOutputStream
+              .computeInt32SizeNoTag(dataSize);
+        }
+        dMLOPDKLBMFMemoizedSerializedSize = dataSize;
+      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetLackedPlaceMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -624,15 +633,7 @@ public final class GetQuestLackingResourceRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(2, lackedPlaceMap__);
-      }
-      if (questId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, questId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(6, retcode_);
+            .computeMessageSize(5, lackedPlaceMap__);
       }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetLackedNpcMap().getMap().entrySet()) {
@@ -642,35 +643,29 @@ public final class GetQuestLackingResourceRspOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(7, lackedNpcMap__);
+            .computeMessageSize(6, lackedNpcMap__);
+      }
+      if (questId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(8, questId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < lackedPlaceList_.size(); i++) {
+        for (int i = 0; i < kPIKFCDPMMM_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lackedPlaceList_.getInt(i));
+            .computeUInt32SizeNoTag(kPIKFCDPMMM_.getInt(i));
         }
         size += dataSize;
-        if (!getLackedPlaceListList().isEmpty()) {
+        if (!getKPIKFCDPMMMList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        lackedPlaceListMemoizedSerializedSize = dataSize;
-      }
-      {
-        int dataSize = 0;
-        for (int i = 0; i < lackedNpcList_.size(); i++) {
-          dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(lackedNpcList_.getInt(i));
-        }
-        size += dataSize;
-        if (!getLackedNpcListList().isEmpty()) {
-          size += 1;
-          size += com.google.protobuf.CodedOutputStream
-              .computeInt32SizeNoTag(dataSize);
-        }
-        lackedNpcListMemoizedSerializedSize = dataSize;
+        kPIKFCDPMMMMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -687,18 +682,18 @@ public final class GetQuestLackingResourceRspOuterClass {
       }
       emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp other = (emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp) obj;
 
-      if (!internalGetLackedPlaceMap().equals(
-          other.internalGetLackedPlaceMap())) return false;
       if (!internalGetLackedNpcMap().equals(
           other.internalGetLackedNpcMap())) return false;
-      if (!getLackedPlaceListList()
-          .equals(other.getLackedPlaceListList())) return false;
+      if (!getKPIKFCDPMMMList()
+          .equals(other.getKPIKFCDPMMMList())) return false;
       if (getQuestId()
           != other.getQuestId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
-      if (!getLackedNpcListList()
-          .equals(other.getLackedNpcListList())) return false;
+      if (!internalGetLackedPlaceMap().equals(
+          other.internalGetLackedPlaceMap())) return false;
+      if (!getDMLOPDKLBMFList()
+          .equals(other.getDMLOPDKLBMFList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -710,25 +705,25 @@ public final class GetQuestLackingResourceRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (!internalGetLackedPlaceMap().getMap().isEmpty()) {
-        hash = (37 * hash) + LACKED_PLACE_MAP_FIELD_NUMBER;
-        hash = (53 * hash) + internalGetLackedPlaceMap().hashCode();
-      }
       if (!internalGetLackedNpcMap().getMap().isEmpty()) {
         hash = (37 * hash) + LACKED_NPC_MAP_FIELD_NUMBER;
         hash = (53 * hash) + internalGetLackedNpcMap().hashCode();
       }
-      if (getLackedPlaceListCount() > 0) {
-        hash = (37 * hash) + LACKED_PLACE_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLackedPlaceListList().hashCode();
+      if (getKPIKFCDPMMMCount() > 0) {
+        hash = (37 * hash) + KPIKFCDPMMM_FIELD_NUMBER;
+        hash = (53 * hash) + getKPIKFCDPMMMList().hashCode();
       }
       hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
       hash = (53 * hash) + getQuestId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
-      if (getLackedNpcListCount() > 0) {
-        hash = (37 * hash) + LACKED_NPC_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getLackedNpcListList().hashCode();
+      if (!internalGetLackedPlaceMap().getMap().isEmpty()) {
+        hash = (37 * hash) + LACKED_PLACE_MAP_FIELD_NUMBER;
+        hash = (53 * hash) + internalGetLackedPlaceMap().hashCode();
+      }
+      if (getDMLOPDKLBMFCount() > 0) {
+        hash = (37 * hash) + DMLOPDKLBMF_FIELD_NUMBER;
+        hash = (53 * hash) + getDMLOPDKLBMFList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -827,13 +822,8 @@ public final class GetQuestLackingResourceRspOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 424;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: OFAJEECKBCP
+     * CmdId: 411
      * </pre>
      *
      * Protobuf type {@code GetQuestLackingResourceRsp}
@@ -851,10 +841,10 @@ public final class GetQuestLackingResourceRspOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 2:
-            return internalGetLackedPlaceMap();
-          case 7:
+          case 6:
             return internalGetLackedNpcMap();
+          case 5:
+            return internalGetLackedPlaceMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -864,10 +854,10 @@ public final class GetQuestLackingResourceRspOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 2:
-            return internalGetMutableLackedPlaceMap();
-          case 7:
+          case 6:
             return internalGetMutableLackedNpcMap();
+          case 5:
+            return internalGetMutableLackedPlaceMap();
           default:
             throw new RuntimeException(
                 "Invalid map field number: " + number);
@@ -899,15 +889,15 @@ public final class GetQuestLackingResourceRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        internalGetMutableLackedPlaceMap().clear();
         internalGetMutableLackedNpcMap().clear();
-        lackedPlaceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+        kPIKFCDPMMM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         questId_ = 0;
 
         retcode_ = 0;
 
-        lackedNpcList_ = emptyIntList();
+        internalGetMutableLackedPlaceMap().clear();
+        dMLOPDKLBMF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
@@ -936,22 +926,22 @@ public final class GetQuestLackingResourceRspOuterClass {
       public emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp buildPartial() {
         emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp result = new emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp(this);
         int from_bitField0_ = bitField0_;
-        result.lackedPlaceMap_ = internalGetLackedPlaceMap();
-        result.lackedPlaceMap_.makeImmutable();
         result.lackedNpcMap_ = internalGetLackedNpcMap();
         result.lackedNpcMap_.makeImmutable();
-        if (((bitField0_ & 0x00000004) != 0)) {
-          lackedPlaceList_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000004);
+        if (((bitField0_ & 0x00000002) != 0)) {
+          kPIKFCDPMMM_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.lackedPlaceList_ = lackedPlaceList_;
+        result.kPIKFCDPMMM_ = kPIKFCDPMMM_;
         result.questId_ = questId_;
         result.retcode_ = retcode_;
+        result.lackedPlaceMap_ = internalGetLackedPlaceMap();
+        result.lackedPlaceMap_.makeImmutable();
         if (((bitField0_ & 0x00000008) != 0)) {
-          lackedNpcList_.makeImmutable();
+          dMLOPDKLBMF_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
         }
-        result.lackedNpcList_ = lackedNpcList_;
+        result.dMLOPDKLBMF_ = dMLOPDKLBMF_;
         onBuilt();
         return result;
       }
@@ -1000,17 +990,15 @@ public final class GetQuestLackingResourceRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp other) {
         if (other == emu.grasscutter.net.proto.GetQuestLackingResourceRspOuterClass.GetQuestLackingResourceRsp.getDefaultInstance()) return this;
-        internalGetMutableLackedPlaceMap().mergeFrom(
-            other.internalGetLackedPlaceMap());
         internalGetMutableLackedNpcMap().mergeFrom(
             other.internalGetLackedNpcMap());
-        if (!other.lackedPlaceList_.isEmpty()) {
-          if (lackedPlaceList_.isEmpty()) {
-            lackedPlaceList_ = other.lackedPlaceList_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+        if (!other.kPIKFCDPMMM_.isEmpty()) {
+          if (kPIKFCDPMMM_.isEmpty()) {
+            kPIKFCDPMMM_ = other.kPIKFCDPMMM_;
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureLackedPlaceListIsMutable();
-            lackedPlaceList_.addAll(other.lackedPlaceList_);
+            ensureKPIKFCDPMMMIsMutable();
+            kPIKFCDPMMM_.addAll(other.kPIKFCDPMMM_);
           }
           onChanged();
         }
@@ -1020,13 +1008,15 @@ public final class GetQuestLackingResourceRspOuterClass {
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
-        if (!other.lackedNpcList_.isEmpty()) {
-          if (lackedNpcList_.isEmpty()) {
-            lackedNpcList_ = other.lackedNpcList_;
+        internalGetMutableLackedPlaceMap().mergeFrom(
+            other.internalGetLackedPlaceMap());
+        if (!other.dMLOPDKLBMF_.isEmpty()) {
+          if (dMLOPDKLBMF_.isEmpty()) {
+            dMLOPDKLBMF_ = other.dMLOPDKLBMF_;
             bitField0_ = (bitField0_ & ~0x00000008);
           } else {
-            ensureLackedNpcListIsMutable();
-            lackedNpcList_.addAll(other.lackedNpcList_);
+            ensureDMLOPDKLBMFIsMutable();
+            dMLOPDKLBMF_.addAll(other.dMLOPDKLBMF_);
           }
           onChanged();
         }
@@ -1061,134 +1051,6 @@ public final class GetQuestLackingResourceRspOuterClass {
       private int bitField0_;
 
       private com.google.protobuf.MapField<
-          java.lang.Integer, java.lang.Integer> lackedPlaceMap_;
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetLackedPlaceMap() {
-        if (lackedPlaceMap_ == null) {
-          return com.google.protobuf.MapField.emptyMapField(
-              LackedPlaceMapDefaultEntryHolder.defaultEntry);
-        }
-        return lackedPlaceMap_;
-      }
-      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
-      internalGetMutableLackedPlaceMap() {
-        onChanged();;
-        if (lackedPlaceMap_ == null) {
-          lackedPlaceMap_ = com.google.protobuf.MapField.newMapField(
-              LackedPlaceMapDefaultEntryHolder.defaultEntry);
-        }
-        if (!lackedPlaceMap_.isMutable()) {
-          lackedPlaceMap_ = lackedPlaceMap_.copy();
-        }
-        return lackedPlaceMap_;
-      }
-
-      public int getLackedPlaceMapCount() {
-        return internalGetLackedPlaceMap().getMap().size();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-
-      @java.lang.Override
-      public boolean containsLackedPlaceMap(
-          int key) {
-        
-        return internalGetLackedPlaceMap().getMap().containsKey(key);
-      }
-      /**
-       * Use {@link #getLackedPlaceMapMap()} instead.
-       */
-      @java.lang.Override
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMap() {
-        return getLackedPlaceMapMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-      @java.lang.Override
-
-      public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMapMap() {
-        return internalGetLackedPlaceMap().getMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-      @java.lang.Override
-
-      public int getLackedPlaceMapOrDefault(
-          int key,
-          int defaultValue) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLackedPlaceMap().getMap();
-        return map.containsKey(key) ? map.get(key) : defaultValue;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-      @java.lang.Override
-
-      public int getLackedPlaceMapOrThrow(
-          int key) {
-        
-        java.util.Map<java.lang.Integer, java.lang.Integer> map =
-            internalGetLackedPlaceMap().getMap();
-        if (!map.containsKey(key)) {
-          throw new java.lang.IllegalArgumentException();
-        }
-        return map.get(key);
-      }
-
-      public Builder clearLackedPlaceMap() {
-        internalGetMutableLackedPlaceMap().getMutableMap()
-            .clear();
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-
-      public Builder removeLackedPlaceMap(
-          int key) {
-        
-        internalGetMutableLackedPlaceMap().getMutableMap()
-            .remove(key);
-        return this;
-      }
-      /**
-       * Use alternate mutation accessors instead.
-       */
-      @java.lang.Deprecated
-      public java.util.Map<java.lang.Integer, java.lang.Integer>
-      getMutableLackedPlaceMap() {
-        return internalGetMutableLackedPlaceMap().getMutableMap();
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-      public Builder putLackedPlaceMap(
-          int key,
-          int value) {
-        
-        
-        internalGetMutableLackedPlaceMap().getMutableMap()
-            .put(key, value);
-        return this;
-      }
-      /**
-       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 2;</code>
-       */
-
-      public Builder putAllLackedPlaceMap(
-          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
-        internalGetMutableLackedPlaceMap().getMutableMap()
-            .putAll(values);
-        return this;
-      }
-
-      private com.google.protobuf.MapField<
           java.lang.Integer, java.lang.Integer> lackedNpcMap_;
       private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
       internalGetLackedNpcMap() {
@@ -1215,7 +1077,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return internalGetLackedNpcMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
 
       @java.lang.Override
@@ -1233,7 +1095,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return getLackedNpcMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1241,7 +1103,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return internalGetLackedNpcMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1254,7 +1116,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
       @java.lang.Override
 
@@ -1275,7 +1137,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
 
       public Builder removeLackedNpcMap(
@@ -1294,7 +1156,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return internalGetMutableLackedNpcMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
       public Builder putLackedNpcMap(
           int key,
@@ -1306,7 +1168,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 7;</code>
+       * <code>map&lt;uint32, uint32&gt; lacked_npc_map = 6;</code>
        */
 
       public Builder putAllLackedNpcMap(
@@ -1316,88 +1178,88 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList lackedPlaceList_ = emptyIntList();
-      private void ensureLackedPlaceListIsMutable() {
-        if (!((bitField0_ & 0x00000004) != 0)) {
-          lackedPlaceList_ = mutableCopy(lackedPlaceList_);
-          bitField0_ |= 0x00000004;
+      private com.google.protobuf.Internal.IntList kPIKFCDPMMM_ = emptyIntList();
+      private void ensureKPIKFCDPMMMIsMutable() {
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          kPIKFCDPMMM_ = mutableCopy(kPIKFCDPMMM_);
+          bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
-       * @return A list containing the lackedPlaceList.
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+       * @return A list containing the kPIKFCDPMMM.
        */
       public java.util.List<java.lang.Integer>
-          getLackedPlaceListList() {
-        return ((bitField0_ & 0x00000004) != 0) ?
-                 java.util.Collections.unmodifiableList(lackedPlaceList_) : lackedPlaceList_;
+          getKPIKFCDPMMMList() {
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(kPIKFCDPMMM_) : kPIKFCDPMMM_;
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
-       * @return The count of lackedPlaceList.
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+       * @return The count of kPIKFCDPMMM.
        */
-      public int getLackedPlaceListCount() {
-        return lackedPlaceList_.size();
+      public int getKPIKFCDPMMMCount() {
+        return kPIKFCDPMMM_.size();
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
        * @param index The index of the element to return.
-       * @return The lackedPlaceList at the given index.
+       * @return The kPIKFCDPMMM at the given index.
        */
-      public int getLackedPlaceList(int index) {
-        return lackedPlaceList_.getInt(index);
+      public int getKPIKFCDPMMM(int index) {
+        return kPIKFCDPMMM_.getInt(index);
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
        * @param index The index to set the value at.
-       * @param value The lackedPlaceList to set.
+       * @param value The kPIKFCDPMMM to set.
        * @return This builder for chaining.
        */
-      public Builder setLackedPlaceList(
+      public Builder setKPIKFCDPMMM(
           int index, int value) {
-        ensureLackedPlaceListIsMutable();
-        lackedPlaceList_.setInt(index, value);
+        ensureKPIKFCDPMMMIsMutable();
+        kPIKFCDPMMM_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
-       * @param value The lackedPlaceList to add.
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+       * @param value The kPIKFCDPMMM to add.
        * @return This builder for chaining.
        */
-      public Builder addLackedPlaceList(int value) {
-        ensureLackedPlaceListIsMutable();
-        lackedPlaceList_.addInt(value);
+      public Builder addKPIKFCDPMMM(int value) {
+        ensureKPIKFCDPMMMIsMutable();
+        kPIKFCDPMMM_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
-       * @param values The lackedPlaceList to add.
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
+       * @param values The kPIKFCDPMMM to add.
        * @return This builder for chaining.
        */
-      public Builder addAllLackedPlaceList(
+      public Builder addAllKPIKFCDPMMM(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLackedPlaceListIsMutable();
+        ensureKPIKFCDPMMMIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lackedPlaceList_);
+            values, kPIKFCDPMMM_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_place_list = 11;</code>
+       * <code>repeated uint32 KPIKFCDPMMM = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLackedPlaceList() {
-        lackedPlaceList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000004);
+      public Builder clearKPIKFCDPMMM() {
+        kPIKFCDPMMM_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
       }
 
       private int questId_ ;
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 8;</code>
        * @return The questId.
        */
       @java.lang.Override
@@ -1405,7 +1267,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return questId_;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 8;</code>
        * @param value The questId to set.
        * @return This builder for chaining.
        */
@@ -1416,7 +1278,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 quest_id = 3;</code>
+       * <code>uint32 quest_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearQuestId() {
@@ -1428,7 +1290,7 @@ public final class GetQuestLackingResourceRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -1436,7 +1298,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -1447,7 +1309,7 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 6;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -1457,80 +1319,208 @@ public final class GetQuestLackingResourceRspOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList lackedNpcList_ = emptyIntList();
-      private void ensureLackedNpcListIsMutable() {
+      private com.google.protobuf.MapField<
+          java.lang.Integer, java.lang.Integer> lackedPlaceMap_;
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetLackedPlaceMap() {
+        if (lackedPlaceMap_ == null) {
+          return com.google.protobuf.MapField.emptyMapField(
+              LackedPlaceMapDefaultEntryHolder.defaultEntry);
+        }
+        return lackedPlaceMap_;
+      }
+      private com.google.protobuf.MapField<java.lang.Integer, java.lang.Integer>
+      internalGetMutableLackedPlaceMap() {
+        onChanged();;
+        if (lackedPlaceMap_ == null) {
+          lackedPlaceMap_ = com.google.protobuf.MapField.newMapField(
+              LackedPlaceMapDefaultEntryHolder.defaultEntry);
+        }
+        if (!lackedPlaceMap_.isMutable()) {
+          lackedPlaceMap_ = lackedPlaceMap_.copy();
+        }
+        return lackedPlaceMap_;
+      }
+
+      public int getLackedPlaceMapCount() {
+        return internalGetLackedPlaceMap().getMap().size();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+
+      @java.lang.Override
+      public boolean containsLackedPlaceMap(
+          int key) {
+        
+        return internalGetLackedPlaceMap().getMap().containsKey(key);
+      }
+      /**
+       * Use {@link #getLackedPlaceMapMap()} instead.
+       */
+      @java.lang.Override
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMap() {
+        return getLackedPlaceMapMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public java.util.Map<java.lang.Integer, java.lang.Integer> getLackedPlaceMapMap() {
+        return internalGetLackedPlaceMap().getMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getLackedPlaceMapOrDefault(
+          int key,
+          int defaultValue) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetLackedPlaceMap().getMap();
+        return map.containsKey(key) ? map.get(key) : defaultValue;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+      @java.lang.Override
+
+      public int getLackedPlaceMapOrThrow(
+          int key) {
+        
+        java.util.Map<java.lang.Integer, java.lang.Integer> map =
+            internalGetLackedPlaceMap().getMap();
+        if (!map.containsKey(key)) {
+          throw new java.lang.IllegalArgumentException();
+        }
+        return map.get(key);
+      }
+
+      public Builder clearLackedPlaceMap() {
+        internalGetMutableLackedPlaceMap().getMutableMap()
+            .clear();
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+
+      public Builder removeLackedPlaceMap(
+          int key) {
+        
+        internalGetMutableLackedPlaceMap().getMutableMap()
+            .remove(key);
+        return this;
+      }
+      /**
+       * Use alternate mutation accessors instead.
+       */
+      @java.lang.Deprecated
+      public java.util.Map<java.lang.Integer, java.lang.Integer>
+      getMutableLackedPlaceMap() {
+        return internalGetMutableLackedPlaceMap().getMutableMap();
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+      public Builder putLackedPlaceMap(
+          int key,
+          int value) {
+        
+        
+        internalGetMutableLackedPlaceMap().getMutableMap()
+            .put(key, value);
+        return this;
+      }
+      /**
+       * <code>map&lt;uint32, uint32&gt; lacked_place_map = 5;</code>
+       */
+
+      public Builder putAllLackedPlaceMap(
+          java.util.Map<java.lang.Integer, java.lang.Integer> values) {
+        internalGetMutableLackedPlaceMap().getMutableMap()
+            .putAll(values);
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList dMLOPDKLBMF_ = emptyIntList();
+      private void ensureDMLOPDKLBMFIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          lackedNpcList_ = mutableCopy(lackedNpcList_);
+          dMLOPDKLBMF_ = mutableCopy(dMLOPDKLBMF_);
           bitField0_ |= 0x00000008;
          }
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
-       * @return A list containing the lackedNpcList.
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+       * @return A list containing the dMLOPDKLBMF.
        */
       public java.util.List<java.lang.Integer>
-          getLackedNpcListList() {
+          getDMLOPDKLBMFList() {
         return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(lackedNpcList_) : lackedNpcList_;
+                 java.util.Collections.unmodifiableList(dMLOPDKLBMF_) : dMLOPDKLBMF_;
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
-       * @return The count of lackedNpcList.
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+       * @return The count of dMLOPDKLBMF.
        */
-      public int getLackedNpcListCount() {
-        return lackedNpcList_.size();
+      public int getDMLOPDKLBMFCount() {
+        return dMLOPDKLBMF_.size();
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
        * @param index The index of the element to return.
-       * @return The lackedNpcList at the given index.
+       * @return The dMLOPDKLBMF at the given index.
        */
-      public int getLackedNpcList(int index) {
-        return lackedNpcList_.getInt(index);
+      public int getDMLOPDKLBMF(int index) {
+        return dMLOPDKLBMF_.getInt(index);
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
        * @param index The index to set the value at.
-       * @param value The lackedNpcList to set.
+       * @param value The dMLOPDKLBMF to set.
        * @return This builder for chaining.
        */
-      public Builder setLackedNpcList(
+      public Builder setDMLOPDKLBMF(
           int index, int value) {
-        ensureLackedNpcListIsMutable();
-        lackedNpcList_.setInt(index, value);
+        ensureDMLOPDKLBMFIsMutable();
+        dMLOPDKLBMF_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
-       * @param value The lackedNpcList to add.
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+       * @param value The dMLOPDKLBMF to add.
        * @return This builder for chaining.
        */
-      public Builder addLackedNpcList(int value) {
-        ensureLackedNpcListIsMutable();
-        lackedNpcList_.addInt(value);
+      public Builder addDMLOPDKLBMF(int value) {
+        ensureDMLOPDKLBMFIsMutable();
+        dMLOPDKLBMF_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
-       * @param values The lackedNpcList to add.
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
+       * @param values The dMLOPDKLBMF to add.
        * @return This builder for chaining.
        */
-      public Builder addAllLackedNpcList(
+      public Builder addAllDMLOPDKLBMF(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureLackedNpcListIsMutable();
+        ensureDMLOPDKLBMFIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, lackedNpcList_);
+            values, dMLOPDKLBMF_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 lacked_npc_list = 14;</code>
+       * <code>repeated uint32 DMLOPDKLBMF = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLackedNpcList() {
-        lackedNpcList_ = emptyIntList();
+      public Builder clearDMLOPDKLBMF() {
+        dMLOPDKLBMF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
@@ -1594,15 +1584,15 @@ public final class GetQuestLackingResourceRspOuterClass {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GetQuestLackingResourceRsp_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor;
-  private static final 
-    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_fieldAccessorTable;
-  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_GetQuestLackingResourceRsp_LackedNpcMapEntry_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_GetQuestLackingResourceRsp_LackedNpcMapEntry_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1612,18 +1602,17 @@ public final class GetQuestLackingResourceRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n GetQuestLackingResourceRsp.proto\"\361\002\n\032G" +
-      "etQuestLackingResourceRsp\022I\n\020lacked_plac" +
-      "e_map\030\002 \003(\0132/.GetQuestLackingResourceRsp" +
-      ".LackedPlaceMapEntry\022E\n\016lacked_npc_map\030\007" +
-      " \003(\0132-.GetQuestLackingResourceRsp.Lacked" +
-      "NpcMapEntry\022\031\n\021lacked_place_list\030\013 \003(\r\022\020" +
-      "\n\010quest_id\030\003 \001(\r\022\017\n\007retcode\030\006 \001(\005\022\027\n\017lac" +
-      "ked_npc_list\030\016 \003(\r\0325\n\023LackedPlaceMapEntr" +
-      "y\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0323\n\021Lac" +
-      "kedNpcMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001" +
-      "(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006pro" +
-      "to3"
+      "\n GetQuestLackingResourceRsp.proto\"\347\002\n\032G" +
+      "etQuestLackingResourceRsp\022E\n\016lacked_npc_" +
+      "map\030\006 \003(\0132-.GetQuestLackingResourceRsp.L" +
+      "ackedNpcMapEntry\022\023\n\013KPIKFCDPMMM\030\017 \003(\r\022\020\n" +
+      "\010quest_id\030\010 \001(\r\022\017\n\007retcode\030\016 \001(\005\022I\n\020lack" +
+      "ed_place_map\030\005 \003(\0132/.GetQuestLackingReso" +
+      "urceRsp.LackedPlaceMapEntry\022\023\n\013DMLOPDKLB" +
+      "MF\030\004 \003(\r\0323\n\021LackedNpcMapEntry\022\013\n\003key\030\001 \001" +
+      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001\0325\n\023LackedPlaceMapE" +
+      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031" +
+      "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1634,18 +1623,18 @@ public final class GetQuestLackingResourceRspOuterClass {
     internal_static_GetQuestLackingResourceRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetQuestLackingResourceRsp_descriptor,
-        new java.lang.String[] { "LackedPlaceMap", "LackedNpcMap", "LackedPlaceList", "QuestId", "Retcode", "LackedNpcList", });
-    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor =
-      internal_static_GetQuestLackingResourceRsp_descriptor.getNestedTypes().get(0);
-    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor,
-        new java.lang.String[] { "Key", "Value", });
+        new java.lang.String[] { "LackedNpcMap", "KPIKFCDPMMM", "QuestId", "Retcode", "LackedPlaceMap", "DMLOPDKLBMF", });
     internal_static_GetQuestLackingResourceRsp_LackedNpcMapEntry_descriptor =
-      internal_static_GetQuestLackingResourceRsp_descriptor.getNestedTypes().get(1);
+      internal_static_GetQuestLackingResourceRsp_descriptor.getNestedTypes().get(0);
     internal_static_GetQuestLackingResourceRsp_LackedNpcMapEntry_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GetQuestLackingResourceRsp_LackedNpcMapEntry_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor =
+      internal_static_GetQuestLackingResourceRsp_descriptor.getNestedTypes().get(1);
+    internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_GetQuestLackingResourceRsp_LackedPlaceMapEntry_descriptor,
         new java.lang.String[] { "Key", "Value", });
   }
 

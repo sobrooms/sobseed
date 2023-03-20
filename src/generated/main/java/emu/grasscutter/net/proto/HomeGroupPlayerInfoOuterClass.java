@@ -19,69 +19,73 @@ public final class HomeGroupPlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string psn_id = 10;</code>
-     * @return The psnId.
+     * <code>uint32 player_level = 12;</code>
+     * @return The playerLevel.
      */
-    java.lang.String getPsnId();
-    /**
-     * <code>string psn_id = 10;</code>
-     * @return The bytes for psnId.
-     */
-    com.google.protobuf.ByteString
-        getPsnIdBytes();
+    int getPlayerLevel();
 
     /**
-     * <code>string nickname = 13;</code>
+     * <code>string online_id = 8;</code>
+     * @return The onlineId.
+     */
+    java.lang.String getOnlineId();
+    /**
+     * <code>string online_id = 8;</code>
+     * @return The bytes for onlineId.
+     */
+    com.google.protobuf.ByteString
+        getOnlineIdBytes();
+
+    /**
+     * <code>string nickname = 15;</code>
      * @return The nickname.
      */
     java.lang.String getNickname();
     /**
-     * <code>string nickname = 13;</code>
+     * <code>string nickname = 15;</code>
      * @return The bytes for nickname.
      */
     com.google.protobuf.ByteString
         getNicknameBytes();
 
     /**
-     * <code>uint32 uid = 1;</code>
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      * @return Whether the profilePicture field is set.
      */
     boolean hasProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      * @return The profilePicture.
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture();
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      */
     emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder();
 
     /**
-     * <code>uint32 player_level = 9;</code>
-     * @return The playerLevel.
+     * <code>string psn_id = 6;</code>
+     * @return The psnId.
      */
-    int getPlayerLevel();
-
+    java.lang.String getPsnId();
     /**
-     * <code>string online_id = 4;</code>
-     * @return The onlineId.
-     */
-    java.lang.String getOnlineId();
-    /**
-     * <code>string online_id = 4;</code>
-     * @return The bytes for onlineId.
+     * <code>string psn_id = 6;</code>
+     * @return The bytes for psnId.
      */
     com.google.protobuf.ByteString
-        getOnlineIdBytes();
+        getPsnIdBytes();
   }
   /**
+   * <pre>
+   * Name: HEJFJALGCON
+   * </pre>
+   *
    * Protobuf type {@code HomeGroupPlayerInfo}
    */
   public static final class HomeGroupPlayerInfo extends
@@ -94,9 +98,9 @@ public final class HomeGroupPlayerInfoOuterClass {
       super(builder);
     }
     private HomeGroupPlayerInfo() {
-      psnId_ = "";
-      nickname_ = "";
       onlineId_ = "";
+      nickname_ = "";
+      psnId_ = "";
     }
 
     @java.lang.Override
@@ -129,12 +133,29 @@ public final class HomeGroupPlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 50: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              psnId_ = s;
+              break;
+            }
+            case 56: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 18: {
+            case 66: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              onlineId_ = s;
+              break;
+            }
+            case 96: {
+
+              playerLevel_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder subBuilder = null;
               if (profilePicture_ != null) {
                 subBuilder = profilePicture_.toBuilder();
@@ -147,24 +168,7 @@ public final class HomeGroupPlayerInfoOuterClass {
 
               break;
             }
-            case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              onlineId_ = s;
-              break;
-            }
-            case 72: {
-
-              playerLevel_ = input.readUInt32();
-              break;
-            }
-            case 82: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              psnId_ = s;
-              break;
-            }
-            case 106: {
+            case 122: {
               java.lang.String s = input.readStringRequireUtf8();
 
               nickname_ = s;
@@ -202,48 +206,59 @@ public final class HomeGroupPlayerInfoOuterClass {
               emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.class, emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.Builder.class);
     }
 
-    public static final int PSN_ID_FIELD_NUMBER = 10;
-    private volatile java.lang.Object psnId_;
+    public static final int PLAYER_LEVEL_FIELD_NUMBER = 12;
+    private int playerLevel_;
     /**
-     * <code>string psn_id = 10;</code>
-     * @return The psnId.
+     * <code>uint32 player_level = 12;</code>
+     * @return The playerLevel.
      */
     @java.lang.Override
-    public java.lang.String getPsnId() {
-      java.lang.Object ref = psnId_;
+    public int getPlayerLevel() {
+      return playerLevel_;
+    }
+
+    public static final int ONLINE_ID_FIELD_NUMBER = 8;
+    private volatile java.lang.Object onlineId_;
+    /**
+     * <code>string online_id = 8;</code>
+     * @return The onlineId.
+     */
+    @java.lang.Override
+    public java.lang.String getOnlineId() {
+      java.lang.Object ref = onlineId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        psnId_ = s;
+        onlineId_ = s;
         return s;
       }
     }
     /**
-     * <code>string psn_id = 10;</code>
-     * @return The bytes for psnId.
+     * <code>string online_id = 8;</code>
+     * @return The bytes for onlineId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getPsnIdBytes() {
-      java.lang.Object ref = psnId_;
+        getOnlineIdBytes() {
+      java.lang.Object ref = onlineId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        psnId_ = b;
+        onlineId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int NICKNAME_FIELD_NUMBER = 13;
+    public static final int NICKNAME_FIELD_NUMBER = 15;
     private volatile java.lang.Object nickname_;
     /**
-     * <code>string nickname = 13;</code>
+     * <code>string nickname = 15;</code>
      * @return The nickname.
      */
     @java.lang.Override
@@ -260,7 +275,7 @@ public final class HomeGroupPlayerInfoOuterClass {
       }
     }
     /**
-     * <code>string nickname = 13;</code>
+     * <code>string nickname = 15;</code>
      * @return The bytes for nickname.
      */
     @java.lang.Override
@@ -278,10 +293,10 @@ public final class HomeGroupPlayerInfoOuterClass {
       }
     }
 
-    public static final int UID_FIELD_NUMBER = 1;
+    public static final int UID_FIELD_NUMBER = 7;
     private int uid_;
     /**
-     * <code>uint32 uid = 1;</code>
+     * <code>uint32 uid = 7;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -289,10 +304,10 @@ public final class HomeGroupPlayerInfoOuterClass {
       return uid_;
     }
 
-    public static final int PROFILE_PICTURE_FIELD_NUMBER = 2;
+    public static final int PROFILE_PICTURE_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture profilePicture_;
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      * @return Whether the profilePicture field is set.
      */
     @java.lang.Override
@@ -300,7 +315,7 @@ public final class HomeGroupPlayerInfoOuterClass {
       return profilePicture_ != null;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      * @return The profilePicture.
      */
     @java.lang.Override
@@ -308,56 +323,45 @@ public final class HomeGroupPlayerInfoOuterClass {
       return profilePicture_ == null ? emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.getDefaultInstance() : profilePicture_;
     }
     /**
-     * <code>.ProfilePicture profile_picture = 2;</code>
+     * <code>.ProfilePicture profile_picture = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
       return getProfilePicture();
     }
 
-    public static final int PLAYER_LEVEL_FIELD_NUMBER = 9;
-    private int playerLevel_;
+    public static final int PSN_ID_FIELD_NUMBER = 6;
+    private volatile java.lang.Object psnId_;
     /**
-     * <code>uint32 player_level = 9;</code>
-     * @return The playerLevel.
+     * <code>string psn_id = 6;</code>
+     * @return The psnId.
      */
     @java.lang.Override
-    public int getPlayerLevel() {
-      return playerLevel_;
-    }
-
-    public static final int ONLINE_ID_FIELD_NUMBER = 4;
-    private volatile java.lang.Object onlineId_;
-    /**
-     * <code>string online_id = 4;</code>
-     * @return The onlineId.
-     */
-    @java.lang.Override
-    public java.lang.String getOnlineId() {
-      java.lang.Object ref = onlineId_;
+    public java.lang.String getPsnId() {
+      java.lang.Object ref = psnId_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        onlineId_ = s;
+        psnId_ = s;
         return s;
       }
     }
     /**
-     * <code>string online_id = 4;</code>
-     * @return The bytes for onlineId.
+     * <code>string psn_id = 6;</code>
+     * @return The bytes for psnId.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getOnlineIdBytes() {
-      java.lang.Object ref = onlineId_;
+        getPsnIdBytes() {
+      java.lang.Object ref = psnId_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        onlineId_ = b;
+        psnId_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -378,23 +382,23 @@ public final class HomeGroupPlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (!getPsnIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 6, psnId_);
+      }
       if (uid_ != 0) {
-        output.writeUInt32(1, uid_);
+        output.writeUInt32(7, uid_);
       }
-      if (profilePicture_ != null) {
-        output.writeMessage(2, getProfilePicture());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, onlineId_);
+      if (!getOnlineIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 8, onlineId_);
       }
       if (playerLevel_ != 0) {
-        output.writeUInt32(9, playerLevel_);
+        output.writeUInt32(12, playerLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 10, psnId_);
+      if (profilePicture_ != null) {
+        output.writeMessage(13, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 13, nickname_);
+      if (!getNicknameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, nickname_);
       }
       unknownFields.writeTo(output);
     }
@@ -405,26 +409,26 @@ public final class HomeGroupPlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (!getPsnIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, psnId_);
+      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, uid_);
+          .computeUInt32Size(7, uid_);
       }
-      if (profilePicture_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(2, getProfilePicture());
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, onlineId_);
+      if (!getOnlineIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, onlineId_);
       }
       if (playerLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, playerLevel_);
+          .computeUInt32Size(12, playerLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(psnId_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, psnId_);
+      if (profilePicture_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(13, getProfilePicture());
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, nickname_);
+      if (!getNicknameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, nickname_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -441,8 +445,10 @@ public final class HomeGroupPlayerInfoOuterClass {
       }
       emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo other = (emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo) obj;
 
-      if (!getPsnId()
-          .equals(other.getPsnId())) return false;
+      if (getPlayerLevel()
+          != other.getPlayerLevel()) return false;
+      if (!getOnlineId()
+          .equals(other.getOnlineId())) return false;
       if (!getNickname()
           .equals(other.getNickname())) return false;
       if (getUid()
@@ -452,10 +458,8 @@ public final class HomeGroupPlayerInfoOuterClass {
         if (!getProfilePicture()
             .equals(other.getProfilePicture())) return false;
       }
-      if (getPlayerLevel()
-          != other.getPlayerLevel()) return false;
-      if (!getOnlineId()
-          .equals(other.getOnlineId())) return false;
+      if (!getPsnId()
+          .equals(other.getPsnId())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -467,8 +471,10 @@ public final class HomeGroupPlayerInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPsnId().hashCode();
+      hash = (37 * hash) + PLAYER_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getPlayerLevel();
+      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getOnlineId().hashCode();
       hash = (37 * hash) + NICKNAME_FIELD_NUMBER;
       hash = (53 * hash) + getNickname().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
@@ -477,10 +483,8 @@ public final class HomeGroupPlayerInfoOuterClass {
         hash = (37 * hash) + PROFILE_PICTURE_FIELD_NUMBER;
         hash = (53 * hash) + getProfilePicture().hashCode();
       }
-      hash = (37 * hash) + PLAYER_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getPlayerLevel();
-      hash = (37 * hash) + ONLINE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getOnlineId().hashCode();
+      hash = (37 * hash) + PSN_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPsnId().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -577,6 +581,10 @@ public final class HomeGroupPlayerInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HEJFJALGCON
+     * </pre>
+     *
      * Protobuf type {@code HomeGroupPlayerInfo}
      */
     public static final class Builder extends
@@ -614,7 +622,9 @@ public final class HomeGroupPlayerInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        psnId_ = "";
+        playerLevel_ = 0;
+
+        onlineId_ = "";
 
         nickname_ = "";
 
@@ -626,9 +636,7 @@ public final class HomeGroupPlayerInfoOuterClass {
           profilePicture_ = null;
           profilePictureBuilder_ = null;
         }
-        playerLevel_ = 0;
-
-        onlineId_ = "";
+        psnId_ = "";
 
         return this;
       }
@@ -656,7 +664,8 @@ public final class HomeGroupPlayerInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo buildPartial() {
         emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo result = new emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo(this);
-        result.psnId_ = psnId_;
+        result.playerLevel_ = playerLevel_;
+        result.onlineId_ = onlineId_;
         result.nickname_ = nickname_;
         result.uid_ = uid_;
         if (profilePictureBuilder_ == null) {
@@ -664,8 +673,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         } else {
           result.profilePicture_ = profilePictureBuilder_.build();
         }
-        result.playerLevel_ = playerLevel_;
-        result.onlineId_ = onlineId_;
+        result.psnId_ = psnId_;
         onBuilt();
         return result;
       }
@@ -714,8 +722,11 @@ public final class HomeGroupPlayerInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo other) {
         if (other == emu.grasscutter.net.proto.HomeGroupPlayerInfoOuterClass.HomeGroupPlayerInfo.getDefaultInstance()) return this;
-        if (!other.getPsnId().isEmpty()) {
-          psnId_ = other.psnId_;
+        if (other.getPlayerLevel() != 0) {
+          setPlayerLevel(other.getPlayerLevel());
+        }
+        if (!other.getOnlineId().isEmpty()) {
+          onlineId_ = other.onlineId_;
           onChanged();
         }
         if (!other.getNickname().isEmpty()) {
@@ -728,11 +739,8 @@ public final class HomeGroupPlayerInfoOuterClass {
         if (other.hasProfilePicture()) {
           mergeProfilePicture(other.getProfilePicture());
         }
-        if (other.getPlayerLevel() != 0) {
-          setPlayerLevel(other.getPlayerLevel());
-        }
-        if (!other.getOnlineId().isEmpty()) {
-          onlineId_ = other.onlineId_;
+        if (!other.getPsnId().isEmpty()) {
+          psnId_ = other.psnId_;
           onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
@@ -764,85 +772,116 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
 
-      private java.lang.Object psnId_ = "";
+      private int playerLevel_ ;
       /**
-       * <code>string psn_id = 10;</code>
-       * @return The psnId.
+       * <code>uint32 player_level = 12;</code>
+       * @return The playerLevel.
        */
-      public java.lang.String getPsnId() {
-        java.lang.Object ref = psnId_;
+      @java.lang.Override
+      public int getPlayerLevel() {
+        return playerLevel_;
+      }
+      /**
+       * <code>uint32 player_level = 12;</code>
+       * @param value The playerLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPlayerLevel(int value) {
+        
+        playerLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 player_level = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPlayerLevel() {
+        
+        playerLevel_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private java.lang.Object onlineId_ = "";
+      /**
+       * <code>string online_id = 8;</code>
+       * @return The onlineId.
+       */
+      public java.lang.String getOnlineId() {
+        java.lang.Object ref = onlineId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          psnId_ = s;
+          onlineId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string psn_id = 10;</code>
-       * @return The bytes for psnId.
+       * <code>string online_id = 8;</code>
+       * @return The bytes for onlineId.
        */
       public com.google.protobuf.ByteString
-          getPsnIdBytes() {
-        java.lang.Object ref = psnId_;
+          getOnlineIdBytes() {
+        java.lang.Object ref = onlineId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          psnId_ = b;
+          onlineId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string psn_id = 10;</code>
-       * @param value The psnId to set.
+       * <code>string online_id = 8;</code>
+       * @param value The onlineId to set.
        * @return This builder for chaining.
        */
-      public Builder setPsnId(
+      public Builder setOnlineId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        psnId_ = value;
+        onlineId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string psn_id = 10;</code>
+       * <code>string online_id = 8;</code>
        * @return This builder for chaining.
        */
-      public Builder clearPsnId() {
+      public Builder clearOnlineId() {
         
-        psnId_ = getDefaultInstance().getPsnId();
+        onlineId_ = getDefaultInstance().getOnlineId();
         onChanged();
         return this;
       }
       /**
-       * <code>string psn_id = 10;</code>
-       * @param value The bytes for psnId to set.
+       * <code>string online_id = 8;</code>
+       * @param value The bytes for onlineId to set.
        * @return This builder for chaining.
        */
-      public Builder setPsnIdBytes(
+      public Builder setOnlineIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        psnId_ = value;
+        onlineId_ = value;
         onChanged();
         return this;
       }
 
       private java.lang.Object nickname_ = "";
       /**
-       * <code>string nickname = 13;</code>
+       * <code>string nickname = 15;</code>
        * @return The nickname.
        */
       public java.lang.String getNickname() {
@@ -858,7 +897,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string nickname = 13;</code>
+       * <code>string nickname = 15;</code>
        * @return The bytes for nickname.
        */
       public com.google.protobuf.ByteString
@@ -875,7 +914,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string nickname = 13;</code>
+       * <code>string nickname = 15;</code>
        * @param value The nickname to set.
        * @return This builder for chaining.
        */
@@ -890,7 +929,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 13;</code>
+       * <code>string nickname = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearNickname() {
@@ -900,7 +939,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string nickname = 13;</code>
+       * <code>string nickname = 15;</code>
        * @param value The bytes for nickname to set.
        * @return This builder for chaining.
        */
@@ -918,7 +957,7 @@ public final class HomeGroupPlayerInfoOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 7;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -926,7 +965,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 7;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -937,7 +976,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 1;</code>
+       * <code>uint32 uid = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -951,14 +990,14 @@ public final class HomeGroupPlayerInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> profilePictureBuilder_;
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        * @return Whether the profilePicture field is set.
        */
       public boolean hasProfilePicture() {
         return profilePictureBuilder_ != null || profilePicture_ != null;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        * @return The profilePicture.
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture getProfilePicture() {
@@ -969,7 +1008,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder setProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -985,7 +1024,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder setProfilePicture(
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder builderForValue) {
@@ -999,7 +1038,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder mergeProfilePicture(emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture value) {
         if (profilePictureBuilder_ == null) {
@@ -1017,7 +1056,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public Builder clearProfilePicture() {
         if (profilePictureBuilder_ == null) {
@@ -1031,7 +1070,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder getProfilePictureBuilder() {
         
@@ -1039,7 +1078,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         return getProfilePictureFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       public emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder getProfilePictureOrBuilder() {
         if (profilePictureBuilder_ != null) {
@@ -1050,7 +1089,7 @@ public final class HomeGroupPlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.ProfilePicture profile_picture = 2;</code>
+       * <code>.ProfilePicture profile_picture = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePicture.Builder, emu.grasscutter.net.proto.ProfilePictureOuterClass.ProfilePictureOrBuilder> 
@@ -1066,109 +1105,78 @@ public final class HomeGroupPlayerInfoOuterClass {
         return profilePictureBuilder_;
       }
 
-      private int playerLevel_ ;
+      private java.lang.Object psnId_ = "";
       /**
-       * <code>uint32 player_level = 9;</code>
-       * @return The playerLevel.
+       * <code>string psn_id = 6;</code>
+       * @return The psnId.
        */
-      @java.lang.Override
-      public int getPlayerLevel() {
-        return playerLevel_;
-      }
-      /**
-       * <code>uint32 player_level = 9;</code>
-       * @param value The playerLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPlayerLevel(int value) {
-        
-        playerLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 player_level = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPlayerLevel() {
-        
-        playerLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object onlineId_ = "";
-      /**
-       * <code>string online_id = 4;</code>
-       * @return The onlineId.
-       */
-      public java.lang.String getOnlineId() {
-        java.lang.Object ref = onlineId_;
+      public java.lang.String getPsnId() {
+        java.lang.Object ref = psnId_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          onlineId_ = s;
+          psnId_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string online_id = 4;</code>
-       * @return The bytes for onlineId.
+       * <code>string psn_id = 6;</code>
+       * @return The bytes for psnId.
        */
       public com.google.protobuf.ByteString
-          getOnlineIdBytes() {
-        java.lang.Object ref = onlineId_;
+          getPsnIdBytes() {
+        java.lang.Object ref = psnId_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          onlineId_ = b;
+          psnId_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string online_id = 4;</code>
-       * @param value The onlineId to set.
+       * <code>string psn_id = 6;</code>
+       * @param value The psnId to set.
        * @return This builder for chaining.
        */
-      public Builder setOnlineId(
+      public Builder setPsnId(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        onlineId_ = value;
+        psnId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string online_id = 4;</code>
+       * <code>string psn_id = 6;</code>
        * @return This builder for chaining.
        */
-      public Builder clearOnlineId() {
+      public Builder clearPsnId() {
         
-        onlineId_ = getDefaultInstance().getOnlineId();
+        psnId_ = getDefaultInstance().getPsnId();
         onChanged();
         return this;
       }
       /**
-       * <code>string online_id = 4;</code>
-       * @param value The bytes for onlineId to set.
+       * <code>string psn_id = 6;</code>
+       * @param value The bytes for psnId to set.
        * @return This builder for chaining.
        */
-      public Builder setOnlineIdBytes(
+      public Builder setPsnIdBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        onlineId_ = value;
+        psnId_ = value;
         onChanged();
         return this;
       }
@@ -1240,10 +1248,10 @@ public final class HomeGroupPlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeGroupPlayerInfo.proto\032\024ProfilePict" +
-      "ure.proto\"\227\001\n\023HomeGroupPlayerInfo\022\016\n\006psn" +
-      "_id\030\n \001(\t\022\020\n\010nickname\030\r \001(\t\022\013\n\003uid\030\001 \001(\r" +
-      "\022(\n\017profile_picture\030\002 \001(\0132\017.ProfilePictu" +
-      "re\022\024\n\014player_level\030\t \001(\r\022\021\n\tonline_id\030\004 " +
+      "ure.proto\"\227\001\n\023HomeGroupPlayerInfo\022\024\n\014pla" +
+      "yer_level\030\014 \001(\r\022\021\n\tonline_id\030\010 \001(\t\022\020\n\010ni" +
+      "ckname\030\017 \001(\t\022\013\n\003uid\030\007 \001(\r\022(\n\017profile_pic" +
+      "ture\030\r \001(\0132\017.ProfilePicture\022\016\n\006psn_id\030\006 " +
       "\001(\tB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1256,7 +1264,7 @@ public final class HomeGroupPlayerInfoOuterClass {
     internal_static_HomeGroupPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeGroupPlayerInfo_descriptor,
-        new java.lang.String[] { "PsnId", "Nickname", "Uid", "ProfilePicture", "PlayerLevel", "OnlineId", });
+        new java.lang.String[] { "PlayerLevel", "OnlineId", "Nickname", "Uid", "ProfilePicture", "PsnId", });
     emu.grasscutter.net.proto.ProfilePictureOuterClass.getDescriptor();
   }
 

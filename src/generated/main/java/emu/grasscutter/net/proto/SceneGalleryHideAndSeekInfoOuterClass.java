@@ -19,40 +19,44 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
-     * @return A list containing the visibleUidList.
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+     * @return A list containing the dJOKECOIPFF.
      */
-    java.util.List<java.lang.Integer> getVisibleUidListList();
+    java.util.List<java.lang.Integer> getDJOKECOIPFFList();
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
-     * @return The count of visibleUidList.
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+     * @return The count of dJOKECOIPFF.
      */
-    int getVisibleUidListCount();
+    int getDJOKECOIPFFCount();
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
      * @param index The index of the element to return.
-     * @return The visibleUidList at the given index.
+     * @return The dJOKECOIPFF at the given index.
      */
-    int getVisibleUidList(int index);
+    int getDJOKECOIPFF(int index);
 
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
-     * @return A list containing the caughtUidList.
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+     * @return A list containing the bCBIGMMKEJH.
      */
-    java.util.List<java.lang.Integer> getCaughtUidListList();
+    java.util.List<java.lang.Integer> getBCBIGMMKEJHList();
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
-     * @return The count of caughtUidList.
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+     * @return The count of bCBIGMMKEJH.
      */
-    int getCaughtUidListCount();
+    int getBCBIGMMKEJHCount();
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
      * @param index The index of the element to return.
-     * @return The caughtUidList at the given index.
+     * @return The bCBIGMMKEJH at the given index.
      */
-    int getCaughtUidList(int index);
+    int getBCBIGMMKEJH(int index);
   }
   /**
+   * <pre>
+   * Name: OCLKBDJILAF
+   * </pre>
+   *
    * Protobuf type {@code SceneGalleryHideAndSeekInfo}
    */
   public static final class SceneGalleryHideAndSeekInfo extends
@@ -65,8 +69,8 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       super(builder);
     }
     private SceneGalleryHideAndSeekInfo() {
-      visibleUidList_ = emptyIntList();
-      caughtUidList_ = emptyIntList();
+      dJOKECOIPFF_ = emptyIntList();
+      bCBIGMMKEJH_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -100,44 +104,44 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-                caughtUidList_ = newIntList();
+                bCBIGMMKEJH_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
-              caughtUidList_.addInt(input.readUInt32());
+              bCBIGMMKEJH_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
-                caughtUidList_ = newIntList();
+                bCBIGMMKEJH_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
               }
               while (input.getBytesUntilLimit() > 0) {
-                caughtUidList_.addInt(input.readUInt32());
+                bCBIGMMKEJH_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
             }
-            case 80: {
+            case 104: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                visibleUidList_ = newIntList();
+                dJOKECOIPFF_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
-              visibleUidList_.addInt(input.readUInt32());
+              dJOKECOIPFF_.addInt(input.readUInt32());
               break;
             }
-            case 82: {
+            case 106: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
-                visibleUidList_ = newIntList();
+                dJOKECOIPFF_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
-                visibleUidList_.addInt(input.readUInt32());
+                dJOKECOIPFF_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -158,10 +162,10 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          caughtUidList_.makeImmutable(); // C
+          bCBIGMMKEJH_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          visibleUidList_.makeImmutable(); // C
+          dJOKECOIPFF_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,61 +184,61 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
               emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.class, emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.Builder.class);
     }
 
-    public static final int VISIBLE_UID_LIST_FIELD_NUMBER = 10;
-    private com.google.protobuf.Internal.IntList visibleUidList_;
+    public static final int DJOKECOIPFF_FIELD_NUMBER = 13;
+    private com.google.protobuf.Internal.IntList dJOKECOIPFF_;
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
-     * @return A list containing the visibleUidList.
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+     * @return A list containing the dJOKECOIPFF.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getVisibleUidListList() {
-      return visibleUidList_;
+        getDJOKECOIPFFList() {
+      return dJOKECOIPFF_;
     }
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
-     * @return The count of visibleUidList.
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+     * @return The count of dJOKECOIPFF.
      */
-    public int getVisibleUidListCount() {
-      return visibleUidList_.size();
+    public int getDJOKECOIPFFCount() {
+      return dJOKECOIPFF_.size();
     }
     /**
-     * <code>repeated uint32 visible_uid_list = 10;</code>
+     * <code>repeated uint32 DJOKECOIPFF = 13;</code>
      * @param index The index of the element to return.
-     * @return The visibleUidList at the given index.
+     * @return The dJOKECOIPFF at the given index.
      */
-    public int getVisibleUidList(int index) {
-      return visibleUidList_.getInt(index);
+    public int getDJOKECOIPFF(int index) {
+      return dJOKECOIPFF_.getInt(index);
     }
-    private int visibleUidListMemoizedSerializedSize = -1;
+    private int dJOKECOIPFFMemoizedSerializedSize = -1;
 
-    public static final int CAUGHT_UID_LIST_FIELD_NUMBER = 7;
-    private com.google.protobuf.Internal.IntList caughtUidList_;
+    public static final int BCBIGMMKEJH_FIELD_NUMBER = 12;
+    private com.google.protobuf.Internal.IntList bCBIGMMKEJH_;
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
-     * @return A list containing the caughtUidList.
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+     * @return A list containing the bCBIGMMKEJH.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getCaughtUidListList() {
-      return caughtUidList_;
+        getBCBIGMMKEJHList() {
+      return bCBIGMMKEJH_;
     }
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
-     * @return The count of caughtUidList.
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+     * @return The count of bCBIGMMKEJH.
      */
-    public int getCaughtUidListCount() {
-      return caughtUidList_.size();
+    public int getBCBIGMMKEJHCount() {
+      return bCBIGMMKEJH_.size();
     }
     /**
-     * <code>repeated uint32 caught_uid_list = 7;</code>
+     * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
      * @param index The index of the element to return.
-     * @return The caughtUidList at the given index.
+     * @return The bCBIGMMKEJH at the given index.
      */
-    public int getCaughtUidList(int index) {
-      return caughtUidList_.getInt(index);
+    public int getBCBIGMMKEJH(int index) {
+      return bCBIGMMKEJH_.getInt(index);
     }
-    private int caughtUidListMemoizedSerializedSize = -1;
+    private int bCBIGMMKEJHMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -251,19 +255,19 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (getCaughtUidListList().size() > 0) {
-        output.writeUInt32NoTag(58);
-        output.writeUInt32NoTag(caughtUidListMemoizedSerializedSize);
+      if (getBCBIGMMKEJHList().size() > 0) {
+        output.writeUInt32NoTag(98);
+        output.writeUInt32NoTag(bCBIGMMKEJHMemoizedSerializedSize);
       }
-      for (int i = 0; i < caughtUidList_.size(); i++) {
-        output.writeUInt32NoTag(caughtUidList_.getInt(i));
+      for (int i = 0; i < bCBIGMMKEJH_.size(); i++) {
+        output.writeUInt32NoTag(bCBIGMMKEJH_.getInt(i));
       }
-      if (getVisibleUidListList().size() > 0) {
-        output.writeUInt32NoTag(82);
-        output.writeUInt32NoTag(visibleUidListMemoizedSerializedSize);
+      if (getDJOKECOIPFFList().size() > 0) {
+        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(dJOKECOIPFFMemoizedSerializedSize);
       }
-      for (int i = 0; i < visibleUidList_.size(); i++) {
-        output.writeUInt32NoTag(visibleUidList_.getInt(i));
+      for (int i = 0; i < dJOKECOIPFF_.size(); i++) {
+        output.writeUInt32NoTag(dJOKECOIPFF_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -276,31 +280,31 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       size = 0;
       {
         int dataSize = 0;
-        for (int i = 0; i < caughtUidList_.size(); i++) {
+        for (int i = 0; i < bCBIGMMKEJH_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(caughtUidList_.getInt(i));
+            .computeUInt32SizeNoTag(bCBIGMMKEJH_.getInt(i));
         }
         size += dataSize;
-        if (!getCaughtUidListList().isEmpty()) {
+        if (!getBCBIGMMKEJHList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        caughtUidListMemoizedSerializedSize = dataSize;
+        bCBIGMMKEJHMemoizedSerializedSize = dataSize;
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < visibleUidList_.size(); i++) {
+        for (int i = 0; i < dJOKECOIPFF_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(visibleUidList_.getInt(i));
+            .computeUInt32SizeNoTag(dJOKECOIPFF_.getInt(i));
         }
         size += dataSize;
-        if (!getVisibleUidListList().isEmpty()) {
+        if (!getDJOKECOIPFFList().isEmpty()) {
           size += 1;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        visibleUidListMemoizedSerializedSize = dataSize;
+        dJOKECOIPFFMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,10 +321,10 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo other = (emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo) obj;
 
-      if (!getVisibleUidListList()
-          .equals(other.getVisibleUidListList())) return false;
-      if (!getCaughtUidListList()
-          .equals(other.getCaughtUidListList())) return false;
+      if (!getDJOKECOIPFFList()
+          .equals(other.getDJOKECOIPFFList())) return false;
+      if (!getBCBIGMMKEJHList()
+          .equals(other.getBCBIGMMKEJHList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -332,13 +336,13 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getVisibleUidListCount() > 0) {
-        hash = (37 * hash) + VISIBLE_UID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getVisibleUidListList().hashCode();
+      if (getDJOKECOIPFFCount() > 0) {
+        hash = (37 * hash) + DJOKECOIPFF_FIELD_NUMBER;
+        hash = (53 * hash) + getDJOKECOIPFFList().hashCode();
       }
-      if (getCaughtUidListCount() > 0) {
-        hash = (37 * hash) + CAUGHT_UID_LIST_FIELD_NUMBER;
-        hash = (53 * hash) + getCaughtUidListList().hashCode();
+      if (getBCBIGMMKEJHCount() > 0) {
+        hash = (37 * hash) + BCBIGMMKEJH_FIELD_NUMBER;
+        hash = (53 * hash) + getBCBIGMMKEJHList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -436,6 +440,10 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OCLKBDJILAF
+     * </pre>
+     *
      * Protobuf type {@code SceneGalleryHideAndSeekInfo}
      */
     public static final class Builder extends
@@ -473,9 +481,9 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        visibleUidList_ = emptyIntList();
+        dJOKECOIPFF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        caughtUidList_ = emptyIntList();
+        bCBIGMMKEJH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         return this;
       }
@@ -505,15 +513,15 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
         emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo result = new emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo(this);
         int from_bitField0_ = bitField0_;
         if (((bitField0_ & 0x00000001) != 0)) {
-          visibleUidList_.makeImmutable();
+          dJOKECOIPFF_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
-        result.visibleUidList_ = visibleUidList_;
+        result.dJOKECOIPFF_ = dJOKECOIPFF_;
         if (((bitField0_ & 0x00000002) != 0)) {
-          caughtUidList_.makeImmutable();
+          bCBIGMMKEJH_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000002);
         }
-        result.caughtUidList_ = caughtUidList_;
+        result.bCBIGMMKEJH_ = bCBIGMMKEJH_;
         onBuilt();
         return result;
       }
@@ -562,23 +570,23 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo other) {
         if (other == emu.grasscutter.net.proto.SceneGalleryHideAndSeekInfoOuterClass.SceneGalleryHideAndSeekInfo.getDefaultInstance()) return this;
-        if (!other.visibleUidList_.isEmpty()) {
-          if (visibleUidList_.isEmpty()) {
-            visibleUidList_ = other.visibleUidList_;
+        if (!other.dJOKECOIPFF_.isEmpty()) {
+          if (dJOKECOIPFF_.isEmpty()) {
+            dJOKECOIPFF_ = other.dJOKECOIPFF_;
             bitField0_ = (bitField0_ & ~0x00000001);
           } else {
-            ensureVisibleUidListIsMutable();
-            visibleUidList_.addAll(other.visibleUidList_);
+            ensureDJOKECOIPFFIsMutable();
+            dJOKECOIPFF_.addAll(other.dJOKECOIPFF_);
           }
           onChanged();
         }
-        if (!other.caughtUidList_.isEmpty()) {
-          if (caughtUidList_.isEmpty()) {
-            caughtUidList_ = other.caughtUidList_;
+        if (!other.bCBIGMMKEJH_.isEmpty()) {
+          if (bCBIGMMKEJH_.isEmpty()) {
+            bCBIGMMKEJH_ = other.bCBIGMMKEJH_;
             bitField0_ = (bitField0_ & ~0x00000002);
           } else {
-            ensureCaughtUidListIsMutable();
-            caughtUidList_.addAll(other.caughtUidList_);
+            ensureBCBIGMMKEJHIsMutable();
+            bCBIGMMKEJH_.addAll(other.bCBIGMMKEJH_);
           }
           onChanged();
         }
@@ -612,159 +620,159 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       }
       private int bitField0_;
 
-      private com.google.protobuf.Internal.IntList visibleUidList_ = emptyIntList();
-      private void ensureVisibleUidListIsMutable() {
+      private com.google.protobuf.Internal.IntList dJOKECOIPFF_ = emptyIntList();
+      private void ensureDJOKECOIPFFIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          visibleUidList_ = mutableCopy(visibleUidList_);
+          dJOKECOIPFF_ = mutableCopy(dJOKECOIPFF_);
           bitField0_ |= 0x00000001;
          }
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
-       * @return A list containing the visibleUidList.
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+       * @return A list containing the dJOKECOIPFF.
        */
       public java.util.List<java.lang.Integer>
-          getVisibleUidListList() {
+          getDJOKECOIPFFList() {
         return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(visibleUidList_) : visibleUidList_;
+                 java.util.Collections.unmodifiableList(dJOKECOIPFF_) : dJOKECOIPFF_;
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
-       * @return The count of visibleUidList.
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+       * @return The count of dJOKECOIPFF.
        */
-      public int getVisibleUidListCount() {
-        return visibleUidList_.size();
+      public int getDJOKECOIPFFCount() {
+        return dJOKECOIPFF_.size();
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
        * @param index The index of the element to return.
-       * @return The visibleUidList at the given index.
+       * @return The dJOKECOIPFF at the given index.
        */
-      public int getVisibleUidList(int index) {
-        return visibleUidList_.getInt(index);
+      public int getDJOKECOIPFF(int index) {
+        return dJOKECOIPFF_.getInt(index);
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
        * @param index The index to set the value at.
-       * @param value The visibleUidList to set.
+       * @param value The dJOKECOIPFF to set.
        * @return This builder for chaining.
        */
-      public Builder setVisibleUidList(
+      public Builder setDJOKECOIPFF(
           int index, int value) {
-        ensureVisibleUidListIsMutable();
-        visibleUidList_.setInt(index, value);
+        ensureDJOKECOIPFFIsMutable();
+        dJOKECOIPFF_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
-       * @param value The visibleUidList to add.
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+       * @param value The dJOKECOIPFF to add.
        * @return This builder for chaining.
        */
-      public Builder addVisibleUidList(int value) {
-        ensureVisibleUidListIsMutable();
-        visibleUidList_.addInt(value);
+      public Builder addDJOKECOIPFF(int value) {
+        ensureDJOKECOIPFFIsMutable();
+        dJOKECOIPFF_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
-       * @param values The visibleUidList to add.
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
+       * @param values The dJOKECOIPFF to add.
        * @return This builder for chaining.
        */
-      public Builder addAllVisibleUidList(
+      public Builder addAllDJOKECOIPFF(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureVisibleUidListIsMutable();
+        ensureDJOKECOIPFFIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, visibleUidList_);
+            values, dJOKECOIPFF_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 visible_uid_list = 10;</code>
+       * <code>repeated uint32 DJOKECOIPFF = 13;</code>
        * @return This builder for chaining.
        */
-      public Builder clearVisibleUidList() {
-        visibleUidList_ = emptyIntList();
+      public Builder clearDJOKECOIPFF() {
+        dJOKECOIPFF_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList caughtUidList_ = emptyIntList();
-      private void ensureCaughtUidListIsMutable() {
+      private com.google.protobuf.Internal.IntList bCBIGMMKEJH_ = emptyIntList();
+      private void ensureBCBIGMMKEJHIsMutable() {
         if (!((bitField0_ & 0x00000002) != 0)) {
-          caughtUidList_ = mutableCopy(caughtUidList_);
+          bCBIGMMKEJH_ = mutableCopy(bCBIGMMKEJH_);
           bitField0_ |= 0x00000002;
          }
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
-       * @return A list containing the caughtUidList.
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+       * @return A list containing the bCBIGMMKEJH.
        */
       public java.util.List<java.lang.Integer>
-          getCaughtUidListList() {
+          getBCBIGMMKEJHList() {
         return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(caughtUidList_) : caughtUidList_;
+                 java.util.Collections.unmodifiableList(bCBIGMMKEJH_) : bCBIGMMKEJH_;
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
-       * @return The count of caughtUidList.
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+       * @return The count of bCBIGMMKEJH.
        */
-      public int getCaughtUidListCount() {
-        return caughtUidList_.size();
+      public int getBCBIGMMKEJHCount() {
+        return bCBIGMMKEJH_.size();
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
        * @param index The index of the element to return.
-       * @return The caughtUidList at the given index.
+       * @return The bCBIGMMKEJH at the given index.
        */
-      public int getCaughtUidList(int index) {
-        return caughtUidList_.getInt(index);
+      public int getBCBIGMMKEJH(int index) {
+        return bCBIGMMKEJH_.getInt(index);
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
        * @param index The index to set the value at.
-       * @param value The caughtUidList to set.
+       * @param value The bCBIGMMKEJH to set.
        * @return This builder for chaining.
        */
-      public Builder setCaughtUidList(
+      public Builder setBCBIGMMKEJH(
           int index, int value) {
-        ensureCaughtUidListIsMutable();
-        caughtUidList_.setInt(index, value);
+        ensureBCBIGMMKEJHIsMutable();
+        bCBIGMMKEJH_.setInt(index, value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
-       * @param value The caughtUidList to add.
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+       * @param value The bCBIGMMKEJH to add.
        * @return This builder for chaining.
        */
-      public Builder addCaughtUidList(int value) {
-        ensureCaughtUidListIsMutable();
-        caughtUidList_.addInt(value);
+      public Builder addBCBIGMMKEJH(int value) {
+        ensureBCBIGMMKEJHIsMutable();
+        bCBIGMMKEJH_.addInt(value);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
-       * @param values The caughtUidList to add.
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
+       * @param values The bCBIGMMKEJH to add.
        * @return This builder for chaining.
        */
-      public Builder addAllCaughtUidList(
+      public Builder addAllBCBIGMMKEJH(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureCaughtUidListIsMutable();
+        ensureBCBIGMMKEJHIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, caughtUidList_);
+            values, bCBIGMMKEJH_);
         onChanged();
         return this;
       }
       /**
-       * <code>repeated uint32 caught_uid_list = 7;</code>
+       * <code>repeated uint32 BCBIGMMKEJH = 12;</code>
        * @return This builder for chaining.
        */
-      public Builder clearCaughtUidList() {
-        caughtUidList_ = emptyIntList();
+      public Builder clearBCBIGMMKEJH() {
+        bCBIGMMKEJH_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
         onChanged();
         return this;
@@ -836,10 +844,10 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n!SceneGalleryHideAndSeekInfo.proto\"P\n\033S" +
-      "ceneGalleryHideAndSeekInfo\022\030\n\020visible_ui" +
-      "d_list\030\n \003(\r\022\027\n\017caught_uid_list\030\007 \003(\rB\033\n" +
-      "\031emu.grasscutter.net.protob\006proto3"
+      "\n!SceneGalleryHideAndSeekInfo.proto\"G\n\033S" +
+      "ceneGalleryHideAndSeekInfo\022\023\n\013DJOKECOIPF" +
+      "F\030\r \003(\r\022\023\n\013BCBIGMMKEJH\030\014 \003(\rB\033\n\031emu.gras" +
+      "scutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -850,7 +858,7 @@ public final class SceneGalleryHideAndSeekInfoOuterClass {
     internal_static_SceneGalleryHideAndSeekInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneGalleryHideAndSeekInfo_descriptor,
-        new java.lang.String[] { "VisibleUidList", "CaughtUidList", });
+        new java.lang.String[] { "DJOKECOIPFF", "BCBIGMMKEJH", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -20,11 +20,6 @@ public final class AbilityStringOuterClass {
 
     /**
      * <code>string str = 1;</code>
-     * @return Whether the str field is set.
-     */
-    boolean hasStr();
-    /**
-     * <code>string str = 1;</code>
      * @return The str.
      */
     java.lang.String getStr();
@@ -37,11 +32,6 @@ public final class AbilityStringOuterClass {
 
     /**
      * <code>uint32 hash = 2;</code>
-     * @return Whether the hash field is set.
-     */
-    boolean hasHash();
-    /**
-     * <code>uint32 hash = 2;</code>
      * @return The hash.
      */
     int getHash();
@@ -49,6 +39,10 @@ public final class AbilityStringOuterClass {
     public emu.grasscutter.net.proto.AbilityStringOuterClass.AbilityString.TypeCase getTypeCase();
   }
   /**
+   * <pre>
+   * Name: ALGGELGLCLJ
+   * </pre>
+   *
    * Protobuf type {@code AbilityString}
    */
   public static final class AbilityString extends
@@ -180,13 +174,6 @@ public final class AbilityStringOuterClass {
     public static final int STR_FIELD_NUMBER = 1;
     /**
      * <code>string str = 1;</code>
-     * @return Whether the str field is set.
-     */
-    public boolean hasStr() {
-      return typeCase_ == 1;
-    }
-    /**
-     * <code>string str = 1;</code>
      * @return The str.
      */
     public java.lang.String getStr() {
@@ -230,14 +217,6 @@ public final class AbilityStringOuterClass {
     }
 
     public static final int HASH_FIELD_NUMBER = 2;
-    /**
-     * <code>uint32 hash = 2;</code>
-     * @return Whether the hash field is set.
-     */
-    @java.lang.Override
-    public boolean hasHash() {
-      return typeCase_ == 2;
-    }
     /**
      * <code>uint32 hash = 2;</code>
      * @return The hash.
@@ -435,6 +414,10 @@ public final class AbilityStringOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: ALGGELGLCLJ
+     * </pre>
+     *
      * Protobuf type {@code AbilityString}
      */
     public static final class Builder extends
@@ -616,14 +599,6 @@ public final class AbilityStringOuterClass {
 
       /**
        * <code>string str = 1;</code>
-       * @return Whether the str field is set.
-       */
-      @java.lang.Override
-      public boolean hasStr() {
-        return typeCase_ == 1;
-      }
-      /**
-       * <code>string str = 1;</code>
        * @return The str.
        */
       @java.lang.Override
@@ -711,13 +686,6 @@ public final class AbilityStringOuterClass {
         return this;
       }
 
-      /**
-       * <code>uint32 hash = 2;</code>
-       * @return Whether the hash field is set.
-       */
-      public boolean hasHash() {
-        return typeCase_ == 2;
-      }
       /**
        * <code>uint32 hash = 2;</code>
        * @return The hash.

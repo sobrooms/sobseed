@@ -67,6 +67,10 @@ public final class RegionSimpleInfoOuterClass {
         getDispatchUrlBytes();
   }
   /**
+   * <pre>
+   * Name: LLDIKKJHCCB
+   * </pre>
+   *
    * Protobuf type {@code RegionSimpleInfo}
    */
   public static final class RegionSimpleInfo extends
@@ -337,16 +341,16 @@ public final class RegionSimpleInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+      if (!getTitleBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, title_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
+      if (!getTypeBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, type_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dispatchUrl_)) {
+      if (!getDispatchUrlBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, dispatchUrl_);
       }
       unknownFields.writeTo(output);
@@ -358,16 +362,16 @@ public final class RegionSimpleInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+      if (!getTitleBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, title_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
+      if (!getTypeBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, type_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(dispatchUrl_)) {
+      if (!getDispatchUrlBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, dispatchUrl_);
       }
       size += unknownFields.getSerializedSize();
@@ -508,6 +512,10 @@ public final class RegionSimpleInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: LLDIKKJHCCB
+     * </pre>
+     *
      * Protobuf type {@code RegionSimpleInfo}
      */
     public static final class Builder extends

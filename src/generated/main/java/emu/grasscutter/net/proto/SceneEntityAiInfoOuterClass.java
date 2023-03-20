@@ -163,6 +163,10 @@ public final class SceneEntityAiInfoOuterClass {
     int getCurTactic();
   }
   /**
+   * <pre>
+   * Name: NELPLEPDNED
+   * </pre>
+   *
    * Protobuf type {@code SceneEntityAiInfo}
    */
   public static final class SceneEntityAiInfo extends
@@ -914,6 +918,10 @@ public final class SceneEntityAiInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: NELPLEPDNED
+     * </pre>
+     *
      * Protobuf type {@code SceneEntityAiInfo}
      */
     public static final class Builder extends

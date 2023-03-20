@@ -60,6 +60,10 @@ public final class ReliquaryOuterClass {
     int getAppendPropIdList(int index);
   }
   /**
+   * <pre>
+   * Name: HNBHEIDALPL
+   * </pre>
+   *
    * Protobuf type {@code Reliquary}
    */
   public static final class Reliquary extends
@@ -471,6 +475,10 @@ public final class ReliquaryOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HNBHEIDALPL
+     * </pre>
+     *
      * Protobuf type {@code Reliquary}
      */
     public static final class Builder extends

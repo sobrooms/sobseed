@@ -294,6 +294,10 @@ public final class BreakoutSnapShotOuterClass {
     int getRawClientGameTime();
   }
   /**
+   * <pre>
+   * Name: HNPNHGMKOGO
+   * </pre>
+   *
    * Protobuf type {@code BreakoutSnapShot}
    */
   public static final class BreakoutSnapShot extends
@@ -1425,6 +1429,10 @@ public final class BreakoutSnapShotOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HNPNHGMKOGO
+     * </pre>
+     *
      * Protobuf type {@code BreakoutSnapShot}
      */
     public static final class Builder extends

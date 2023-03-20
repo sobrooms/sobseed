@@ -54,13 +54,8 @@ public final class GroupSuiteNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 3489;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: AHFIMIOOLNJ
+   * CmdId: 3263
    * </pre>
    *
    * Protobuf type {@code GroupSuiteNotify}
@@ -414,13 +409,8 @@ public final class GroupSuiteNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 3489;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: AHFIMIOOLNJ
+     * CmdId: 3263
      * </pre>
      *
      * Protobuf type {@code GroupSuiteNotify}

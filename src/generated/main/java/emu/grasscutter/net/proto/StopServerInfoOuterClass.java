@@ -55,6 +55,10 @@ public final class StopServerInfoOuterClass {
         getContentMsgBytes();
   }
   /**
+   * <pre>
+   * Name: HJLECMBBPOF
+   * </pre>
+   *
    * Protobuf type {@code StopServerInfo}
    */
   public static final class StopServerInfo extends
@@ -273,10 +277,10 @@ public final class StopServerInfoOuterClass {
       if (stopEndTime_ != 0) {
         output.writeUInt32(2, stopEndTime_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
+      if (!getUrlBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, url_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(contentMsg_)) {
+      if (!getContentMsgBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 4, contentMsg_);
       }
       unknownFields.writeTo(output);
@@ -296,10 +300,10 @@ public final class StopServerInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, stopEndTime_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(url_)) {
+      if (!getUrlBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, url_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(contentMsg_)) {
+      if (!getContentMsgBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, contentMsg_);
       }
       size += unknownFields.getSerializedSize();
@@ -440,6 +444,10 @@ public final class StopServerInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HJLECMBBPOF
+     * </pre>
+     *
      * Protobuf type {@code StopServerInfo}
      */
     public static final class Builder extends

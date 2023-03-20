@@ -99,6 +99,10 @@ public final class BossChestInfoOuterClass {
         int key);
   }
   /**
+   * <pre>
+   * Name: CFMDIIMKKFP
+   * </pre>
+   *
    * Protobuf type {@code BossChestInfo}
    */
   public static final class BossChestInfo extends
@@ -664,6 +668,10 @@ public final class BossChestInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CFMDIIMKKFP
+     * </pre>
+     *
      * Protobuf type {@code BossChestInfo}
      */
     public static final class Builder extends

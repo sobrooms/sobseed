@@ -37,13 +37,8 @@ public final class ClosedItemNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 641;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: JMJFPPIJEGA
+   * CmdId: 689
    * </pre>
    *
    * Protobuf type {@code ClosedItemNotify}
@@ -350,13 +345,8 @@ public final class ClosedItemNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 641;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: JMJFPPIJEGA
+     * CmdId: 689
      * </pre>
      *
      * Protobuf type {@code ClosedItemNotify}

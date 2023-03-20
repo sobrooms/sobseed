@@ -15,149 +15,153 @@ public final class InteractTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Name: CHKGDGODKAA
+   * </pre>
+   *
    * Protobuf enum {@code InteractType}
    */
   public enum InteractType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>INTERACT_TYPE_NONE = 0;</code>
+     * <code>INTERACT_NONE = 0;</code>
      */
-    INTERACT_TYPE_NONE(0),
+    INTERACT_NONE(0),
     /**
-     * <code>INTERACT_TYPE_PICK_ITEM = 1;</code>
+     * <code>INTERACT_PICK_ITEM = 1;</code>
      */
-    INTERACT_TYPE_PICK_ITEM(1),
+    INTERACT_PICK_ITEM(1),
     /**
-     * <code>INTERACT_TYPE_GATHER = 2;</code>
+     * <code>INTERACT_GATHER = 2;</code>
      */
-    INTERACT_TYPE_GATHER(2),
+    INTERACT_GATHER(2),
     /**
-     * <code>INTERACT_TYPE_OPEN_CHEST = 3;</code>
+     * <code>INTERACT_OPEN_CHEST = 3;</code>
      */
-    INTERACT_TYPE_OPEN_CHEST(3),
+    INTERACT_OPEN_CHEST(3),
     /**
-     * <code>INTERACT_TYPE_OPEN_STATUE = 4;</code>
+     * <code>INTERACT_OPEN_STATUE = 4;</code>
      */
-    INTERACT_TYPE_OPEN_STATUE(4),
+    INTERACT_OPEN_STATUE(4),
     /**
-     * <code>INTERACT_TYPE_CONSUME = 5;</code>
+     * <code>INTERACT_CONSUM = 5;</code>
      */
-    INTERACT_TYPE_CONSUME(5),
+    INTERACT_CONSUM(5),
     /**
-     * <code>INTERACT_TYPE_MP_PLAY_REWARD = 6;</code>
+     * <code>INTERACT_MP_PLAY_REWARD = 6;</code>
      */
-    INTERACT_TYPE_MP_PLAY_REWARD(6),
+    INTERACT_MP_PLAY_REWARD(6),
     /**
-     * <code>INTERACT_TYPE_VIEW = 7;</code>
+     * <code>INTERACT_VIEW = 7;</code>
      */
-    INTERACT_TYPE_VIEW(7),
+    INTERACT_VIEW(7),
     /**
-     * <code>INTERACT_TYPE_GENERAL_REWARD = 8;</code>
+     * <code>INTERACT_GENERAL_REWARD = 8;</code>
      */
-    INTERACT_TYPE_GENERAL_REWARD(8),
+    INTERACT_GENERAL_REWARD(8),
     /**
-     * <code>INTERACT_TYPE_MIRACLE_RING = 9;</code>
+     * <code>INTERACT_MIRACLE_RING = 9;</code>
      */
-    INTERACT_TYPE_MIRACLE_RING(9),
+    INTERACT_MIRACLE_RING(9),
     /**
-     * <code>INTERACT_TYPE_FOUNDATION = 10;</code>
+     * <code>INTERACT_FOUNDATION = 10;</code>
      */
-    INTERACT_TYPE_FOUNDATION(10),
+    INTERACT_FOUNDATION(10),
     /**
-     * <code>INTERACT_TYPE_ECHO_SHELL = 11;</code>
+     * <code>INTERACT_ECHO_SHELL = 11;</code>
      */
-    INTERACT_TYPE_ECHO_SHELL(11),
+    INTERACT_ECHO_SHELL(11),
     /**
-     * <code>INTERACT_TYPE_HOME_GATHER = 12;</code>
+     * <code>INTERACT_HOME_GATHER = 12;</code>
      */
-    INTERACT_TYPE_HOME_GATHER(12),
+    INTERACT_HOME_GATHER(12),
     /**
-     * <code>INTERACT_TYPE_ENV_ANIMAL = 13;</code>
+     * <code>INTERACT_ENV_ANIMAL = 13;</code>
      */
-    INTERACT_TYPE_ENV_ANIMAL(13),
+    INTERACT_ENV_ANIMAL(13),
     /**
-     * <code>INTERACT_TYPE_QUEST_GADGET = 14;</code>
+     * <code>INTERACT_QUEST_GADGET = 14;</code>
      */
-    INTERACT_TYPE_QUEST_GADGET(14),
+    INTERACT_QUEST_GADGET(14),
     /**
-     * <code>INTERACT_TYPE_UI_INTERACT = 15;</code>
+     * <code>INTERACT_UI_INTERACT = 15;</code>
      */
-    INTERACT_TYPE_UI_INTERACT(15),
+    INTERACT_UI_INTERACT(15),
     /**
-     * <code>INTERACT_TYPE_DESHRET_OBELISK = 16;</code>
+     * <code>INTERACT_DESHRET_OBELISK = 16;</code>
      */
-    INTERACT_TYPE_DESHRET_OBELISK(16),
+    INTERACT_DESHRET_OBELISK(16),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>INTERACT_TYPE_NONE = 0;</code>
+     * <code>INTERACT_NONE = 0;</code>
      */
-    public static final int INTERACT_TYPE_NONE_VALUE = 0;
+    public static final int INTERACT_NONE_VALUE = 0;
     /**
-     * <code>INTERACT_TYPE_PICK_ITEM = 1;</code>
+     * <code>INTERACT_PICK_ITEM = 1;</code>
      */
-    public static final int INTERACT_TYPE_PICK_ITEM_VALUE = 1;
+    public static final int INTERACT_PICK_ITEM_VALUE = 1;
     /**
-     * <code>INTERACT_TYPE_GATHER = 2;</code>
+     * <code>INTERACT_GATHER = 2;</code>
      */
-    public static final int INTERACT_TYPE_GATHER_VALUE = 2;
+    public static final int INTERACT_GATHER_VALUE = 2;
     /**
-     * <code>INTERACT_TYPE_OPEN_CHEST = 3;</code>
+     * <code>INTERACT_OPEN_CHEST = 3;</code>
      */
-    public static final int INTERACT_TYPE_OPEN_CHEST_VALUE = 3;
+    public static final int INTERACT_OPEN_CHEST_VALUE = 3;
     /**
-     * <code>INTERACT_TYPE_OPEN_STATUE = 4;</code>
+     * <code>INTERACT_OPEN_STATUE = 4;</code>
      */
-    public static final int INTERACT_TYPE_OPEN_STATUE_VALUE = 4;
+    public static final int INTERACT_OPEN_STATUE_VALUE = 4;
     /**
-     * <code>INTERACT_TYPE_CONSUME = 5;</code>
+     * <code>INTERACT_CONSUM = 5;</code>
      */
-    public static final int INTERACT_TYPE_CONSUME_VALUE = 5;
+    public static final int INTERACT_CONSUM_VALUE = 5;
     /**
-     * <code>INTERACT_TYPE_MP_PLAY_REWARD = 6;</code>
+     * <code>INTERACT_MP_PLAY_REWARD = 6;</code>
      */
-    public static final int INTERACT_TYPE_MP_PLAY_REWARD_VALUE = 6;
+    public static final int INTERACT_MP_PLAY_REWARD_VALUE = 6;
     /**
-     * <code>INTERACT_TYPE_VIEW = 7;</code>
+     * <code>INTERACT_VIEW = 7;</code>
      */
-    public static final int INTERACT_TYPE_VIEW_VALUE = 7;
+    public static final int INTERACT_VIEW_VALUE = 7;
     /**
-     * <code>INTERACT_TYPE_GENERAL_REWARD = 8;</code>
+     * <code>INTERACT_GENERAL_REWARD = 8;</code>
      */
-    public static final int INTERACT_TYPE_GENERAL_REWARD_VALUE = 8;
+    public static final int INTERACT_GENERAL_REWARD_VALUE = 8;
     /**
-     * <code>INTERACT_TYPE_MIRACLE_RING = 9;</code>
+     * <code>INTERACT_MIRACLE_RING = 9;</code>
      */
-    public static final int INTERACT_TYPE_MIRACLE_RING_VALUE = 9;
+    public static final int INTERACT_MIRACLE_RING_VALUE = 9;
     /**
-     * <code>INTERACT_TYPE_FOUNDATION = 10;</code>
+     * <code>INTERACT_FOUNDATION = 10;</code>
      */
-    public static final int INTERACT_TYPE_FOUNDATION_VALUE = 10;
+    public static final int INTERACT_FOUNDATION_VALUE = 10;
     /**
-     * <code>INTERACT_TYPE_ECHO_SHELL = 11;</code>
+     * <code>INTERACT_ECHO_SHELL = 11;</code>
      */
-    public static final int INTERACT_TYPE_ECHO_SHELL_VALUE = 11;
+    public static final int INTERACT_ECHO_SHELL_VALUE = 11;
     /**
-     * <code>INTERACT_TYPE_HOME_GATHER = 12;</code>
+     * <code>INTERACT_HOME_GATHER = 12;</code>
      */
-    public static final int INTERACT_TYPE_HOME_GATHER_VALUE = 12;
+    public static final int INTERACT_HOME_GATHER_VALUE = 12;
     /**
-     * <code>INTERACT_TYPE_ENV_ANIMAL = 13;</code>
+     * <code>INTERACT_ENV_ANIMAL = 13;</code>
      */
-    public static final int INTERACT_TYPE_ENV_ANIMAL_VALUE = 13;
+    public static final int INTERACT_ENV_ANIMAL_VALUE = 13;
     /**
-     * <code>INTERACT_TYPE_QUEST_GADGET = 14;</code>
+     * <code>INTERACT_QUEST_GADGET = 14;</code>
      */
-    public static final int INTERACT_TYPE_QUEST_GADGET_VALUE = 14;
+    public static final int INTERACT_QUEST_GADGET_VALUE = 14;
     /**
-     * <code>INTERACT_TYPE_UI_INTERACT = 15;</code>
+     * <code>INTERACT_UI_INTERACT = 15;</code>
      */
-    public static final int INTERACT_TYPE_UI_INTERACT_VALUE = 15;
+    public static final int INTERACT_UI_INTERACT_VALUE = 15;
     /**
-     * <code>INTERACT_TYPE_DESHRET_OBELISK = 16;</code>
+     * <code>INTERACT_DESHRET_OBELISK = 16;</code>
      */
-    public static final int INTERACT_TYPE_DESHRET_OBELISK_VALUE = 16;
+    public static final int INTERACT_DESHRET_OBELISK_VALUE = 16;
 
 
     public final int getNumber() {
@@ -184,23 +188,23 @@ public final class InteractTypeOuterClass {
      */
     public static InteractType forNumber(int value) {
       switch (value) {
-        case 0: return INTERACT_TYPE_NONE;
-        case 1: return INTERACT_TYPE_PICK_ITEM;
-        case 2: return INTERACT_TYPE_GATHER;
-        case 3: return INTERACT_TYPE_OPEN_CHEST;
-        case 4: return INTERACT_TYPE_OPEN_STATUE;
-        case 5: return INTERACT_TYPE_CONSUME;
-        case 6: return INTERACT_TYPE_MP_PLAY_REWARD;
-        case 7: return INTERACT_TYPE_VIEW;
-        case 8: return INTERACT_TYPE_GENERAL_REWARD;
-        case 9: return INTERACT_TYPE_MIRACLE_RING;
-        case 10: return INTERACT_TYPE_FOUNDATION;
-        case 11: return INTERACT_TYPE_ECHO_SHELL;
-        case 12: return INTERACT_TYPE_HOME_GATHER;
-        case 13: return INTERACT_TYPE_ENV_ANIMAL;
-        case 14: return INTERACT_TYPE_QUEST_GADGET;
-        case 15: return INTERACT_TYPE_UI_INTERACT;
-        case 16: return INTERACT_TYPE_DESHRET_OBELISK;
+        case 0: return INTERACT_NONE;
+        case 1: return INTERACT_PICK_ITEM;
+        case 2: return INTERACT_GATHER;
+        case 3: return INTERACT_OPEN_CHEST;
+        case 4: return INTERACT_OPEN_STATUE;
+        case 5: return INTERACT_CONSUM;
+        case 6: return INTERACT_MP_PLAY_REWARD;
+        case 7: return INTERACT_VIEW;
+        case 8: return INTERACT_GENERAL_REWARD;
+        case 9: return INTERACT_MIRACLE_RING;
+        case 10: return INTERACT_FOUNDATION;
+        case 11: return INTERACT_ECHO_SHELL;
+        case 12: return INTERACT_HOME_GATHER;
+        case 13: return INTERACT_ENV_ANIMAL;
+        case 14: return INTERACT_QUEST_GADGET;
+        case 15: return INTERACT_UI_INTERACT;
+        case 16: return INTERACT_DESHRET_OBELISK;
         default: return null;
       }
     }
@@ -266,21 +270,19 @@ public final class InteractTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\022InteractType.proto*\214\004\n\014InteractType\022\026\n" +
-      "\022INTERACT_TYPE_NONE\020\000\022\033\n\027INTERACT_TYPE_P" +
-      "ICK_ITEM\020\001\022\030\n\024INTERACT_TYPE_GATHER\020\002\022\034\n\030" +
-      "INTERACT_TYPE_OPEN_CHEST\020\003\022\035\n\031INTERACT_T" +
-      "YPE_OPEN_STATUE\020\004\022\031\n\025INTERACT_TYPE_CONSU" +
-      "ME\020\005\022 \n\034INTERACT_TYPE_MP_PLAY_REWARD\020\006\022\026" +
-      "\n\022INTERACT_TYPE_VIEW\020\007\022 \n\034INTERACT_TYPE_" +
-      "GENERAL_REWARD\020\010\022\036\n\032INTERACT_TYPE_MIRACL" +
-      "E_RING\020\t\022\034\n\030INTERACT_TYPE_FOUNDATION\020\n\022\034" +
-      "\n\030INTERACT_TYPE_ECHO_SHELL\020\013\022\035\n\031INTERACT" +
-      "_TYPE_HOME_GATHER\020\014\022\034\n\030INTERACT_TYPE_ENV" +
-      "_ANIMAL\020\r\022\036\n\032INTERACT_TYPE_QUEST_GADGET\020" +
-      "\016\022\035\n\031INTERACT_TYPE_UI_INTERACT\020\017\022!\n\035INTE" +
-      "RACT_TYPE_DESHRET_OBELISK\020\020B\033\n\031emu.grass" +
-      "cutter.net.protob\006proto3"
+      "\n\022InteractType.proto*\266\003\n\014InteractType\022\021\n" +
+      "\rINTERACT_NONE\020\000\022\026\n\022INTERACT_PICK_ITEM\020\001" +
+      "\022\023\n\017INTERACT_GATHER\020\002\022\027\n\023INTERACT_OPEN_C" +
+      "HEST\020\003\022\030\n\024INTERACT_OPEN_STATUE\020\004\022\023\n\017INTE" +
+      "RACT_CONSUM\020\005\022\033\n\027INTERACT_MP_PLAY_REWARD" +
+      "\020\006\022\021\n\rINTERACT_VIEW\020\007\022\033\n\027INTERACT_GENERA" +
+      "L_REWARD\020\010\022\031\n\025INTERACT_MIRACLE_RING\020\t\022\027\n" +
+      "\023INTERACT_FOUNDATION\020\n\022\027\n\023INTERACT_ECHO_" +
+      "SHELL\020\013\022\030\n\024INTERACT_HOME_GATHER\020\014\022\027\n\023INT" +
+      "ERACT_ENV_ANIMAL\020\r\022\031\n\025INTERACT_QUEST_GAD" +
+      "GET\020\016\022\030\n\024INTERACT_UI_INTERACT\020\017\022\034\n\030INTER" +
+      "ACT_DESHRET_OBELISK\020\020B\033\n\031emu.grasscutter" +
+      ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

@@ -47,20 +47,10 @@ public final class RoutePointOuterClass {
 
     /**
      * <code>float velocity = 11;</code>
-     * @return Whether the velocity field is set.
-     */
-    boolean hasVelocity();
-    /**
-     * <code>float velocity = 11;</code>
      * @return The velocity.
      */
     float getVelocity();
 
-    /**
-     * <code>float time = 12;</code>
-     * @return Whether the time field is set.
-     */
-    boolean hasTime();
     /**
      * <code>float time = 12;</code>
      * @return The time.
@@ -117,6 +107,10 @@ public final class RoutePointOuterClass {
     public emu.grasscutter.net.proto.RoutePointOuterClass.RoutePoint.RotateParamsCase getRotateParamsCase();
   }
   /**
+   * <pre>
+   * Name: BFLAAJGIKBG
+   * </pre>
+   *
    * Protobuf type {@code RoutePoint}
    */
   public static final class RoutePoint extends
@@ -403,14 +397,6 @@ public final class RoutePointOuterClass {
     public static final int VELOCITY_FIELD_NUMBER = 11;
     /**
      * <code>float velocity = 11;</code>
-     * @return Whether the velocity field is set.
-     */
-    @java.lang.Override
-    public boolean hasVelocity() {
-      return moveParamsCase_ == 11;
-    }
-    /**
-     * <code>float velocity = 11;</code>
      * @return The velocity.
      */
     @java.lang.Override
@@ -422,14 +408,6 @@ public final class RoutePointOuterClass {
     }
 
     public static final int TIME_FIELD_NUMBER = 12;
-    /**
-     * <code>float time = 12;</code>
-     * @return Whether the time field is set.
-     */
-    @java.lang.Override
-    public boolean hasTime() {
-      return moveParamsCase_ == 12;
-    }
     /**
      * <code>float time = 12;</code>
      * @return The time.
@@ -822,6 +800,10 @@ public final class RoutePointOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BFLAAJGIKBG
+     * </pre>
+     *
      * Protobuf type {@code RoutePoint}
      */
     public static final class Builder extends
@@ -1264,13 +1246,6 @@ public final class RoutePointOuterClass {
 
       /**
        * <code>float velocity = 11;</code>
-       * @return Whether the velocity field is set.
-       */
-      public boolean hasVelocity() {
-        return moveParamsCase_ == 11;
-      }
-      /**
-       * <code>float velocity = 11;</code>
        * @return The velocity.
        */
       public float getVelocity() {
@@ -1303,13 +1278,6 @@ public final class RoutePointOuterClass {
         return this;
       }
 
-      /**
-       * <code>float time = 12;</code>
-       * @return Whether the time field is set.
-       */
-      public boolean hasTime() {
-        return moveParamsCase_ == 12;
-      }
       /**
        * <code>float time = 12;</code>
        * @return The time.

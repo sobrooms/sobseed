@@ -42,6 +42,10 @@ public final class WorktopInfoOuterClass {
     boolean getIsGuestCanOperate();
   }
   /**
+   * <pre>
+   * Name: OKMBKEFJCCF
+   * </pre>
+   *
    * Protobuf type {@code WorktopInfo}
    */
   public static final class WorktopInfo extends
@@ -373,6 +377,10 @@ public final class WorktopInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OKMBKEFJCCF
+     * </pre>
+     *
      * Protobuf type {@code WorktopInfo}
      */
     public static final class Builder extends

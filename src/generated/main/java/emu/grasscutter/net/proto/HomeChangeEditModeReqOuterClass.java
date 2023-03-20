@@ -26,14 +26,8 @@ public final class HomeChangeEditModeReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4719;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: IGOBNECJKBF
+   * CmdId: 4533
    * </pre>
    *
    * Protobuf type {@code HomeChangeEditModeReq}
@@ -286,14 +280,8 @@ public final class HomeChangeEditModeReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4719;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: IGOBNECJKBF
+     * CmdId: 4533
      * </pre>
      *
      * Protobuf type {@code HomeChangeEditModeReq}

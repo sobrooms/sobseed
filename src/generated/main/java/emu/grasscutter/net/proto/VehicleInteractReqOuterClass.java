@@ -19,38 +19,32 @@ public final class VehicleInteractReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.VehicleInteractType interact_type = 3;</code>
-     * @return The enum numeric value on the wire for interactType.
-     */
-    int getInteractTypeValue();
-    /**
-     * <code>.VehicleInteractType interact_type = 3;</code>
-     * @return The interactType.
-     */
-    emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType getInteractType();
-
-    /**
-     * <code>uint32 entity_id = 11;</code>
+     * <code>uint32 entity_id = 8;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 pos = 4;</code>
+     * <code>.VehicleInteractType interact_type = 9;</code>
+     * @return The enum numeric value on the wire for interactType.
+     */
+    int getInteractTypeValue();
+    /**
+     * <code>.VehicleInteractType interact_type = 9;</code>
+     * @return The interactType.
+     */
+    emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType getInteractType();
+
+    /**
+     * <code>uint32 pos = 6;</code>
      * @return The pos.
      */
     int getPos();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 889;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: DPOAMNMLJFP
+   * CmdId: 844
    * </pre>
    *
    * Protobuf type {@code VehicleInteractReq}
@@ -98,20 +92,20 @@ public final class VehicleInteractReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-              int rawValue = input.readEnum();
-
-              interactType_ = rawValue;
-              break;
-            }
-            case 32: {
+            case 48: {
 
               pos_ = input.readUInt32();
               break;
             }
-            case 88: {
+            case 64: {
 
               entityId_ = input.readUInt32();
+              break;
+            }
+            case 72: {
+              int rawValue = input.readEnum();
+
+              interactType_ = rawValue;
               break;
             }
             default: {
@@ -146,17 +140,28 @@ public final class VehicleInteractReqOuterClass {
               emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq.class, emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq.Builder.class);
     }
 
-    public static final int INTERACT_TYPE_FIELD_NUMBER = 3;
+    public static final int ENTITY_ID_FIELD_NUMBER = 8;
+    private int entityId_;
+    /**
+     * <code>uint32 entity_id = 8;</code>
+     * @return The entityId.
+     */
+    @java.lang.Override
+    public int getEntityId() {
+      return entityId_;
+    }
+
+    public static final int INTERACT_TYPE_FIELD_NUMBER = 9;
     private int interactType_;
     /**
-     * <code>.VehicleInteractType interact_type = 3;</code>
+     * <code>.VehicleInteractType interact_type = 9;</code>
      * @return The enum numeric value on the wire for interactType.
      */
     @java.lang.Override public int getInteractTypeValue() {
       return interactType_;
     }
     /**
-     * <code>.VehicleInteractType interact_type = 3;</code>
+     * <code>.VehicleInteractType interact_type = 9;</code>
      * @return The interactType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType getInteractType() {
@@ -165,21 +170,10 @@ public final class VehicleInteractReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.UNRECOGNIZED : result;
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 11;
-    private int entityId_;
-    /**
-     * <code>uint32 entity_id = 11;</code>
-     * @return The entityId.
-     */
-    @java.lang.Override
-    public int getEntityId() {
-      return entityId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 4;
+    public static final int POS_FIELD_NUMBER = 6;
     private int pos_;
     /**
-     * <code>uint32 pos = 4;</code>
+     * <code>uint32 pos = 6;</code>
      * @return The pos.
      */
     @java.lang.Override
@@ -201,14 +195,14 @@ public final class VehicleInteractReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
-        output.writeEnum(3, interactType_);
-      }
       if (pos_ != 0) {
-        output.writeUInt32(4, pos_);
+        output.writeUInt32(6, pos_);
       }
       if (entityId_ != 0) {
-        output.writeUInt32(11, entityId_);
+        output.writeUInt32(8, entityId_);
+      }
+      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_NONE.getNumber()) {
+        output.writeEnum(9, interactType_);
       }
       unknownFields.writeTo(output);
     }
@@ -219,17 +213,17 @@ public final class VehicleInteractReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(3, interactType_);
-      }
       if (pos_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, pos_);
+          .computeUInt32Size(6, pos_);
       }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, entityId_);
+          .computeUInt32Size(8, entityId_);
+      }
+      if (interactType_ != emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.VEHICLE_INTERACT_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(9, interactType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -246,9 +240,9 @@ public final class VehicleInteractReqOuterClass {
       }
       emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq other = (emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq) obj;
 
-      if (interactType_ != other.interactType_) return false;
       if (getEntityId()
           != other.getEntityId()) return false;
+      if (interactType_ != other.interactType_) return false;
       if (getPos()
           != other.getPos()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -262,10 +256,10 @@ public final class VehicleInteractReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + INTERACT_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + interactType_;
       hash = (37 * hash) + ENTITY_ID_FIELD_NUMBER;
       hash = (53 * hash) + getEntityId();
+      hash = (37 * hash) + INTERACT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + interactType_;
       hash = (37 * hash) + POS_FIELD_NUMBER;
       hash = (53 * hash) + getPos();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -365,14 +359,8 @@ public final class VehicleInteractReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 889;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: DPOAMNMLJFP
+     * CmdId: 844
      * </pre>
      *
      * Protobuf type {@code VehicleInteractReq}
@@ -412,9 +400,9 @@ public final class VehicleInteractReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        interactType_ = 0;
-
         entityId_ = 0;
+
+        interactType_ = 0;
 
         pos_ = 0;
 
@@ -444,8 +432,8 @@ public final class VehicleInteractReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq buildPartial() {
         emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq result = new emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq(this);
-        result.interactType_ = interactType_;
         result.entityId_ = entityId_;
+        result.interactType_ = interactType_;
         result.pos_ = pos_;
         onBuilt();
         return result;
@@ -495,11 +483,11 @@ public final class VehicleInteractReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq other) {
         if (other == emu.grasscutter.net.proto.VehicleInteractReqOuterClass.VehicleInteractReq.getDefaultInstance()) return this;
-        if (other.interactType_ != 0) {
-          setInteractTypeValue(other.getInteractTypeValue());
-        }
         if (other.getEntityId() != 0) {
           setEntityId(other.getEntityId());
+        }
+        if (other.interactType_ != 0) {
+          setInteractTypeValue(other.getInteractTypeValue());
         }
         if (other.getPos() != 0) {
           setPos(other.getPos());
@@ -533,16 +521,47 @@ public final class VehicleInteractReqOuterClass {
         return this;
       }
 
+      private int entityId_ ;
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @return The entityId.
+       */
+      @java.lang.Override
+      public int getEntityId() {
+        return entityId_;
+      }
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @param value The entityId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEntityId(int value) {
+        
+        entityId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 entity_id = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEntityId() {
+        
+        entityId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int interactType_ = 0;
       /**
-       * <code>.VehicleInteractType interact_type = 3;</code>
+       * <code>.VehicleInteractType interact_type = 9;</code>
        * @return The enum numeric value on the wire for interactType.
        */
       @java.lang.Override public int getInteractTypeValue() {
         return interactType_;
       }
       /**
-       * <code>.VehicleInteractType interact_type = 3;</code>
+       * <code>.VehicleInteractType interact_type = 9;</code>
        * @param value The enum numeric value on the wire for interactType to set.
        * @return This builder for chaining.
        */
@@ -553,7 +572,7 @@ public final class VehicleInteractReqOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleInteractType interact_type = 3;</code>
+       * <code>.VehicleInteractType interact_type = 9;</code>
        * @return The interactType.
        */
       @java.lang.Override
@@ -563,7 +582,7 @@ public final class VehicleInteractReqOuterClass {
         return result == null ? emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.VehicleInteractType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.VehicleInteractType interact_type = 3;</code>
+       * <code>.VehicleInteractType interact_type = 9;</code>
        * @param value The interactType to set.
        * @return This builder for chaining.
        */
@@ -577,7 +596,7 @@ public final class VehicleInteractReqOuterClass {
         return this;
       }
       /**
-       * <code>.VehicleInteractType interact_type = 3;</code>
+       * <code>.VehicleInteractType interact_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearInteractType() {
@@ -587,40 +606,9 @@ public final class VehicleInteractReqOuterClass {
         return this;
       }
 
-      private int entityId_ ;
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @return The entityId.
-       */
-      @java.lang.Override
-      public int getEntityId() {
-        return entityId_;
-      }
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @param value The entityId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEntityId(int value) {
-        
-        entityId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 entity_id = 11;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEntityId() {
-        
-        entityId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int pos_ ;
       /**
-       * <code>uint32 pos = 4;</code>
+       * <code>uint32 pos = 6;</code>
        * @return The pos.
        */
       @java.lang.Override
@@ -628,7 +616,7 @@ public final class VehicleInteractReqOuterClass {
         return pos_;
       }
       /**
-       * <code>uint32 pos = 4;</code>
+       * <code>uint32 pos = 6;</code>
        * @param value The pos to set.
        * @return This builder for chaining.
        */
@@ -639,7 +627,7 @@ public final class VehicleInteractReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 pos = 4;</code>
+       * <code>uint32 pos = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearPos() {
@@ -716,9 +704,9 @@ public final class VehicleInteractReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030VehicleInteractReq.proto\032\031VehicleInter" +
-      "actType.proto\"a\n\022VehicleInteractReq\022+\n\ri" +
-      "nteract_type\030\003 \001(\0162\024.VehicleInteractType" +
-      "\022\021\n\tentity_id\030\013 \001(\r\022\013\n\003pos\030\004 \001(\rB\033\n\031emu." +
+      "actType.proto\"a\n\022VehicleInteractReq\022\021\n\te" +
+      "ntity_id\030\010 \001(\r\022+\n\rinteract_type\030\t \001(\0162\024." +
+      "VehicleInteractType\022\013\n\003pos\030\006 \001(\rB\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -731,7 +719,7 @@ public final class VehicleInteractReqOuterClass {
     internal_static_VehicleInteractReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_VehicleInteractReq_descriptor,
-        new java.lang.String[] { "InteractType", "EntityId", "Pos", });
+        new java.lang.String[] { "EntityId", "InteractType", "Pos", });
     emu.grasscutter.net.proto.VehicleInteractTypeOuterClass.getDescriptor();
   }
 

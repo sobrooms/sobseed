@@ -19,18 +19,22 @@ public final class InstableSprayAvatarInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 avatar_id = 10;</code>
-     * @return The avatarId.
-     */
-    long getAvatarId();
-
-    /**
-     * <code>bool is_trial = 12;</code>
+     * <code>bool is_trial = 1;</code>
      * @return The isTrial.
      */
     boolean getIsTrial();
+
+    /**
+     * <code>uint64 avatar_id = 5;</code>
+     * @return The avatarId.
+     */
+    long getAvatarId();
   }
   /**
+   * <pre>
+   * Name: HHNOKNHCINE
+   * </pre>
+   *
    * Protobuf type {@code InstableSprayAvatarInfo}
    */
   public static final class InstableSprayAvatarInfo extends
@@ -75,14 +79,14 @@ public final class InstableSprayAvatarInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 80: {
-
-              avatarId_ = input.readUInt64();
-              break;
-            }
-            case 96: {
+            case 8: {
 
               isTrial_ = input.readBool();
+              break;
+            }
+            case 40: {
+
+              avatarId_ = input.readUInt64();
               break;
             }
             default: {
@@ -117,26 +121,26 @@ public final class InstableSprayAvatarInfoOuterClass {
               emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.class, emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.Builder.class);
     }
 
-    public static final int AVATAR_ID_FIELD_NUMBER = 10;
-    private long avatarId_;
-    /**
-     * <code>uint64 avatar_id = 10;</code>
-     * @return The avatarId.
-     */
-    @java.lang.Override
-    public long getAvatarId() {
-      return avatarId_;
-    }
-
-    public static final int IS_TRIAL_FIELD_NUMBER = 12;
+    public static final int IS_TRIAL_FIELD_NUMBER = 1;
     private boolean isTrial_;
     /**
-     * <code>bool is_trial = 12;</code>
+     * <code>bool is_trial = 1;</code>
      * @return The isTrial.
      */
     @java.lang.Override
     public boolean getIsTrial() {
       return isTrial_;
+    }
+
+    public static final int AVATAR_ID_FIELD_NUMBER = 5;
+    private long avatarId_;
+    /**
+     * <code>uint64 avatar_id = 5;</code>
+     * @return The avatarId.
+     */
+    @java.lang.Override
+    public long getAvatarId() {
+      return avatarId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -153,11 +157,11 @@ public final class InstableSprayAvatarInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (avatarId_ != 0L) {
-        output.writeUInt64(10, avatarId_);
-      }
       if (isTrial_ != false) {
-        output.writeBool(12, isTrial_);
+        output.writeBool(1, isTrial_);
+      }
+      if (avatarId_ != 0L) {
+        output.writeUInt64(5, avatarId_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class InstableSprayAvatarInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (avatarId_ != 0L) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, avatarId_);
-      }
       if (isTrial_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(12, isTrial_);
+          .computeBoolSize(1, isTrial_);
+      }
+      if (avatarId_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt64Size(5, avatarId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -191,10 +195,10 @@ public final class InstableSprayAvatarInfoOuterClass {
       }
       emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo other = (emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo) obj;
 
-      if (getAvatarId()
-          != other.getAvatarId()) return false;
       if (getIsTrial()
           != other.getIsTrial()) return false;
+      if (getAvatarId()
+          != other.getAvatarId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -206,12 +210,12 @@ public final class InstableSprayAvatarInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getAvatarId());
       hash = (37 * hash) + IS_TRIAL_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTrial());
+      hash = (37 * hash) + AVATAR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getAvatarId());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -308,6 +312,10 @@ public final class InstableSprayAvatarInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HHNOKNHCINE
+     * </pre>
+     *
      * Protobuf type {@code InstableSprayAvatarInfo}
      */
     public static final class Builder extends
@@ -345,9 +353,9 @@ public final class InstableSprayAvatarInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        avatarId_ = 0L;
-
         isTrial_ = false;
+
+        avatarId_ = 0L;
 
         return this;
       }
@@ -375,8 +383,8 @@ public final class InstableSprayAvatarInfoOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo buildPartial() {
         emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo result = new emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo(this);
-        result.avatarId_ = avatarId_;
         result.isTrial_ = isTrial_;
+        result.avatarId_ = avatarId_;
         onBuilt();
         return result;
       }
@@ -425,11 +433,11 @@ public final class InstableSprayAvatarInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo other) {
         if (other == emu.grasscutter.net.proto.InstableSprayAvatarInfoOuterClass.InstableSprayAvatarInfo.getDefaultInstance()) return this;
-        if (other.getAvatarId() != 0L) {
-          setAvatarId(other.getAvatarId());
-        }
         if (other.getIsTrial() != false) {
           setIsTrial(other.getIsTrial());
+        }
+        if (other.getAvatarId() != 0L) {
+          setAvatarId(other.getAvatarId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -460,40 +468,9 @@ public final class InstableSprayAvatarInfoOuterClass {
         return this;
       }
 
-      private long avatarId_ ;
-      /**
-       * <code>uint64 avatar_id = 10;</code>
-       * @return The avatarId.
-       */
-      @java.lang.Override
-      public long getAvatarId() {
-        return avatarId_;
-      }
-      /**
-       * <code>uint64 avatar_id = 10;</code>
-       * @param value The avatarId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setAvatarId(long value) {
-        
-        avatarId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint64 avatar_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearAvatarId() {
-        
-        avatarId_ = 0L;
-        onChanged();
-        return this;
-      }
-
       private boolean isTrial_ ;
       /**
-       * <code>bool is_trial = 12;</code>
+       * <code>bool is_trial = 1;</code>
        * @return The isTrial.
        */
       @java.lang.Override
@@ -501,7 +478,7 @@ public final class InstableSprayAvatarInfoOuterClass {
         return isTrial_;
       }
       /**
-       * <code>bool is_trial = 12;</code>
+       * <code>bool is_trial = 1;</code>
        * @param value The isTrial to set.
        * @return This builder for chaining.
        */
@@ -512,12 +489,43 @@ public final class InstableSprayAvatarInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_trial = 12;</code>
+       * <code>bool is_trial = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTrial() {
         
         isTrial_ = false;
+        onChanged();
+        return this;
+      }
+
+      private long avatarId_ ;
+      /**
+       * <code>uint64 avatar_id = 5;</code>
+       * @return The avatarId.
+       */
+      @java.lang.Override
+      public long getAvatarId() {
+        return avatarId_;
+      }
+      /**
+       * <code>uint64 avatar_id = 5;</code>
+       * @param value The avatarId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setAvatarId(long value) {
+        
+        avatarId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint64 avatar_id = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearAvatarId() {
+        
+        avatarId_ = 0L;
         onChanged();
         return this;
       }
@@ -589,8 +597,8 @@ public final class InstableSprayAvatarInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\035InstableSprayAvatarInfo.proto\">\n\027Insta" +
-      "bleSprayAvatarInfo\022\021\n\tavatar_id\030\n \001(\004\022\020\n" +
-      "\010is_trial\030\014 \001(\010B\033\n\031emu.grasscutter.net.p" +
+      "bleSprayAvatarInfo\022\020\n\010is_trial\030\001 \001(\010\022\021\n\t" +
+      "avatar_id\030\005 \001(\004B\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -602,7 +610,7 @@ public final class InstableSprayAvatarInfoOuterClass {
     internal_static_InstableSprayAvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_InstableSprayAvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "IsTrial", });
+        new java.lang.String[] { "IsTrial", "AvatarId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

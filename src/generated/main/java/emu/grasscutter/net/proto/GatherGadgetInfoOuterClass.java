@@ -31,6 +31,10 @@ public final class GatherGadgetInfoOuterClass {
     boolean getIsForbidGuest();
   }
   /**
+   * <pre>
+   * Name: AOPHOBIKEHK
+   * </pre>
+   *
    * Protobuf type {@code GatherGadgetInfo}
    */
   public static final class GatherGadgetInfo extends
@@ -307,6 +311,10 @@ public final class GatherGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: AOPHOBIKEHK
+     * </pre>
+     *
      * Protobuf type {@code GatherGadgetInfo}
      */
     public static final class Builder extends

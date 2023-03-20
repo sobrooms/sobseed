@@ -31,6 +31,10 @@ public final class ScreenInfoOuterClass {
     int getProjectorEntityId();
   }
   /**
+   * <pre>
+   * Name: HLJEHBEBFMD
+   * </pre>
+   *
    * Protobuf type {@code ScreenInfo}
    */
   public static final class ScreenInfo extends
@@ -306,6 +310,10 @@ public final class ScreenInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HLJEHBEBFMD
+     * </pre>
+     *
      * Protobuf type {@code ScreenInfo}
      */
     public static final class Builder extends

@@ -19,23 +19,27 @@ public final class FireworksLaunchParamOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.FireworksLaunchParamType type = 4;</code>
+     * <code>int32 value = 6;</code>
+     * @return The value.
+     */
+    int getValue();
+
+    /**
+     * <code>.FireworksLaunchParamType type = 5;</code>
      * @return The enum numeric value on the wire for type.
      */
     int getTypeValue();
     /**
-     * <code>.FireworksLaunchParamType type = 4;</code>
+     * <code>.FireworksLaunchParamType type = 5;</code>
      * @return The type.
      */
     emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType getType();
-
-    /**
-     * <code>int32 value = 2;</code>
-     * @return The value.
-     */
-    int getValue();
   }
   /**
+   * <pre>
+   * Name: AJEMFEKHOPK
+   * </pre>
+   *
    * Protobuf type {@code FireworksLaunchParam}
    */
   public static final class FireworksLaunchParam extends
@@ -81,15 +85,15 @@ public final class FireworksLaunchParamOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              value_ = input.readInt32();
-              break;
-            }
-            case 32: {
+            case 40: {
               int rawValue = input.readEnum();
 
               type_ = rawValue;
+              break;
+            }
+            case 48: {
+
+              value_ = input.readInt32();
               break;
             }
             default: {
@@ -124,34 +128,34 @@ public final class FireworksLaunchParamOuterClass {
               emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam.class, emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam.Builder.class);
     }
 
-    public static final int TYPE_FIELD_NUMBER = 4;
+    public static final int VALUE_FIELD_NUMBER = 6;
+    private int value_;
+    /**
+     * <code>int32 value = 6;</code>
+     * @return The value.
+     */
+    @java.lang.Override
+    public int getValue() {
+      return value_;
+    }
+
+    public static final int TYPE_FIELD_NUMBER = 5;
     private int type_;
     /**
-     * <code>.FireworksLaunchParamType type = 4;</code>
+     * <code>.FireworksLaunchParamType type = 5;</code>
      * @return The enum numeric value on the wire for type.
      */
     @java.lang.Override public int getTypeValue() {
       return type_;
     }
     /**
-     * <code>.FireworksLaunchParamType type = 4;</code>
+     * <code>.FireworksLaunchParamType type = 5;</code>
      * @return The type.
      */
     @java.lang.Override public emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType getType() {
       @SuppressWarnings("deprecation")
       emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType result = emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.valueOf(type_);
       return result == null ? emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.UNRECOGNIZED : result;
-    }
-
-    public static final int VALUE_FIELD_NUMBER = 2;
-    private int value_;
-    /**
-     * <code>int32 value = 2;</code>
-     * @return The value.
-     */
-    @java.lang.Override
-    public int getValue() {
-      return value_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -168,11 +172,11 @@ public final class FireworksLaunchParamOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (value_ != 0) {
-        output.writeInt32(2, value_);
+      if (type_ != emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.FIREWORKS_LAUNCH_PARAM_NONE.getNumber()) {
+        output.writeEnum(5, type_);
       }
-      if (type_ != emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.FIREWORKS_LAUNCH_PARAM_TYPE_NONE.getNumber()) {
-        output.writeEnum(4, type_);
+      if (value_ != 0) {
+        output.writeInt32(6, value_);
       }
       unknownFields.writeTo(output);
     }
@@ -183,13 +187,13 @@ public final class FireworksLaunchParamOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (type_ != emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.FIREWORKS_LAUNCH_PARAM_NONE.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(5, type_);
+      }
       if (value_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, value_);
-      }
-      if (type_ != emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.FIREWORKS_LAUNCH_PARAM_TYPE_NONE.getNumber()) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, type_);
+          .computeInt32Size(6, value_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -206,9 +210,9 @@ public final class FireworksLaunchParamOuterClass {
       }
       emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam other = (emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam) obj;
 
-      if (type_ != other.type_) return false;
       if (getValue()
           != other.getValue()) return false;
+      if (type_ != other.type_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -220,10 +224,10 @@ public final class FireworksLaunchParamOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + type_;
       hash = (37 * hash) + VALUE_FIELD_NUMBER;
       hash = (53 * hash) + getValue();
+      hash = (37 * hash) + TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + type_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -320,6 +324,10 @@ public final class FireworksLaunchParamOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: AJEMFEKHOPK
+     * </pre>
+     *
      * Protobuf type {@code FireworksLaunchParam}
      */
     public static final class Builder extends
@@ -357,9 +365,9 @@ public final class FireworksLaunchParamOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        type_ = 0;
-
         value_ = 0;
+
+        type_ = 0;
 
         return this;
       }
@@ -387,8 +395,8 @@ public final class FireworksLaunchParamOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam buildPartial() {
         emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam result = new emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam(this);
-        result.type_ = type_;
         result.value_ = value_;
+        result.type_ = type_;
         onBuilt();
         return result;
       }
@@ -437,11 +445,11 @@ public final class FireworksLaunchParamOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam other) {
         if (other == emu.grasscutter.net.proto.FireworksLaunchParamOuterClass.FireworksLaunchParam.getDefaultInstance()) return this;
-        if (other.type_ != 0) {
-          setTypeValue(other.getTypeValue());
-        }
         if (other.getValue() != 0) {
           setValue(other.getValue());
+        }
+        if (other.type_ != 0) {
+          setTypeValue(other.getTypeValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -472,16 +480,47 @@ public final class FireworksLaunchParamOuterClass {
         return this;
       }
 
+      private int value_ ;
+      /**
+       * <code>int32 value = 6;</code>
+       * @return The value.
+       */
+      @java.lang.Override
+      public int getValue() {
+        return value_;
+      }
+      /**
+       * <code>int32 value = 6;</code>
+       * @param value The value to set.
+       * @return This builder for chaining.
+       */
+      public Builder setValue(int value) {
+        
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 value = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearValue() {
+        
+        value_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int type_ = 0;
       /**
-       * <code>.FireworksLaunchParamType type = 4;</code>
+       * <code>.FireworksLaunchParamType type = 5;</code>
        * @return The enum numeric value on the wire for type.
        */
       @java.lang.Override public int getTypeValue() {
         return type_;
       }
       /**
-       * <code>.FireworksLaunchParamType type = 4;</code>
+       * <code>.FireworksLaunchParamType type = 5;</code>
        * @param value The enum numeric value on the wire for type to set.
        * @return This builder for chaining.
        */
@@ -492,7 +531,7 @@ public final class FireworksLaunchParamOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchParamType type = 4;</code>
+       * <code>.FireworksLaunchParamType type = 5;</code>
        * @return The type.
        */
       @java.lang.Override
@@ -502,7 +541,7 @@ public final class FireworksLaunchParamOuterClass {
         return result == null ? emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.FireworksLaunchParamType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.FireworksLaunchParamType type = 4;</code>
+       * <code>.FireworksLaunchParamType type = 5;</code>
        * @param value The type to set.
        * @return This builder for chaining.
        */
@@ -516,43 +555,12 @@ public final class FireworksLaunchParamOuterClass {
         return this;
       }
       /**
-       * <code>.FireworksLaunchParamType type = 4;</code>
+       * <code>.FireworksLaunchParamType type = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearType() {
         
         type_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int value_ ;
-      /**
-       * <code>int32 value = 2;</code>
-       * @return The value.
-       */
-      @java.lang.Override
-      public int getValue() {
-        return value_;
-      }
-      /**
-       * <code>int32 value = 2;</code>
-       * @param value The value to set.
-       * @return This builder for chaining.
-       */
-      public Builder setValue(int value) {
-        
-        value_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 value = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearValue() {
-        
-        value_ = 0;
         onChanged();
         return this;
       }
@@ -625,8 +633,8 @@ public final class FireworksLaunchParamOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032FireworksLaunchParam.proto\032\036FireworksL" +
       "aunchParamType.proto\"N\n\024FireworksLaunchP" +
-      "aram\022\'\n\004type\030\004 \001(\0162\031.FireworksLaunchPara" +
-      "mType\022\r\n\005value\030\002 \001(\005B\033\n\031emu.grasscutter." +
+      "aram\022\r\n\005value\030\006 \001(\005\022\'\n\004type\030\005 \001(\0162\031.Fire" +
+      "worksLaunchParamTypeB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -639,7 +647,7 @@ public final class FireworksLaunchParamOuterClass {
     internal_static_FireworksLaunchParam_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FireworksLaunchParam_descriptor,
-        new java.lang.String[] { "Type", "Value", });
+        new java.lang.String[] { "Value", "Type", });
     emu.grasscutter.net.proto.FireworksLaunchParamTypeOuterClass.getDescriptor();
   }
 

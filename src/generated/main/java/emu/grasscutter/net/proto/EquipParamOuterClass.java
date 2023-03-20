@@ -43,6 +43,10 @@ public final class EquipParamOuterClass {
     int getPromoteLevel();
   }
   /**
+   * <pre>
+   * Name: GABBGJCLKIK
+   * </pre>
+   *
    * Protobuf type {@code EquipParam}
    */
   public static final class EquipParam extends
@@ -372,6 +376,10 @@ public final class EquipParamOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: GABBGJCLKIK
+     * </pre>
+     *
      * Protobuf type {@code EquipParam}
      */
     public static final class Builder extends

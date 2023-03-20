@@ -49,6 +49,10 @@ public final class AbilityAttachedModifierOuterClass {
     int getAttachNameHash();
   }
   /**
+   * <pre>
+   * Name: JFHLNEBEOAA
+   * </pre>
+   *
    * Protobuf type {@code AbilityAttachedModifier}
    */
   public static final class AbilityAttachedModifier extends
@@ -407,6 +411,10 @@ public final class AbilityAttachedModifierOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: JFHLNEBEOAA
+     * </pre>
+     *
      * Protobuf type {@code AbilityAttachedModifier}
      */
     public static final class Builder extends

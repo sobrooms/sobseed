@@ -37,6 +37,10 @@ public final class VehicleMemberOuterClass {
     int getPos();
   }
   /**
+   * <pre>
+   * Name: ENANJKOACDB
+   * </pre>
+   *
    * Protobuf type {@code VehicleMember}
    */
   public static final class VehicleMember extends
@@ -340,6 +344,10 @@ public final class VehicleMemberOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: ENANJKOACDB
+     * </pre>
+     *
      * Protobuf type {@code VehicleMember}
      */
     public static final class Builder extends

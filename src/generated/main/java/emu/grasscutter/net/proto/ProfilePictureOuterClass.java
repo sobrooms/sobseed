@@ -31,6 +31,10 @@ public final class ProfilePictureOuterClass {
     int getCostumeId();
   }
   /**
+   * <pre>
+   * Name: ILGNCKHBGFO
+   * </pre>
+   *
    * Protobuf type {@code ProfilePicture}
    */
   public static final class ProfilePicture extends
@@ -306,6 +310,10 @@ public final class ProfilePictureOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: ILGNCKHBGFO
+     * </pre>
+     *
      * Protobuf type {@code ProfilePicture}
      */
     public static final class Builder extends

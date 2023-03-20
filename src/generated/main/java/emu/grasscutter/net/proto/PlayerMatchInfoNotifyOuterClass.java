@@ -19,57 +19,16 @@ public final class PlayerMatchInfoNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 dungeon_id = 4;</code>
+     * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
     int getDungeonId();
 
     /**
-     * <code>uint32 match_begin_time = 5;</code>
-     * @return The matchBeginTime.
-     */
-    int getMatchBeginTime();
-
-    /**
-     * <code>uint32 estimate_match_cost_time = 10;</code>
-     * @return The estimateMatchCostTime.
-     */
-    int getEstimateMatchCostTime();
-
-    /**
-     * <code>uint32 host_uid = 12;</code>
+     * <code>uint32 host_uid = 9;</code>
      * @return The hostUid.
      */
     int getHostUid();
-
-    /**
-     * <code>.MatchType match_type = 13;</code>
-     * @return The enum numeric value on the wire for matchType.
-     */
-    int getMatchTypeValue();
-    /**
-     * <code>.MatchType match_type = 13;</code>
-     * @return The matchType.
-     */
-    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
-
-    /**
-     * <code>uint32 mechanicus_difficult_level = 15;</code>
-     * @return The mechanicusDifficultLevel.
-     */
-    int getMechanicusDifficultLevel();
-
-    /**
-     * <code>uint32 mp_play_id = 2;</code>
-     * @return The mpPlayId.
-     */
-    int getMpPlayId();
-
-    /**
-     * <code>uint32 match_id = 7;</code>
-     * @return The matchId.
-     */
-    int getMatchId();
 
     /**
      * <code>repeated uint32 match_param_list = 11;</code>
@@ -87,16 +46,52 @@ public final class PlayerMatchInfoNotifyOuterClass {
      * @return The matchParamList at the given index.
      */
     int getMatchParamList(int index);
+
+    /**
+     * <code>uint32 BBPAKLDFKOH = 14;</code>
+     * @return The bBPAKLDFKOH.
+     */
+    int getBBPAKLDFKOH();
+
+    /**
+     * <code>.MatchType match_type = 3;</code>
+     * @return The enum numeric value on the wire for matchType.
+     */
+    int getMatchTypeValue();
+    /**
+     * <code>.MatchType match_type = 3;</code>
+     * @return The matchType.
+     */
+    emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType();
+
+    /**
+     * <code>uint32 mp_play_id = 10;</code>
+     * @return The mpPlayId.
+     */
+    int getMpPlayId();
+
+    /**
+     * <code>uint32 match_id = 7;</code>
+     * @return The matchId.
+     */
+    int getMatchId();
+
+    /**
+     * <code>uint32 LLBEFAFNBON = 13;</code>
+     * @return The lLBEFAFNBON.
+     */
+    int getLLBEFAFNBON();
+
+    /**
+     * <code>uint32 mechanicus_difficult_level = 15;</code>
+     * @return The mechanicusDifficultLevel.
+     */
+    int getMechanicusDifficultLevel();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4172;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: HLBCEGALDLM
+   * CmdId: 4159
    * </pre>
    *
    * Protobuf type {@code PlayerMatchInfoNotify}
@@ -111,8 +106,8 @@ public final class PlayerMatchInfoNotifyOuterClass {
       super(builder);
     }
     private PlayerMatchInfoNotify() {
-      matchType_ = 0;
       matchParamList_ = emptyIntList();
+      matchType_ = 0;
     }
 
     @java.lang.Override
@@ -146,19 +141,15 @@ public final class PlayerMatchInfoNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
+              int rawValue = input.readEnum();
 
-              mpPlayId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              dungeonId_ = input.readUInt32();
+              matchType_ = rawValue;
               break;
             }
             case 40: {
 
-              matchBeginTime_ = input.readUInt32();
+              dungeonId_ = input.readUInt32();
               break;
             }
             case 56: {
@@ -166,9 +157,14 @@ public final class PlayerMatchInfoNotifyOuterClass {
               matchId_ = input.readUInt32();
               break;
             }
+            case 72: {
+
+              hostUid_ = input.readUInt32();
+              break;
+            }
             case 80: {
 
-              estimateMatchCostTime_ = input.readUInt32();
+              mpPlayId_ = input.readUInt32();
               break;
             }
             case 88: {
@@ -192,15 +188,14 @@ public final class PlayerMatchInfoNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 96: {
+            case 104: {
 
-              hostUid_ = input.readUInt32();
+              lLBEFAFNBON_ = input.readUInt32();
               break;
             }
-            case 104: {
-              int rawValue = input.readEnum();
+            case 112: {
 
-              matchType_ = rawValue;
+              bBPAKLDFKOH_ = input.readUInt32();
               break;
             }
             case 120: {
@@ -243,10 +238,10 @@ public final class PlayerMatchInfoNotifyOuterClass {
               emu.grasscutter.net.proto.PlayerMatchInfoNotifyOuterClass.PlayerMatchInfoNotify.class, emu.grasscutter.net.proto.PlayerMatchInfoNotifyOuterClass.PlayerMatchInfoNotify.Builder.class);
     }
 
-    public static final int DUNGEON_ID_FIELD_NUMBER = 4;
+    public static final int DUNGEON_ID_FIELD_NUMBER = 5;
     private int dungeonId_;
     /**
-     * <code>uint32 dungeon_id = 4;</code>
+     * <code>uint32 dungeon_id = 5;</code>
      * @return The dungeonId.
      */
     @java.lang.Override
@@ -254,89 +249,15 @@ public final class PlayerMatchInfoNotifyOuterClass {
       return dungeonId_;
     }
 
-    public static final int MATCH_BEGIN_TIME_FIELD_NUMBER = 5;
-    private int matchBeginTime_;
-    /**
-     * <code>uint32 match_begin_time = 5;</code>
-     * @return The matchBeginTime.
-     */
-    @java.lang.Override
-    public int getMatchBeginTime() {
-      return matchBeginTime_;
-    }
-
-    public static final int ESTIMATE_MATCH_COST_TIME_FIELD_NUMBER = 10;
-    private int estimateMatchCostTime_;
-    /**
-     * <code>uint32 estimate_match_cost_time = 10;</code>
-     * @return The estimateMatchCostTime.
-     */
-    @java.lang.Override
-    public int getEstimateMatchCostTime() {
-      return estimateMatchCostTime_;
-    }
-
-    public static final int HOST_UID_FIELD_NUMBER = 12;
+    public static final int HOST_UID_FIELD_NUMBER = 9;
     private int hostUid_;
     /**
-     * <code>uint32 host_uid = 12;</code>
+     * <code>uint32 host_uid = 9;</code>
      * @return The hostUid.
      */
     @java.lang.Override
     public int getHostUid() {
       return hostUid_;
-    }
-
-    public static final int MATCH_TYPE_FIELD_NUMBER = 13;
-    private int matchType_;
-    /**
-     * <code>.MatchType match_type = 13;</code>
-     * @return The enum numeric value on the wire for matchType.
-     */
-    @java.lang.Override public int getMatchTypeValue() {
-      return matchType_;
-    }
-    /**
-     * <code>.MatchType match_type = 13;</code>
-     * @return The matchType.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
-      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
-    }
-
-    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 15;
-    private int mechanicusDifficultLevel_;
-    /**
-     * <code>uint32 mechanicus_difficult_level = 15;</code>
-     * @return The mechanicusDifficultLevel.
-     */
-    @java.lang.Override
-    public int getMechanicusDifficultLevel() {
-      return mechanicusDifficultLevel_;
-    }
-
-    public static final int MP_PLAY_ID_FIELD_NUMBER = 2;
-    private int mpPlayId_;
-    /**
-     * <code>uint32 mp_play_id = 2;</code>
-     * @return The mpPlayId.
-     */
-    @java.lang.Override
-    public int getMpPlayId() {
-      return mpPlayId_;
-    }
-
-    public static final int MATCH_ID_FIELD_NUMBER = 7;
-    private int matchId_;
-    /**
-     * <code>uint32 match_id = 7;</code>
-     * @return The matchId.
-     */
-    @java.lang.Override
-    public int getMatchId() {
-      return matchId_;
     }
 
     public static final int MATCH_PARAM_LIST_FIELD_NUMBER = 11;
@@ -367,6 +288,80 @@ public final class PlayerMatchInfoNotifyOuterClass {
     }
     private int matchParamListMemoizedSerializedSize = -1;
 
+    public static final int BBPAKLDFKOH_FIELD_NUMBER = 14;
+    private int bBPAKLDFKOH_;
+    /**
+     * <code>uint32 BBPAKLDFKOH = 14;</code>
+     * @return The bBPAKLDFKOH.
+     */
+    @java.lang.Override
+    public int getBBPAKLDFKOH() {
+      return bBPAKLDFKOH_;
+    }
+
+    public static final int MATCH_TYPE_FIELD_NUMBER = 3;
+    private int matchType_;
+    /**
+     * <code>.MatchType match_type = 3;</code>
+     * @return The enum numeric value on the wire for matchType.
+     */
+    @java.lang.Override public int getMatchTypeValue() {
+      return matchType_;
+    }
+    /**
+     * <code>.MatchType match_type = 3;</code>
+     * @return The matchType.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
+      return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
+    }
+
+    public static final int MP_PLAY_ID_FIELD_NUMBER = 10;
+    private int mpPlayId_;
+    /**
+     * <code>uint32 mp_play_id = 10;</code>
+     * @return The mpPlayId.
+     */
+    @java.lang.Override
+    public int getMpPlayId() {
+      return mpPlayId_;
+    }
+
+    public static final int MATCH_ID_FIELD_NUMBER = 7;
+    private int matchId_;
+    /**
+     * <code>uint32 match_id = 7;</code>
+     * @return The matchId.
+     */
+    @java.lang.Override
+    public int getMatchId() {
+      return matchId_;
+    }
+
+    public static final int LLBEFAFNBON_FIELD_NUMBER = 13;
+    private int lLBEFAFNBON_;
+    /**
+     * <code>uint32 LLBEFAFNBON = 13;</code>
+     * @return The lLBEFAFNBON.
+     */
+    @java.lang.Override
+    public int getLLBEFAFNBON() {
+      return lLBEFAFNBON_;
+    }
+
+    public static final int MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER = 15;
+    private int mechanicusDifficultLevel_;
+    /**
+     * <code>uint32 mechanicus_difficult_level = 15;</code>
+     * @return The mechanicusDifficultLevel.
+     */
+    @java.lang.Override
+    public int getMechanicusDifficultLevel() {
+      return mechanicusDifficultLevel_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -382,20 +377,20 @@ public final class PlayerMatchInfoNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (mpPlayId_ != 0) {
-        output.writeUInt32(2, mpPlayId_);
+      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
+        output.writeEnum(3, matchType_);
       }
       if (dungeonId_ != 0) {
-        output.writeUInt32(4, dungeonId_);
-      }
-      if (matchBeginTime_ != 0) {
-        output.writeUInt32(5, matchBeginTime_);
+        output.writeUInt32(5, dungeonId_);
       }
       if (matchId_ != 0) {
         output.writeUInt32(7, matchId_);
       }
-      if (estimateMatchCostTime_ != 0) {
-        output.writeUInt32(10, estimateMatchCostTime_);
+      if (hostUid_ != 0) {
+        output.writeUInt32(9, hostUid_);
+      }
+      if (mpPlayId_ != 0) {
+        output.writeUInt32(10, mpPlayId_);
       }
       if (getMatchParamListList().size() > 0) {
         output.writeUInt32NoTag(90);
@@ -404,11 +399,11 @@ public final class PlayerMatchInfoNotifyOuterClass {
       for (int i = 0; i < matchParamList_.size(); i++) {
         output.writeUInt32NoTag(matchParamList_.getInt(i));
       }
-      if (hostUid_ != 0) {
-        output.writeUInt32(12, hostUid_);
+      if (lLBEFAFNBON_ != 0) {
+        output.writeUInt32(13, lLBEFAFNBON_);
       }
-      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
-        output.writeEnum(13, matchType_);
+      if (bBPAKLDFKOH_ != 0) {
+        output.writeUInt32(14, bBPAKLDFKOH_);
       }
       if (mechanicusDifficultLevel_ != 0) {
         output.writeUInt32(15, mechanicusDifficultLevel_);
@@ -422,25 +417,25 @@ public final class PlayerMatchInfoNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (mpPlayId_ != 0) {
+      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, mpPlayId_);
+          .computeEnumSize(3, matchType_);
       }
       if (dungeonId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, dungeonId_);
-      }
-      if (matchBeginTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, matchBeginTime_);
+          .computeUInt32Size(5, dungeonId_);
       }
       if (matchId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(7, matchId_);
       }
-      if (estimateMatchCostTime_ != 0) {
+      if (hostUid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, estimateMatchCostTime_);
+          .computeUInt32Size(9, hostUid_);
+      }
+      if (mpPlayId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, mpPlayId_);
       }
       {
         int dataSize = 0;
@@ -456,13 +451,13 @@ public final class PlayerMatchInfoNotifyOuterClass {
         }
         matchParamListMemoizedSerializedSize = dataSize;
       }
-      if (hostUid_ != 0) {
+      if (lLBEFAFNBON_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, hostUid_);
+          .computeUInt32Size(13, lLBEFAFNBON_);
       }
-      if (matchType_ != emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.MATCH_TYPE_NONE.getNumber()) {
+      if (bBPAKLDFKOH_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(13, matchType_);
+          .computeUInt32Size(14, bBPAKLDFKOH_);
       }
       if (mechanicusDifficultLevel_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -485,21 +480,21 @@ public final class PlayerMatchInfoNotifyOuterClass {
 
       if (getDungeonId()
           != other.getDungeonId()) return false;
-      if (getMatchBeginTime()
-          != other.getMatchBeginTime()) return false;
-      if (getEstimateMatchCostTime()
-          != other.getEstimateMatchCostTime()) return false;
       if (getHostUid()
           != other.getHostUid()) return false;
+      if (!getMatchParamListList()
+          .equals(other.getMatchParamListList())) return false;
+      if (getBBPAKLDFKOH()
+          != other.getBBPAKLDFKOH()) return false;
       if (matchType_ != other.matchType_) return false;
-      if (getMechanicusDifficultLevel()
-          != other.getMechanicusDifficultLevel()) return false;
       if (getMpPlayId()
           != other.getMpPlayId()) return false;
       if (getMatchId()
           != other.getMatchId()) return false;
-      if (!getMatchParamListList()
-          .equals(other.getMatchParamListList())) return false;
+      if (getLLBEFAFNBON()
+          != other.getLLBEFAFNBON()) return false;
+      if (getMechanicusDifficultLevel()
+          != other.getMechanicusDifficultLevel()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -513,24 +508,24 @@ public final class PlayerMatchInfoNotifyOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + DUNGEON_ID_FIELD_NUMBER;
       hash = (53 * hash) + getDungeonId();
-      hash = (37 * hash) + MATCH_BEGIN_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchBeginTime();
-      hash = (37 * hash) + ESTIMATE_MATCH_COST_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getEstimateMatchCostTime();
       hash = (37 * hash) + HOST_UID_FIELD_NUMBER;
       hash = (53 * hash) + getHostUid();
-      hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + matchType_;
-      hash = (37 * hash) + MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getMechanicusDifficultLevel();
-      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMpPlayId();
-      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMatchId();
       if (getMatchParamListCount() > 0) {
         hash = (37 * hash) + MATCH_PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMatchParamListList().hashCode();
       }
+      hash = (37 * hash) + BBPAKLDFKOH_FIELD_NUMBER;
+      hash = (53 * hash) + getBBPAKLDFKOH();
+      hash = (37 * hash) + MATCH_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + matchType_;
+      hash = (37 * hash) + MP_PLAY_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMpPlayId();
+      hash = (37 * hash) + MATCH_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMatchId();
+      hash = (37 * hash) + LLBEFAFNBON_FIELD_NUMBER;
+      hash = (53 * hash) + getLLBEFAFNBON();
+      hash = (37 * hash) + MECHANICUS_DIFFICULT_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getMechanicusDifficultLevel();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -628,13 +623,8 @@ public final class PlayerMatchInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4172;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: HLBCEGALDLM
+     * CmdId: 4159
      * </pre>
      *
      * Protobuf type {@code PlayerMatchInfoNotify}
@@ -676,22 +666,22 @@ public final class PlayerMatchInfoNotifyOuterClass {
         super.clear();
         dungeonId_ = 0;
 
-        matchBeginTime_ = 0;
-
-        estimateMatchCostTime_ = 0;
-
         hostUid_ = 0;
 
-        matchType_ = 0;
+        matchParamList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        bBPAKLDFKOH_ = 0;
 
-        mechanicusDifficultLevel_ = 0;
+        matchType_ = 0;
 
         mpPlayId_ = 0;
 
         matchId_ = 0;
 
-        matchParamList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
+        lLBEFAFNBON_ = 0;
+
+        mechanicusDifficultLevel_ = 0;
+
         return this;
       }
 
@@ -720,18 +710,18 @@ public final class PlayerMatchInfoNotifyOuterClass {
         emu.grasscutter.net.proto.PlayerMatchInfoNotifyOuterClass.PlayerMatchInfoNotify result = new emu.grasscutter.net.proto.PlayerMatchInfoNotifyOuterClass.PlayerMatchInfoNotify(this);
         int from_bitField0_ = bitField0_;
         result.dungeonId_ = dungeonId_;
-        result.matchBeginTime_ = matchBeginTime_;
-        result.estimateMatchCostTime_ = estimateMatchCostTime_;
         result.hostUid_ = hostUid_;
-        result.matchType_ = matchType_;
-        result.mechanicusDifficultLevel_ = mechanicusDifficultLevel_;
-        result.mpPlayId_ = mpPlayId_;
-        result.matchId_ = matchId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           matchParamList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.matchParamList_ = matchParamList_;
+        result.bBPAKLDFKOH_ = bBPAKLDFKOH_;
+        result.matchType_ = matchType_;
+        result.mpPlayId_ = mpPlayId_;
+        result.matchId_ = matchId_;
+        result.lLBEFAFNBON_ = lLBEFAFNBON_;
+        result.mechanicusDifficultLevel_ = mechanicusDifficultLevel_;
         onBuilt();
         return result;
       }
@@ -783,26 +773,8 @@ public final class PlayerMatchInfoNotifyOuterClass {
         if (other.getDungeonId() != 0) {
           setDungeonId(other.getDungeonId());
         }
-        if (other.getMatchBeginTime() != 0) {
-          setMatchBeginTime(other.getMatchBeginTime());
-        }
-        if (other.getEstimateMatchCostTime() != 0) {
-          setEstimateMatchCostTime(other.getEstimateMatchCostTime());
-        }
         if (other.getHostUid() != 0) {
           setHostUid(other.getHostUid());
-        }
-        if (other.matchType_ != 0) {
-          setMatchTypeValue(other.getMatchTypeValue());
-        }
-        if (other.getMechanicusDifficultLevel() != 0) {
-          setMechanicusDifficultLevel(other.getMechanicusDifficultLevel());
-        }
-        if (other.getMpPlayId() != 0) {
-          setMpPlayId(other.getMpPlayId());
-        }
-        if (other.getMatchId() != 0) {
-          setMatchId(other.getMatchId());
         }
         if (!other.matchParamList_.isEmpty()) {
           if (matchParamList_.isEmpty()) {
@@ -813,6 +785,24 @@ public final class PlayerMatchInfoNotifyOuterClass {
             matchParamList_.addAll(other.matchParamList_);
           }
           onChanged();
+        }
+        if (other.getBBPAKLDFKOH() != 0) {
+          setBBPAKLDFKOH(other.getBBPAKLDFKOH());
+        }
+        if (other.matchType_ != 0) {
+          setMatchTypeValue(other.getMatchTypeValue());
+        }
+        if (other.getMpPlayId() != 0) {
+          setMpPlayId(other.getMpPlayId());
+        }
+        if (other.getMatchId() != 0) {
+          setMatchId(other.getMatchId());
+        }
+        if (other.getLLBEFAFNBON() != 0) {
+          setLLBEFAFNBON(other.getLLBEFAFNBON());
+        }
+        if (other.getMechanicusDifficultLevel() != 0) {
+          setMechanicusDifficultLevel(other.getMechanicusDifficultLevel());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -846,7 +836,7 @@ public final class PlayerMatchInfoNotifyOuterClass {
 
       private int dungeonId_ ;
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return The dungeonId.
        */
       @java.lang.Override
@@ -854,7 +844,7 @@ public final class PlayerMatchInfoNotifyOuterClass {
         return dungeonId_;
       }
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @param value The dungeonId to set.
        * @return This builder for chaining.
        */
@@ -865,7 +855,7 @@ public final class PlayerMatchInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 dungeon_id = 4;</code>
+       * <code>uint32 dungeon_id = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearDungeonId() {
@@ -875,71 +865,9 @@ public final class PlayerMatchInfoNotifyOuterClass {
         return this;
       }
 
-      private int matchBeginTime_ ;
-      /**
-       * <code>uint32 match_begin_time = 5;</code>
-       * @return The matchBeginTime.
-       */
-      @java.lang.Override
-      public int getMatchBeginTime() {
-        return matchBeginTime_;
-      }
-      /**
-       * <code>uint32 match_begin_time = 5;</code>
-       * @param value The matchBeginTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchBeginTime(int value) {
-        
-        matchBeginTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 match_begin_time = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchBeginTime() {
-        
-        matchBeginTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int estimateMatchCostTime_ ;
-      /**
-       * <code>uint32 estimate_match_cost_time = 10;</code>
-       * @return The estimateMatchCostTime.
-       */
-      @java.lang.Override
-      public int getEstimateMatchCostTime() {
-        return estimateMatchCostTime_;
-      }
-      /**
-       * <code>uint32 estimate_match_cost_time = 10;</code>
-       * @param value The estimateMatchCostTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setEstimateMatchCostTime(int value) {
-        
-        estimateMatchCostTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 estimate_match_cost_time = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearEstimateMatchCostTime() {
-        
-        estimateMatchCostTime_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int hostUid_ ;
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 9;</code>
        * @return The hostUid.
        */
       @java.lang.Override
@@ -947,7 +875,7 @@ public final class PlayerMatchInfoNotifyOuterClass {
         return hostUid_;
       }
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 9;</code>
        * @param value The hostUid to set.
        * @return This builder for chaining.
        */
@@ -958,159 +886,12 @@ public final class PlayerMatchInfoNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 host_uid = 12;</code>
+       * <code>uint32 host_uid = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearHostUid() {
         
         hostUid_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int matchType_ = 0;
-      /**
-       * <code>.MatchType match_type = 13;</code>
-       * @return The enum numeric value on the wire for matchType.
-       */
-      @java.lang.Override public int getMatchTypeValue() {
-        return matchType_;
-      }
-      /**
-       * <code>.MatchType match_type = 13;</code>
-       * @param value The enum numeric value on the wire for matchType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchTypeValue(int value) {
-        
-        matchType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MatchType match_type = 13;</code>
-       * @return The matchType.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
-        return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.MatchType match_type = 13;</code>
-       * @param value The matchType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchType(emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        matchType_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.MatchType match_type = 13;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchType() {
-        
-        matchType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mechanicusDifficultLevel_ ;
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @return The mechanicusDifficultLevel.
-       */
-      @java.lang.Override
-      public int getMechanicusDifficultLevel() {
-        return mechanicusDifficultLevel_;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @param value The mechanicusDifficultLevel to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMechanicusDifficultLevel(int value) {
-        
-        mechanicusDifficultLevel_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mechanicus_difficult_level = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMechanicusDifficultLevel() {
-        
-        mechanicusDifficultLevel_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int mpPlayId_ ;
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @return The mpPlayId.
-       */
-      @java.lang.Override
-      public int getMpPlayId() {
-        return mpPlayId_;
-      }
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @param value The mpPlayId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMpPlayId(int value) {
-        
-        mpPlayId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mp_play_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMpPlayId() {
-        
-        mpPlayId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int matchId_ ;
-      /**
-       * <code>uint32 match_id = 7;</code>
-       * @return The matchId.
-       */
-      @java.lang.Override
-      public int getMatchId() {
-        return matchId_;
-      }
-      /**
-       * <code>uint32 match_id = 7;</code>
-       * @param value The matchId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMatchId(int value) {
-        
-        matchId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 match_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMatchId() {
-        
-        matchId_ = 0;
         onChanged();
         return this;
       }
@@ -1193,6 +974,215 @@ public final class PlayerMatchInfoNotifyOuterClass {
         onChanged();
         return this;
       }
+
+      private int bBPAKLDFKOH_ ;
+      /**
+       * <code>uint32 BBPAKLDFKOH = 14;</code>
+       * @return The bBPAKLDFKOH.
+       */
+      @java.lang.Override
+      public int getBBPAKLDFKOH() {
+        return bBPAKLDFKOH_;
+      }
+      /**
+       * <code>uint32 BBPAKLDFKOH = 14;</code>
+       * @param value The bBPAKLDFKOH to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBBPAKLDFKOH(int value) {
+        
+        bBPAKLDFKOH_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 BBPAKLDFKOH = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBBPAKLDFKOH() {
+        
+        bBPAKLDFKOH_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int matchType_ = 0;
+      /**
+       * <code>.MatchType match_type = 3;</code>
+       * @return The enum numeric value on the wire for matchType.
+       */
+      @java.lang.Override public int getMatchTypeValue() {
+        return matchType_;
+      }
+      /**
+       * <code>.MatchType match_type = 3;</code>
+       * @param value The enum numeric value on the wire for matchType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMatchTypeValue(int value) {
+        
+        matchType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MatchType match_type = 3;</code>
+       * @return The matchType.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType getMatchType() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType result = emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.valueOf(matchType_);
+        return result == null ? emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.MatchType match_type = 3;</code>
+       * @param value The matchType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMatchType(emu.grasscutter.net.proto.MatchTypeOuterClass.MatchType value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        matchType_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.MatchType match_type = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMatchType() {
+        
+        matchType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mpPlayId_ ;
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @return The mpPlayId.
+       */
+      @java.lang.Override
+      public int getMpPlayId() {
+        return mpPlayId_;
+      }
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @param value The mpPlayId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMpPlayId(int value) {
+        
+        mpPlayId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mp_play_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMpPlayId() {
+        
+        mpPlayId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int matchId_ ;
+      /**
+       * <code>uint32 match_id = 7;</code>
+       * @return The matchId.
+       */
+      @java.lang.Override
+      public int getMatchId() {
+        return matchId_;
+      }
+      /**
+       * <code>uint32 match_id = 7;</code>
+       * @param value The matchId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMatchId(int value) {
+        
+        matchId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 match_id = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMatchId() {
+        
+        matchId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int lLBEFAFNBON_ ;
+      /**
+       * <code>uint32 LLBEFAFNBON = 13;</code>
+       * @return The lLBEFAFNBON.
+       */
+      @java.lang.Override
+      public int getLLBEFAFNBON() {
+        return lLBEFAFNBON_;
+      }
+      /**
+       * <code>uint32 LLBEFAFNBON = 13;</code>
+       * @param value The lLBEFAFNBON to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLLBEFAFNBON(int value) {
+        
+        lLBEFAFNBON_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 LLBEFAFNBON = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLLBEFAFNBON() {
+        
+        lLBEFAFNBON_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int mechanicusDifficultLevel_ ;
+      /**
+       * <code>uint32 mechanicus_difficult_level = 15;</code>
+       * @return The mechanicusDifficultLevel.
+       */
+      @java.lang.Override
+      public int getMechanicusDifficultLevel() {
+        return mechanicusDifficultLevel_;
+      }
+      /**
+       * <code>uint32 mechanicus_difficult_level = 15;</code>
+       * @param value The mechanicusDifficultLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMechanicusDifficultLevel(int value) {
+        
+        mechanicusDifficultLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mechanicus_difficult_level = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMechanicusDifficultLevel() {
+        
+        mechanicusDifficultLevel_ = 0;
+        onChanged();
+        return this;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -1261,14 +1251,14 @@ public final class PlayerMatchInfoNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033PlayerMatchInfoNotify.proto\032\017MatchType" +
-      ".proto\"\375\001\n\025PlayerMatchInfoNotify\022\022\n\ndung" +
-      "eon_id\030\004 \001(\r\022\030\n\020match_begin_time\030\005 \001(\r\022 " +
-      "\n\030estimate_match_cost_time\030\n \001(\r\022\020\n\010host" +
-      "_uid\030\014 \001(\r\022\036\n\nmatch_type\030\r \001(\0162\n.MatchTy" +
-      "pe\022\"\n\032mechanicus_difficult_level\030\017 \001(\r\022\022" +
-      "\n\nmp_play_id\030\002 \001(\r\022\020\n\010match_id\030\007 \001(\r\022\030\n\020" +
-      "match_param_list\030\013 \003(\rB\033\n\031emu.grasscutte" +
-      "r.net.protob\006proto3"
+      ".proto\"\353\001\n\025PlayerMatchInfoNotify\022\022\n\ndung" +
+      "eon_id\030\005 \001(\r\022\020\n\010host_uid\030\t \001(\r\022\030\n\020match_" +
+      "param_list\030\013 \003(\r\022\023\n\013BBPAKLDFKOH\030\016 \001(\r\022\036\n" +
+      "\nmatch_type\030\003 \001(\0162\n.MatchType\022\022\n\nmp_play" +
+      "_id\030\n \001(\r\022\020\n\010match_id\030\007 \001(\r\022\023\n\013LLBEFAFNB" +
+      "ON\030\r \001(\r\022\"\n\032mechanicus_difficult_level\030\017" +
+      " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1280,7 +1270,7 @@ public final class PlayerMatchInfoNotifyOuterClass {
     internal_static_PlayerMatchInfoNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_PlayerMatchInfoNotify_descriptor,
-        new java.lang.String[] { "DungeonId", "MatchBeginTime", "EstimateMatchCostTime", "HostUid", "MatchType", "MechanicusDifficultLevel", "MpPlayId", "MatchId", "MatchParamList", });
+        new java.lang.String[] { "DungeonId", "HostUid", "MatchParamList", "BBPAKLDFKOH", "MatchType", "MpPlayId", "MatchId", "LLBEFAFNBON", "MechanicusDifficultLevel", });
     emu.grasscutter.net.proto.MatchTypeOuterClass.getDescriptor();
   }
 

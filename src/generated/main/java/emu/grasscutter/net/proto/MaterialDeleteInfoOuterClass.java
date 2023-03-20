@@ -72,6 +72,10 @@ public final class MaterialDeleteInfoOuterClass {
     public emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfo.DeleteInfoCase getDeleteInfoCase();
   }
   /**
+   * <pre>
+   * Name: OEDJPHACFPH
+   * </pre>
+   *
    * Protobuf type {@code MaterialDeleteInfo}
    */
   public static final class MaterialDeleteInfo extends
@@ -240,6 +244,10 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
+     * <pre>
+     * Name: NLLLEFHCFNB
+     * </pre>
+     *
      * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
      */
     public static final class CountDownDelete extends
@@ -617,6 +625,10 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Name: NLLLEFHCFNB
+       * </pre>
+       *
        * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
        */
       public static final class Builder extends
@@ -1014,6 +1026,10 @@ public final class MaterialDeleteInfoOuterClass {
       int getDeleteTime();
     }
     /**
+     * <pre>
+     * Name: PBANAIDKAMN
+     * </pre>
+     *
      * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
      */
     public static final class DateTimeDelete extends
@@ -1262,6 +1278,10 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Name: PBANAIDKAMN
+       * </pre>
+       *
        * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
        */
       public static final class Builder extends
@@ -1542,6 +1562,10 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
+     * <pre>
+     * Name: FFCMPAFJMDA
+     * </pre>
+     *
      * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
      */
     public static final class DelayWeekCountDownDelete extends
@@ -1946,6 +1970,10 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Name: FFCMPAFJMDA
+       * </pre>
+       *
        * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
        */
       public static final class Builder extends
@@ -2727,6 +2755,10 @@ public final class MaterialDeleteInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OEDJPHACFPH
+     * </pre>
+     *
      * Protobuf type {@code MaterialDeleteInfo}
      */
     public static final class Builder extends

@@ -19,32 +19,27 @@ public final class SceneTimeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 scene_time = 10;</code>
+     * <code>uint64 scene_time = 2;</code>
      * @return The sceneTime.
      */
     long getSceneTime();
 
     /**
-     * <code>uint32 scene_id = 14;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>bool is_paused = 5;</code>
+     * <code>bool is_paused = 7;</code>
      * @return The isPaused.
      */
     boolean getIsPaused();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 296;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: EBJECAINEDK
+   * CmdId: 210
    * </pre>
    *
    * Protobuf type {@code SceneTimeNotify}
@@ -91,17 +86,17 @@ public final class SceneTimeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              isPaused_ = input.readBool();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               sceneTime_ = input.readUInt64();
               break;
             }
-            case 112: {
+            case 56: {
+
+              isPaused_ = input.readBool();
+              break;
+            }
+            case 104: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -138,10 +133,10 @@ public final class SceneTimeNotifyOuterClass {
               emu.grasscutter.net.proto.SceneTimeNotifyOuterClass.SceneTimeNotify.class, emu.grasscutter.net.proto.SceneTimeNotifyOuterClass.SceneTimeNotify.Builder.class);
     }
 
-    public static final int SCENE_TIME_FIELD_NUMBER = 10;
+    public static final int SCENE_TIME_FIELD_NUMBER = 2;
     private long sceneTime_;
     /**
-     * <code>uint64 scene_time = 10;</code>
+     * <code>uint64 scene_time = 2;</code>
      * @return The sceneTime.
      */
     @java.lang.Override
@@ -149,10 +144,10 @@ public final class SceneTimeNotifyOuterClass {
       return sceneTime_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 14;
+    public static final int SCENE_ID_FIELD_NUMBER = 13;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 14;</code>
+     * <code>uint32 scene_id = 13;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -160,10 +155,10 @@ public final class SceneTimeNotifyOuterClass {
       return sceneId_;
     }
 
-    public static final int IS_PAUSED_FIELD_NUMBER = 5;
+    public static final int IS_PAUSED_FIELD_NUMBER = 7;
     private boolean isPaused_;
     /**
-     * <code>bool is_paused = 5;</code>
+     * <code>bool is_paused = 7;</code>
      * @return The isPaused.
      */
     @java.lang.Override
@@ -185,14 +180,14 @@ public final class SceneTimeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isPaused_ != false) {
-        output.writeBool(5, isPaused_);
-      }
       if (sceneTime_ != 0L) {
-        output.writeUInt64(10, sceneTime_);
+        output.writeUInt64(2, sceneTime_);
+      }
+      if (isPaused_ != false) {
+        output.writeBool(7, isPaused_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(14, sceneId_);
+        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -203,17 +198,17 @@ public final class SceneTimeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isPaused_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isPaused_);
-      }
       if (sceneTime_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(10, sceneTime_);
+          .computeUInt64Size(2, sceneTime_);
+      }
+      if (isPaused_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(7, isPaused_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, sceneId_);
+          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -352,13 +347,8 @@ public final class SceneTimeNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 296;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: EBJECAINEDK
+     * CmdId: 210
      * </pre>
      *
      * Protobuf type {@code SceneTimeNotify}
@@ -521,7 +511,7 @@ public final class SceneTimeNotifyOuterClass {
 
       private long sceneTime_ ;
       /**
-       * <code>uint64 scene_time = 10;</code>
+       * <code>uint64 scene_time = 2;</code>
        * @return The sceneTime.
        */
       @java.lang.Override
@@ -529,7 +519,7 @@ public final class SceneTimeNotifyOuterClass {
         return sceneTime_;
       }
       /**
-       * <code>uint64 scene_time = 10;</code>
+       * <code>uint64 scene_time = 2;</code>
        * @param value The sceneTime to set.
        * @return This builder for chaining.
        */
@@ -540,7 +530,7 @@ public final class SceneTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint64 scene_time = 10;</code>
+       * <code>uint64 scene_time = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTime() {
@@ -552,7 +542,7 @@ public final class SceneTimeNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -560,7 +550,7 @@ public final class SceneTimeNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -571,7 +561,7 @@ public final class SceneTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 14;</code>
+       * <code>uint32 scene_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -583,7 +573,7 @@ public final class SceneTimeNotifyOuterClass {
 
       private boolean isPaused_ ;
       /**
-       * <code>bool is_paused = 5;</code>
+       * <code>bool is_paused = 7;</code>
        * @return The isPaused.
        */
       @java.lang.Override
@@ -591,7 +581,7 @@ public final class SceneTimeNotifyOuterClass {
         return isPaused_;
       }
       /**
-       * <code>bool is_paused = 5;</code>
+       * <code>bool is_paused = 7;</code>
        * @param value The isPaused to set.
        * @return This builder for chaining.
        */
@@ -602,7 +592,7 @@ public final class SceneTimeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_paused = 5;</code>
+       * <code>bool is_paused = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsPaused() {
@@ -679,8 +669,8 @@ public final class SceneTimeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025SceneTimeNotify.proto\"J\n\017SceneTimeNoti" +
-      "fy\022\022\n\nscene_time\030\n \001(\004\022\020\n\010scene_id\030\016 \001(\r" +
-      "\022\021\n\tis_paused\030\005 \001(\010B\033\n\031emu.grasscutter.n" +
+      "fy\022\022\n\nscene_time\030\002 \001(\004\022\020\n\010scene_id\030\r \001(\r" +
+      "\022\021\n\tis_paused\030\007 \001(\010B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

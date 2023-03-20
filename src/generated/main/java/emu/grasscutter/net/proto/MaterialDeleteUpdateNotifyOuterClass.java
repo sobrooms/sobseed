@@ -20,13 +20,8 @@ public final class MaterialDeleteUpdateNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 604;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: KKPBLFHGLFP
+   * CmdId: 620
    * </pre>
    *
    * Protobuf type {@code MaterialDeleteUpdateNotify}
@@ -251,13 +246,8 @@ public final class MaterialDeleteUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 604;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: KKPBLFHGLFP
+     * CmdId: 620
      * </pre>
      *
      * Protobuf type {@code MaterialDeleteUpdateNotify}

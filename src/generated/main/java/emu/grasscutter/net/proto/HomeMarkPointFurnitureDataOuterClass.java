@@ -84,6 +84,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
     public emu.grasscutter.net.proto.HomeMarkPointFurnitureDataOuterClass.HomeMarkPointFurnitureData.ExtraCase getExtraCase();
   }
   /**
+   * <pre>
+   * Name: BEAHFDOKHFA
+   * </pre>
+   *
    * Protobuf type {@code HomeMarkPointFurnitureData}
    */
   public static final class HomeMarkPointFurnitureData extends
@@ -611,6 +615,10 @@ public final class HomeMarkPointFurnitureDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BEAHFDOKHFA
+     * </pre>
+     *
      * Protobuf type {@code HomeMarkPointFurnitureData}
      */
     public static final class Builder extends

@@ -73,6 +73,10 @@ public final class ShopConcertProductOuterClass {
     int getBuyTimes();
   }
   /**
+   * <pre>
+   * Name: FIMJMLPLPAC
+   * </pre>
+   *
    * Protobuf type {@code ShopConcertProduct}
    */
   public static final class ShopConcertProduct extends
@@ -333,10 +337,10 @@ public final class ShopConcertProductOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
+      if (!getProductIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, productId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(priceTier_)) {
+      if (!getPriceTierBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, priceTier_);
       }
       if (obtainCount_ != 0) {
@@ -363,10 +367,10 @@ public final class ShopConcertProductOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
+      if (!getProductIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, productId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(priceTier_)) {
+      if (!getPriceTierBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, priceTier_);
       }
       if (obtainCount_ != 0) {
@@ -539,6 +543,10 @@ public final class ShopConcertProductOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FIMJMLPLPAC
+     * </pre>
+     *
      * Protobuf type {@code ShopConcertProduct}
      */
     public static final class Builder extends

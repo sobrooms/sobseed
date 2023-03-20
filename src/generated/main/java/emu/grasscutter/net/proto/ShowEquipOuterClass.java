@@ -57,6 +57,10 @@ public final class ShowEquipOuterClass {
     public emu.grasscutter.net.proto.ShowEquipOuterClass.ShowEquip.DetailCase getDetailCase();
   }
   /**
+   * <pre>
+   * Name: BBBEJBEBBLD
+   * </pre>
+   *
    * Protobuf type {@code ShowEquip}
    */
   public static final class ShowEquip extends
@@ -475,6 +479,10 @@ public final class ShowEquipOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BBBEJBEBBLD
+     * </pre>
+     *
      * Protobuf type {@code ShowEquip}
      */
     public static final class Builder extends

@@ -36,6 +36,10 @@ public final class DeshretObeliskGadgetInfoOuterClass {
     int getArgumentList(int index);
   }
   /**
+   * <pre>
+   * Name: OIFFHAFGIBA
+   * </pre>
+   *
    * Protobuf type {@code DeshretObeliskGadgetInfo}
    */
   public static final class DeshretObeliskGadgetInfo extends
@@ -339,6 +343,10 @@ public final class DeshretObeliskGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OIFFHAFGIBA
+     * </pre>
+     *
      * Protobuf type {@code DeshretObeliskGadgetInfo}
      */
     public static final class Builder extends

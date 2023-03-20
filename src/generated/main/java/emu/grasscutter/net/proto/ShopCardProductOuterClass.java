@@ -90,6 +90,10 @@ public final class ShopCardProductOuterClass {
     public emu.grasscutter.net.proto.ShopCardProductOuterClass.ShopCardProduct.ExtraCardDataCase getExtraCardDataCase();
   }
   /**
+   * <pre>
+   * Name: FINEJDCEECI
+   * </pre>
+   *
    * Protobuf type {@code ShopCardProduct}
    */
   public static final class ShopCardProduct extends
@@ -224,54 +228,98 @@ public final class ShopCardProductOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
           getBaseItemListList();
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getBaseItemList(int index);
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       int getBaseItemListCount();
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
           getBaseItemListOrBuilderList();
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getBaseItemListOrBuilder(
           int index);
 
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> 
           getPerDayItemListList();
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getPerDayItemList(int index);
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       int getPerDayItemListCount();
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
           getPerDayItemListOrBuilderList();
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getPerDayItemListOrBuilder(
           int index);
     }
     /**
+     * <pre>
+     * Name: KPKPFMLBAOL
+     * </pre>
+     *
      * Protobuf type {@code ShopCardProduct.ResinCard}
      */
     public static final class ResinCard extends
@@ -378,6 +426,10 @@ public final class ShopCardProductOuterClass {
       public static final int BASE_ITEM_LIST_FIELD_NUMBER = 1;
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> baseItemList_;
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       @java.lang.Override
@@ -385,6 +437,10 @@ public final class ShopCardProductOuterClass {
         return baseItemList_;
       }
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       @java.lang.Override
@@ -393,6 +449,10 @@ public final class ShopCardProductOuterClass {
         return baseItemList_;
       }
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       @java.lang.Override
@@ -400,6 +460,10 @@ public final class ShopCardProductOuterClass {
         return baseItemList_.size();
       }
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       @java.lang.Override
@@ -407,6 +471,10 @@ public final class ShopCardProductOuterClass {
         return baseItemList_.get(index);
       }
       /**
+       * <pre>
+       * GFLEMFDCFIM
+       * </pre>
+       *
        * <code>repeated .ItemParam base_item_list = 1;</code>
        */
       @java.lang.Override
@@ -418,6 +486,10 @@ public final class ShopCardProductOuterClass {
       public static final int PER_DAY_ITEM_LIST_FIELD_NUMBER = 2;
       private java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> perDayItemList_;
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       @java.lang.Override
@@ -425,6 +497,10 @@ public final class ShopCardProductOuterClass {
         return perDayItemList_;
       }
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       @java.lang.Override
@@ -433,6 +509,10 @@ public final class ShopCardProductOuterClass {
         return perDayItemList_;
       }
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       @java.lang.Override
@@ -440,6 +520,10 @@ public final class ShopCardProductOuterClass {
         return perDayItemList_.size();
       }
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       @java.lang.Override
@@ -447,6 +531,10 @@ public final class ShopCardProductOuterClass {
         return perDayItemList_.get(index);
       }
       /**
+       * <pre>
+       * HBANPLNDOJA
+       * </pre>
+       *
        * <code>repeated .ItemParam per_day_item_list = 2;</code>
        */
       @java.lang.Override
@@ -626,6 +714,10 @@ public final class ShopCardProductOuterClass {
         return builder;
       }
       /**
+       * <pre>
+       * Name: KPKPFMLBAOL
+       * </pre>
+       *
        * Protobuf type {@code ShopCardProduct.ResinCard}
        */
       public static final class Builder extends
@@ -865,6 +957,10 @@ public final class ShopCardProductOuterClass {
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> baseItemListBuilder_;
 
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getBaseItemListList() {
@@ -875,6 +971,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public int getBaseItemListCount() {
@@ -885,6 +985,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getBaseItemList(int index) {
@@ -895,6 +999,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder setBaseItemList(
@@ -912,6 +1020,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder setBaseItemList(
@@ -926,6 +1038,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder addBaseItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -942,6 +1058,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder addBaseItemList(
@@ -959,6 +1079,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder addBaseItemList(
@@ -973,6 +1097,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder addBaseItemList(
@@ -987,6 +1115,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder addAllBaseItemList(
@@ -1002,6 +1134,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder clearBaseItemList() {
@@ -1015,6 +1151,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public Builder removeBaseItemList(int index) {
@@ -1028,6 +1168,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getBaseItemListBuilder(
@@ -1035,6 +1179,10 @@ public final class ShopCardProductOuterClass {
           return getBaseItemListFieldBuilder().getBuilder(index);
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getBaseItemListOrBuilder(
@@ -1045,6 +1193,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -1056,6 +1208,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addBaseItemListBuilder() {
@@ -1063,6 +1219,10 @@ public final class ShopCardProductOuterClass {
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addBaseItemListBuilder(
@@ -1071,6 +1231,10 @@ public final class ShopCardProductOuterClass {
               index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
         }
         /**
+         * <pre>
+         * GFLEMFDCFIM
+         * </pre>
+         *
          * <code>repeated .ItemParam base_item_list = 1;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
@@ -1105,6 +1269,10 @@ public final class ShopCardProductOuterClass {
             emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> perDayItemListBuilder_;
 
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam> getPerDayItemListList() {
@@ -1115,6 +1283,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public int getPerDayItemListCount() {
@@ -1125,6 +1297,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam getPerDayItemList(int index) {
@@ -1135,6 +1311,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder setPerDayItemList(
@@ -1152,6 +1332,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder setPerDayItemList(
@@ -1166,6 +1350,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder addPerDayItemList(emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam value) {
@@ -1182,6 +1370,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder addPerDayItemList(
@@ -1199,6 +1391,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder addPerDayItemList(
@@ -1213,6 +1409,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder addPerDayItemList(
@@ -1227,6 +1427,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder addAllPerDayItemList(
@@ -1242,6 +1446,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder clearPerDayItemList() {
@@ -1255,6 +1463,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public Builder removePerDayItemList(int index) {
@@ -1268,6 +1480,10 @@ public final class ShopCardProductOuterClass {
           return this;
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder getPerDayItemListBuilder(
@@ -1275,6 +1491,10 @@ public final class ShopCardProductOuterClass {
           return getPerDayItemListFieldBuilder().getBuilder(index);
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder getPerDayItemListOrBuilder(
@@ -1285,6 +1505,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public java.util.List<? extends emu.grasscutter.net.proto.ItemParamOuterClass.ItemParamOrBuilder> 
@@ -1296,6 +1520,10 @@ public final class ShopCardProductOuterClass {
           }
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addPerDayItemListBuilder() {
@@ -1303,6 +1531,10 @@ public final class ShopCardProductOuterClass {
               emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder addPerDayItemListBuilder(
@@ -1311,6 +1543,10 @@ public final class ShopCardProductOuterClass {
               index, emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.getDefaultInstance());
         }
         /**
+         * <pre>
+         * HBANPLNDOJA
+         * </pre>
+         *
          * <code>repeated .ItemParam per_day_item_list = 2;</code>
          */
         public java.util.List<emu.grasscutter.net.proto.ItemParamOuterClass.ItemParam.Builder> 
@@ -1599,10 +1835,10 @@ public final class ShopCardProductOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
+      if (!getProductIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, productId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(priceTier_)) {
+      if (!getPriceTierBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, priceTier_);
       }
       if (mcoinBase_ != 0) {
@@ -1632,10 +1868,10 @@ public final class ShopCardProductOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(productId_)) {
+      if (!getProductIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, productId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(priceTier_)) {
+      if (!getPriceTierBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, priceTier_);
       }
       if (mcoinBase_ != 0) {
@@ -1829,6 +2065,10 @@ public final class ShopCardProductOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FINEJDCEECI
+     * </pre>
+     *
      * Protobuf type {@code ShopCardProduct}
      */
     public static final class Builder extends

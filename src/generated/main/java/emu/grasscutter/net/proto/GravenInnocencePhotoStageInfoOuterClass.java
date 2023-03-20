@@ -19,24 +19,28 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     int getStageId();
 
     /**
-     * <code>bool is_open = 10;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>bool is_finished = 8;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     boolean getIsFinished();
   }
   /**
+   * <pre>
+   * Name: MIGCAFCNLJD
+   * </pre>
+   *
    * Protobuf type {@code GravenInnocencePhotoStageInfo}
    */
   public static final class GravenInnocencePhotoStageInfo extends
@@ -81,19 +85,19 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 8: {
+
+              stageId_ = input.readUInt32();
+              break;
+            }
+            case 32: {
 
               isFinished_ = input.readBool();
               break;
             }
-            case 80: {
+            case 48: {
 
               isOpen_ = input.readBool();
-              break;
-            }
-            case 88: {
-
-              stageId_ = input.readUInt32();
               break;
             }
             default: {
@@ -128,10 +132,10 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
               emu.grasscutter.net.proto.GravenInnocencePhotoStageInfoOuterClass.GravenInnocencePhotoStageInfo.class, emu.grasscutter.net.proto.GravenInnocencePhotoStageInfoOuterClass.GravenInnocencePhotoStageInfo.Builder.class);
     }
 
-    public static final int STAGE_ID_FIELD_NUMBER = 11;
+    public static final int STAGE_ID_FIELD_NUMBER = 1;
     private int stageId_;
     /**
-     * <code>uint32 stage_id = 11;</code>
+     * <code>uint32 stage_id = 1;</code>
      * @return The stageId.
      */
     @java.lang.Override
@@ -139,10 +143,10 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
       return stageId_;
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 10;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 10;</code>
+     * <code>bool is_open = 6;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -150,10 +154,10 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
       return isOpen_;
     }
 
-    public static final int IS_FINISHED_FIELD_NUMBER = 8;
+    public static final int IS_FINISHED_FIELD_NUMBER = 4;
     private boolean isFinished_;
     /**
-     * <code>bool is_finished = 8;</code>
+     * <code>bool is_finished = 4;</code>
      * @return The isFinished.
      */
     @java.lang.Override
@@ -175,14 +179,14 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (stageId_ != 0) {
+        output.writeUInt32(1, stageId_);
+      }
       if (isFinished_ != false) {
-        output.writeBool(8, isFinished_);
+        output.writeBool(4, isFinished_);
       }
       if (isOpen_ != false) {
-        output.writeBool(10, isOpen_);
-      }
-      if (stageId_ != 0) {
-        output.writeUInt32(11, stageId_);
+        output.writeBool(6, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -193,17 +197,17 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (stageId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(1, stageId_);
+      }
       if (isFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isFinished_);
+          .computeBoolSize(4, isFinished_);
       }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(10, isOpen_);
-      }
-      if (stageId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, stageId_);
+          .computeBoolSize(6, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -341,6 +345,10 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: MIGCAFCNLJD
+     * </pre>
+     *
      * Protobuf type {@code GravenInnocencePhotoStageInfo}
      */
     public static final class Builder extends
@@ -501,7 +509,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
 
       private int stageId_ ;
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return The stageId.
        */
       @java.lang.Override
@@ -509,7 +517,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return stageId_;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @param value The stageId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +528,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 stage_id = 11;</code>
+       * <code>uint32 stage_id = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStageId() {
@@ -532,7 +540,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 10;</code>
+       * <code>bool is_open = 6;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -540,7 +548,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <code>bool is_open = 6;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -551,7 +559,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 10;</code>
+       * <code>bool is_open = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -563,7 +571,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
 
       private boolean isFinished_ ;
       /**
-       * <code>bool is_finished = 8;</code>
+       * <code>bool is_finished = 4;</code>
        * @return The isFinished.
        */
       @java.lang.Override
@@ -571,7 +579,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return isFinished_;
       }
       /**
-       * <code>bool is_finished = 8;</code>
+       * <code>bool is_finished = 4;</code>
        * @param value The isFinished to set.
        * @return This builder for chaining.
        */
@@ -582,7 +590,7 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_finished = 8;</code>
+       * <code>bool is_finished = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsFinished() {
@@ -660,8 +668,8 @@ public final class GravenInnocencePhotoStageInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n#GravenInnocencePhotoStageInfo.proto\"W\n" +
       "\035GravenInnocencePhotoStageInfo\022\020\n\010stage_" +
-      "id\030\013 \001(\r\022\017\n\007is_open\030\n \001(\010\022\023\n\013is_finished" +
-      "\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
+      "id\030\001 \001(\r\022\017\n\007is_open\030\006 \001(\010\022\023\n\013is_finished" +
+      "\030\004 \001(\010B\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

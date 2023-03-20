@@ -15,45 +15,49 @@ public final class MovingPlatformTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Name: IILHKHMLOIA
+   * </pre>
+   *
    * Protobuf enum {@code MovingPlatformType}
    */
   public enum MovingPlatformType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>MOVING_PLATFORM_TYPE_NONE = 0;</code>
+     * <code>MOVING_PLATFORM_NONE = 0;</code>
      */
-    MOVING_PLATFORM_TYPE_NONE(0),
+    MOVING_PLATFORM_NONE(0),
     /**
-     * <code>MOVING_PLATFORM_TYPE_USE_CONFIG = 1;</code>
+     * <code>MOVING_PLATFORM_USE_CONFIG = 1;</code>
      */
-    MOVING_PLATFORM_TYPE_USE_CONFIG(1),
+    MOVING_PLATFORM_USE_CONFIG(1),
     /**
-     * <code>MOVING_PLATFORM_TYPE_ABILITY = 2;</code>
+     * <code>MOVING_PLATFORM_ABILITY = 2;</code>
      */
-    MOVING_PLATFORM_TYPE_ABILITY(2),
+    MOVING_PLATFORM_ABILITY(2),
     /**
-     * <code>MOVING_PLATFORM_TYPE_ROUTE = 3;</code>
+     * <code>MOVING_PLATFORM_ROUTE = 3;</code>
      */
-    MOVING_PLATFORM_TYPE_ROUTE(3),
+    MOVING_PLATFORM_ROUTE(3),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>MOVING_PLATFORM_TYPE_NONE = 0;</code>
+     * <code>MOVING_PLATFORM_NONE = 0;</code>
      */
-    public static final int MOVING_PLATFORM_TYPE_NONE_VALUE = 0;
+    public static final int MOVING_PLATFORM_NONE_VALUE = 0;
     /**
-     * <code>MOVING_PLATFORM_TYPE_USE_CONFIG = 1;</code>
+     * <code>MOVING_PLATFORM_USE_CONFIG = 1;</code>
      */
-    public static final int MOVING_PLATFORM_TYPE_USE_CONFIG_VALUE = 1;
+    public static final int MOVING_PLATFORM_USE_CONFIG_VALUE = 1;
     /**
-     * <code>MOVING_PLATFORM_TYPE_ABILITY = 2;</code>
+     * <code>MOVING_PLATFORM_ABILITY = 2;</code>
      */
-    public static final int MOVING_PLATFORM_TYPE_ABILITY_VALUE = 2;
+    public static final int MOVING_PLATFORM_ABILITY_VALUE = 2;
     /**
-     * <code>MOVING_PLATFORM_TYPE_ROUTE = 3;</code>
+     * <code>MOVING_PLATFORM_ROUTE = 3;</code>
      */
-    public static final int MOVING_PLATFORM_TYPE_ROUTE_VALUE = 3;
+    public static final int MOVING_PLATFORM_ROUTE_VALUE = 3;
 
 
     public final int getNumber() {
@@ -80,10 +84,10 @@ public final class MovingPlatformTypeOuterClass {
      */
     public static MovingPlatformType forNumber(int value) {
       switch (value) {
-        case 0: return MOVING_PLATFORM_TYPE_NONE;
-        case 1: return MOVING_PLATFORM_TYPE_USE_CONFIG;
-        case 2: return MOVING_PLATFORM_TYPE_ABILITY;
-        case 3: return MOVING_PLATFORM_TYPE_ROUTE;
+        case 0: return MOVING_PLATFORM_NONE;
+        case 1: return MOVING_PLATFORM_USE_CONFIG;
+        case 2: return MOVING_PLATFORM_ABILITY;
+        case 3: return MOVING_PLATFORM_ROUTE;
         default: return null;
       }
     }
@@ -149,12 +153,11 @@ public final class MovingPlatformTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\030MovingPlatformType.proto*\232\001\n\022MovingPla" +
-      "tformType\022\035\n\031MOVING_PLATFORM_TYPE_NONE\020\000" +
-      "\022#\n\037MOVING_PLATFORM_TYPE_USE_CONFIG\020\001\022 \n" +
-      "\034MOVING_PLATFORM_TYPE_ABILITY\020\002\022\036\n\032MOVIN" +
-      "G_PLATFORM_TYPE_ROUTE\020\003B\033\n\031emu.grasscutt" +
-      "er.net.protob\006proto3"
+      "\n\030MovingPlatformType.proto*\206\001\n\022MovingPla" +
+      "tformType\022\030\n\024MOVING_PLATFORM_NONE\020\000\022\036\n\032M" +
+      "OVING_PLATFORM_USE_CONFIG\020\001\022\033\n\027MOVING_PL" +
+      "ATFORM_ABILITY\020\002\022\031\n\025MOVING_PLATFORM_ROUT" +
+      "E\020\003B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

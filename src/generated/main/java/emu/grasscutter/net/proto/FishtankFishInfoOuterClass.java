@@ -37,6 +37,10 @@ public final class FishtankFishInfoOuterClass {
     float getInitialRotationY();
   }
   /**
+   * <pre>
+   * Name: DCKPBCPNIDC
+   * </pre>
+   *
    * Protobuf type {@code FishtankFishInfo}
    */
   public static final class FishtankFishInfo extends
@@ -345,6 +349,10 @@ public final class FishtankFishInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: DCKPBCPNIDC
+     * </pre>
+     *
      * Protobuf type {@code FishtankFishInfo}
      */
     public static final class Builder extends

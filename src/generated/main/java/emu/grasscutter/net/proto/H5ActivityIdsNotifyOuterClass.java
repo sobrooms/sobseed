@@ -19,17 +19,17 @@ public final class H5ActivityIdsNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 client_red_dot_timestamp = 5;</code>
+     * <code>uint32 client_red_dot_timestamp = 12;</code>
      * @return The clientRedDotTimestamp.
      */
     int getClientRedDotTimestamp();
 
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     int getH5ActivityMapCount();
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     boolean containsH5ActivityMap(
         int key);
@@ -40,19 +40,19 @@ public final class H5ActivityIdsNotifyOuterClass {
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getH5ActivityMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     java.util.Map<java.lang.Integer, java.lang.Integer>
     getH5ActivityMapMap();
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
 
     int getH5ActivityMapOrDefault(
         int key,
         int defaultValue);
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
 
     int getH5ActivityMapOrThrow(
@@ -60,13 +60,8 @@ public final class H5ActivityIdsNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 5672;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: FAONDBOEDMA
+   * CmdId: 5659
    * </pre>
    *
    * Protobuf type {@code H5ActivityIdsNotify}
@@ -114,12 +109,7 @@ public final class H5ActivityIdsNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              clientRedDotTimestamp_ = input.readUInt32();
-              break;
-            }
-            case 98: {
+            case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 h5ActivityMap_ = com.google.protobuf.MapField.newMapField(
                     H5ActivityMapDefaultEntryHolder.defaultEntry);
@@ -130,6 +120,11 @@ public final class H5ActivityIdsNotifyOuterClass {
                   H5ActivityMapDefaultEntryHolder.defaultEntry.getParserForType(), extensionRegistry);
               h5ActivityMap_.getMutableMap().put(
                   h5ActivityMap__.getKey(), h5ActivityMap__.getValue());
+              break;
+            }
+            case 96: {
+
+              clientRedDotTimestamp_ = input.readUInt32();
               break;
             }
             default: {
@@ -161,7 +156,7 @@ public final class H5ActivityIdsNotifyOuterClass {
     protected com.google.protobuf.MapField internalGetMapField(
         int number) {
       switch (number) {
-        case 12:
+        case 1:
           return internalGetH5ActivityMap();
         default:
           throw new RuntimeException(
@@ -176,10 +171,10 @@ public final class H5ActivityIdsNotifyOuterClass {
               emu.grasscutter.net.proto.H5ActivityIdsNotifyOuterClass.H5ActivityIdsNotify.class, emu.grasscutter.net.proto.H5ActivityIdsNotifyOuterClass.H5ActivityIdsNotify.Builder.class);
     }
 
-    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 5;
+    public static final int CLIENT_RED_DOT_TIMESTAMP_FIELD_NUMBER = 12;
     private int clientRedDotTimestamp_;
     /**
-     * <code>uint32 client_red_dot_timestamp = 5;</code>
+     * <code>uint32 client_red_dot_timestamp = 12;</code>
      * @return The clientRedDotTimestamp.
      */
     @java.lang.Override
@@ -187,7 +182,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       return clientRedDotTimestamp_;
     }
 
-    public static final int H5_ACTIVITY_MAP_FIELD_NUMBER = 12;
+    public static final int H5_ACTIVITY_MAP_FIELD_NUMBER = 1;
     private static final class H5ActivityMapDefaultEntryHolder {
       static final com.google.protobuf.MapEntry<
           java.lang.Integer, java.lang.Integer> defaultEntry =
@@ -214,7 +209,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       return internalGetH5ActivityMap().getMap().size();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
 
     @java.lang.Override
@@ -232,7 +227,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       return getH5ActivityMapMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     @java.lang.Override
 
@@ -240,7 +235,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       return internalGetH5ActivityMap().getMap();
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     @java.lang.Override
 
@@ -253,7 +248,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       return map.containsKey(key) ? map.get(key) : defaultValue;
     }
     /**
-     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+     * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
      */
     @java.lang.Override
 
@@ -282,15 +277,15 @@ public final class H5ActivityIdsNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (clientRedDotTimestamp_ != 0) {
-        output.writeUInt32(5, clientRedDotTimestamp_);
-      }
       com.google.protobuf.GeneratedMessageV3
         .serializeIntegerMapTo(
           output,
           internalGetH5ActivityMap(),
           H5ActivityMapDefaultEntryHolder.defaultEntry,
-          12);
+          1);
+      if (clientRedDotTimestamp_ != 0) {
+        output.writeUInt32(12, clientRedDotTimestamp_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -300,10 +295,6 @@ public final class H5ActivityIdsNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (clientRedDotTimestamp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, clientRedDotTimestamp_);
-      }
       for (java.util.Map.Entry<java.lang.Integer, java.lang.Integer> entry
            : internalGetH5ActivityMap().getMap().entrySet()) {
         com.google.protobuf.MapEntry<java.lang.Integer, java.lang.Integer>
@@ -312,7 +303,11 @@ public final class H5ActivityIdsNotifyOuterClass {
             .setValue(entry.getValue())
             .build();
         size += com.google.protobuf.CodedOutputStream
-            .computeMessageSize(12, h5ActivityMap__);
+            .computeMessageSize(1, h5ActivityMap__);
+      }
+      if (clientRedDotTimestamp_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(12, clientRedDotTimestamp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -447,13 +442,8 @@ public final class H5ActivityIdsNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 5672;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: FAONDBOEDMA
+     * CmdId: 5659
      * </pre>
      *
      * Protobuf type {@code H5ActivityIdsNotify}
@@ -471,7 +461,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 1:
             return internalGetH5ActivityMap();
           default:
             throw new RuntimeException(
@@ -482,7 +472,7 @@ public final class H5ActivityIdsNotifyOuterClass {
       protected com.google.protobuf.MapField internalGetMutableMapField(
           int number) {
         switch (number) {
-          case 12:
+          case 1:
             return internalGetMutableH5ActivityMap();
           default:
             throw new RuntimeException(
@@ -633,7 +623,7 @@ public final class H5ActivityIdsNotifyOuterClass {
 
       private int clientRedDotTimestamp_ ;
       /**
-       * <code>uint32 client_red_dot_timestamp = 5;</code>
+       * <code>uint32 client_red_dot_timestamp = 12;</code>
        * @return The clientRedDotTimestamp.
        */
       @java.lang.Override
@@ -641,7 +631,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return clientRedDotTimestamp_;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 5;</code>
+       * <code>uint32 client_red_dot_timestamp = 12;</code>
        * @param value The clientRedDotTimestamp to set.
        * @return This builder for chaining.
        */
@@ -652,7 +642,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 client_red_dot_timestamp = 5;</code>
+       * <code>uint32 client_red_dot_timestamp = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearClientRedDotTimestamp() {
@@ -689,7 +679,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return internalGetH5ActivityMap().getMap().size();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
 
       @java.lang.Override
@@ -707,7 +697,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return getH5ActivityMapMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
       @java.lang.Override
 
@@ -715,7 +705,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return internalGetH5ActivityMap().getMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
       @java.lang.Override
 
@@ -728,7 +718,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return map.containsKey(key) ? map.get(key) : defaultValue;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
       @java.lang.Override
 
@@ -749,7 +739,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
 
       public Builder removeH5ActivityMap(
@@ -768,7 +758,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return internalGetMutableH5ActivityMap().getMutableMap();
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
       public Builder putH5ActivityMap(
           int key,
@@ -780,7 +770,7 @@ public final class H5ActivityIdsNotifyOuterClass {
         return this;
       }
       /**
-       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 12;</code>
+       * <code>map&lt;uint32, uint32&gt; h5_activity_map = 1;</code>
        */
 
       public Builder putAllH5ActivityMap(
@@ -863,7 +853,7 @@ public final class H5ActivityIdsNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\031H5ActivityIdsNotify.proto\"\257\001\n\023H5Activi" +
       "tyIdsNotify\022 \n\030client_red_dot_timestamp\030" +
-      "\005 \001(\r\022@\n\017h5_activity_map\030\014 \003(\0132\'.H5Activ" +
+      "\014 \001(\r\022@\n\017h5_activity_map\030\001 \003(\0132\'.H5Activ" +
       "ityIdsNotify.H5ActivityMapEntry\0324\n\022H5Act" +
       "ivityMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(" +
       "\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006prot" +

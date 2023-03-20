@@ -55,6 +55,10 @@ public final class VehicleInfoOuterClass {
     float getCurStamina();
   }
   /**
+   * <pre>
+   * Name: CDPOOGDCAEF
+   * </pre>
+   *
    * Protobuf type {@code VehicleInfo}
    */
   public static final class VehicleInfo extends
@@ -399,6 +403,10 @@ public final class VehicleInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CDPOOGDCAEF
+     * </pre>
+     *
      * Protobuf type {@code VehicleInfo}
      */
     public static final class Builder extends

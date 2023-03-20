@@ -31,6 +31,10 @@ public final class AvatarEquipAffixInfoOuterClass {
     int getLeftCdTime();
   }
   /**
+   * <pre>
+   * Name: JPOMNGOBDIO
+   * </pre>
+   *
    * Protobuf type {@code AvatarEquipAffixInfo}
    */
   public static final class AvatarEquipAffixInfo extends
@@ -306,6 +310,10 @@ public final class AvatarEquipAffixInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: JPOMNGOBDIO
+     * </pre>
+     *
      * Protobuf type {@code AvatarEquipAffixInfo}
      */
     public static final class Builder extends

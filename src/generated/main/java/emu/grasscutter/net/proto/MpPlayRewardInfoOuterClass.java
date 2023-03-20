@@ -59,6 +59,10 @@ public final class MpPlayRewardInfoOuterClass {
     int getQualifyUidList(int index);
   }
   /**
+   * <pre>
+   * Name: NFAAELHDHLM
+   * </pre>
+   *
    * Protobuf type {@code MpPlayRewardInfo}
    */
   public static final class MpPlayRewardInfo extends
@@ -469,6 +473,10 @@ public final class MpPlayRewardInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: NFAAELHDHLM
+     * </pre>
+     *
      * Protobuf type {@code MpPlayRewardInfo}
      */
     public static final class Builder extends

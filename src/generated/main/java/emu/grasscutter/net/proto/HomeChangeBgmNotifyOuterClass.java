@@ -19,20 +19,15 @@ public final class HomeChangeBgmNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bgm_id = 9;</code>
+     * <code>uint32 bgm_id = 6;</code>
      * @return The bgmId.
      */
     int getBgmId();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4518;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: HLAEEPDHFMD
+   * CmdId: 4653
    * </pre>
    *
    * Protobuf type {@code HomeChangeBgmNotify}
@@ -79,7 +74,7 @@ public final class HomeChangeBgmNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 48: {
 
               bgmId_ = input.readUInt32();
               break;
@@ -116,10 +111,10 @@ public final class HomeChangeBgmNotifyOuterClass {
               emu.grasscutter.net.proto.HomeChangeBgmNotifyOuterClass.HomeChangeBgmNotify.class, emu.grasscutter.net.proto.HomeChangeBgmNotifyOuterClass.HomeChangeBgmNotify.Builder.class);
     }
 
-    public static final int BGM_ID_FIELD_NUMBER = 9;
+    public static final int BGM_ID_FIELD_NUMBER = 6;
     private int bgmId_;
     /**
-     * <code>uint32 bgm_id = 9;</code>
+     * <code>uint32 bgm_id = 6;</code>
      * @return The bgmId.
      */
     @java.lang.Override
@@ -142,7 +137,7 @@ public final class HomeChangeBgmNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bgmId_ != 0) {
-        output.writeUInt32(9, bgmId_);
+        output.writeUInt32(6, bgmId_);
       }
       unknownFields.writeTo(output);
     }
@@ -155,7 +150,7 @@ public final class HomeChangeBgmNotifyOuterClass {
       size = 0;
       if (bgmId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, bgmId_);
+          .computeUInt32Size(6, bgmId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,13 +279,8 @@ public final class HomeChangeBgmNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4518;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: HLAEEPDHFMD
+     * CmdId: 4653
      * </pre>
      *
      * Protobuf type {@code HomeChangeBgmNotify}
@@ -441,7 +431,7 @@ public final class HomeChangeBgmNotifyOuterClass {
 
       private int bgmId_ ;
       /**
-       * <code>uint32 bgm_id = 9;</code>
+       * <code>uint32 bgm_id = 6;</code>
        * @return The bgmId.
        */
       @java.lang.Override
@@ -449,7 +439,7 @@ public final class HomeChangeBgmNotifyOuterClass {
         return bgmId_;
       }
       /**
-       * <code>uint32 bgm_id = 9;</code>
+       * <code>uint32 bgm_id = 6;</code>
        * @param value The bgmId to set.
        * @return This builder for chaining.
        */
@@ -460,7 +450,7 @@ public final class HomeChangeBgmNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bgm_id = 9;</code>
+       * <code>uint32 bgm_id = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearBgmId() {
@@ -537,7 +527,7 @@ public final class HomeChangeBgmNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\031HomeChangeBgmNotify.proto\"%\n\023HomeChang" +
-      "eBgmNotify\022\016\n\006bgm_id\030\t \001(\rB\033\n\031emu.grassc" +
+      "eBgmNotify\022\016\n\006bgm_id\030\006 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

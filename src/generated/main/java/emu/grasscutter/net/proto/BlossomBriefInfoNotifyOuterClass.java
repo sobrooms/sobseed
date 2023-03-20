@@ -44,14 +44,8 @@ public final class BlossomBriefInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 2756;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: NJPBNLDFKIJ
+   * CmdId: 2754
    * </pre>
    *
    * Protobuf type {@code BlossomBriefInfoNotify}
@@ -343,14 +337,8 @@ public final class BlossomBriefInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 2756;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: NJPBNLDFKIJ
+     * CmdId: 2754
      * </pre>
      *
      * Protobuf type {@code BlossomBriefInfoNotify}

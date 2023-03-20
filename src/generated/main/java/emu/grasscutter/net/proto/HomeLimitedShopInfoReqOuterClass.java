@@ -20,14 +20,8 @@ public final class HomeLimitedShopInfoReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4815;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: JFFKPGFDHIC
+   * CmdId: 4476
    * </pre>
    *
    * Protobuf type {@code HomeLimitedShopInfoReq}
@@ -252,14 +246,8 @@ public final class HomeLimitedShopInfoReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4815;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: JFFKPGFDHIC
+     * CmdId: 4476
      * </pre>
      *
      * Protobuf type {@code HomeLimitedShopInfoReq}

@@ -43,11 +43,19 @@ public final class MailTextContentOuterClass {
         getContentBytes();
 
     /**
+     * <pre>
+     *NBNLJCLPGEA
+     * </pre>
+     *
      * <code>string sender = 3;</code>
      * @return The sender.
      */
     java.lang.String getSender();
     /**
+     * <pre>
+     *NBNLJCLPGEA
+     * </pre>
+     *
      * <code>string sender = 3;</code>
      * @return The bytes for sender.
      */
@@ -55,6 +63,10 @@ public final class MailTextContentOuterClass {
         getSenderBytes();
   }
   /**
+   * <pre>
+   * Name: CBGLBMMCPPK 
+   * </pre>
+   *
    * Protobuf type {@code MailTextContent}
    */
   public static final class MailTextContent extends
@@ -231,6 +243,10 @@ public final class MailTextContentOuterClass {
     public static final int SENDER_FIELD_NUMBER = 3;
     private volatile java.lang.Object sender_;
     /**
+     * <pre>
+     *NBNLJCLPGEA
+     * </pre>
+     *
      * <code>string sender = 3;</code>
      * @return The sender.
      */
@@ -248,6 +264,10 @@ public final class MailTextContentOuterClass {
       }
     }
     /**
+     * <pre>
+     *NBNLJCLPGEA
+     * </pre>
+     *
      * <code>string sender = 3;</code>
      * @return The bytes for sender.
      */
@@ -280,13 +300,13 @@ public final class MailTextContentOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+      if (!getTitleBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, title_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
+      if (!getContentBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, content_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
+      if (!getSenderBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, sender_);
       }
       unknownFields.writeTo(output);
@@ -298,13 +318,13 @@ public final class MailTextContentOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(title_)) {
+      if (!getTitleBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, title_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(content_)) {
+      if (!getContentBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, content_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(sender_)) {
+      if (!getSenderBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, sender_);
       }
       size += unknownFields.getSerializedSize();
@@ -441,6 +461,10 @@ public final class MailTextContentOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CBGLBMMCPPK 
+     * </pre>
+     *
      * Protobuf type {@code MailTextContent}
      */
     public static final class Builder extends
@@ -756,6 +780,10 @@ public final class MailTextContentOuterClass {
 
       private java.lang.Object sender_ = "";
       /**
+       * <pre>
+       *NBNLJCLPGEA
+       * </pre>
+       *
        * <code>string sender = 3;</code>
        * @return The sender.
        */
@@ -772,6 +800,10 @@ public final class MailTextContentOuterClass {
         }
       }
       /**
+       * <pre>
+       *NBNLJCLPGEA
+       * </pre>
+       *
        * <code>string sender = 3;</code>
        * @return The bytes for sender.
        */
@@ -789,6 +821,10 @@ public final class MailTextContentOuterClass {
         }
       }
       /**
+       * <pre>
+       *NBNLJCLPGEA
+       * </pre>
+       *
        * <code>string sender = 3;</code>
        * @param value The sender to set.
        * @return This builder for chaining.
@@ -804,6 +840,10 @@ public final class MailTextContentOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *NBNLJCLPGEA
+       * </pre>
+       *
        * <code>string sender = 3;</code>
        * @return This builder for chaining.
        */
@@ -814,6 +854,10 @@ public final class MailTextContentOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *NBNLJCLPGEA
+       * </pre>
+       *
        * <code>string sender = 3;</code>
        * @param value The bytes for sender to set.
        * @return This builder for chaining.

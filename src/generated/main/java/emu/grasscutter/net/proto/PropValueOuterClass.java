@@ -32,20 +32,10 @@ public final class PropValueOuterClass {
 
     /**
      * <code>int64 ival = 2;</code>
-     * @return Whether the ival field is set.
-     */
-    boolean hasIval();
-    /**
-     * <code>int64 ival = 2;</code>
      * @return The ival.
      */
     long getIval();
 
-    /**
-     * <code>float fval = 3;</code>
-     * @return Whether the fval field is set.
-     */
-    boolean hasFval();
     /**
      * <code>float fval = 3;</code>
      * @return The fval.
@@ -55,6 +45,10 @@ public final class PropValueOuterClass {
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.ValueCase getValueCase();
   }
   /**
+   * <pre>
+   * Name: EACNABDMBBF
+   * </pre>
+   *
    * Protobuf type {@code PropValue}
    */
   public static final class PropValue extends
@@ -217,14 +211,6 @@ public final class PropValueOuterClass {
     public static final int IVAL_FIELD_NUMBER = 2;
     /**
      * <code>int64 ival = 2;</code>
-     * @return Whether the ival field is set.
-     */
-    @java.lang.Override
-    public boolean hasIval() {
-      return valueCase_ == 2;
-    }
-    /**
-     * <code>int64 ival = 2;</code>
      * @return The ival.
      */
     @java.lang.Override
@@ -236,14 +222,6 @@ public final class PropValueOuterClass {
     }
 
     public static final int FVAL_FIELD_NUMBER = 3;
-    /**
-     * <code>float fval = 3;</code>
-     * @return Whether the fval field is set.
-     */
-    @java.lang.Override
-    public boolean hasFval() {
-      return valueCase_ == 3;
-    }
     /**
      * <code>float fval = 3;</code>
      * @return The fval.
@@ -470,6 +448,10 @@ public final class PropValueOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: EACNABDMBBF
+     * </pre>
+     *
      * Protobuf type {@code PropValue}
      */
     public static final class Builder extends
@@ -723,13 +705,6 @@ public final class PropValueOuterClass {
 
       /**
        * <code>int64 ival = 2;</code>
-       * @return Whether the ival field is set.
-       */
-      public boolean hasIval() {
-        return valueCase_ == 2;
-      }
-      /**
-       * <code>int64 ival = 2;</code>
        * @return The ival.
        */
       public long getIval() {
@@ -762,13 +737,6 @@ public final class PropValueOuterClass {
         return this;
       }
 
-      /**
-       * <code>float fval = 3;</code>
-       * @return Whether the fval field is set.
-       */
-      public boolean hasFval() {
-        return valueCase_ == 3;
-      }
       /**
        * <code>float fval = 3;</code>
        * @return The fval.

@@ -19,18 +19,22 @@ public final class BlitzRushStageOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_open = 8;</code>
+     * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
     boolean getIsOpen();
 
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 open_time = 10;</code>
      * @return The openTime.
      */
     int getOpenTime();
   }
   /**
+   * <pre>
+   * Name: EOJPOKECCCF
+   * </pre>
+   *
    * Protobuf type {@code BlitzRushStage}
    */
   public static final class BlitzRushStage extends
@@ -75,14 +79,14 @@ public final class BlitzRushStageOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
-
-              isOpen_ = input.readBool();
-              break;
-            }
-            case 96: {
+            case 80: {
 
               openTime_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -117,10 +121,10 @@ public final class BlitzRushStageOuterClass {
               emu.grasscutter.net.proto.BlitzRushStageOuterClass.BlitzRushStage.class, emu.grasscutter.net.proto.BlitzRushStageOuterClass.BlitzRushStage.Builder.class);
     }
 
-    public static final int IS_OPEN_FIELD_NUMBER = 8;
+    public static final int IS_OPEN_FIELD_NUMBER = 13;
     private boolean isOpen_;
     /**
-     * <code>bool is_open = 8;</code>
+     * <code>bool is_open = 13;</code>
      * @return The isOpen.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class BlitzRushStageOuterClass {
       return isOpen_;
     }
 
-    public static final int OPEN_TIME_FIELD_NUMBER = 12;
+    public static final int OPEN_TIME_FIELD_NUMBER = 10;
     private int openTime_;
     /**
-     * <code>uint32 open_time = 12;</code>
+     * <code>uint32 open_time = 10;</code>
      * @return The openTime.
      */
     @java.lang.Override
@@ -153,11 +157,11 @@ public final class BlitzRushStageOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isOpen_ != false) {
-        output.writeBool(8, isOpen_);
-      }
       if (openTime_ != 0) {
-        output.writeUInt32(12, openTime_);
+        output.writeUInt32(10, openTime_);
+      }
+      if (isOpen_ != false) {
+        output.writeBool(13, isOpen_);
       }
       unknownFields.writeTo(output);
     }
@@ -168,13 +172,13 @@ public final class BlitzRushStageOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isOpen_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isOpen_);
-      }
       if (openTime_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, openTime_);
+          .computeUInt32Size(10, openTime_);
+      }
+      if (isOpen_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(13, isOpen_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -307,6 +311,10 @@ public final class BlitzRushStageOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: EOJPOKECCCF
+     * </pre>
+     *
      * Protobuf type {@code BlitzRushStage}
      */
     public static final class Builder extends
@@ -461,7 +469,7 @@ public final class BlitzRushStageOuterClass {
 
       private boolean isOpen_ ;
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 13;</code>
        * @return The isOpen.
        */
       @java.lang.Override
@@ -469,7 +477,7 @@ public final class BlitzRushStageOuterClass {
         return isOpen_;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 13;</code>
        * @param value The isOpen to set.
        * @return This builder for chaining.
        */
@@ -480,7 +488,7 @@ public final class BlitzRushStageOuterClass {
         return this;
       }
       /**
-       * <code>bool is_open = 8;</code>
+       * <code>bool is_open = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsOpen() {
@@ -492,7 +500,7 @@ public final class BlitzRushStageOuterClass {
 
       private int openTime_ ;
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 10;</code>
        * @return The openTime.
        */
       @java.lang.Override
@@ -500,7 +508,7 @@ public final class BlitzRushStageOuterClass {
         return openTime_;
       }
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 10;</code>
        * @param value The openTime to set.
        * @return This builder for chaining.
        */
@@ -511,7 +519,7 @@ public final class BlitzRushStageOuterClass {
         return this;
       }
       /**
-       * <code>uint32 open_time = 12;</code>
+       * <code>uint32 open_time = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearOpenTime() {
@@ -588,7 +596,7 @@ public final class BlitzRushStageOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\024BlitzRushStage.proto\"4\n\016BlitzRushStage" +
-      "\022\017\n\007is_open\030\010 \001(\010\022\021\n\topen_time\030\014 \001(\rB\033\n\031" +
+      "\022\017\n\007is_open\030\r \001(\010\022\021\n\topen_time\030\n \001(\rB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

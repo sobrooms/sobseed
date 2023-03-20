@@ -31,6 +31,10 @@ public final class TrialAvatarGrantRecordOuterClass {
     int getFromParentQuestId();
   }
   /**
+   * <pre>
+   * Name: FINJPJBDGIK
+   * </pre>
+   *
    * Protobuf type {@code TrialAvatarGrantRecord}
    */
   public static final class TrialAvatarGrantRecord extends
@@ -118,6 +122,10 @@ public final class TrialAvatarGrantRecordOuterClass {
     }
 
     /**
+     * <pre>
+     * Name: FJBKKFJNBHD
+     * </pre>
+     *
      * Protobuf enum {@code TrialAvatarGrantRecord.GrantReason}
      */
     public enum GrantReason
@@ -178,6 +186,14 @@ public final class TrialAvatarGrantRecordOuterClass {
        * <code>GRANT_REASON_BY_CHAR_AMUSEMENT = 13;</code>
        */
       GRANT_REASON_BY_CHAR_AMUSEMENT(13),
+      /**
+       * <code>FJBKKFJNBHD_HMLDNDBKNFL = 14;</code>
+       */
+      FJBKKFJNBHD_HMLDNDBKNFL(14),
+      /**
+       * <code>FJBKKFJNBHD_PJDEJIHFCPP = 15;</code>
+       */
+      FJBKKFJNBHD_PJDEJIHFCPP(15),
       UNRECOGNIZED(-1),
       ;
 
@@ -237,6 +253,14 @@ public final class TrialAvatarGrantRecordOuterClass {
        * <code>GRANT_REASON_BY_CHAR_AMUSEMENT = 13;</code>
        */
       public static final int GRANT_REASON_BY_CHAR_AMUSEMENT_VALUE = 13;
+      /**
+       * <code>FJBKKFJNBHD_HMLDNDBKNFL = 14;</code>
+       */
+      public static final int FJBKKFJNBHD_HMLDNDBKNFL_VALUE = 14;
+      /**
+       * <code>FJBKKFJNBHD_PJDEJIHFCPP = 15;</code>
+       */
+      public static final int FJBKKFJNBHD_PJDEJIHFCPP_VALUE = 15;
 
 
       public final int getNumber() {
@@ -277,6 +301,8 @@ public final class TrialAvatarGrantRecordOuterClass {
           case 11: return GRANT_REASON_BY_MUQADAS_POTION_ACTIVITY;
           case 12: return GRANT_REASON_BY_VINTAGE_HUNTING;
           case 13: return GRANT_REASON_BY_CHAR_AMUSEMENT;
+          case 14: return FJBKKFJNBHD_HMLDNDBKNFL;
+          case 15: return FJBKKFJNBHD_PJDEJIHFCPP;
           default: return null;
         }
       }
@@ -522,6 +548,10 @@ public final class TrialAvatarGrantRecordOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FINJPJBDGIK
+     * </pre>
+     *
      * Protobuf type {@code TrialAvatarGrantRecord}
      */
     public static final class Builder extends
@@ -802,9 +832,9 @@ public final class TrialAvatarGrantRecordOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\034TrialAvatarGrantRecord.proto\"\346\004\n\026Trial" +
+      "\n\034TrialAvatarGrantRecord.proto\"\240\005\n\026Trial" +
       "AvatarGrantRecord\022\024\n\014grant_reason\030\001 \001(\r\022" +
-      "\034\n\024from_parent_quest_id\030\002 \001(\r\"\227\004\n\013GrantR" +
+      "\034\n\024from_parent_quest_id\030\002 \001(\r\"\321\004\n\013GrantR" +
       "eason\022\030\n\024GRANT_REASON_INVALID\020\000\022\031\n\025GRANT" +
       "_REASON_BY_QUEST\020\001\022)\n%GRANT_REASON_BY_TR" +
       "IAL_AVATAR_ACTIVITY\020\002\022-\n)GRANT_REASON_BY" +
@@ -818,8 +848,9 @@ public final class TrialAvatarGrantRecordOuterClass {
       "CTIVITY\020\n\022+\n\'GRANT_REASON_BY_MUQADAS_POT" +
       "ION_ACTIVITY\020\013\022#\n\037GRANT_REASON_BY_VINTAG" +
       "E_HUNTING\020\014\022\"\n\036GRANT_REASON_BY_CHAR_AMUS" +
-      "EMENT\020\rB\033\n\031emu.grasscutter.net.protob\006pr" +
-      "oto3"
+      "EMENT\020\r\022\033\n\027FJBKKFJNBHD_HMLDNDBKNFL\020\016\022\033\n\027" +
+      "FJBKKFJNBHD_PJDEJIHFCPP\020\017B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

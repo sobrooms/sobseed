@@ -43,6 +43,10 @@ public final class WindFieldDetailInfoOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Name: BLAMPOHHEDO
+   * </pre>
+   *
    * Protobuf type {@code WindFieldDetailInfo}
    */
   public static final class WindFieldDetailInfo extends
@@ -331,6 +335,10 @@ public final class WindFieldDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BLAMPOHHEDO
+     * </pre>
+     *
      * Protobuf type {@code WindFieldDetailInfo}
      */
     public static final class Builder extends

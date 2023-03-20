@@ -83,6 +83,10 @@ public final class GadgetPlayInfoOuterClass {
     public emu.grasscutter.net.proto.GadgetPlayInfoOuterClass.GadgetPlayInfo.PlayInfoCase getPlayInfoCase();
   }
   /**
+   * <pre>
+   * Name: FOENOMBFLMO
+   * </pre>
+   *
    * Protobuf type {@code GadgetPlayInfo}
    */
   public static final class GadgetPlayInfo extends
@@ -629,6 +633,10 @@ public final class GadgetPlayInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FOENOMBFLMO
+     * </pre>
+     *
      * Protobuf type {@code GadgetPlayInfo}
      */
     public static final class Builder extends

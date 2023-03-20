@@ -15,173 +15,177 @@ public final class VisionTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Name: GCJAHMGAAGM
+   * </pre>
+   *
    * Protobuf enum {@code VisionType}
    */
   public enum VisionType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>VISION_TYPE_NONE = 0;</code>
+     * <code>VISION_NONE = 0;</code>
      */
-    VISION_TYPE_NONE(0),
+    VISION_NONE(0),
     /**
-     * <code>VISION_TYPE_MEET = 1;</code>
+     * <code>VISION_MEET = 1;</code>
      */
-    VISION_TYPE_MEET(1),
+    VISION_MEET(1),
     /**
-     * <code>VISION_TYPE_REBORN = 2;</code>
+     * <code>VISION_REBORN = 2;</code>
      */
-    VISION_TYPE_REBORN(2),
+    VISION_REBORN(2),
     /**
-     * <code>VISION_TYPE_REPLACE = 3;</code>
+     * <code>VISION_REPLACE = 3;</code>
      */
-    VISION_TYPE_REPLACE(3),
+    VISION_REPLACE(3),
     /**
-     * <code>VISION_TYPE_WAYPOINT_REBORN = 4;</code>
+     * <code>VISION_WAYPOINT_REBORN = 4;</code>
      */
-    VISION_TYPE_WAYPOINT_REBORN(4),
+    VISION_WAYPOINT_REBORN(4),
     /**
-     * <code>VISION_TYPE_MISS = 5;</code>
+     * <code>VISION_MISS = 5;</code>
      */
-    VISION_TYPE_MISS(5),
+    VISION_MISS(5),
     /**
-     * <code>VISION_TYPE_DIE = 6;</code>
+     * <code>VISION_DIE = 6;</code>
      */
-    VISION_TYPE_DIE(6),
+    VISION_DIE(6),
     /**
-     * <code>VISION_TYPE_GATHER_ESCAPE = 7;</code>
+     * <code>VISION_GATHER_ESCAPE = 7;</code>
      */
-    VISION_TYPE_GATHER_ESCAPE(7),
+    VISION_GATHER_ESCAPE(7),
     /**
-     * <code>VISION_TYPE_REFRESH = 8;</code>
+     * <code>VISION_REFRESH = 8;</code>
      */
-    VISION_TYPE_REFRESH(8),
+    VISION_REFRESH(8),
     /**
-     * <code>VISION_TYPE_TRANSPORT = 9;</code>
+     * <code>VISION_TRANSPORT = 9;</code>
      */
-    VISION_TYPE_TRANSPORT(9),
+    VISION_TRANSPORT(9),
     /**
-     * <code>VISION_TYPE_REPLACE_DIE = 10;</code>
+     * <code>VISION_REPLACE_DIE = 10;</code>
      */
-    VISION_TYPE_REPLACE_DIE(10),
+    VISION_REPLACE_DIE(10),
     /**
-     * <code>VISION_TYPE_REPLACE_NO_NOTIFY = 11;</code>
+     * <code>VISION_REPLACE_NO_NOTIFY = 11;</code>
      */
-    VISION_TYPE_REPLACE_NO_NOTIFY(11),
+    VISION_REPLACE_NO_NOTIFY(11),
     /**
-     * <code>VISION_TYPE_BORN = 12;</code>
+     * <code>VISION_BORN = 12;</code>
      */
-    VISION_TYPE_BORN(12),
+    VISION_BORN(12),
     /**
-     * <code>VISION_TYPE_PICKUP = 13;</code>
+     * <code>VISION_PICKUP = 13;</code>
      */
-    VISION_TYPE_PICKUP(13),
+    VISION_PICKUP(13),
     /**
-     * <code>VISION_TYPE_REMOVE = 14;</code>
+     * <code>VISION_REMOVE = 14;</code>
      */
-    VISION_TYPE_REMOVE(14),
+    VISION_REMOVE(14),
     /**
-     * <code>VISION_TYPE_CHANGE_COSTUME = 15;</code>
+     * <code>VISION_CHANGE_COSTUME = 15;</code>
      */
-    VISION_TYPE_CHANGE_COSTUME(15),
+    VISION_CHANGE_COSTUME(15),
     /**
-     * <code>VISION_TYPE_FISH_REFRESH = 16;</code>
+     * <code>VISION_FISH_REFRESH = 16;</code>
      */
-    VISION_TYPE_FISH_REFRESH(16),
+    VISION_FISH_REFRESH(16),
     /**
-     * <code>VISION_TYPE_FISH_BIG_SHOCK = 17;</code>
+     * <code>VISION_FISH_BIG_SHOCK = 17;</code>
      */
-    VISION_TYPE_FISH_BIG_SHOCK(17),
+    VISION_FISH_BIG_SHOCK(17),
     /**
-     * <code>VISION_TYPE_FISH_QTE_SUCC = 18;</code>
+     * <code>VISION_FISH_QTE_SUCC = 18;</code>
      */
-    VISION_TYPE_FISH_QTE_SUCC(18),
+    VISION_FISH_QTE_SUCC(18),
     /**
-     * <code>VISION_TYPE_CAPTURE_DISAPPEAR = 19;</code>
+     * <code>VISION_CAPTURE_DISAPPEAR = 19;</code>
      */
-    VISION_TYPE_CAPTURE_DISAPPEAR(19),
+    VISION_CAPTURE_DISAPPEAR(19),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>VISION_TYPE_NONE = 0;</code>
+     * <code>VISION_NONE = 0;</code>
      */
-    public static final int VISION_TYPE_NONE_VALUE = 0;
+    public static final int VISION_NONE_VALUE = 0;
     /**
-     * <code>VISION_TYPE_MEET = 1;</code>
+     * <code>VISION_MEET = 1;</code>
      */
-    public static final int VISION_TYPE_MEET_VALUE = 1;
+    public static final int VISION_MEET_VALUE = 1;
     /**
-     * <code>VISION_TYPE_REBORN = 2;</code>
+     * <code>VISION_REBORN = 2;</code>
      */
-    public static final int VISION_TYPE_REBORN_VALUE = 2;
+    public static final int VISION_REBORN_VALUE = 2;
     /**
-     * <code>VISION_TYPE_REPLACE = 3;</code>
+     * <code>VISION_REPLACE = 3;</code>
      */
-    public static final int VISION_TYPE_REPLACE_VALUE = 3;
+    public static final int VISION_REPLACE_VALUE = 3;
     /**
-     * <code>VISION_TYPE_WAYPOINT_REBORN = 4;</code>
+     * <code>VISION_WAYPOINT_REBORN = 4;</code>
      */
-    public static final int VISION_TYPE_WAYPOINT_REBORN_VALUE = 4;
+    public static final int VISION_WAYPOINT_REBORN_VALUE = 4;
     /**
-     * <code>VISION_TYPE_MISS = 5;</code>
+     * <code>VISION_MISS = 5;</code>
      */
-    public static final int VISION_TYPE_MISS_VALUE = 5;
+    public static final int VISION_MISS_VALUE = 5;
     /**
-     * <code>VISION_TYPE_DIE = 6;</code>
+     * <code>VISION_DIE = 6;</code>
      */
-    public static final int VISION_TYPE_DIE_VALUE = 6;
+    public static final int VISION_DIE_VALUE = 6;
     /**
-     * <code>VISION_TYPE_GATHER_ESCAPE = 7;</code>
+     * <code>VISION_GATHER_ESCAPE = 7;</code>
      */
-    public static final int VISION_TYPE_GATHER_ESCAPE_VALUE = 7;
+    public static final int VISION_GATHER_ESCAPE_VALUE = 7;
     /**
-     * <code>VISION_TYPE_REFRESH = 8;</code>
+     * <code>VISION_REFRESH = 8;</code>
      */
-    public static final int VISION_TYPE_REFRESH_VALUE = 8;
+    public static final int VISION_REFRESH_VALUE = 8;
     /**
-     * <code>VISION_TYPE_TRANSPORT = 9;</code>
+     * <code>VISION_TRANSPORT = 9;</code>
      */
-    public static final int VISION_TYPE_TRANSPORT_VALUE = 9;
+    public static final int VISION_TRANSPORT_VALUE = 9;
     /**
-     * <code>VISION_TYPE_REPLACE_DIE = 10;</code>
+     * <code>VISION_REPLACE_DIE = 10;</code>
      */
-    public static final int VISION_TYPE_REPLACE_DIE_VALUE = 10;
+    public static final int VISION_REPLACE_DIE_VALUE = 10;
     /**
-     * <code>VISION_TYPE_REPLACE_NO_NOTIFY = 11;</code>
+     * <code>VISION_REPLACE_NO_NOTIFY = 11;</code>
      */
-    public static final int VISION_TYPE_REPLACE_NO_NOTIFY_VALUE = 11;
+    public static final int VISION_REPLACE_NO_NOTIFY_VALUE = 11;
     /**
-     * <code>VISION_TYPE_BORN = 12;</code>
+     * <code>VISION_BORN = 12;</code>
      */
-    public static final int VISION_TYPE_BORN_VALUE = 12;
+    public static final int VISION_BORN_VALUE = 12;
     /**
-     * <code>VISION_TYPE_PICKUP = 13;</code>
+     * <code>VISION_PICKUP = 13;</code>
      */
-    public static final int VISION_TYPE_PICKUP_VALUE = 13;
+    public static final int VISION_PICKUP_VALUE = 13;
     /**
-     * <code>VISION_TYPE_REMOVE = 14;</code>
+     * <code>VISION_REMOVE = 14;</code>
      */
-    public static final int VISION_TYPE_REMOVE_VALUE = 14;
+    public static final int VISION_REMOVE_VALUE = 14;
     /**
-     * <code>VISION_TYPE_CHANGE_COSTUME = 15;</code>
+     * <code>VISION_CHANGE_COSTUME = 15;</code>
      */
-    public static final int VISION_TYPE_CHANGE_COSTUME_VALUE = 15;
+    public static final int VISION_CHANGE_COSTUME_VALUE = 15;
     /**
-     * <code>VISION_TYPE_FISH_REFRESH = 16;</code>
+     * <code>VISION_FISH_REFRESH = 16;</code>
      */
-    public static final int VISION_TYPE_FISH_REFRESH_VALUE = 16;
+    public static final int VISION_FISH_REFRESH_VALUE = 16;
     /**
-     * <code>VISION_TYPE_FISH_BIG_SHOCK = 17;</code>
+     * <code>VISION_FISH_BIG_SHOCK = 17;</code>
      */
-    public static final int VISION_TYPE_FISH_BIG_SHOCK_VALUE = 17;
+    public static final int VISION_FISH_BIG_SHOCK_VALUE = 17;
     /**
-     * <code>VISION_TYPE_FISH_QTE_SUCC = 18;</code>
+     * <code>VISION_FISH_QTE_SUCC = 18;</code>
      */
-    public static final int VISION_TYPE_FISH_QTE_SUCC_VALUE = 18;
+    public static final int VISION_FISH_QTE_SUCC_VALUE = 18;
     /**
-     * <code>VISION_TYPE_CAPTURE_DISAPPEAR = 19;</code>
+     * <code>VISION_CAPTURE_DISAPPEAR = 19;</code>
      */
-    public static final int VISION_TYPE_CAPTURE_DISAPPEAR_VALUE = 19;
+    public static final int VISION_CAPTURE_DISAPPEAR_VALUE = 19;
 
 
     public final int getNumber() {
@@ -208,26 +212,26 @@ public final class VisionTypeOuterClass {
      */
     public static VisionType forNumber(int value) {
       switch (value) {
-        case 0: return VISION_TYPE_NONE;
-        case 1: return VISION_TYPE_MEET;
-        case 2: return VISION_TYPE_REBORN;
-        case 3: return VISION_TYPE_REPLACE;
-        case 4: return VISION_TYPE_WAYPOINT_REBORN;
-        case 5: return VISION_TYPE_MISS;
-        case 6: return VISION_TYPE_DIE;
-        case 7: return VISION_TYPE_GATHER_ESCAPE;
-        case 8: return VISION_TYPE_REFRESH;
-        case 9: return VISION_TYPE_TRANSPORT;
-        case 10: return VISION_TYPE_REPLACE_DIE;
-        case 11: return VISION_TYPE_REPLACE_NO_NOTIFY;
-        case 12: return VISION_TYPE_BORN;
-        case 13: return VISION_TYPE_PICKUP;
-        case 14: return VISION_TYPE_REMOVE;
-        case 15: return VISION_TYPE_CHANGE_COSTUME;
-        case 16: return VISION_TYPE_FISH_REFRESH;
-        case 17: return VISION_TYPE_FISH_BIG_SHOCK;
-        case 18: return VISION_TYPE_FISH_QTE_SUCC;
-        case 19: return VISION_TYPE_CAPTURE_DISAPPEAR;
+        case 0: return VISION_NONE;
+        case 1: return VISION_MEET;
+        case 2: return VISION_REBORN;
+        case 3: return VISION_REPLACE;
+        case 4: return VISION_WAYPOINT_REBORN;
+        case 5: return VISION_MISS;
+        case 6: return VISION_DIE;
+        case 7: return VISION_GATHER_ESCAPE;
+        case 8: return VISION_REFRESH;
+        case 9: return VISION_TRANSPORT;
+        case 10: return VISION_REPLACE_DIE;
+        case 11: return VISION_REPLACE_NO_NOTIFY;
+        case 12: return VISION_BORN;
+        case 13: return VISION_PICKUP;
+        case 14: return VISION_REMOVE;
+        case 15: return VISION_CHANGE_COSTUME;
+        case 16: return VISION_FISH_REFRESH;
+        case 17: return VISION_FISH_BIG_SHOCK;
+        case 18: return VISION_FISH_QTE_SUCC;
+        case 19: return VISION_CAPTURE_DISAPPEAR;
         default: return null;
       }
     }
@@ -293,22 +297,19 @@ public final class VisionTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020VisionType.proto*\256\004\n\nVisionType\022\024\n\020VIS" +
-      "ION_TYPE_NONE\020\000\022\024\n\020VISION_TYPE_MEET\020\001\022\026\n" +
-      "\022VISION_TYPE_REBORN\020\002\022\027\n\023VISION_TYPE_REP" +
-      "LACE\020\003\022\037\n\033VISION_TYPE_WAYPOINT_REBORN\020\004\022" +
-      "\024\n\020VISION_TYPE_MISS\020\005\022\023\n\017VISION_TYPE_DIE" +
-      "\020\006\022\035\n\031VISION_TYPE_GATHER_ESCAPE\020\007\022\027\n\023VIS" +
-      "ION_TYPE_REFRESH\020\010\022\031\n\025VISION_TYPE_TRANSP" +
-      "ORT\020\t\022\033\n\027VISION_TYPE_REPLACE_DIE\020\n\022!\n\035VI" +
-      "SION_TYPE_REPLACE_NO_NOTIFY\020\013\022\024\n\020VISION_" +
-      "TYPE_BORN\020\014\022\026\n\022VISION_TYPE_PICKUP\020\r\022\026\n\022V" +
-      "ISION_TYPE_REMOVE\020\016\022\036\n\032VISION_TYPE_CHANG" +
-      "E_COSTUME\020\017\022\034\n\030VISION_TYPE_FISH_REFRESH\020" +
-      "\020\022\036\n\032VISION_TYPE_FISH_BIG_SHOCK\020\021\022\035\n\031VIS" +
-      "ION_TYPE_FISH_QTE_SUCC\020\022\022!\n\035VISION_TYPE_" +
-      "CAPTURE_DISAPPEAR\020\023B\033\n\031emu.grasscutter.n" +
-      "et.protob\006proto3"
+      "\n\020VisionType.proto*\312\003\n\nVisionType\022\017\n\013VIS" +
+      "ION_NONE\020\000\022\017\n\013VISION_MEET\020\001\022\021\n\rVISION_RE" +
+      "BORN\020\002\022\022\n\016VISION_REPLACE\020\003\022\032\n\026VISION_WAY" +
+      "POINT_REBORN\020\004\022\017\n\013VISION_MISS\020\005\022\016\n\nVISIO" +
+      "N_DIE\020\006\022\030\n\024VISION_GATHER_ESCAPE\020\007\022\022\n\016VIS" +
+      "ION_REFRESH\020\010\022\024\n\020VISION_TRANSPORT\020\t\022\026\n\022V" +
+      "ISION_REPLACE_DIE\020\n\022\034\n\030VISION_REPLACE_NO" +
+      "_NOTIFY\020\013\022\017\n\013VISION_BORN\020\014\022\021\n\rVISION_PIC" +
+      "KUP\020\r\022\021\n\rVISION_REMOVE\020\016\022\031\n\025VISION_CHANG" +
+      "E_COSTUME\020\017\022\027\n\023VISION_FISH_REFRESH\020\020\022\031\n\025" +
+      "VISION_FISH_BIG_SHOCK\020\021\022\030\n\024VISION_FISH_Q" +
+      "TE_SUCC\020\022\022\034\n\030VISION_CAPTURE_DISAPPEAR\020\023B" +
+      "\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

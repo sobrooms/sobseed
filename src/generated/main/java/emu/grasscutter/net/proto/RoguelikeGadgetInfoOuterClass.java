@@ -43,6 +43,10 @@ public final class RoguelikeGadgetInfoOuterClass {
     int getCellId();
   }
   /**
+   * <pre>
+   * Name: BDEFJFGKKBF
+   * </pre>
+   *
    * Protobuf type {@code RoguelikeGadgetInfo}
    */
   public static final class RoguelikeGadgetInfo extends
@@ -372,6 +376,10 @@ public final class RoguelikeGadgetInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BDEFJFGKKBF
+     * </pre>
+     *
      * Protobuf type {@code RoguelikeGadgetInfo}
      */
     public static final class Builder extends

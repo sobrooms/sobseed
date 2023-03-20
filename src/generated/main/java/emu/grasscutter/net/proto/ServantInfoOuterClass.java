@@ -31,6 +31,10 @@ public final class ServantInfoOuterClass {
     int getBornSlotIndex();
   }
   /**
+   * <pre>
+   * Name: HAKHNIFICLC
+   * </pre>
+   *
    * Protobuf type {@code ServantInfo}
    */
   public static final class ServantInfo extends
@@ -306,6 +310,10 @@ public final class ServantInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HAKHNIFICLC
+     * </pre>
+     *
      * Protobuf type {@code ServantInfo}
      */
     public static final class Builder extends

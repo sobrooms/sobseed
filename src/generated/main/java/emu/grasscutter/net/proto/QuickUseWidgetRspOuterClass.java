@@ -19,59 +19,59 @@ public final class QuickUseWidgetRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
      * <code>uint32 material_id = 11;</code>
      * @return The materialId.
      */
     int getMaterialId();
 
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      * @return Whether the detectorData field is set.
      */
     boolean hasDetectorData();
     /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      * @return The detectorData.
      */
     emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDetectorData();
     /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      */
     emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDetectorDataOrBuilder();
 
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      * @return Whether the clientCollectorData field is set.
      */
     boolean hasClientCollectorData();
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      * @return The clientCollectorData.
      */
     emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorData();
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      */
     emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataOrBuilder();
 
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      * @return Whether the skyCrystalDetectorQuickUseResult field is set.
      */
     boolean hasSkyCrystalDetectorQuickUseResult();
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      * @return The skyCrystalDetectorQuickUseResult.
      */
     emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult getSkyCrystalDetectorQuickUseResult();
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      */
     emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResultOrBuilder getSkyCrystalDetectorQuickUseResultOrBuilder();
 
@@ -79,13 +79,8 @@ public final class QuickUseWidgetRspOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4265;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: NBBMMCLDPLL
+   * CmdId: 4285
    * </pre>
    *
    * Protobuf type {@code QuickUseWidgetRsp}
@@ -132,33 +127,14 @@ public final class QuickUseWidgetRspOuterClass {
             case 0:
               done = true;
               break;
-            case 82: {
-              emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder subBuilder = null;
-              if (paramCase_ == 10) {
-                subBuilder = ((emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_).toBuilder();
-              }
-              param_ =
-                  input.readMessage(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
-                param_ = subBuilder.buildPartial();
-              }
-              paramCase_ = 10;
-              break;
-            }
-            case 88: {
-
-              materialId_ = input.readUInt32();
-              break;
-            }
-            case 96: {
+            case 8: {
 
               retcode_ = input.readInt32();
               break;
             }
-            case 114: {
+            case 42: {
               emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder subBuilder = null;
-              if (paramCase_ == 14) {
+              if (paramCase_ == 5) {
                 subBuilder = ((emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_).toBuilder();
               }
               param_ =
@@ -167,12 +143,31 @@ public final class QuickUseWidgetRspOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_);
                 param_ = subBuilder.buildPartial();
               }
-              paramCase_ = 14;
+              paramCase_ = 5;
               break;
             }
-            case 1378578: {
+            case 88: {
+
+              materialId_ = input.readUInt32();
+              break;
+            }
+            case 98: {
+              emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder subBuilder = null;
+              if (paramCase_ == 12) {
+                subBuilder = ((emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_).toBuilder();
+              }
+              param_ =
+                  input.readMessage(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
+                param_ = subBuilder.buildPartial();
+              }
+              paramCase_ = 12;
+              break;
+            }
+            case 195626: {
               emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder subBuilder = null;
-              if (paramCase_ == 172322) {
+              if (paramCase_ == 24453) {
                 subBuilder = ((emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_).toBuilder();
               }
               param_ =
@@ -181,7 +176,7 @@ public final class QuickUseWidgetRspOuterClass {
                 subBuilder.mergeFrom((emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_);
                 param_ = subBuilder.buildPartial();
               }
-              paramCase_ = 172322;
+              paramCase_ = 24453;
               break;
             }
             default: {
@@ -221,9 +216,9 @@ public final class QuickUseWidgetRspOuterClass {
     public enum ParamCase
         implements com.google.protobuf.Internal.EnumLite,
             com.google.protobuf.AbstractMessage.InternalOneOfEnum {
-      DETECTOR_DATA(14),
-      CLIENT_COLLECTOR_DATA(10),
-      SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT(172322),
+      DETECTOR_DATA(5),
+      CLIENT_COLLECTOR_DATA(12),
+      SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT(24453),
       PARAM_NOT_SET(0);
       private final int value;
       private ParamCase(int value) {
@@ -241,9 +236,9 @@ public final class QuickUseWidgetRspOuterClass {
 
       public static ParamCase forNumber(int value) {
         switch (value) {
-          case 14: return DETECTOR_DATA;
-          case 10: return CLIENT_COLLECTOR_DATA;
-          case 172322: return SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT;
+          case 5: return DETECTOR_DATA;
+          case 12: return CLIENT_COLLECTOR_DATA;
+          case 24453: return SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT;
           case 0: return PARAM_NOT_SET;
           default: return null;
         }
@@ -259,6 +254,17 @@ public final class QuickUseWidgetRspOuterClass {
           paramCase_);
     }
 
+    public static final int RETCODE_FIELD_NUMBER = 1;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 1;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
     public static final int MATERIAL_ID_FIELD_NUMBER = 11;
     private int materialId_;
     /**
@@ -270,105 +276,94 @@ public final class QuickUseWidgetRspOuterClass {
       return materialId_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 12;
-    private int retcode_;
+    public static final int DETECTOR_DATA_FIELD_NUMBER = 5;
     /**
-     * <code>int32 retcode = 12;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int DETECTOR_DATA_FIELD_NUMBER = 14;
-    /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      * @return Whether the detectorData field is set.
      */
     @java.lang.Override
     public boolean hasDetectorData() {
-      return paramCase_ == 14;
+      return paramCase_ == 5;
     }
     /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      * @return The detectorData.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDetectorData() {
-      if (paramCase_ == 14) {
+      if (paramCase_ == 5) {
          return (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_;
       }
       return emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
     }
     /**
-     * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+     * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDetectorDataOrBuilder() {
-      if (paramCase_ == 14) {
+      if (paramCase_ == 5) {
          return (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_;
       }
       return emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
     }
 
-    public static final int CLIENT_COLLECTOR_DATA_FIELD_NUMBER = 10;
+    public static final int CLIENT_COLLECTOR_DATA_FIELD_NUMBER = 12;
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      * @return Whether the clientCollectorData field is set.
      */
     @java.lang.Override
     public boolean hasClientCollectorData() {
-      return paramCase_ == 10;
+      return paramCase_ == 12;
     }
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      * @return The clientCollectorData.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorData() {
-      if (paramCase_ == 10) {
+      if (paramCase_ == 12) {
          return (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_;
       }
       return emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
     }
     /**
-     * <code>.ClientCollectorData client_collector_data = 10;</code>
+     * <code>.ClientCollectorData client_collector_data = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataOrBuilder() {
-      if (paramCase_ == 10) {
+      if (paramCase_ == 12) {
          return (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_;
       }
       return emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
     }
 
-    public static final int SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT_FIELD_NUMBER = 172322;
+    public static final int SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT_FIELD_NUMBER = 24453;
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      * @return Whether the skyCrystalDetectorQuickUseResult field is set.
      */
     @java.lang.Override
     public boolean hasSkyCrystalDetectorQuickUseResult() {
-      return paramCase_ == 172322;
+      return paramCase_ == 24453;
     }
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      * @return The skyCrystalDetectorQuickUseResult.
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult getSkyCrystalDetectorQuickUseResult() {
-      if (paramCase_ == 172322) {
+      if (paramCase_ == 24453) {
          return (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_;
       }
       return emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
     }
     /**
-     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+     * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResultOrBuilder getSkyCrystalDetectorQuickUseResultOrBuilder() {
-      if (paramCase_ == 172322) {
+      if (paramCase_ == 24453) {
          return (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_;
       }
       return emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
@@ -388,20 +383,20 @@ public final class QuickUseWidgetRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (paramCase_ == 10) {
-        output.writeMessage(10, (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
+      if (retcode_ != 0) {
+        output.writeInt32(1, retcode_);
+      }
+      if (paramCase_ == 5) {
+        output.writeMessage(5, (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_);
       }
       if (materialId_ != 0) {
         output.writeUInt32(11, materialId_);
       }
-      if (retcode_ != 0) {
-        output.writeInt32(12, retcode_);
+      if (paramCase_ == 12) {
+        output.writeMessage(12, (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
       }
-      if (paramCase_ == 14) {
-        output.writeMessage(14, (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_);
-      }
-      if (paramCase_ == 172322) {
-        output.writeMessage(172322, (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_);
+      if (paramCase_ == 24453) {
+        output.writeMessage(24453, (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_);
       }
       unknownFields.writeTo(output);
     }
@@ -412,25 +407,25 @@ public final class QuickUseWidgetRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (paramCase_ == 10) {
+      if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(10, (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
+          .computeInt32Size(1, retcode_);
+      }
+      if (paramCase_ == 5) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_);
       }
       if (materialId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, materialId_);
       }
-      if (retcode_ != 0) {
+      if (paramCase_ == 12) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(12, retcode_);
+          .computeMessageSize(12, (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_);
       }
-      if (paramCase_ == 14) {
+      if (paramCase_ == 24453) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_);
-      }
-      if (paramCase_ == 172322) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(172322, (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_);
+          .computeMessageSize(24453, (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -447,21 +442,21 @@ public final class QuickUseWidgetRspOuterClass {
       }
       emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp other = (emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp) obj;
 
-      if (getMaterialId()
-          != other.getMaterialId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (getMaterialId()
+          != other.getMaterialId()) return false;
       if (!getParamCase().equals(other.getParamCase())) return false;
       switch (paramCase_) {
-        case 14:
+        case 5:
           if (!getDetectorData()
               .equals(other.getDetectorData())) return false;
           break;
-        case 10:
+        case 12:
           if (!getClientCollectorData()
               .equals(other.getClientCollectorData())) return false;
           break;
-        case 172322:
+        case 24453:
           if (!getSkyCrystalDetectorQuickUseResult()
               .equals(other.getSkyCrystalDetectorQuickUseResult())) return false;
           break;
@@ -479,20 +474,20 @@ public final class QuickUseWidgetRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMaterialId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
+      hash = (37 * hash) + MATERIAL_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMaterialId();
       switch (paramCase_) {
-        case 14:
+        case 5:
           hash = (37 * hash) + DETECTOR_DATA_FIELD_NUMBER;
           hash = (53 * hash) + getDetectorData().hashCode();
           break;
-        case 10:
+        case 12:
           hash = (37 * hash) + CLIENT_COLLECTOR_DATA_FIELD_NUMBER;
           hash = (53 * hash) + getClientCollectorData().hashCode();
           break;
-        case 172322:
+        case 24453:
           hash = (37 * hash) + SKY_CRYSTAL_DETECTOR_QUICK_USE_RESULT_FIELD_NUMBER;
           hash = (53 * hash) + getSkyCrystalDetectorQuickUseResult().hashCode();
           break;
@@ -596,13 +591,8 @@ public final class QuickUseWidgetRspOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4265;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: NBBMMCLDPLL
+     * CmdId: 4285
      * </pre>
      *
      * Protobuf type {@code QuickUseWidgetRsp}
@@ -642,9 +632,9 @@ public final class QuickUseWidgetRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        materialId_ = 0;
-
         retcode_ = 0;
+
+        materialId_ = 0;
 
         paramCase_ = 0;
         param_ = null;
@@ -674,23 +664,23 @@ public final class QuickUseWidgetRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp buildPartial() {
         emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp result = new emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp(this);
-        result.materialId_ = materialId_;
         result.retcode_ = retcode_;
-        if (paramCase_ == 14) {
+        result.materialId_ = materialId_;
+        if (paramCase_ == 5) {
           if (detectorDataBuilder_ == null) {
             result.param_ = param_;
           } else {
             result.param_ = detectorDataBuilder_.build();
           }
         }
-        if (paramCase_ == 10) {
+        if (paramCase_ == 12) {
           if (clientCollectorDataBuilder_ == null) {
             result.param_ = param_;
           } else {
             result.param_ = clientCollectorDataBuilder_.build();
           }
         }
-        if (paramCase_ == 172322) {
+        if (paramCase_ == 24453) {
           if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
             result.param_ = param_;
           } else {
@@ -746,11 +736,11 @@ public final class QuickUseWidgetRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp other) {
         if (other == emu.grasscutter.net.proto.QuickUseWidgetRspOuterClass.QuickUseWidgetRsp.getDefaultInstance()) return this;
-        if (other.getMaterialId() != 0) {
-          setMaterialId(other.getMaterialId());
-        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
+        }
+        if (other.getMaterialId() != 0) {
+          setMaterialId(other.getMaterialId());
         }
         switch (other.getParamCase()) {
           case DETECTOR_DATA: {
@@ -813,6 +803,37 @@ public final class QuickUseWidgetRspOuterClass {
       }
 
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int materialId_ ;
       /**
        * <code>uint32 material_id = 11;</code>
@@ -844,67 +865,36 @@ public final class QuickUseWidgetRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 12;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> detectorDataBuilder_;
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        * @return Whether the detectorData field is set.
        */
       @java.lang.Override
       public boolean hasDetectorData() {
-        return paramCase_ == 14;
+        return paramCase_ == 5;
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        * @return The detectorData.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData getDetectorData() {
         if (detectorDataBuilder_ == null) {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             return (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_;
           }
           return emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
         } else {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             return detectorDataBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
         }
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       public Builder setDetectorData(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
         if (detectorDataBuilder_ == null) {
@@ -916,11 +906,11 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           detectorDataBuilder_.setMessage(value);
         }
-        paramCase_ = 14;
+        paramCase_ = 5;
         return this;
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       public Builder setDetectorData(
           emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder builderForValue) {
@@ -930,15 +920,15 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           detectorDataBuilder_.setMessage(builderForValue.build());
         }
-        paramCase_ = 14;
+        paramCase_ = 5;
         return this;
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       public Builder mergeDetectorData(emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData value) {
         if (detectorDataBuilder_ == null) {
-          if (paramCase_ == 14 &&
+          if (paramCase_ == 5 &&
               param_ != emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance()) {
             param_ = emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.newBuilder((emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_)
                 .mergeFrom(value).buildPartial();
@@ -947,26 +937,26 @@ public final class QuickUseWidgetRspOuterClass {
           }
           onChanged();
         } else {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             detectorDataBuilder_.mergeFrom(value);
           }
           detectorDataBuilder_.setMessage(value);
         }
-        paramCase_ = 14;
+        paramCase_ = 5;
         return this;
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       public Builder clearDetectorData() {
         if (detectorDataBuilder_ == null) {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             paramCase_ = 0;
             param_ = null;
             onChanged();
           }
         } else {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             paramCase_ = 0;
             param_ = null;
           }
@@ -975,33 +965,33 @@ public final class QuickUseWidgetRspOuterClass {
         return this;
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder getDetectorDataBuilder() {
         return getDetectorDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder getDetectorDataOrBuilder() {
-        if ((paramCase_ == 14) && (detectorDataBuilder_ != null)) {
+        if ((paramCase_ == 5) && (detectorDataBuilder_ != null)) {
           return detectorDataBuilder_.getMessageOrBuilder();
         } else {
-          if (paramCase_ == 14) {
+          if (paramCase_ == 5) {
             return (emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData) param_;
           }
           return emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
         }
       }
       /**
-       * <code>.OneoffGatherPointDetectorData detector_data = 14;</code>
+       * <code>.OneoffGatherPointDetectorData detector_data = 5;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.Builder, emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorDataOrBuilder> 
           getDetectorDataFieldBuilder() {
         if (detectorDataBuilder_ == null) {
-          if (!(paramCase_ == 14)) {
+          if (!(paramCase_ == 5)) {
             param_ = emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.OneoffGatherPointDetectorData.getDefaultInstance();
           }
           detectorDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1011,7 +1001,7 @@ public final class QuickUseWidgetRspOuterClass {
                   isClean());
           param_ = null;
         }
-        paramCase_ = 14;
+        paramCase_ = 5;
         onChanged();;
         return detectorDataBuilder_;
       }
@@ -1019,33 +1009,33 @@ public final class QuickUseWidgetRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> clientCollectorDataBuilder_;
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        * @return Whether the clientCollectorData field is set.
        */
       @java.lang.Override
       public boolean hasClientCollectorData() {
-        return paramCase_ == 10;
+        return paramCase_ == 12;
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        * @return The clientCollectorData.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData getClientCollectorData() {
         if (clientCollectorDataBuilder_ == null) {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             return (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_;
           }
           return emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
         } else {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             return clientCollectorDataBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
         }
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       public Builder setClientCollectorData(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
         if (clientCollectorDataBuilder_ == null) {
@@ -1057,11 +1047,11 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           clientCollectorDataBuilder_.setMessage(value);
         }
-        paramCase_ = 10;
+        paramCase_ = 12;
         return this;
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       public Builder setClientCollectorData(
           emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder builderForValue) {
@@ -1071,15 +1061,15 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           clientCollectorDataBuilder_.setMessage(builderForValue.build());
         }
-        paramCase_ = 10;
+        paramCase_ = 12;
         return this;
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       public Builder mergeClientCollectorData(emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData value) {
         if (clientCollectorDataBuilder_ == null) {
-          if (paramCase_ == 10 &&
+          if (paramCase_ == 12 &&
               param_ != emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance()) {
             param_ = emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.newBuilder((emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_)
                 .mergeFrom(value).buildPartial();
@@ -1088,26 +1078,26 @@ public final class QuickUseWidgetRspOuterClass {
           }
           onChanged();
         } else {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             clientCollectorDataBuilder_.mergeFrom(value);
           }
           clientCollectorDataBuilder_.setMessage(value);
         }
-        paramCase_ = 10;
+        paramCase_ = 12;
         return this;
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       public Builder clearClientCollectorData() {
         if (clientCollectorDataBuilder_ == null) {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             paramCase_ = 0;
             param_ = null;
             onChanged();
           }
         } else {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             paramCase_ = 0;
             param_ = null;
           }
@@ -1116,33 +1106,33 @@ public final class QuickUseWidgetRspOuterClass {
         return this;
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder getClientCollectorDataBuilder() {
         return getClientCollectorDataFieldBuilder().getBuilder();
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder getClientCollectorDataOrBuilder() {
-        if ((paramCase_ == 10) && (clientCollectorDataBuilder_ != null)) {
+        if ((paramCase_ == 12) && (clientCollectorDataBuilder_ != null)) {
           return clientCollectorDataBuilder_.getMessageOrBuilder();
         } else {
-          if (paramCase_ == 10) {
+          if (paramCase_ == 12) {
             return (emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData) param_;
           }
           return emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
         }
       }
       /**
-       * <code>.ClientCollectorData client_collector_data = 10;</code>
+       * <code>.ClientCollectorData client_collector_data = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.Builder, emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorDataOrBuilder> 
           getClientCollectorDataFieldBuilder() {
         if (clientCollectorDataBuilder_ == null) {
-          if (!(paramCase_ == 10)) {
+          if (!(paramCase_ == 12)) {
             param_ = emu.grasscutter.net.proto.ClientCollectorDataOuterClass.ClientCollectorData.getDefaultInstance();
           }
           clientCollectorDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1152,7 +1142,7 @@ public final class QuickUseWidgetRspOuterClass {
                   isClean());
           param_ = null;
         }
-        paramCase_ = 10;
+        paramCase_ = 12;
         onChanged();;
         return clientCollectorDataBuilder_;
       }
@@ -1160,33 +1150,33 @@ public final class QuickUseWidgetRspOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult, emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder, emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResultOrBuilder> skyCrystalDetectorQuickUseResultBuilder_;
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        * @return Whether the skyCrystalDetectorQuickUseResult field is set.
        */
       @java.lang.Override
       public boolean hasSkyCrystalDetectorQuickUseResult() {
-        return paramCase_ == 172322;
+        return paramCase_ == 24453;
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        * @return The skyCrystalDetectorQuickUseResult.
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult getSkyCrystalDetectorQuickUseResult() {
         if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             return (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_;
           }
           return emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
         } else {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             return skyCrystalDetectorQuickUseResultBuilder_.getMessage();
           }
           return emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       public Builder setSkyCrystalDetectorQuickUseResult(emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult value) {
         if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
@@ -1198,11 +1188,11 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           skyCrystalDetectorQuickUseResultBuilder_.setMessage(value);
         }
-        paramCase_ = 172322;
+        paramCase_ = 24453;
         return this;
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       public Builder setSkyCrystalDetectorQuickUseResult(
           emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder builderForValue) {
@@ -1212,15 +1202,15 @@ public final class QuickUseWidgetRspOuterClass {
         } else {
           skyCrystalDetectorQuickUseResultBuilder_.setMessage(builderForValue.build());
         }
-        paramCase_ = 172322;
+        paramCase_ = 24453;
         return this;
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       public Builder mergeSkyCrystalDetectorQuickUseResult(emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult value) {
         if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
-          if (paramCase_ == 172322 &&
+          if (paramCase_ == 24453 &&
               param_ != emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance()) {
             param_ = emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.newBuilder((emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_)
                 .mergeFrom(value).buildPartial();
@@ -1229,26 +1219,26 @@ public final class QuickUseWidgetRspOuterClass {
           }
           onChanged();
         } else {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             skyCrystalDetectorQuickUseResultBuilder_.mergeFrom(value);
           }
           skyCrystalDetectorQuickUseResultBuilder_.setMessage(value);
         }
-        paramCase_ = 172322;
+        paramCase_ = 24453;
         return this;
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       public Builder clearSkyCrystalDetectorQuickUseResult() {
         if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             paramCase_ = 0;
             param_ = null;
             onChanged();
           }
         } else {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             paramCase_ = 0;
             param_ = null;
           }
@@ -1257,33 +1247,33 @@ public final class QuickUseWidgetRspOuterClass {
         return this;
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       public emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder getSkyCrystalDetectorQuickUseResultBuilder() {
         return getSkyCrystalDetectorQuickUseResultFieldBuilder().getBuilder();
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       @java.lang.Override
       public emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResultOrBuilder getSkyCrystalDetectorQuickUseResultOrBuilder() {
-        if ((paramCase_ == 172322) && (skyCrystalDetectorQuickUseResultBuilder_ != null)) {
+        if ((paramCase_ == 24453) && (skyCrystalDetectorQuickUseResultBuilder_ != null)) {
           return skyCrystalDetectorQuickUseResultBuilder_.getMessageOrBuilder();
         } else {
-          if (paramCase_ == 172322) {
+          if (paramCase_ == 24453) {
             return (emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult) param_;
           }
           return emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
         }
       }
       /**
-       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 172322;</code>
+       * <code>.SkyCrystalDetectorQuickUseResult sky_crystal_detector_quick_use_result = 24453;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult, emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.Builder, emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResultOrBuilder> 
           getSkyCrystalDetectorQuickUseResultFieldBuilder() {
         if (skyCrystalDetectorQuickUseResultBuilder_ == null) {
-          if (!(paramCase_ == 172322)) {
+          if (!(paramCase_ == 24453)) {
             param_ = emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.SkyCrystalDetectorQuickUseResult.getDefaultInstance();
           }
           skyCrystalDetectorQuickUseResultBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -1293,7 +1283,7 @@ public final class QuickUseWidgetRspOuterClass {
                   isClean());
           param_ = null;
         }
-        paramCase_ = 172322;
+        paramCase_ = 24453;
         onChanged();;
         return skyCrystalDetectorQuickUseResultBuilder_;
       }
@@ -1367,12 +1357,12 @@ public final class QuickUseWidgetRspOuterClass {
       "\n\027QuickUseWidgetRsp.proto\032\031ClientCollect" +
       "orData.proto\032#OneoffGatherPointDetectorD" +
       "ata.proto\032&SkyCrystalDetectorQuickUseRes" +
-      "ult.proto\"\210\002\n\021QuickUseWidgetRsp\022\023\n\013mater" +
-      "ial_id\030\013 \001(\r\022\017\n\007retcode\030\014 \001(\005\0227\n\rdetecto" +
-      "r_data\030\016 \001(\0132\036.OneoffGatherPointDetector" +
-      "DataH\000\0225\n\025client_collector_data\030\n \001(\0132\024." +
+      "ult.proto\"\210\002\n\021QuickUseWidgetRsp\022\017\n\007retco" +
+      "de\030\001 \001(\005\022\023\n\013material_id\030\013 \001(\r\0227\n\rdetecto" +
+      "r_data\030\005 \001(\0132\036.OneoffGatherPointDetector" +
+      "DataH\000\0225\n\025client_collector_data\030\014 \001(\0132\024." +
       "ClientCollectorDataH\000\022T\n%sky_crystal_det" +
-      "ector_quick_use_result\030\242\302\n \001(\0132!.SkyCrys" +
+      "ector_quick_use_result\030\205\277\001 \001(\0132!.SkyCrys" +
       "talDetectorQuickUseResultH\000B\007\n\005paramB\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
@@ -1388,7 +1378,7 @@ public final class QuickUseWidgetRspOuterClass {
     internal_static_QuickUseWidgetRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_QuickUseWidgetRsp_descriptor,
-        new java.lang.String[] { "MaterialId", "Retcode", "DetectorData", "ClientCollectorData", "SkyCrystalDetectorQuickUseResult", "Param", });
+        new java.lang.String[] { "Retcode", "MaterialId", "DetectorData", "ClientCollectorData", "SkyCrystalDetectorQuickUseResult", "Param", });
     emu.grasscutter.net.proto.ClientCollectorDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.OneoffGatherPointDetectorDataOuterClass.getDescriptor();
     emu.grasscutter.net.proto.SkyCrystalDetectorQuickUseResultOuterClass.getDescriptor();

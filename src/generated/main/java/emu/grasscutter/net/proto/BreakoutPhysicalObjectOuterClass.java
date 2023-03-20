@@ -169,6 +169,10 @@ public final class BreakoutPhysicalObjectOuterClass {
     int getOffset();
   }
   /**
+   * <pre>
+   * Name: GNMIBJGAHKL
+   * </pre>
+   *
    * Protobuf type {@code BreakoutPhysicalObject}
    */
   public static final class BreakoutPhysicalObject extends
@@ -958,6 +962,10 @@ public final class BreakoutPhysicalObjectOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: GNMIBJGAHKL
+     * </pre>
+     *
      * Protobuf type {@code BreakoutPhysicalObject}
      */
     public static final class Builder extends

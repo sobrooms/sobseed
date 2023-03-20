@@ -19,13 +19,13 @@ public final class GetQuestTalkHistoryRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 9;</code>
      * @return The parentQuestId.
      */
     int getParentQuestId();
@@ -49,13 +49,8 @@ public final class GetQuestTalkHistoryRspOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 478;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: MMOIOJJOHGJ
+   * CmdId: 465
    * </pre>
    *
    * Protobuf type {@code GetQuestTalkHistoryRsp}
@@ -104,16 +99,6 @@ public final class GetQuestTalkHistoryRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              parentQuestId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
             case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 talkIdList_ = newIntList();
@@ -133,6 +118,16 @@ public final class GetQuestTalkHistoryRspOuterClass {
                 talkIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 72: {
+
+              parentQuestId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -170,10 +165,10 @@ public final class GetQuestTalkHistoryRspOuterClass {
               emu.grasscutter.net.proto.GetQuestTalkHistoryRspOuterClass.GetQuestTalkHistoryRsp.class, emu.grasscutter.net.proto.GetQuestTalkHistoryRspOuterClass.GetQuestTalkHistoryRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 4;
+    public static final int RETCODE_FIELD_NUMBER = 14;
     private int retcode_;
     /**
-     * <code>int32 retcode = 4;</code>
+     * <code>int32 retcode = 14;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -181,10 +176,10 @@ public final class GetQuestTalkHistoryRspOuterClass {
       return retcode_;
     }
 
-    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 3;
+    public static final int PARENT_QUEST_ID_FIELD_NUMBER = 9;
     private int parentQuestId_;
     /**
-     * <code>uint32 parent_quest_id = 3;</code>
+     * <code>uint32 parent_quest_id = 9;</code>
      * @return The parentQuestId.
      */
     @java.lang.Override
@@ -235,18 +230,18 @@ public final class GetQuestTalkHistoryRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (parentQuestId_ != 0) {
-        output.writeUInt32(3, parentQuestId_);
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(4, retcode_);
-      }
       if (getTalkIdListList().size() > 0) {
         output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(talkIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < talkIdList_.size(); i++) {
         output.writeUInt32NoTag(talkIdList_.getInt(i));
+      }
+      if (parentQuestId_ != 0) {
+        output.writeUInt32(9, parentQuestId_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(14, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -257,14 +252,6 @@ public final class GetQuestTalkHistoryRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (parentQuestId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, parentQuestId_);
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, retcode_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < talkIdList_.size(); i++) {
@@ -278,6 +265,14 @@ public final class GetQuestTalkHistoryRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         talkIdListMemoizedSerializedSize = dataSize;
+      }
+      if (parentQuestId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(9, parentQuestId_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(14, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -416,13 +411,8 @@ public final class GetQuestTalkHistoryRspOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 478;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: MMOIOJJOHGJ
+     * CmdId: 465
      * </pre>
      *
      * Protobuf type {@code GetQuestTalkHistoryRsp}
@@ -598,7 +588,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -606,7 +596,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -617,7 +607,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 4;</code>
+       * <code>int32 retcode = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -629,7 +619,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
 
       private int parentQuestId_ ;
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 9;</code>
        * @return The parentQuestId.
        */
       @java.lang.Override
@@ -637,7 +627,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
         return parentQuestId_;
       }
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 9;</code>
        * @param value The parentQuestId to set.
        * @return This builder for chaining.
        */
@@ -648,7 +638,7 @@ public final class GetQuestTalkHistoryRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 parent_quest_id = 3;</code>
+       * <code>uint32 parent_quest_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearParentQuestId() {
@@ -804,8 +794,8 @@ public final class GetQuestTalkHistoryRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034GetQuestTalkHistoryRsp.proto\"X\n\026GetQue" +
-      "stTalkHistoryRsp\022\017\n\007retcode\030\004 \001(\005\022\027\n\017par" +
-      "ent_quest_id\030\003 \001(\r\022\024\n\014talk_id_list\030\005 \003(\r" +
+      "stTalkHistoryRsp\022\017\n\007retcode\030\016 \001(\005\022\027\n\017par" +
+      "ent_quest_id\030\t \001(\r\022\024\n\014talk_id_list\030\005 \003(\r" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -37,14 +37,8 @@ public final class DungeonCandidateTeamChangeAvatarReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 982;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: DHPIDPOHNDO
+   * CmdId: 988
    * </pre>
    *
    * Protobuf type {@code DungeonCandidateTeamChangeAvatarReq}
@@ -351,14 +345,8 @@ public final class DungeonCandidateTeamChangeAvatarReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 982;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: DHPIDPOHNDO
+     * CmdId: 988
      * </pre>
      *
      * Protobuf type {@code DungeonCandidateTeamChangeAvatarReq}

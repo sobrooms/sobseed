@@ -31,6 +31,10 @@ public final class BreakoutElementReactionCounterOuterClass {
     int getCount();
   }
   /**
+   * <pre>
+   * Name: BBFLDMEFACH
+   * </pre>
+   *
    * Protobuf type {@code BreakoutElementReactionCounter}
    */
   public static final class BreakoutElementReactionCounter extends
@@ -306,6 +310,10 @@ public final class BreakoutElementReactionCounterOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BBFLDMEFACH
+     * </pre>
+     *
      * Protobuf type {@code BreakoutElementReactionCounter}
      */
     public static final class Builder extends

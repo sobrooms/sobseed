@@ -46,20 +46,10 @@ public final class AbilityScalarValueEntryOuterClass {
 
     /**
      * <code>float float_value = 3;</code>
-     * @return Whether the floatValue field is set.
-     */
-    boolean hasFloatValue();
-    /**
-     * <code>float float_value = 3;</code>
      * @return The floatValue.
      */
     float getFloatValue();
 
-    /**
-     * <code>string string_value = 4;</code>
-     * @return Whether the stringValue field is set.
-     */
-    boolean hasStringValue();
     /**
      * <code>string string_value = 4;</code>
      * @return The stringValue.
@@ -74,20 +64,10 @@ public final class AbilityScalarValueEntryOuterClass {
 
     /**
      * <code>int32 int_value = 5;</code>
-     * @return Whether the intValue field is set.
-     */
-    boolean hasIntValue();
-    /**
-     * <code>int32 int_value = 5;</code>
      * @return The intValue.
      */
     int getIntValue();
 
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return Whether the uintValue field is set.
-     */
-    boolean hasUintValue();
     /**
      * <code>uint32 uint_value = 6;</code>
      * @return The uintValue.
@@ -97,6 +77,10 @@ public final class AbilityScalarValueEntryOuterClass {
     public emu.grasscutter.net.proto.AbilityScalarValueEntryOuterClass.AbilityScalarValueEntry.ValueCase getValueCase();
   }
   /**
+   * <pre>
+   * Name: JHJPOIJGPEB
+   * </pre>
+   *
    * Protobuf type {@code AbilityScalarValueEntry}
    */
   public static final class AbilityScalarValueEntry extends
@@ -307,14 +291,6 @@ public final class AbilityScalarValueEntryOuterClass {
     public static final int FLOAT_VALUE_FIELD_NUMBER = 3;
     /**
      * <code>float float_value = 3;</code>
-     * @return Whether the floatValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasFloatValue() {
-      return valueCase_ == 3;
-    }
-    /**
-     * <code>float float_value = 3;</code>
      * @return The floatValue.
      */
     @java.lang.Override
@@ -326,13 +302,6 @@ public final class AbilityScalarValueEntryOuterClass {
     }
 
     public static final int STRING_VALUE_FIELD_NUMBER = 4;
-    /**
-     * <code>string string_value = 4;</code>
-     * @return Whether the stringValue field is set.
-     */
-    public boolean hasStringValue() {
-      return valueCase_ == 4;
-    }
     /**
      * <code>string string_value = 4;</code>
      * @return The stringValue.
@@ -380,14 +349,6 @@ public final class AbilityScalarValueEntryOuterClass {
     public static final int INT_VALUE_FIELD_NUMBER = 5;
     /**
      * <code>int32 int_value = 5;</code>
-     * @return Whether the intValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasIntValue() {
-      return valueCase_ == 5;
-    }
-    /**
-     * <code>int32 int_value = 5;</code>
      * @return The intValue.
      */
     @java.lang.Override
@@ -399,14 +360,6 @@ public final class AbilityScalarValueEntryOuterClass {
     }
 
     public static final int UINT_VALUE_FIELD_NUMBER = 6;
-    /**
-     * <code>uint32 uint_value = 6;</code>
-     * @return Whether the uintValue field is set.
-     */
-    @java.lang.Override
-    public boolean hasUintValue() {
-      return valueCase_ == 6;
-    }
     /**
      * <code>uint32 uint_value = 6;</code>
      * @return The uintValue.
@@ -436,7 +389,7 @@ public final class AbilityScalarValueEntryOuterClass {
       if (key_ != null) {
         output.writeMessage(1, getKey());
       }
-      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOWN.getNumber()) {
+      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW.getNumber()) {
         output.writeEnum(2, valueType_);
       }
       if (valueCase_ == 3) {
@@ -467,7 +420,7 @@ public final class AbilityScalarValueEntryOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getKey());
       }
-      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOWN.getNumber()) {
+      if (valueType_ != emu.grasscutter.net.proto.AbilityScalarTypeOuterClass.AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(2, valueType_);
       }
@@ -666,6 +619,10 @@ public final class AbilityScalarValueEntryOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: JHJPOIJGPEB
+     * </pre>
+     *
      * Protobuf type {@code AbilityScalarValueEntry}
      */
     public static final class Builder extends
@@ -1054,13 +1011,6 @@ public final class AbilityScalarValueEntryOuterClass {
 
       /**
        * <code>float float_value = 3;</code>
-       * @return Whether the floatValue field is set.
-       */
-      public boolean hasFloatValue() {
-        return valueCase_ == 3;
-      }
-      /**
-       * <code>float float_value = 3;</code>
        * @return The floatValue.
        */
       public float getFloatValue() {
@@ -1093,14 +1043,6 @@ public final class AbilityScalarValueEntryOuterClass {
         return this;
       }
 
-      /**
-       * <code>string string_value = 4;</code>
-       * @return Whether the stringValue field is set.
-       */
-      @java.lang.Override
-      public boolean hasStringValue() {
-        return valueCase_ == 4;
-      }
       /**
        * <code>string string_value = 4;</code>
        * @return The stringValue.
@@ -1192,13 +1134,6 @@ public final class AbilityScalarValueEntryOuterClass {
 
       /**
        * <code>int32 int_value = 5;</code>
-       * @return Whether the intValue field is set.
-       */
-      public boolean hasIntValue() {
-        return valueCase_ == 5;
-      }
-      /**
-       * <code>int32 int_value = 5;</code>
        * @return The intValue.
        */
       public int getIntValue() {
@@ -1231,13 +1166,6 @@ public final class AbilityScalarValueEntryOuterClass {
         return this;
       }
 
-      /**
-       * <code>uint32 uint_value = 6;</code>
-       * @return Whether the uintValue field is set.
-       */
-      public boolean hasUintValue() {
-        return valueCase_ == 6;
-      }
       /**
        * <code>uint32 uint_value = 6;</code>
        * @return The uintValue.

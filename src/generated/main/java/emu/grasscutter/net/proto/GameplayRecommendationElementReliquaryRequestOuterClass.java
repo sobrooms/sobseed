@@ -19,18 +19,22 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 element_type = 2;</code>
+     * <code>uint32 element_type = 9;</code>
      * @return The elementType.
      */
     int getElementType();
 
     /**
-     * <code>uint32 equip_type = 3;</code>
+     * <code>uint32 equip_type = 11;</code>
      * @return The equipType.
      */
     int getEquipType();
   }
   /**
+   * <pre>
+   * Name: HACCJLNLCBK
+   * </pre>
+   *
    * Protobuf type {@code GameplayRecommendationElementReliquaryRequest}
    */
   public static final class GameplayRecommendationElementReliquaryRequest extends
@@ -75,12 +79,12 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 72: {
 
               elementType_ = input.readUInt32();
               break;
             }
-            case 24: {
+            case 88: {
 
               equipType_ = input.readUInt32();
               break;
@@ -117,10 +121,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
               emu.grasscutter.net.proto.GameplayRecommendationElementReliquaryRequestOuterClass.GameplayRecommendationElementReliquaryRequest.class, emu.grasscutter.net.proto.GameplayRecommendationElementReliquaryRequestOuterClass.GameplayRecommendationElementReliquaryRequest.Builder.class);
     }
 
-    public static final int ELEMENT_TYPE_FIELD_NUMBER = 2;
+    public static final int ELEMENT_TYPE_FIELD_NUMBER = 9;
     private int elementType_;
     /**
-     * <code>uint32 element_type = 2;</code>
+     * <code>uint32 element_type = 9;</code>
      * @return The elementType.
      */
     @java.lang.Override
@@ -128,10 +132,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
       return elementType_;
     }
 
-    public static final int EQUIP_TYPE_FIELD_NUMBER = 3;
+    public static final int EQUIP_TYPE_FIELD_NUMBER = 11;
     private int equipType_;
     /**
-     * <code>uint32 equip_type = 3;</code>
+     * <code>uint32 equip_type = 11;</code>
      * @return The equipType.
      */
     @java.lang.Override
@@ -154,10 +158,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (elementType_ != 0) {
-        output.writeUInt32(2, elementType_);
+        output.writeUInt32(9, elementType_);
       }
       if (equipType_ != 0) {
-        output.writeUInt32(3, equipType_);
+        output.writeUInt32(11, equipType_);
       }
       unknownFields.writeTo(output);
     }
@@ -170,11 +174,11 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
       size = 0;
       if (elementType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, elementType_);
+          .computeUInt32Size(9, elementType_);
       }
       if (equipType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, equipType_);
+          .computeUInt32Size(11, equipType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -306,6 +310,10 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HACCJLNLCBK
+     * </pre>
+     *
      * Protobuf type {@code GameplayRecommendationElementReliquaryRequest}
      */
     public static final class Builder extends
@@ -460,7 +468,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
 
       private int elementType_ ;
       /**
-       * <code>uint32 element_type = 2;</code>
+       * <code>uint32 element_type = 9;</code>
        * @return The elementType.
        */
       @java.lang.Override
@@ -468,7 +476,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
         return elementType_;
       }
       /**
-       * <code>uint32 element_type = 2;</code>
+       * <code>uint32 element_type = 9;</code>
        * @param value The elementType to set.
        * @return This builder for chaining.
        */
@@ -479,7 +487,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
         return this;
       }
       /**
-       * <code>uint32 element_type = 2;</code>
+       * <code>uint32 element_type = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearElementType() {
@@ -491,7 +499,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
 
       private int equipType_ ;
       /**
-       * <code>uint32 equip_type = 3;</code>
+       * <code>uint32 equip_type = 11;</code>
        * @return The equipType.
        */
       @java.lang.Override
@@ -499,7 +507,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
         return equipType_;
       }
       /**
-       * <code>uint32 equip_type = 3;</code>
+       * <code>uint32 equip_type = 11;</code>
        * @param value The equipType to set.
        * @return This builder for chaining.
        */
@@ -510,7 +518,7 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
         return this;
       }
       /**
-       * <code>uint32 equip_type = 3;</code>
+       * <code>uint32 equip_type = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearEquipType() {
@@ -588,8 +596,8 @@ public final class GameplayRecommendationElementReliquaryRequestOuterClass {
     java.lang.String[] descriptorData = {
       "\n3GameplayRecommendationElementReliquary" +
       "Request.proto\"Y\n-GameplayRecommendationE" +
-      "lementReliquaryRequest\022\024\n\014element_type\030\002" +
-      " \001(\r\022\022\n\nequip_type\030\003 \001(\rB\033\n\031emu.grasscut" +
+      "lementReliquaryRequest\022\024\n\014element_type\030\t" +
+      " \001(\r\022\022\n\nequip_type\030\013 \001(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -263,16 +263,17 @@ public class ConfigContainer {
         public static class Mail {
             public String title = "Welcome to SobseedPS!";
             public String content = """
-                    Hi there!\r
-                    Welcome to SobseedPS! If you have any issues, please let us know so that we can help you! \r
-                    \r
-                    Check out our:\r
-                    <type="browser" text="Discord" href="https://discord.gg/QPG3vBTr99"/>
-                    """;
+            Hey there! Welcome to SobseedPS!!!\r
+            Check out our:\r
+            <type="browser" text="Discord" href="https://discord.gg/QPG3vBTr99"/>\r
+            <type="browser" text="GitHub" href="https://github.com/sobrooms"/>\r
+            <type="browser" text="Website" href="https://sobroom.rrryfoo.cf"/>\r
+            """;
             public String sender = "sobrooms";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
-                    new emu.grasscutter.game.mail.Mail.MailItem(13509, 1, 1),
-                    new emu.grasscutter.game.mail.Mail.MailItem(201, 99999, 1)
+                    new emu.grasscutter.game.mail.Mail.MailItem(108293, 1, 1),
+                    new emu.grasscutter.game.mail.Mail.MailItem(223, 99999, 1),
+                    new emu.grasscutter.game.mail.Mail.MailItem(224, 99999, 1)
             };
         }
     }
@@ -284,7 +285,7 @@ public class ConfigContainer {
         public int worldLevel = 7;
 
         public String nickName = "SobseedPS Server";
-        public String signature = "Sob!";
+        public String signature = "Sob at my face loudly";
     }
 
     public static class Files {

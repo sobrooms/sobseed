@@ -49,6 +49,10 @@ public final class MassivePropSyncInfoOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Name: IBDHKPKIDND
+   * </pre>
+   *
    * Protobuf type {@code MassivePropSyncInfo}
    */
   public static final class MassivePropSyncInfo extends
@@ -365,6 +369,10 @@ public final class MassivePropSyncInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: IBDHKPKIDND
+     * </pre>
+     *
      * Protobuf type {@code MassivePropSyncInfo}
      */
     public static final class Builder extends

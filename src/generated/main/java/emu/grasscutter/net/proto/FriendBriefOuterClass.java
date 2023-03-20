@@ -217,6 +217,10 @@ public final class FriendBriefOuterClass {
     emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType getPlatformType();
   }
   /**
+   * <pre>
+   * Name: CCNCLHGNBFP
+   * </pre>
+   *
    * Protobuf type {@code FriendBrief}
    */
   public static final class FriendBrief extends
@@ -869,7 +873,7 @@ public final class FriendBriefOuterClass {
       if (uid_ != 0) {
         output.writeUInt32(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, nickname_);
       }
       if (level_ != 0) {
@@ -881,10 +885,10 @@ public final class FriendBriefOuterClass {
       if (worldLevel_ != 0) {
         output.writeUInt32(5, worldLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 6, signature_);
       }
-      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_ONLINE_STATE_DISCONNECT.getNumber()) {
+      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_DISCONNECT.getNumber()) {
         output.writeEnum(7, onlineState_);
       }
       if (param_ != 0) {
@@ -893,7 +897,7 @@ public final class FriendBriefOuterClass {
       if (isMpModeAvailable_ != false) {
         output.writeBool(10, isMpModeAvailable_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 11, onlineId_);
       }
       if (lastActiveTime_ != 0) {
@@ -911,7 +915,7 @@ public final class FriendBriefOuterClass {
       if (chatSequence_ != 0) {
         output.writeUInt32(16, chatSequence_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+      if (!getRemarkNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 17, remarkName_);
       }
       for (int i = 0; i < showAvatarInfoList_.size(); i++) {
@@ -929,7 +933,7 @@ public final class FriendBriefOuterClass {
       if (isPsnSource_ != false) {
         output.writeBool(26, isPsnSource_);
       }
-      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
+      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.EDITOR.getNumber()) {
         output.writeEnum(27, platformType_);
       }
       unknownFields.writeTo(output);
@@ -945,7 +949,7 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, uid_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nickname_)) {
+      if (!getNicknameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, nickname_);
       }
       if (level_ != 0) {
@@ -960,10 +964,10 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, worldLevel_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(signature_)) {
+      if (!getSignatureBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, signature_);
       }
-      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_ONLINE_STATE_DISCONNECT.getNumber()) {
+      if (onlineState_ != emu.grasscutter.net.proto.FriendOnlineStateOuterClass.FriendOnlineState.FRIEND_DISCONNECT.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(7, onlineState_);
       }
@@ -975,7 +979,7 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(10, isMpModeAvailable_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(onlineId_)) {
+      if (!getOnlineIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, onlineId_);
       }
       if (lastActiveTime_ != 0) {
@@ -998,7 +1002,7 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(16, chatSequence_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(remarkName_)) {
+      if (!getRemarkNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(17, remarkName_);
       }
       for (int i = 0; i < showAvatarInfoList_.size(); i++) {
@@ -1021,7 +1025,7 @@ public final class FriendBriefOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(26, isPsnSource_);
       }
-      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_EDITOR.getNumber()) {
+      if (platformType_ != emu.grasscutter.net.proto.PlatformTypeOuterClass.PlatformType.EDITOR.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(27, platformType_);
       }
@@ -1243,6 +1247,10 @@ public final class FriendBriefOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CCNCLHGNBFP
+     * </pre>
+     *
      * Protobuf type {@code FriendBrief}
      */
     public static final class Builder extends

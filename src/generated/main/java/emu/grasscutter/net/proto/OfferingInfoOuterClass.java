@@ -25,6 +25,10 @@ public final class OfferingInfoOuterClass {
     int getOfferingId();
   }
   /**
+   * <pre>
+   * Name: FCKEMAGNIFF
+   * </pre>
+   *
    * Protobuf type {@code OfferingInfo}
    */
   public static final class OfferingInfo extends
@@ -273,6 +277,10 @@ public final class OfferingInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: FCKEMAGNIFF
+     * </pre>
+     *
      * Protobuf type {@code OfferingInfo}
      */
     public static final class Builder extends

@@ -44,13 +44,8 @@ public final class FinishedParentQuestNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 419;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: BCPKKPKIOIG
+   * CmdId: 464
    * </pre>
    *
    * Protobuf type {@code FinishedParentQuestNotify}
@@ -342,13 +337,8 @@ public final class FinishedParentQuestNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 419;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: BCPKKPKIOIG
+     * CmdId: 464
      * </pre>
      *
      * Protobuf type {@code FinishedParentQuestNotify}

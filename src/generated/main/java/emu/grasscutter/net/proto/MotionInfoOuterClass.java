@@ -132,6 +132,10 @@ public final class MotionInfoOuterClass {
     long getIntervalVelocity();
   }
   /**
+   * <pre>
+   * Name: BNEGCDIFHLA
+   * </pre>
+   *
    * Protobuf type {@code MotionInfo}
    */
   public static final class MotionInfo extends
@@ -758,6 +762,10 @@ public final class MotionInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BNEGCDIFHLA
+     * </pre>
+     *
      * Protobuf type {@code MotionInfo}
      */
     public static final class Builder extends

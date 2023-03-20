@@ -59,6 +59,10 @@ public final class FoundationInfoOuterClass {
     int getLockedByUid();
   }
   /**
+   * <pre>
+   * Name: BHEIJJMBINN
+   * </pre>
+   *
    * Protobuf type {@code FoundationInfo}
    */
   public static final class FoundationInfo extends
@@ -452,6 +456,10 @@ public final class FoundationInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: BHEIJJMBINN
+     * </pre>
+     *
      * Protobuf type {@code FoundationInfo}
      */
     public static final class Builder extends

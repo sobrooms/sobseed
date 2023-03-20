@@ -19,28 +19,28 @@ public final class StoreItemDelNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.StoreType store_type = 6;</code>
+     * <code>.StoreType store_type = 1;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     int getStoreTypeValue();
     /**
-     * <code>.StoreType store_type = 6;</code>
+     * <code>.StoreType store_type = 1;</code>
      * @return The storeType.
      */
     emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType();
 
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @return A list containing the guidList.
      */
     java.util.List<java.lang.Long> getGuidListList();
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @return The count of guidList.
      */
     int getGuidListCount();
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @param index The index of the element to return.
      * @return The guidList at the given index.
      */
@@ -48,13 +48,8 @@ public final class StoreItemDelNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 619;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: LFBAPJJCKLK
+   * CmdId: 664
    * </pre>
    *
    * Protobuf type {@code StoreItemDelNotify}
@@ -104,13 +99,13 @@ public final class StoreItemDelNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 8: {
               int rawValue = input.readEnum();
 
               storeType_ = rawValue;
               break;
             }
-            case 64: {
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 guidList_ = newLongList();
                 mutable_bitField0_ |= 0x00000001;
@@ -118,7 +113,7 @@ public final class StoreItemDelNotifyOuterClass {
               guidList_.addLong(input.readUInt64());
               break;
             }
-            case 66: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -166,17 +161,17 @@ public final class StoreItemDelNotifyOuterClass {
               emu.grasscutter.net.proto.StoreItemDelNotifyOuterClass.StoreItemDelNotify.class, emu.grasscutter.net.proto.StoreItemDelNotifyOuterClass.StoreItemDelNotify.Builder.class);
     }
 
-    public static final int STORE_TYPE_FIELD_NUMBER = 6;
+    public static final int STORE_TYPE_FIELD_NUMBER = 1;
     private int storeType_;
     /**
-     * <code>.StoreType store_type = 6;</code>
+     * <code>.StoreType store_type = 1;</code>
      * @return The enum numeric value on the wire for storeType.
      */
     @java.lang.Override public int getStoreTypeValue() {
       return storeType_;
     }
     /**
-     * <code>.StoreType store_type = 6;</code>
+     * <code>.StoreType store_type = 1;</code>
      * @return The storeType.
      */
     @java.lang.Override public emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType getStoreType() {
@@ -185,10 +180,10 @@ public final class StoreItemDelNotifyOuterClass {
       return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
     }
 
-    public static final int GUID_LIST_FIELD_NUMBER = 8;
+    public static final int GUID_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.LongList guidList_;
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @return A list containing the guidList.
      */
     @java.lang.Override
@@ -197,14 +192,14 @@ public final class StoreItemDelNotifyOuterClass {
       return guidList_;
     }
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @return The count of guidList.
      */
     public int getGuidListCount() {
       return guidList_.size();
     }
     /**
-     * <code>repeated uint64 guid_list = 8;</code>
+     * <code>repeated uint64 guid_list = 15;</code>
      * @param index The index of the element to return.
      * @return The guidList at the given index.
      */
@@ -228,11 +223,11 @@ public final class StoreItemDelNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
-        output.writeEnum(6, storeType_);
+      if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_NONE.getNumber()) {
+        output.writeEnum(1, storeType_);
       }
       if (getGuidListList().size() > 0) {
-        output.writeUInt32NoTag(66);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(guidListMemoizedSerializedSize);
       }
       for (int i = 0; i < guidList_.size(); i++) {
@@ -247,9 +242,9 @@ public final class StoreItemDelNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_TYPE_NONE.getNumber()) {
+      if (storeType_ != emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.STORE_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(6, storeType_);
+          .computeEnumSize(1, storeType_);
       }
       {
         int dataSize = 0;
@@ -397,13 +392,8 @@ public final class StoreItemDelNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 619;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: LFBAPJJCKLK
+     * CmdId: 664
      * </pre>
      *
      * Protobuf type {@code StoreItemDelNotify}
@@ -573,14 +563,14 @@ public final class StoreItemDelNotifyOuterClass {
 
       private int storeType_ = 0;
       /**
-       * <code>.StoreType store_type = 6;</code>
+       * <code>.StoreType store_type = 1;</code>
        * @return The enum numeric value on the wire for storeType.
        */
       @java.lang.Override public int getStoreTypeValue() {
         return storeType_;
       }
       /**
-       * <code>.StoreType store_type = 6;</code>
+       * <code>.StoreType store_type = 1;</code>
        * @param value The enum numeric value on the wire for storeType to set.
        * @return This builder for chaining.
        */
@@ -591,7 +581,7 @@ public final class StoreItemDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 6;</code>
+       * <code>.StoreType store_type = 1;</code>
        * @return The storeType.
        */
       @java.lang.Override
@@ -601,7 +591,7 @@ public final class StoreItemDelNotifyOuterClass {
         return result == null ? emu.grasscutter.net.proto.StoreTypeOuterClass.StoreType.UNRECOGNIZED : result;
       }
       /**
-       * <code>.StoreType store_type = 6;</code>
+       * <code>.StoreType store_type = 1;</code>
        * @param value The storeType to set.
        * @return This builder for chaining.
        */
@@ -615,7 +605,7 @@ public final class StoreItemDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>.StoreType store_type = 6;</code>
+       * <code>.StoreType store_type = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearStoreType() {
@@ -633,7 +623,7 @@ public final class StoreItemDelNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @return A list containing the guidList.
        */
       public java.util.List<java.lang.Long>
@@ -642,14 +632,14 @@ public final class StoreItemDelNotifyOuterClass {
                  java.util.Collections.unmodifiableList(guidList_) : guidList_;
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @return The count of guidList.
        */
       public int getGuidListCount() {
         return guidList_.size();
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @param index The index of the element to return.
        * @return The guidList at the given index.
        */
@@ -657,7 +647,7 @@ public final class StoreItemDelNotifyOuterClass {
         return guidList_.getLong(index);
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The guidList to set.
        * @return This builder for chaining.
@@ -670,7 +660,7 @@ public final class StoreItemDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @param value The guidList to add.
        * @return This builder for chaining.
        */
@@ -681,7 +671,7 @@ public final class StoreItemDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @param values The guidList to add.
        * @return This builder for chaining.
        */
@@ -694,7 +684,7 @@ public final class StoreItemDelNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint64 guid_list = 8;</code>
+       * <code>repeated uint64 guid_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuidList() {
@@ -772,7 +762,7 @@ public final class StoreItemDelNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030StoreItemDelNotify.proto\032\017StoreType.pr" +
       "oto\"G\n\022StoreItemDelNotify\022\036\n\nstore_type\030" +
-      "\006 \001(\0162\n.StoreType\022\021\n\tguid_list\030\010 \003(\004B\033\n\031" +
+      "\001 \001(\0162\n.StoreType\022\021\n\tguid_list\030\017 \003(\004B\033\n\031" +
       "emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

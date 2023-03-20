@@ -86,6 +86,10 @@ public final class MapMarkPointOuterClass {
     int getQuestId();
   }
   /**
+   * <pre>
+   * Name: CKNMIHFPLAI
+   * </pre>
+   *
    * Protobuf type {@code MapMarkPoint}
    */
   public static final class MapMarkPoint extends
@@ -363,19 +367,19 @@ public final class MapMarkPointOuterClass {
       if (sceneId_ != 0) {
         output.writeUInt32(1, sceneId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
       }
       if (pos_ != null) {
         output.writeMessage(3, getPos());
       }
-      if (pointType_ != emu.grasscutter.net.proto.MapMarkPointTypeOuterClass.MapMarkPointType.MAP_MARK_POINT_TYPE_NPC.getNumber()) {
+      if (pointType_ != emu.grasscutter.net.proto.MapMarkPointTypeOuterClass.MapMarkPointType.NPC.getNumber()) {
         output.writeEnum(4, pointType_);
       }
       if (monsterId_ != 0) {
         output.writeUInt32(5, monsterId_);
       }
-      if (fromType_ != emu.grasscutter.net.proto.MapMarkFromTypeOuterClass.MapMarkFromType.MAP_MARK_FROM_TYPE_NONE.getNumber()) {
+      if (fromType_ != emu.grasscutter.net.proto.MapMarkFromTypeOuterClass.MapMarkFromType.MAP_MARK_FROM_TYPE_NOE.getNumber()) {
         output.writeEnum(6, fromType_);
       }
       if (questId_ != 0) {
@@ -394,14 +398,14 @@ public final class MapMarkPointOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(1, sceneId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getPos());
       }
-      if (pointType_ != emu.grasscutter.net.proto.MapMarkPointTypeOuterClass.MapMarkPointType.MAP_MARK_POINT_TYPE_NPC.getNumber()) {
+      if (pointType_ != emu.grasscutter.net.proto.MapMarkPointTypeOuterClass.MapMarkPointType.NPC.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(4, pointType_);
       }
@@ -409,7 +413,7 @@ public final class MapMarkPointOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(5, monsterId_);
       }
-      if (fromType_ != emu.grasscutter.net.proto.MapMarkFromTypeOuterClass.MapMarkFromType.MAP_MARK_FROM_TYPE_NONE.getNumber()) {
+      if (fromType_ != emu.grasscutter.net.proto.MapMarkFromTypeOuterClass.MapMarkFromType.MAP_MARK_FROM_TYPE_NOE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(6, fromType_);
       }
@@ -570,6 +574,10 @@ public final class MapMarkPointOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CKNMIHFPLAI
+     * </pre>
+     *
      * Protobuf type {@code MapMarkPoint}
      */
     public static final class Builder extends

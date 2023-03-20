@@ -19,20 +19,15 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     int getRetcode();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 663;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: GOHLFBHEKIN
+   * CmdId: 604
    * </pre>
    *
    * Protobuf type {@code TakeMaterialDeleteReturnRsp}
@@ -79,7 +74,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 72: {
 
               retcode_ = input.readInt32();
               break;
@@ -116,10 +111,10 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
               emu.grasscutter.net.proto.TakeMaterialDeleteReturnRspOuterClass.TakeMaterialDeleteReturnRsp.class, emu.grasscutter.net.proto.TakeMaterialDeleteReturnRspOuterClass.TakeMaterialDeleteReturnRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 8;
+    public static final int RETCODE_FIELD_NUMBER = 9;
     private int retcode_;
     /**
-     * <code>int32 retcode = 8;</code>
+     * <code>int32 retcode = 9;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -142,7 +137,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (retcode_ != 0) {
-        output.writeInt32(8, retcode_);
+        output.writeInt32(9, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -155,7 +150,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
       size = 0;
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(8, retcode_);
+          .computeInt32Size(9, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -284,13 +279,8 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 663;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: GOHLFBHEKIN
+     * CmdId: 604
      * </pre>
      *
      * Protobuf type {@code TakeMaterialDeleteReturnRsp}
@@ -441,7 +431,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 9;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -449,7 +439,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 9;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -460,7 +450,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 8;</code>
+       * <code>int32 retcode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -537,7 +527,7 @@ public final class TakeMaterialDeleteReturnRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!TakeMaterialDeleteReturnRsp.proto\".\n\033T" +
-      "akeMaterialDeleteReturnRsp\022\017\n\007retcode\030\010 " +
+      "akeMaterialDeleteReturnRsp\022\017\n\007retcode\030\t " +
       "\001(\005B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -31,6 +31,10 @@ public final class BreakoutBrickInfoOuterClass {
     int getElementType();
   }
   /**
+   * <pre>
+   * Name: GHMIOBEFBDI
+   * </pre>
+   *
    * Protobuf type {@code BreakoutBrickInfo}
    */
   public static final class BreakoutBrickInfo extends
@@ -306,6 +310,10 @@ public final class BreakoutBrickInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: GHMIOBEFBDI
+     * </pre>
+     *
      * Protobuf type {@code BreakoutBrickInfo}
      */
     public static final class Builder extends

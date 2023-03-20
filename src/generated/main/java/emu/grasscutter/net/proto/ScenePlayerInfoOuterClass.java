@@ -19,57 +19,61 @@ public final class ScenePlayerInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 uid = 2;</code>
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     int getUid();
 
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
+     * @return Whether the onlinePlayerInfo field is set.
+     */
+    boolean hasOnlinePlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
+     * @return The onlinePlayerInfo.
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getOnlinePlayerInfo();
+    /**
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
+     */
+    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getOnlinePlayerInfoOrBuilder();
+
+    /**
+     * <code>string name = 11;</code>
+     * @return The name.
+     */
+    java.lang.String getName();
+    /**
+     * <code>string name = 11;</code>
+     * @return The bytes for name.
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>uint32 scene_id = 9;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>uint32 peer_id = 15;</code>
+     * <code>uint32 peer_id = 13;</code>
      * @return The peerId.
      */
     int getPeerId();
 
     /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
-     * @return Whether the onlinePlayerInfo field is set.
-     */
-    boolean hasOnlinePlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
-     * @return The onlinePlayerInfo.
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getOnlinePlayerInfo();
-    /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
-     */
-    emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getOnlinePlayerInfoOrBuilder();
-
-    /**
-     * <code>bool is_connected = 3;</code>
+     * <code>bool is_connected = 14;</code>
      * @return The isConnected.
      */
     boolean getIsConnected();
-
-    /**
-     * <code>string name = 1;</code>
-     * @return The name.
-     */
-    java.lang.String getName();
-    /**
-     * <code>string name = 1;</code>
-     * @return The bytes for name.
-     */
-    com.google.protobuf.ByteString
-        getNameBytes();
   }
   /**
+   * <pre>
+   * Name: OMMENNJPOHG
+   * </pre>
+   *
    * Protobuf type {@code ScenePlayerInfo}
    */
   public static final class ScenePlayerInfo extends
@@ -115,28 +119,17 @@ public final class ScenePlayerInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 10: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              name_ = s;
-              break;
-            }
-            case 16: {
+            case 8: {
 
               uid_ = input.readUInt32();
               break;
             }
-            case 24: {
-
-              isConnected_ = input.readBool();
-              break;
-            }
-            case 56: {
+            case 72: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 74: {
+            case 82: {
               emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder subBuilder = null;
               if (onlinePlayerInfo_ != null) {
                 subBuilder = onlinePlayerInfo_.toBuilder();
@@ -149,9 +142,20 @@ public final class ScenePlayerInfoOuterClass {
 
               break;
             }
-            case 120: {
+            case 90: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 104: {
 
               peerId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              isConnected_ = input.readBool();
               break;
             }
             default: {
@@ -186,10 +190,10 @@ public final class ScenePlayerInfoOuterClass {
               emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo.class, emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo.Builder.class);
     }
 
-    public static final int UID_FIELD_NUMBER = 2;
+    public static final int UID_FIELD_NUMBER = 1;
     private int uid_;
     /**
-     * <code>uint32 uid = 2;</code>
+     * <code>uint32 uid = 1;</code>
      * @return The uid.
      */
     @java.lang.Override
@@ -197,32 +201,10 @@ public final class ScenePlayerInfoOuterClass {
       return uid_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 7;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 7;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int PEER_ID_FIELD_NUMBER = 15;
-    private int peerId_;
-    /**
-     * <code>uint32 peer_id = 15;</code>
-     * @return The peerId.
-     */
-    @java.lang.Override
-    public int getPeerId() {
-      return peerId_;
-    }
-
-    public static final int ONLINE_PLAYER_INFO_FIELD_NUMBER = 9;
+    public static final int ONLINE_PLAYER_INFO_FIELD_NUMBER = 10;
     private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo onlinePlayerInfo_;
     /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
      * @return Whether the onlinePlayerInfo field is set.
      */
     @java.lang.Override
@@ -230,7 +212,7 @@ public final class ScenePlayerInfoOuterClass {
       return onlinePlayerInfo_ != null;
     }
     /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
      * @return The onlinePlayerInfo.
      */
     @java.lang.Override
@@ -238,28 +220,17 @@ public final class ScenePlayerInfoOuterClass {
       return onlinePlayerInfo_ == null ? emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.getDefaultInstance() : onlinePlayerInfo_;
     }
     /**
-     * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+     * <code>.OnlinePlayerInfo online_player_info = 10;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getOnlinePlayerInfoOrBuilder() {
       return getOnlinePlayerInfo();
     }
 
-    public static final int IS_CONNECTED_FIELD_NUMBER = 3;
-    private boolean isConnected_;
-    /**
-     * <code>bool is_connected = 3;</code>
-     * @return The isConnected.
-     */
-    @java.lang.Override
-    public boolean getIsConnected() {
-      return isConnected_;
-    }
-
-    public static final int NAME_FIELD_NUMBER = 1;
+    public static final int NAME_FIELD_NUMBER = 11;
     private volatile java.lang.Object name_;
     /**
-     * <code>string name = 1;</code>
+     * <code>string name = 11;</code>
      * @return The name.
      */
     @java.lang.Override
@@ -276,7 +247,7 @@ public final class ScenePlayerInfoOuterClass {
       }
     }
     /**
-     * <code>string name = 1;</code>
+     * <code>string name = 11;</code>
      * @return The bytes for name.
      */
     @java.lang.Override
@@ -294,6 +265,39 @@ public final class ScenePlayerInfoOuterClass {
       }
     }
 
+    public static final int SCENE_ID_FIELD_NUMBER = 9;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 9;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
+
+    public static final int PEER_ID_FIELD_NUMBER = 13;
+    private int peerId_;
+    /**
+     * <code>uint32 peer_id = 13;</code>
+     * @return The peerId.
+     */
+    @java.lang.Override
+    public int getPeerId() {
+      return peerId_;
+    }
+
+    public static final int IS_CONNECTED_FIELD_NUMBER = 14;
+    private boolean isConnected_;
+    /**
+     * <code>bool is_connected = 14;</code>
+     * @return The isConnected.
+     */
+    @java.lang.Override
+    public boolean getIsConnected() {
+      return isConnected_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -308,23 +312,23 @@ public final class ScenePlayerInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
-      }
       if (uid_ != 0) {
-        output.writeUInt32(2, uid_);
-      }
-      if (isConnected_ != false) {
-        output.writeBool(3, isConnected_);
+        output.writeUInt32(1, uid_);
       }
       if (sceneId_ != 0) {
-        output.writeUInt32(7, sceneId_);
+        output.writeUInt32(9, sceneId_);
       }
       if (onlinePlayerInfo_ != null) {
-        output.writeMessage(9, getOnlinePlayerInfo());
+        output.writeMessage(10, getOnlinePlayerInfo());
+      }
+      if (!getNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 11, name_);
       }
       if (peerId_ != 0) {
-        output.writeUInt32(15, peerId_);
+        output.writeUInt32(13, peerId_);
+      }
+      if (isConnected_ != false) {
+        output.writeBool(14, isConnected_);
       }
       unknownFields.writeTo(output);
     }
@@ -335,28 +339,28 @@ public final class ScenePlayerInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
-      }
       if (uid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, uid_);
-      }
-      if (isConnected_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(3, isConnected_);
+          .computeUInt32Size(1, uid_);
       }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sceneId_);
+          .computeUInt32Size(9, sceneId_);
       }
       if (onlinePlayerInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, getOnlinePlayerInfo());
+          .computeMessageSize(10, getOnlinePlayerInfo());
+      }
+      if (!getNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, name_);
       }
       if (peerId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, peerId_);
+          .computeUInt32Size(13, peerId_);
+      }
+      if (isConnected_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isConnected_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -375,19 +379,19 @@ public final class ScenePlayerInfoOuterClass {
 
       if (getUid()
           != other.getUid()) return false;
-      if (getSceneId()
-          != other.getSceneId()) return false;
-      if (getPeerId()
-          != other.getPeerId()) return false;
       if (hasOnlinePlayerInfo() != other.hasOnlinePlayerInfo()) return false;
       if (hasOnlinePlayerInfo()) {
         if (!getOnlinePlayerInfo()
             .equals(other.getOnlinePlayerInfo())) return false;
       }
-      if (getIsConnected()
-          != other.getIsConnected()) return false;
       if (!getName()
           .equals(other.getName())) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
+      if (getPeerId()
+          != other.getPeerId()) return false;
+      if (getIsConnected()
+          != other.getIsConnected()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -401,19 +405,19 @@ public final class ScenePlayerInfoOuterClass {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + UID_FIELD_NUMBER;
       hash = (53 * hash) + getUid();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
-      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getPeerId();
       if (hasOnlinePlayerInfo()) {
         hash = (37 * hash) + ONLINE_PLAYER_INFO_FIELD_NUMBER;
         hash = (53 * hash) + getOnlinePlayerInfo().hashCode();
       }
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + PEER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getPeerId();
       hash = (37 * hash) + IS_CONNECTED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsConnected());
-      hash = (37 * hash) + NAME_FIELD_NUMBER;
-      hash = (53 * hash) + getName().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -510,6 +514,10 @@ public final class ScenePlayerInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OMMENNJPOHG
+     * </pre>
+     *
      * Protobuf type {@code ScenePlayerInfo}
      */
     public static final class Builder extends
@@ -549,19 +557,19 @@ public final class ScenePlayerInfoOuterClass {
         super.clear();
         uid_ = 0;
 
-        sceneId_ = 0;
-
-        peerId_ = 0;
-
         if (onlinePlayerInfoBuilder_ == null) {
           onlinePlayerInfo_ = null;
         } else {
           onlinePlayerInfo_ = null;
           onlinePlayerInfoBuilder_ = null;
         }
-        isConnected_ = false;
-
         name_ = "";
+
+        sceneId_ = 0;
+
+        peerId_ = 0;
+
+        isConnected_ = false;
 
         return this;
       }
@@ -590,15 +598,15 @@ public final class ScenePlayerInfoOuterClass {
       public emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo buildPartial() {
         emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo result = new emu.grasscutter.net.proto.ScenePlayerInfoOuterClass.ScenePlayerInfo(this);
         result.uid_ = uid_;
-        result.sceneId_ = sceneId_;
-        result.peerId_ = peerId_;
         if (onlinePlayerInfoBuilder_ == null) {
           result.onlinePlayerInfo_ = onlinePlayerInfo_;
         } else {
           result.onlinePlayerInfo_ = onlinePlayerInfoBuilder_.build();
         }
-        result.isConnected_ = isConnected_;
         result.name_ = name_;
+        result.sceneId_ = sceneId_;
+        result.peerId_ = peerId_;
+        result.isConnected_ = isConnected_;
         onBuilt();
         return result;
       }
@@ -650,21 +658,21 @@ public final class ScenePlayerInfoOuterClass {
         if (other.getUid() != 0) {
           setUid(other.getUid());
         }
+        if (other.hasOnlinePlayerInfo()) {
+          mergeOnlinePlayerInfo(other.getOnlinePlayerInfo());
+        }
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
+        }
         if (other.getSceneId() != 0) {
           setSceneId(other.getSceneId());
         }
         if (other.getPeerId() != 0) {
           setPeerId(other.getPeerId());
         }
-        if (other.hasOnlinePlayerInfo()) {
-          mergeOnlinePlayerInfo(other.getOnlinePlayerInfo());
-        }
         if (other.getIsConnected() != false) {
           setIsConnected(other.getIsConnected());
-        }
-        if (!other.getName().isEmpty()) {
-          name_ = other.name_;
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -697,7 +705,7 @@ public final class ScenePlayerInfoOuterClass {
 
       private int uid_ ;
       /**
-       * <code>uint32 uid = 2;</code>
+       * <code>uint32 uid = 1;</code>
        * @return The uid.
        */
       @java.lang.Override
@@ -705,7 +713,7 @@ public final class ScenePlayerInfoOuterClass {
         return uid_;
       }
       /**
-       * <code>uint32 uid = 2;</code>
+       * <code>uint32 uid = 1;</code>
        * @param value The uid to set.
        * @return This builder for chaining.
        */
@@ -716,7 +724,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 uid = 2;</code>
+       * <code>uint32 uid = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearUid() {
@@ -726,80 +734,18 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
 
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 7;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 7;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 7;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int peerId_ ;
-      /**
-       * <code>uint32 peer_id = 15;</code>
-       * @return The peerId.
-       */
-      @java.lang.Override
-      public int getPeerId() {
-        return peerId_;
-      }
-      /**
-       * <code>uint32 peer_id = 15;</code>
-       * @param value The peerId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPeerId(int value) {
-        
-        peerId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 peer_id = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPeerId() {
-        
-        peerId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo onlinePlayerInfo_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> onlinePlayerInfoBuilder_;
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        * @return Whether the onlinePlayerInfo field is set.
        */
       public boolean hasOnlinePlayerInfo() {
         return onlinePlayerInfoBuilder_ != null || onlinePlayerInfo_ != null;
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        * @return The onlinePlayerInfo.
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo getOnlinePlayerInfo() {
@@ -810,7 +756,7 @@ public final class ScenePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public Builder setOnlinePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (onlinePlayerInfoBuilder_ == null) {
@@ -826,7 +772,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public Builder setOnlinePlayerInfo(
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder builderForValue) {
@@ -840,7 +786,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public Builder mergeOnlinePlayerInfo(emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo value) {
         if (onlinePlayerInfoBuilder_ == null) {
@@ -858,7 +804,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public Builder clearOnlinePlayerInfo() {
         if (onlinePlayerInfoBuilder_ == null) {
@@ -872,7 +818,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder getOnlinePlayerInfoBuilder() {
         
@@ -880,7 +826,7 @@ public final class ScenePlayerInfoOuterClass {
         return getOnlinePlayerInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       public emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder getOnlinePlayerInfoOrBuilder() {
         if (onlinePlayerInfoBuilder_ != null) {
@@ -891,7 +837,7 @@ public final class ScenePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>.OnlinePlayerInfo online_player_info = 9;</code>
+       * <code>.OnlinePlayerInfo online_player_info = 10;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfo.Builder, emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.OnlinePlayerInfoOrBuilder> 
@@ -907,40 +853,9 @@ public final class ScenePlayerInfoOuterClass {
         return onlinePlayerInfoBuilder_;
       }
 
-      private boolean isConnected_ ;
-      /**
-       * <code>bool is_connected = 3;</code>
-       * @return The isConnected.
-       */
-      @java.lang.Override
-      public boolean getIsConnected() {
-        return isConnected_;
-      }
-      /**
-       * <code>bool is_connected = 3;</code>
-       * @param value The isConnected to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsConnected(boolean value) {
-        
-        isConnected_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_connected = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsConnected() {
-        
-        isConnected_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.lang.Object name_ = "";
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 11;</code>
        * @return The name.
        */
       public java.lang.String getName() {
@@ -956,7 +871,7 @@ public final class ScenePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 11;</code>
        * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
@@ -973,7 +888,7 @@ public final class ScenePlayerInfoOuterClass {
         }
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 11;</code>
        * @param value The name to set.
        * @return This builder for chaining.
        */
@@ -988,7 +903,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearName() {
@@ -998,7 +913,7 @@ public final class ScenePlayerInfoOuterClass {
         return this;
       }
       /**
-       * <code>string name = 1;</code>
+       * <code>string name = 11;</code>
        * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
@@ -1010,6 +925,99 @@ public final class ScenePlayerInfoOuterClass {
   checkByteStringIsUtf8(value);
         
         name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 9;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 9;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int peerId_ ;
+      /**
+       * <code>uint32 peer_id = 13;</code>
+       * @return The peerId.
+       */
+      @java.lang.Override
+      public int getPeerId() {
+        return peerId_;
+      }
+      /**
+       * <code>uint32 peer_id = 13;</code>
+       * @param value The peerId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPeerId(int value) {
+        
+        peerId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 peer_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPeerId() {
+        
+        peerId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean isConnected_ ;
+      /**
+       * <code>bool is_connected = 14;</code>
+       * @return The isConnected.
+       */
+      @java.lang.Override
+      public boolean getIsConnected() {
+        return isConnected_;
+      }
+      /**
+       * <code>bool is_connected = 14;</code>
+       * @param value The isConnected to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsConnected(boolean value) {
+        
+        isConnected_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_connected = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsConnected() {
+        
+        isConnected_ = false;
         onChanged();
         return this;
       }
@@ -1081,10 +1089,10 @@ public final class ScenePlayerInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\025ScenePlayerInfo.proto\032\026OnlinePlayerInf" +
-      "o.proto\"\224\001\n\017ScenePlayerInfo\022\013\n\003uid\030\002 \001(\r" +
-      "\022\020\n\010scene_id\030\007 \001(\r\022\017\n\007peer_id\030\017 \001(\r\022-\n\022o" +
-      "nline_player_info\030\t \001(\0132\021.OnlinePlayerIn" +
-      "fo\022\024\n\014is_connected\030\003 \001(\010\022\014\n\004name\030\001 \001(\tB\033" +
+      "o.proto\"\224\001\n\017ScenePlayerInfo\022\013\n\003uid\030\001 \001(\r" +
+      "\022-\n\022online_player_info\030\n \001(\0132\021.OnlinePla" +
+      "yerInfo\022\014\n\004name\030\013 \001(\t\022\020\n\010scene_id\030\t \001(\r\022" +
+      "\017\n\007peer_id\030\r \001(\r\022\024\n\014is_connected\030\016 \001(\010B\033" +
       "\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1097,7 +1105,7 @@ public final class ScenePlayerInfoOuterClass {
     internal_static_ScenePlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ScenePlayerInfo_descriptor,
-        new java.lang.String[] { "Uid", "SceneId", "PeerId", "OnlinePlayerInfo", "IsConnected", "Name", });
+        new java.lang.String[] { "Uid", "OnlinePlayerInfo", "Name", "SceneId", "PeerId", "IsConnected", });
     emu.grasscutter.net.proto.OnlinePlayerInfoOuterClass.getDescriptor();
   }
 

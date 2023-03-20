@@ -19,37 +19,32 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @return A list containing the limitItemIdList.
      */
     java.util.List<java.lang.Integer> getLimitItemIdListList();
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @return The count of limitItemIdList.
      */
     int getLimitItemIdListCount();
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The limitItemIdList at the given index.
      */
     int getLimitItemIdList(int index);
-
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 8735;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: CMDJJJCDAEB
+   * CmdId: 8781
    * </pre>
    *
    * Protobuf type {@code WinterCampGiveFriendItemRsp}
@@ -98,7 +93,12 @@ public final class WinterCampGiveFriendItemRspOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 40: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 limitItemIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +106,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
               limitItemIdList_.addInt(input.readUInt32());
               break;
             }
-            case 26: {
+            case 58: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -117,11 +117,6 @@ public final class WinterCampGiveFriendItemRspOuterClass {
                 limitItemIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 120: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -159,10 +154,21 @@ public final class WinterCampGiveFriendItemRspOuterClass {
               emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp.class, emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp.Builder.class);
     }
 
-    public static final int LIMIT_ITEM_ID_LIST_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 5;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 5;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int LIMIT_ITEM_ID_LIST_FIELD_NUMBER = 7;
     private com.google.protobuf.Internal.IntList limitItemIdList_;
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @return A list containing the limitItemIdList.
      */
     @java.lang.Override
@@ -171,14 +177,14 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       return limitItemIdList_;
     }
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @return The count of limitItemIdList.
      */
     public int getLimitItemIdListCount() {
       return limitItemIdList_.size();
     }
     /**
-     * <code>repeated uint32 limit_item_id_list = 3;</code>
+     * <code>repeated uint32 limit_item_id_list = 7;</code>
      * @param index The index of the element to return.
      * @return The limitItemIdList at the given index.
      */
@@ -186,17 +192,6 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       return limitItemIdList_.getInt(index);
     }
     private int limitItemIdListMemoizedSerializedSize = -1;
-
-    public static final int RETCODE_FIELD_NUMBER = 15;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 15;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -213,15 +208,15 @@ public final class WinterCampGiveFriendItemRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (retcode_ != 0) {
+        output.writeInt32(5, retcode_);
+      }
       if (getLimitItemIdListList().size() > 0) {
-        output.writeUInt32NoTag(26);
+        output.writeUInt32NoTag(58);
         output.writeUInt32NoTag(limitItemIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < limitItemIdList_.size(); i++) {
         output.writeUInt32NoTag(limitItemIdList_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(15, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -232,6 +227,10 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < limitItemIdList_.size(); i++) {
@@ -245,10 +244,6 @@ public final class WinterCampGiveFriendItemRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         limitItemIdListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -265,10 +260,10 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       }
       emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp other = (emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp) obj;
 
-      if (!getLimitItemIdListList()
-          .equals(other.getLimitItemIdListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getLimitItemIdListList()
+          .equals(other.getLimitItemIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -280,12 +275,12 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getLimitItemIdListCount() > 0) {
         hash = (37 * hash) + LIMIT_ITEM_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getLimitItemIdListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -383,13 +378,8 @@ public final class WinterCampGiveFriendItemRspOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 8735;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: CMDJJJCDAEB
+     * CmdId: 8781
      * </pre>
      *
      * Protobuf type {@code WinterCampGiveFriendItemRsp}
@@ -429,10 +419,10 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        limitItemIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         retcode_ = 0;
 
+        limitItemIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -460,12 +450,12 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       public emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp buildPartial() {
         emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp result = new emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (((bitField0_ & 0x00000001) != 0)) {
           limitItemIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.limitItemIdList_ = limitItemIdList_;
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -514,6 +504,9 @@ public final class WinterCampGiveFriendItemRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp other) {
         if (other == emu.grasscutter.net.proto.WinterCampGiveFriendItemRspOuterClass.WinterCampGiveFriendItemRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (!other.limitItemIdList_.isEmpty()) {
           if (limitItemIdList_.isEmpty()) {
             limitItemIdList_ = other.limitItemIdList_;
@@ -523,9 +516,6 @@ public final class WinterCampGiveFriendItemRspOuterClass {
             limitItemIdList_.addAll(other.limitItemIdList_);
           }
           onChanged();
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -557,6 +547,37 @@ public final class WinterCampGiveFriendItemRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private com.google.protobuf.Internal.IntList limitItemIdList_ = emptyIntList();
       private void ensureLimitItemIdListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -565,7 +586,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @return A list containing the limitItemIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -574,14 +595,14 @@ public final class WinterCampGiveFriendItemRspOuterClass {
                  java.util.Collections.unmodifiableList(limitItemIdList_) : limitItemIdList_;
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @return The count of limitItemIdList.
        */
       public int getLimitItemIdListCount() {
         return limitItemIdList_.size();
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @param index The index of the element to return.
        * @return The limitItemIdList at the given index.
        */
@@ -589,7 +610,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
         return limitItemIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @param index The index to set the value at.
        * @param value The limitItemIdList to set.
        * @return This builder for chaining.
@@ -602,7 +623,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @param value The limitItemIdList to add.
        * @return This builder for chaining.
        */
@@ -613,7 +634,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @param values The limitItemIdList to add.
        * @return This builder for chaining.
        */
@@ -626,43 +647,12 @@ public final class WinterCampGiveFriendItemRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 limit_item_id_list = 3;</code>
+       * <code>repeated uint32 limit_item_id_list = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearLimitItemIdList() {
         limitItemIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -734,8 +724,8 @@ public final class WinterCampGiveFriendItemRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!WinterCampGiveFriendItemRsp.proto\"J\n\033W" +
-      "interCampGiveFriendItemRsp\022\032\n\022limit_item" +
-      "_id_list\030\003 \003(\r\022\017\n\007retcode\030\017 \001(\005B\033\n\031emu.g" +
+      "interCampGiveFriendItemRsp\022\017\n\007retcode\030\005 " +
+      "\001(\005\022\032\n\022limit_item_id_list\030\007 \003(\rB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -747,7 +737,7 @@ public final class WinterCampGiveFriendItemRspOuterClass {
     internal_static_WinterCampGiveFriendItemRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WinterCampGiveFriendItemRsp_descriptor,
-        new java.lang.String[] { "LimitItemIdList", "Retcode", });
+        new java.lang.String[] { "Retcode", "LimitItemIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

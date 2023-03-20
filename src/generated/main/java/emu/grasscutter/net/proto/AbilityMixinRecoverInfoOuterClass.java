@@ -88,20 +88,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
     /**
      * <code>uint32 instanced_ability_id = 1;</code>
-     * @return Whether the instancedAbilityId field is set.
-     */
-    boolean hasInstancedAbilityId();
-    /**
-     * <code>uint32 instanced_ability_id = 1;</code>
      * @return The instancedAbilityId.
      */
     int getInstancedAbilityId();
 
-    /**
-     * <code>uint32 instanced_modifier_id = 2;</code>
-     * @return Whether the instancedModifierId field is set.
-     */
-    boolean hasInstancedModifierId();
     /**
      * <code>uint32 instanced_modifier_id = 2;</code>
      * @return The instancedModifierId.
@@ -111,6 +101,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public emu.grasscutter.net.proto.AbilityMixinRecoverInfoOuterClass.AbilityMixinRecoverInfo.SourceCase getSourceCase();
   }
   /**
+   * <pre>
+   * Name: LMMFGNIDKME
+   * </pre>
+   *
    * Protobuf type {@code AbilityMixinRecoverInfo}
    */
   public static final class AbilityMixinRecoverInfo extends
@@ -419,14 +413,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     public static final int INSTANCED_ABILITY_ID_FIELD_NUMBER = 1;
     /**
      * <code>uint32 instanced_ability_id = 1;</code>
-     * @return Whether the instancedAbilityId field is set.
-     */
-    @java.lang.Override
-    public boolean hasInstancedAbilityId() {
-      return sourceCase_ == 1;
-    }
-    /**
-     * <code>uint32 instanced_ability_id = 1;</code>
      * @return The instancedAbilityId.
      */
     @java.lang.Override
@@ -438,14 +424,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
 
     public static final int INSTANCED_MODIFIER_ID_FIELD_NUMBER = 2;
-    /**
-     * <code>uint32 instanced_modifier_id = 2;</code>
-     * @return Whether the instancedModifierId field is set.
-     */
-    @java.lang.Override
-    public boolean hasInstancedModifierId() {
-      return sourceCase_ == 2;
-    }
     /**
      * <code>uint32 instanced_modifier_id = 2;</code>
      * @return The instancedModifierId.
@@ -726,6 +704,10 @@ public final class AbilityMixinRecoverInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: LMMFGNIDKME
+     * </pre>
+     *
      * Protobuf type {@code AbilityMixinRecoverInfo}
      */
     public static final class Builder extends
@@ -1492,13 +1474,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
 
       /**
        * <code>uint32 instanced_ability_id = 1;</code>
-       * @return Whether the instancedAbilityId field is set.
-       */
-      public boolean hasInstancedAbilityId() {
-        return sourceCase_ == 1;
-      }
-      /**
-       * <code>uint32 instanced_ability_id = 1;</code>
        * @return The instancedAbilityId.
        */
       public int getInstancedAbilityId() {
@@ -1531,13 +1506,6 @@ public final class AbilityMixinRecoverInfoOuterClass {
         return this;
       }
 
-      /**
-       * <code>uint32 instanced_modifier_id = 2;</code>
-       * @return Whether the instancedModifierId field is set.
-       */
-      public boolean hasInstancedModifierId() {
-        return sourceCase_ == 2;
-      }
       /**
        * <code>uint32 instanced_modifier_id = 2;</code>
        * @return The instancedModifierId.

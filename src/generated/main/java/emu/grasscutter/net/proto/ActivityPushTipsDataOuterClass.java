@@ -19,7 +19,7 @@ public final class ActivityPushTipsDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 activity_push_tips_id = 14;</code>
+     * <code>uint32 activity_push_tips_id = 12;</code>
      * @return The activityPushTipsId.
      */
     int getActivityPushTipsId();
@@ -36,6 +36,10 @@ public final class ActivityPushTipsDataOuterClass {
     emu.grasscutter.net.proto.ActivityPushTipsStateOuterClass.ActivityPushTipsState getState();
   }
   /**
+   * <pre>
+   * Name: CBEGBPBBDMB
+   * </pre>
+   *
    * Protobuf type {@code ActivityPushTipsData}
    */
   public static final class ActivityPushTipsData extends
@@ -87,7 +91,7 @@ public final class ActivityPushTipsDataOuterClass {
               state_ = rawValue;
               break;
             }
-            case 112: {
+            case 96: {
 
               activityPushTipsId_ = input.readUInt32();
               break;
@@ -124,10 +128,10 @@ public final class ActivityPushTipsDataOuterClass {
               emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.class, emu.grasscutter.net.proto.ActivityPushTipsDataOuterClass.ActivityPushTipsData.Builder.class);
     }
 
-    public static final int ACTIVITY_PUSH_TIPS_ID_FIELD_NUMBER = 14;
+    public static final int ACTIVITY_PUSH_TIPS_ID_FIELD_NUMBER = 12;
     private int activityPushTipsId_;
     /**
-     * <code>uint32 activity_push_tips_id = 14;</code>
+     * <code>uint32 activity_push_tips_id = 12;</code>
      * @return The activityPushTipsId.
      */
     @java.lang.Override
@@ -172,7 +176,7 @@ public final class ActivityPushTipsDataOuterClass {
         output.writeEnum(3, state_);
       }
       if (activityPushTipsId_ != 0) {
-        output.writeUInt32(14, activityPushTipsId_);
+        output.writeUInt32(12, activityPushTipsId_);
       }
       unknownFields.writeTo(output);
     }
@@ -189,7 +193,7 @@ public final class ActivityPushTipsDataOuterClass {
       }
       if (activityPushTipsId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, activityPushTipsId_);
+          .computeUInt32Size(12, activityPushTipsId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -320,6 +324,10 @@ public final class ActivityPushTipsDataOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CBEGBPBBDMB
+     * </pre>
+     *
      * Protobuf type {@code ActivityPushTipsData}
      */
     public static final class Builder extends
@@ -474,7 +482,7 @@ public final class ActivityPushTipsDataOuterClass {
 
       private int activityPushTipsId_ ;
       /**
-       * <code>uint32 activity_push_tips_id = 14;</code>
+       * <code>uint32 activity_push_tips_id = 12;</code>
        * @return The activityPushTipsId.
        */
       @java.lang.Override
@@ -482,7 +490,7 @@ public final class ActivityPushTipsDataOuterClass {
         return activityPushTipsId_;
       }
       /**
-       * <code>uint32 activity_push_tips_id = 14;</code>
+       * <code>uint32 activity_push_tips_id = 12;</code>
        * @param value The activityPushTipsId to set.
        * @return This builder for chaining.
        */
@@ -493,7 +501,7 @@ public final class ActivityPushTipsDataOuterClass {
         return this;
       }
       /**
-       * <code>uint32 activity_push_tips_id = 14;</code>
+       * <code>uint32 activity_push_tips_id = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearActivityPushTipsId() {
@@ -625,7 +633,7 @@ public final class ActivityPushTipsDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\032ActivityPushTipsData.proto\032\033ActivityPu" +
       "shTipsState.proto\"\\\n\024ActivityPushTipsDat" +
-      "a\022\035\n\025activity_push_tips_id\030\016 \001(\r\022%\n\005stat" +
+      "a\022\035\n\025activity_push_tips_id\030\014 \001(\r\022%\n\005stat" +
       "e\030\003 \001(\0162\026.ActivityPushTipsStateB\033\n\031emu.g" +
       "rasscutter.net.protob\006proto3"
     };

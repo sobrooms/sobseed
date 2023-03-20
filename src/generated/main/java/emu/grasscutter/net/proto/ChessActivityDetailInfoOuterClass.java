@@ -19,71 +19,75 @@ public final class ChessActivityDetailInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 punish_over_time = 9;</code>
-     * @return The punishOverTime.
-     */
-    int getPunishOverTime();
-
-    /**
-     * <code>uint32 Unk3300_LPDDFGGKGBP = 4;</code>
-     * @return The unk3300LPDDFGGKGBP.
-     */
-    int getUnk3300LPDDFGGKGBP();
-
-    /**
-     * <code>uint32 level = 14;</code>
-     * @return The level.
-     */
-    int getLevel();
-
-    /**
-     * <code>uint32 exp = 6;</code>
+     * <code>uint32 exp = 13;</code>
      * @return The exp.
      */
     int getExp();
 
     /**
-     * <code>uint32 Unk3300_HBGEGIPIANG = 15;</code>
-     * @return The unk3300HBGEGIPIANG.
+     * <code>uint32 punish_over_time = 15;</code>
+     * @return The punishOverTime.
      */
-    int getUnk3300HBGEGIPIANG();
+    int getPunishOverTime();
 
     /**
-     * <code>uint32 content_close_time = 1;</code>
-     * @return The contentCloseTime.
-     */
-    int getContentCloseTime();
-
-    /**
-     * <code>bool is_teach_dungeon_finished = 11;</code>
+     * <code>bool is_teach_dungeon_finished = 2;</code>
      * @return The isTeachDungeonFinished.
      */
     boolean getIsTeachDungeonFinished();
 
     /**
-     * <code>bool is_content_closed = 5;</code>
+     * <code>uint32 PHPPKFDLABK = 12;</code>
+     * @return The pHPPKFDLABK.
+     */
+    int getPHPPKFDLABK();
+
+    /**
+     * <code>uint32 level = 4;</code>
+     * @return The level.
+     */
+    int getLevel();
+
+    /**
+     * <code>bool is_content_closed = 1;</code>
      * @return The isContentClosed.
      */
     boolean getIsContentClosed();
 
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>uint32 KBCIOAPGBLK = 6;</code>
+     * @return The kBCIOAPGBLK.
+     */
+    int getKBCIOAPGBLK();
+
+    /**
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @return A list containing the finishedMapIdList.
      */
     java.util.List<java.lang.Integer> getFinishedMapIdListList();
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @return The count of finishedMapIdList.
      */
     int getFinishedMapIdListCount();
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The finishedMapIdList at the given index.
      */
     int getFinishedMapIdList(int index);
+
+    /**
+     * <code>uint32 content_close_time = 14;</code>
+     * @return The contentCloseTime.
+     */
+    int getContentCloseTime();
   }
   /**
+   * <pre>
+   * Name: KEKNCNNDFIF
+   * </pre>
+   *
    * Protobuf type {@code ChessActivityDetailInfo}
    */
   public static final class ChessActivityDetailInfo extends
@@ -132,35 +136,25 @@ public final class ChessActivityDetailInfoOuterClass {
               break;
             case 8: {
 
-              contentCloseTime_ = input.readUInt32();
-              break;
-            }
-            case 32: {
-
-              unk3300LPDDFGGKGBP_ = input.readUInt32();
-              break;
-            }
-            case 40: {
-
               isContentClosed_ = input.readBool();
               break;
             }
-            case 48: {
-
-              exp_ = input.readUInt32();
-              break;
-            }
-            case 72: {
-
-              punishOverTime_ = input.readUInt32();
-              break;
-            }
-            case 88: {
+            case 16: {
 
               isTeachDungeonFinished_ = input.readBool();
               break;
             }
-            case 104: {
+            case 32: {
+
+              level_ = input.readUInt32();
+              break;
+            }
+            case 48: {
+
+              kBCIOAPGBLK_ = input.readUInt32();
+              break;
+            }
+            case 80: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 finishedMapIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -168,7 +162,7 @@ public final class ChessActivityDetailInfoOuterClass {
               finishedMapIdList_.addInt(input.readUInt32());
               break;
             }
-            case 106: {
+            case 82: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -181,14 +175,24 @@ public final class ChessActivityDetailInfoOuterClass {
               input.popLimit(limit);
               break;
             }
+            case 96: {
+
+              pHPPKFDLABK_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              exp_ = input.readUInt32();
+              break;
+            }
             case 112: {
 
-              level_ = input.readUInt32();
+              contentCloseTime_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              unk3300HBGEGIPIANG_ = input.readUInt32();
+              punishOverTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -226,43 +230,10 @@ public final class ChessActivityDetailInfoOuterClass {
               emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo.class, emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo.Builder.class);
     }
 
-    public static final int PUNISH_OVER_TIME_FIELD_NUMBER = 9;
-    private int punishOverTime_;
-    /**
-     * <code>uint32 punish_over_time = 9;</code>
-     * @return The punishOverTime.
-     */
-    @java.lang.Override
-    public int getPunishOverTime() {
-      return punishOverTime_;
-    }
-
-    public static final int UNK3300_LPDDFGGKGBP_FIELD_NUMBER = 4;
-    private int unk3300LPDDFGGKGBP_;
-    /**
-     * <code>uint32 Unk3300_LPDDFGGKGBP = 4;</code>
-     * @return The unk3300LPDDFGGKGBP.
-     */
-    @java.lang.Override
-    public int getUnk3300LPDDFGGKGBP() {
-      return unk3300LPDDFGGKGBP_;
-    }
-
-    public static final int LEVEL_FIELD_NUMBER = 14;
-    private int level_;
-    /**
-     * <code>uint32 level = 14;</code>
-     * @return The level.
-     */
-    @java.lang.Override
-    public int getLevel() {
-      return level_;
-    }
-
-    public static final int EXP_FIELD_NUMBER = 6;
+    public static final int EXP_FIELD_NUMBER = 13;
     private int exp_;
     /**
-     * <code>uint32 exp = 6;</code>
+     * <code>uint32 exp = 13;</code>
      * @return The exp.
      */
     @java.lang.Override
@@ -270,32 +241,21 @@ public final class ChessActivityDetailInfoOuterClass {
       return exp_;
     }
 
-    public static final int UNK3300_HBGEGIPIANG_FIELD_NUMBER = 15;
-    private int unk3300HBGEGIPIANG_;
+    public static final int PUNISH_OVER_TIME_FIELD_NUMBER = 15;
+    private int punishOverTime_;
     /**
-     * <code>uint32 Unk3300_HBGEGIPIANG = 15;</code>
-     * @return The unk3300HBGEGIPIANG.
+     * <code>uint32 punish_over_time = 15;</code>
+     * @return The punishOverTime.
      */
     @java.lang.Override
-    public int getUnk3300HBGEGIPIANG() {
-      return unk3300HBGEGIPIANG_;
+    public int getPunishOverTime() {
+      return punishOverTime_;
     }
 
-    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 1;
-    private int contentCloseTime_;
-    /**
-     * <code>uint32 content_close_time = 1;</code>
-     * @return The contentCloseTime.
-     */
-    @java.lang.Override
-    public int getContentCloseTime() {
-      return contentCloseTime_;
-    }
-
-    public static final int IS_TEACH_DUNGEON_FINISHED_FIELD_NUMBER = 11;
+    public static final int IS_TEACH_DUNGEON_FINISHED_FIELD_NUMBER = 2;
     private boolean isTeachDungeonFinished_;
     /**
-     * <code>bool is_teach_dungeon_finished = 11;</code>
+     * <code>bool is_teach_dungeon_finished = 2;</code>
      * @return The isTeachDungeonFinished.
      */
     @java.lang.Override
@@ -303,10 +263,32 @@ public final class ChessActivityDetailInfoOuterClass {
       return isTeachDungeonFinished_;
     }
 
-    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 5;
+    public static final int PHPPKFDLABK_FIELD_NUMBER = 12;
+    private int pHPPKFDLABK_;
+    /**
+     * <code>uint32 PHPPKFDLABK = 12;</code>
+     * @return The pHPPKFDLABK.
+     */
+    @java.lang.Override
+    public int getPHPPKFDLABK() {
+      return pHPPKFDLABK_;
+    }
+
+    public static final int LEVEL_FIELD_NUMBER = 4;
+    private int level_;
+    /**
+     * <code>uint32 level = 4;</code>
+     * @return The level.
+     */
+    @java.lang.Override
+    public int getLevel() {
+      return level_;
+    }
+
+    public static final int IS_CONTENT_CLOSED_FIELD_NUMBER = 1;
     private boolean isContentClosed_;
     /**
-     * <code>bool is_content_closed = 5;</code>
+     * <code>bool is_content_closed = 1;</code>
      * @return The isContentClosed.
      */
     @java.lang.Override
@@ -314,10 +296,21 @@ public final class ChessActivityDetailInfoOuterClass {
       return isContentClosed_;
     }
 
-    public static final int FINISHED_MAP_ID_LIST_FIELD_NUMBER = 13;
+    public static final int KBCIOAPGBLK_FIELD_NUMBER = 6;
+    private int kBCIOAPGBLK_;
+    /**
+     * <code>uint32 KBCIOAPGBLK = 6;</code>
+     * @return The kBCIOAPGBLK.
+     */
+    @java.lang.Override
+    public int getKBCIOAPGBLK() {
+      return kBCIOAPGBLK_;
+    }
+
+    public static final int FINISHED_MAP_ID_LIST_FIELD_NUMBER = 10;
     private com.google.protobuf.Internal.IntList finishedMapIdList_;
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @return A list containing the finishedMapIdList.
      */
     @java.lang.Override
@@ -326,14 +319,14 @@ public final class ChessActivityDetailInfoOuterClass {
       return finishedMapIdList_;
     }
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @return The count of finishedMapIdList.
      */
     public int getFinishedMapIdListCount() {
       return finishedMapIdList_.size();
     }
     /**
-     * <code>repeated uint32 finished_map_id_list = 13;</code>
+     * <code>repeated uint32 finished_map_id_list = 10;</code>
      * @param index The index of the element to return.
      * @return The finishedMapIdList at the given index.
      */
@@ -341,6 +334,17 @@ public final class ChessActivityDetailInfoOuterClass {
       return finishedMapIdList_.getInt(index);
     }
     private int finishedMapIdListMemoizedSerializedSize = -1;
+
+    public static final int CONTENT_CLOSE_TIME_FIELD_NUMBER = 14;
+    private int contentCloseTime_;
+    /**
+     * <code>uint32 content_close_time = 14;</code>
+     * @return The contentCloseTime.
+     */
+    @java.lang.Override
+    public int getContentCloseTime() {
+      return contentCloseTime_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -357,36 +361,36 @@ public final class ChessActivityDetailInfoOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (contentCloseTime_ != 0) {
-        output.writeUInt32(1, contentCloseTime_);
-      }
-      if (unk3300LPDDFGGKGBP_ != 0) {
-        output.writeUInt32(4, unk3300LPDDFGGKGBP_);
-      }
       if (isContentClosed_ != false) {
-        output.writeBool(5, isContentClosed_);
-      }
-      if (exp_ != 0) {
-        output.writeUInt32(6, exp_);
-      }
-      if (punishOverTime_ != 0) {
-        output.writeUInt32(9, punishOverTime_);
+        output.writeBool(1, isContentClosed_);
       }
       if (isTeachDungeonFinished_ != false) {
-        output.writeBool(11, isTeachDungeonFinished_);
+        output.writeBool(2, isTeachDungeonFinished_);
+      }
+      if (level_ != 0) {
+        output.writeUInt32(4, level_);
+      }
+      if (kBCIOAPGBLK_ != 0) {
+        output.writeUInt32(6, kBCIOAPGBLK_);
       }
       if (getFinishedMapIdListList().size() > 0) {
-        output.writeUInt32NoTag(106);
+        output.writeUInt32NoTag(82);
         output.writeUInt32NoTag(finishedMapIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < finishedMapIdList_.size(); i++) {
         output.writeUInt32NoTag(finishedMapIdList_.getInt(i));
       }
-      if (level_ != 0) {
-        output.writeUInt32(14, level_);
+      if (pHPPKFDLABK_ != 0) {
+        output.writeUInt32(12, pHPPKFDLABK_);
       }
-      if (unk3300HBGEGIPIANG_ != 0) {
-        output.writeUInt32(15, unk3300HBGEGIPIANG_);
+      if (exp_ != 0) {
+        output.writeUInt32(13, exp_);
+      }
+      if (contentCloseTime_ != 0) {
+        output.writeUInt32(14, contentCloseTime_);
+      }
+      if (punishOverTime_ != 0) {
+        output.writeUInt32(15, punishOverTime_);
       }
       unknownFields.writeTo(output);
     }
@@ -397,29 +401,21 @@ public final class ChessActivityDetailInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (contentCloseTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, contentCloseTime_);
-      }
-      if (unk3300LPDDFGGKGBP_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, unk3300LPDDFGGKGBP_);
-      }
       if (isContentClosed_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(5, isContentClosed_);
-      }
-      if (exp_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, exp_);
-      }
-      if (punishOverTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, punishOverTime_);
+          .computeBoolSize(1, isContentClosed_);
       }
       if (isTeachDungeonFinished_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, isTeachDungeonFinished_);
+          .computeBoolSize(2, isTeachDungeonFinished_);
+      }
+      if (level_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, level_);
+      }
+      if (kBCIOAPGBLK_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, kBCIOAPGBLK_);
       }
       {
         int dataSize = 0;
@@ -435,13 +431,21 @@ public final class ChessActivityDetailInfoOuterClass {
         }
         finishedMapIdListMemoizedSerializedSize = dataSize;
       }
-      if (level_ != 0) {
+      if (pHPPKFDLABK_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, level_);
+          .computeUInt32Size(12, pHPPKFDLABK_);
       }
-      if (unk3300HBGEGIPIANG_ != 0) {
+      if (exp_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, unk3300HBGEGIPIANG_);
+          .computeUInt32Size(13, exp_);
+      }
+      if (contentCloseTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, contentCloseTime_);
+      }
+      if (punishOverTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(15, punishOverTime_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -458,24 +462,24 @@ public final class ChessActivityDetailInfoOuterClass {
       }
       emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo other = (emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo) obj;
 
-      if (getPunishOverTime()
-          != other.getPunishOverTime()) return false;
-      if (getUnk3300LPDDFGGKGBP()
-          != other.getUnk3300LPDDFGGKGBP()) return false;
-      if (getLevel()
-          != other.getLevel()) return false;
       if (getExp()
           != other.getExp()) return false;
-      if (getUnk3300HBGEGIPIANG()
-          != other.getUnk3300HBGEGIPIANG()) return false;
-      if (getContentCloseTime()
-          != other.getContentCloseTime()) return false;
+      if (getPunishOverTime()
+          != other.getPunishOverTime()) return false;
       if (getIsTeachDungeonFinished()
           != other.getIsTeachDungeonFinished()) return false;
+      if (getPHPPKFDLABK()
+          != other.getPHPPKFDLABK()) return false;
+      if (getLevel()
+          != other.getLevel()) return false;
       if (getIsContentClosed()
           != other.getIsContentClosed()) return false;
+      if (getKBCIOAPGBLK()
+          != other.getKBCIOAPGBLK()) return false;
       if (!getFinishedMapIdListList()
           .equals(other.getFinishedMapIdListList())) return false;
+      if (getContentCloseTime()
+          != other.getContentCloseTime()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -487,28 +491,28 @@ public final class ChessActivityDetailInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + PUNISH_OVER_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getPunishOverTime();
-      hash = (37 * hash) + UNK3300_LPDDFGGKGBP_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300LPDDFGGKGBP();
-      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
-      hash = (53 * hash) + getLevel();
       hash = (37 * hash) + EXP_FIELD_NUMBER;
       hash = (53 * hash) + getExp();
-      hash = (37 * hash) + UNK3300_HBGEGIPIANG_FIELD_NUMBER;
-      hash = (53 * hash) + getUnk3300HBGEGIPIANG();
-      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
-      hash = (53 * hash) + getContentCloseTime();
+      hash = (37 * hash) + PUNISH_OVER_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getPunishOverTime();
       hash = (37 * hash) + IS_TEACH_DUNGEON_FINISHED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsTeachDungeonFinished());
+      hash = (37 * hash) + PHPPKFDLABK_FIELD_NUMBER;
+      hash = (53 * hash) + getPHPPKFDLABK();
+      hash = (37 * hash) + LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + getLevel();
       hash = (37 * hash) + IS_CONTENT_CLOSED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsContentClosed());
+      hash = (37 * hash) + KBCIOAPGBLK_FIELD_NUMBER;
+      hash = (53 * hash) + getKBCIOAPGBLK();
       if (getFinishedMapIdListCount() > 0) {
         hash = (37 * hash) + FINISHED_MAP_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getFinishedMapIdListList().hashCode();
       }
+      hash = (37 * hash) + CONTENT_CLOSE_TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getContentCloseTime();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -605,6 +609,10 @@ public final class ChessActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: KEKNCNNDFIF
+     * </pre>
+     *
      * Protobuf type {@code ChessActivityDetailInfo}
      */
     public static final class Builder extends
@@ -642,24 +650,24 @@ public final class ChessActivityDetailInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        punishOverTime_ = 0;
-
-        unk3300LPDDFGGKGBP_ = 0;
-
-        level_ = 0;
-
         exp_ = 0;
 
-        unk3300HBGEGIPIANG_ = 0;
-
-        contentCloseTime_ = 0;
+        punishOverTime_ = 0;
 
         isTeachDungeonFinished_ = false;
 
+        pHPPKFDLABK_ = 0;
+
+        level_ = 0;
+
         isContentClosed_ = false;
+
+        kBCIOAPGBLK_ = 0;
 
         finishedMapIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        contentCloseTime_ = 0;
+
         return this;
       }
 
@@ -687,19 +695,19 @@ public final class ChessActivityDetailInfoOuterClass {
       public emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo buildPartial() {
         emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo result = new emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo(this);
         int from_bitField0_ = bitField0_;
-        result.punishOverTime_ = punishOverTime_;
-        result.unk3300LPDDFGGKGBP_ = unk3300LPDDFGGKGBP_;
-        result.level_ = level_;
         result.exp_ = exp_;
-        result.unk3300HBGEGIPIANG_ = unk3300HBGEGIPIANG_;
-        result.contentCloseTime_ = contentCloseTime_;
+        result.punishOverTime_ = punishOverTime_;
         result.isTeachDungeonFinished_ = isTeachDungeonFinished_;
+        result.pHPPKFDLABK_ = pHPPKFDLABK_;
+        result.level_ = level_;
         result.isContentClosed_ = isContentClosed_;
+        result.kBCIOAPGBLK_ = kBCIOAPGBLK_;
         if (((bitField0_ & 0x00000001) != 0)) {
           finishedMapIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.finishedMapIdList_ = finishedMapIdList_;
+        result.contentCloseTime_ = contentCloseTime_;
         onBuilt();
         return result;
       }
@@ -748,29 +756,26 @@ public final class ChessActivityDetailInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo other) {
         if (other == emu.grasscutter.net.proto.ChessActivityDetailInfoOuterClass.ChessActivityDetailInfo.getDefaultInstance()) return this;
-        if (other.getPunishOverTime() != 0) {
-          setPunishOverTime(other.getPunishOverTime());
-        }
-        if (other.getUnk3300LPDDFGGKGBP() != 0) {
-          setUnk3300LPDDFGGKGBP(other.getUnk3300LPDDFGGKGBP());
-        }
-        if (other.getLevel() != 0) {
-          setLevel(other.getLevel());
-        }
         if (other.getExp() != 0) {
           setExp(other.getExp());
         }
-        if (other.getUnk3300HBGEGIPIANG() != 0) {
-          setUnk3300HBGEGIPIANG(other.getUnk3300HBGEGIPIANG());
-        }
-        if (other.getContentCloseTime() != 0) {
-          setContentCloseTime(other.getContentCloseTime());
+        if (other.getPunishOverTime() != 0) {
+          setPunishOverTime(other.getPunishOverTime());
         }
         if (other.getIsTeachDungeonFinished() != false) {
           setIsTeachDungeonFinished(other.getIsTeachDungeonFinished());
         }
+        if (other.getPHPPKFDLABK() != 0) {
+          setPHPPKFDLABK(other.getPHPPKFDLABK());
+        }
+        if (other.getLevel() != 0) {
+          setLevel(other.getLevel());
+        }
         if (other.getIsContentClosed() != false) {
           setIsContentClosed(other.getIsContentClosed());
+        }
+        if (other.getKBCIOAPGBLK() != 0) {
+          setKBCIOAPGBLK(other.getKBCIOAPGBLK());
         }
         if (!other.finishedMapIdList_.isEmpty()) {
           if (finishedMapIdList_.isEmpty()) {
@@ -781,6 +786,9 @@ public final class ChessActivityDetailInfoOuterClass {
             finishedMapIdList_.addAll(other.finishedMapIdList_);
           }
           onChanged();
+        }
+        if (other.getContentCloseTime() != 0) {
+          setContentCloseTime(other.getContentCloseTime());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -812,102 +820,9 @@ public final class ChessActivityDetailInfoOuterClass {
       }
       private int bitField0_;
 
-      private int punishOverTime_ ;
-      /**
-       * <code>uint32 punish_over_time = 9;</code>
-       * @return The punishOverTime.
-       */
-      @java.lang.Override
-      public int getPunishOverTime() {
-        return punishOverTime_;
-      }
-      /**
-       * <code>uint32 punish_over_time = 9;</code>
-       * @param value The punishOverTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setPunishOverTime(int value) {
-        
-        punishOverTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 punish_over_time = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearPunishOverTime() {
-        
-        punishOverTime_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int unk3300LPDDFGGKGBP_ ;
-      /**
-       * <code>uint32 Unk3300_LPDDFGGKGBP = 4;</code>
-       * @return The unk3300LPDDFGGKGBP.
-       */
-      @java.lang.Override
-      public int getUnk3300LPDDFGGKGBP() {
-        return unk3300LPDDFGGKGBP_;
-      }
-      /**
-       * <code>uint32 Unk3300_LPDDFGGKGBP = 4;</code>
-       * @param value The unk3300LPDDFGGKGBP to set.
-       * @return This builder for chaining.
-       */
-      public Builder setUnk3300LPDDFGGKGBP(int value) {
-        
-        unk3300LPDDFGGKGBP_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 Unk3300_LPDDFGGKGBP = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearUnk3300LPDDFGGKGBP() {
-        
-        unk3300LPDDFGGKGBP_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int level_ ;
-      /**
-       * <code>uint32 level = 14;</code>
-       * @return The level.
-       */
-      @java.lang.Override
-      public int getLevel() {
-        return level_;
-      }
-      /**
-       * <code>uint32 level = 14;</code>
-       * @param value The level to set.
-       * @return This builder for chaining.
-       */
-      public Builder setLevel(int value) {
-        
-        level_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 level = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearLevel() {
-        
-        level_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int exp_ ;
       /**
-       * <code>uint32 exp = 6;</code>
+       * <code>uint32 exp = 13;</code>
        * @return The exp.
        */
       @java.lang.Override
@@ -915,7 +830,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return exp_;
       }
       /**
-       * <code>uint32 exp = 6;</code>
+       * <code>uint32 exp = 13;</code>
        * @param value The exp to set.
        * @return This builder for chaining.
        */
@@ -926,7 +841,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 exp = 6;</code>
+       * <code>uint32 exp = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearExp() {
@@ -936,71 +851,40 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
 
-      private int unk3300HBGEGIPIANG_ ;
+      private int punishOverTime_ ;
       /**
-       * <code>uint32 Unk3300_HBGEGIPIANG = 15;</code>
-       * @return The unk3300HBGEGIPIANG.
+       * <code>uint32 punish_over_time = 15;</code>
+       * @return The punishOverTime.
        */
       @java.lang.Override
-      public int getUnk3300HBGEGIPIANG() {
-        return unk3300HBGEGIPIANG_;
+      public int getPunishOverTime() {
+        return punishOverTime_;
       }
       /**
-       * <code>uint32 Unk3300_HBGEGIPIANG = 15;</code>
-       * @param value The unk3300HBGEGIPIANG to set.
+       * <code>uint32 punish_over_time = 15;</code>
+       * @param value The punishOverTime to set.
        * @return This builder for chaining.
        */
-      public Builder setUnk3300HBGEGIPIANG(int value) {
+      public Builder setPunishOverTime(int value) {
         
-        unk3300HBGEGIPIANG_ = value;
+        punishOverTime_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 Unk3300_HBGEGIPIANG = 15;</code>
+       * <code>uint32 punish_over_time = 15;</code>
        * @return This builder for chaining.
        */
-      public Builder clearUnk3300HBGEGIPIANG() {
+      public Builder clearPunishOverTime() {
         
-        unk3300HBGEGIPIANG_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int contentCloseTime_ ;
-      /**
-       * <code>uint32 content_close_time = 1;</code>
-       * @return The contentCloseTime.
-       */
-      @java.lang.Override
-      public int getContentCloseTime() {
-        return contentCloseTime_;
-      }
-      /**
-       * <code>uint32 content_close_time = 1;</code>
-       * @param value The contentCloseTime to set.
-       * @return This builder for chaining.
-       */
-      public Builder setContentCloseTime(int value) {
-        
-        contentCloseTime_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 content_close_time = 1;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearContentCloseTime() {
-        
-        contentCloseTime_ = 0;
+        punishOverTime_ = 0;
         onChanged();
         return this;
       }
 
       private boolean isTeachDungeonFinished_ ;
       /**
-       * <code>bool is_teach_dungeon_finished = 11;</code>
+       * <code>bool is_teach_dungeon_finished = 2;</code>
        * @return The isTeachDungeonFinished.
        */
       @java.lang.Override
@@ -1008,7 +892,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return isTeachDungeonFinished_;
       }
       /**
-       * <code>bool is_teach_dungeon_finished = 11;</code>
+       * <code>bool is_teach_dungeon_finished = 2;</code>
        * @param value The isTeachDungeonFinished to set.
        * @return This builder for chaining.
        */
@@ -1019,7 +903,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_teach_dungeon_finished = 11;</code>
+       * <code>bool is_teach_dungeon_finished = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsTeachDungeonFinished() {
@@ -1029,9 +913,71 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
 
+      private int pHPPKFDLABK_ ;
+      /**
+       * <code>uint32 PHPPKFDLABK = 12;</code>
+       * @return The pHPPKFDLABK.
+       */
+      @java.lang.Override
+      public int getPHPPKFDLABK() {
+        return pHPPKFDLABK_;
+      }
+      /**
+       * <code>uint32 PHPPKFDLABK = 12;</code>
+       * @param value The pHPPKFDLABK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setPHPPKFDLABK(int value) {
+        
+        pHPPKFDLABK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 PHPPKFDLABK = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearPHPPKFDLABK() {
+        
+        pHPPKFDLABK_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int level_ ;
+      /**
+       * <code>uint32 level = 4;</code>
+       * @return The level.
+       */
+      @java.lang.Override
+      public int getLevel() {
+        return level_;
+      }
+      /**
+       * <code>uint32 level = 4;</code>
+       * @param value The level to set.
+       * @return This builder for chaining.
+       */
+      public Builder setLevel(int value) {
+        
+        level_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 level = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearLevel() {
+        
+        level_ = 0;
+        onChanged();
+        return this;
+      }
+
       private boolean isContentClosed_ ;
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 1;</code>
        * @return The isContentClosed.
        */
       @java.lang.Override
@@ -1039,7 +985,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return isContentClosed_;
       }
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 1;</code>
        * @param value The isContentClosed to set.
        * @return This builder for chaining.
        */
@@ -1050,12 +996,43 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>bool is_content_closed = 5;</code>
+       * <code>bool is_content_closed = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsContentClosed() {
         
         isContentClosed_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int kBCIOAPGBLK_ ;
+      /**
+       * <code>uint32 KBCIOAPGBLK = 6;</code>
+       * @return The kBCIOAPGBLK.
+       */
+      @java.lang.Override
+      public int getKBCIOAPGBLK() {
+        return kBCIOAPGBLK_;
+      }
+      /**
+       * <code>uint32 KBCIOAPGBLK = 6;</code>
+       * @param value The kBCIOAPGBLK to set.
+       * @return This builder for chaining.
+       */
+      public Builder setKBCIOAPGBLK(int value) {
+        
+        kBCIOAPGBLK_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 KBCIOAPGBLK = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearKBCIOAPGBLK() {
+        
+        kBCIOAPGBLK_ = 0;
         onChanged();
         return this;
       }
@@ -1068,7 +1045,7 @@ public final class ChessActivityDetailInfoOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @return A list containing the finishedMapIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -1077,14 +1054,14 @@ public final class ChessActivityDetailInfoOuterClass {
                  java.util.Collections.unmodifiableList(finishedMapIdList_) : finishedMapIdList_;
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @return The count of finishedMapIdList.
        */
       public int getFinishedMapIdListCount() {
         return finishedMapIdList_.size();
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @param index The index of the element to return.
        * @return The finishedMapIdList at the given index.
        */
@@ -1092,7 +1069,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return finishedMapIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @param index The index to set the value at.
        * @param value The finishedMapIdList to set.
        * @return This builder for chaining.
@@ -1105,7 +1082,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @param value The finishedMapIdList to add.
        * @return This builder for chaining.
        */
@@ -1116,7 +1093,7 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @param values The finishedMapIdList to add.
        * @return This builder for chaining.
        */
@@ -1129,12 +1106,43 @@ public final class ChessActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 finished_map_id_list = 13;</code>
+       * <code>repeated uint32 finished_map_id_list = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearFinishedMapIdList() {
         finishedMapIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
+      private int contentCloseTime_ ;
+      /**
+       * <code>uint32 content_close_time = 14;</code>
+       * @return The contentCloseTime.
+       */
+      @java.lang.Override
+      public int getContentCloseTime() {
+        return contentCloseTime_;
+      }
+      /**
+       * <code>uint32 content_close_time = 14;</code>
+       * @param value The contentCloseTime to set.
+       * @return This builder for chaining.
+       */
+      public Builder setContentCloseTime(int value) {
+        
+        contentCloseTime_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 content_close_time = 14;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearContentCloseTime() {
+        
+        contentCloseTime_ = 0;
         onChanged();
         return this;
       }
@@ -1205,15 +1213,14 @@ public final class ChessActivityDetailInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\035ChessActivityDetailInfo.proto\"\201\002\n\027Ches" +
-      "sActivityDetailInfo\022\030\n\020punish_over_time\030" +
-      "\t \001(\r\022\033\n\023Unk3300_LPDDFGGKGBP\030\004 \001(\r\022\r\n\005le" +
-      "vel\030\016 \001(\r\022\013\n\003exp\030\006 \001(\r\022\033\n\023Unk3300_HBGEGI" +
-      "PIANG\030\017 \001(\r\022\032\n\022content_close_time\030\001 \001(\r\022" +
-      "!\n\031is_teach_dungeon_finished\030\013 \001(\010\022\031\n\021is" +
-      "_content_closed\030\005 \001(\010\022\034\n\024finished_map_id" +
-      "_list\030\r \003(\rB\033\n\031emu.grasscutter.net.proto" +
-      "b\006proto3"
+      "\n\035ChessActivityDetailInfo.proto\"\361\001\n\027Ches" +
+      "sActivityDetailInfo\022\013\n\003exp\030\r \001(\r\022\030\n\020puni" +
+      "sh_over_time\030\017 \001(\r\022!\n\031is_teach_dungeon_f" +
+      "inished\030\002 \001(\010\022\023\n\013PHPPKFDLABK\030\014 \001(\r\022\r\n\005le" +
+      "vel\030\004 \001(\r\022\031\n\021is_content_closed\030\001 \001(\010\022\023\n\013" +
+      "KBCIOAPGBLK\030\006 \001(\r\022\034\n\024finished_map_id_lis" +
+      "t\030\n \003(\r\022\032\n\022content_close_time\030\016 \001(\rB\033\n\031e" +
+      "mu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -1224,7 +1231,7 @@ public final class ChessActivityDetailInfoOuterClass {
     internal_static_ChessActivityDetailInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChessActivityDetailInfo_descriptor,
-        new java.lang.String[] { "PunishOverTime", "Unk3300LPDDFGGKGBP", "Level", "Exp", "Unk3300HBGEGIPIANG", "ContentCloseTime", "IsTeachDungeonFinished", "IsContentClosed", "FinishedMapIdList", });
+        new java.lang.String[] { "Exp", "PunishOverTime", "IsTeachDungeonFinished", "PHPPKFDLABK", "Level", "IsContentClosed", "KBCIOAPGBLK", "FinishedMapIdList", "ContentCloseTime", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

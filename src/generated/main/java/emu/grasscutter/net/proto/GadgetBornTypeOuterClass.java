@@ -15,69 +15,73 @@ public final class GadgetBornTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
+   * <pre>
+   * Name: BHLCFGOBHBJ
+   * </pre>
+   *
    * Protobuf enum {@code GadgetBornType}
    */
   public enum GadgetBornType
       implements com.google.protobuf.ProtocolMessageEnum {
     /**
-     * <code>GADGET_BORN_TYPE_NONE = 0;</code>
+     * <code>GADGET_BORN_NONE = 0;</code>
      */
-    GADGET_BORN_TYPE_NONE(0),
+    GADGET_BORN_NONE(0),
     /**
-     * <code>GADGET_BORN_TYPE_IN_AIR = 1;</code>
+     * <code>GADGET_BORN_IN_AIR = 1;</code>
      */
-    GADGET_BORN_TYPE_IN_AIR(1),
+    GADGET_BORN_IN_AIR(1),
     /**
-     * <code>GADGET_BORN_TYPE_PLAYER = 2;</code>
+     * <code>GADGET_BORN_PLAYER = 2;</code>
      */
-    GADGET_BORN_TYPE_PLAYER(2),
+    GADGET_BORN_PLAYER(2),
     /**
-     * <code>GADGET_BORN_TYPE_MONSTER_HIT = 3;</code>
+     * <code>GADGET_BORN_MONSTER_HIT = 3;</code>
      */
-    GADGET_BORN_TYPE_MONSTER_HIT(3),
+    GADGET_BORN_MONSTER_HIT(3),
     /**
-     * <code>GADGET_BORN_TYPE_MONSTER_DIE = 4;</code>
+     * <code>GADGET_BORN_MONSTER_DIE = 4;</code>
      */
-    GADGET_BORN_TYPE_MONSTER_DIE(4),
+    GADGET_BORN_MONSTER_DIE(4),
     /**
-     * <code>GADGET_BORN_TYPE_GADGET = 5;</code>
+     * <code>GADGET_BORN_GADGET = 5;</code>
      */
-    GADGET_BORN_TYPE_GADGET(5),
+    GADGET_BORN_GADGET(5),
     /**
-     * <code>GADGET_BORN_TYPE_GROUND = 6;</code>
+     * <code>GADGET_BORN_GROUND = 6;</code>
      */
-    GADGET_BORN_TYPE_GROUND(6),
+    GADGET_BORN_GROUND(6),
     UNRECOGNIZED(-1),
     ;
 
     /**
-     * <code>GADGET_BORN_TYPE_NONE = 0;</code>
+     * <code>GADGET_BORN_NONE = 0;</code>
      */
-    public static final int GADGET_BORN_TYPE_NONE_VALUE = 0;
+    public static final int GADGET_BORN_NONE_VALUE = 0;
     /**
-     * <code>GADGET_BORN_TYPE_IN_AIR = 1;</code>
+     * <code>GADGET_BORN_IN_AIR = 1;</code>
      */
-    public static final int GADGET_BORN_TYPE_IN_AIR_VALUE = 1;
+    public static final int GADGET_BORN_IN_AIR_VALUE = 1;
     /**
-     * <code>GADGET_BORN_TYPE_PLAYER = 2;</code>
+     * <code>GADGET_BORN_PLAYER = 2;</code>
      */
-    public static final int GADGET_BORN_TYPE_PLAYER_VALUE = 2;
+    public static final int GADGET_BORN_PLAYER_VALUE = 2;
     /**
-     * <code>GADGET_BORN_TYPE_MONSTER_HIT = 3;</code>
+     * <code>GADGET_BORN_MONSTER_HIT = 3;</code>
      */
-    public static final int GADGET_BORN_TYPE_MONSTER_HIT_VALUE = 3;
+    public static final int GADGET_BORN_MONSTER_HIT_VALUE = 3;
     /**
-     * <code>GADGET_BORN_TYPE_MONSTER_DIE = 4;</code>
+     * <code>GADGET_BORN_MONSTER_DIE = 4;</code>
      */
-    public static final int GADGET_BORN_TYPE_MONSTER_DIE_VALUE = 4;
+    public static final int GADGET_BORN_MONSTER_DIE_VALUE = 4;
     /**
-     * <code>GADGET_BORN_TYPE_GADGET = 5;</code>
+     * <code>GADGET_BORN_GADGET = 5;</code>
      */
-    public static final int GADGET_BORN_TYPE_GADGET_VALUE = 5;
+    public static final int GADGET_BORN_GADGET_VALUE = 5;
     /**
-     * <code>GADGET_BORN_TYPE_GROUND = 6;</code>
+     * <code>GADGET_BORN_GROUND = 6;</code>
      */
-    public static final int GADGET_BORN_TYPE_GROUND_VALUE = 6;
+    public static final int GADGET_BORN_GROUND_VALUE = 6;
 
 
     public final int getNumber() {
@@ -104,13 +108,13 @@ public final class GadgetBornTypeOuterClass {
      */
     public static GadgetBornType forNumber(int value) {
       switch (value) {
-        case 0: return GADGET_BORN_TYPE_NONE;
-        case 1: return GADGET_BORN_TYPE_IN_AIR;
-        case 2: return GADGET_BORN_TYPE_PLAYER;
-        case 3: return GADGET_BORN_TYPE_MONSTER_HIT;
-        case 4: return GADGET_BORN_TYPE_MONSTER_DIE;
-        case 5: return GADGET_BORN_TYPE_GADGET;
-        case 6: return GADGET_BORN_TYPE_GROUND;
+        case 0: return GADGET_BORN_NONE;
+        case 1: return GADGET_BORN_IN_AIR;
+        case 2: return GADGET_BORN_PLAYER;
+        case 3: return GADGET_BORN_MONSTER_HIT;
+        case 4: return GADGET_BORN_MONSTER_DIE;
+        case 5: return GADGET_BORN_GADGET;
+        case 6: return GADGET_BORN_GROUND;
         default: return null;
       }
     }
@@ -176,14 +180,13 @@ public final class GadgetBornTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\024GadgetBornType.proto*\343\001\n\016GadgetBornTyp" +
-      "e\022\031\n\025GADGET_BORN_TYPE_NONE\020\000\022\033\n\027GADGET_B" +
-      "ORN_TYPE_IN_AIR\020\001\022\033\n\027GADGET_BORN_TYPE_PL" +
-      "AYER\020\002\022 \n\034GADGET_BORN_TYPE_MONSTER_HIT\020\003" +
-      "\022 \n\034GADGET_BORN_TYPE_MONSTER_DIE\020\004\022\033\n\027GA" +
-      "DGET_BORN_TYPE_GADGET\020\005\022\033\n\027GADGET_BORN_T" +
-      "YPE_GROUND\020\006B\033\n\031emu.grasscutter.net.prot" +
-      "ob\006proto3"
+      "\n\024GadgetBornType.proto*\300\001\n\016GadgetBornTyp" +
+      "e\022\024\n\020GADGET_BORN_NONE\020\000\022\026\n\022GADGET_BORN_I" +
+      "N_AIR\020\001\022\026\n\022GADGET_BORN_PLAYER\020\002\022\033\n\027GADGE" +
+      "T_BORN_MONSTER_HIT\020\003\022\033\n\027GADGET_BORN_MONS" +
+      "TER_DIE\020\004\022\026\n\022GADGET_BORN_GADGET\020\005\022\026\n\022GAD" +
+      "GET_BORN_GROUND\020\006B\033\n\031emu.grasscutter.net" +
+      ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

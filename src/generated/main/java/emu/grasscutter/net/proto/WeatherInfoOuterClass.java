@@ -25,6 +25,10 @@ public final class WeatherInfoOuterClass {
     int getWeatherAreaId();
   }
   /**
+   * <pre>
+   * Name: CPPKIIBAODF
+   * </pre>
+   *
    * Protobuf type {@code WeatherInfo}
    */
   public static final class WeatherInfo extends
@@ -273,6 +277,10 @@ public final class WeatherInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: CPPKIIBAODF
+     * </pre>
+     *
      * Protobuf type {@code WeatherInfo}
      */
     public static final class Builder extends

@@ -74,20 +74,10 @@ public final class CreateEntityInfoOuterClass {
 
     /**
      * <code>uint32 monster_id = 1;</code>
-     * @return Whether the monsterId field is set.
-     */
-    boolean hasMonsterId();
-    /**
-     * <code>uint32 monster_id = 1;</code>
      * @return The monsterId.
      */
     int getMonsterId();
 
-    /**
-     * <code>uint32 npc_id = 2;</code>
-     * @return Whether the npcId field is set.
-     */
-    boolean hasNpcId();
     /**
      * <code>uint32 npc_id = 2;</code>
      * @return The npcId.
@@ -96,20 +86,10 @@ public final class CreateEntityInfoOuterClass {
 
     /**
      * <code>uint32 gadget_id = 3;</code>
-     * @return Whether the gadgetId field is set.
-     */
-    boolean hasGadgetId();
-    /**
-     * <code>uint32 gadget_id = 3;</code>
      * @return The gadgetId.
      */
     int getGadgetId();
 
-    /**
-     * <code>uint32 item_id = 4;</code>
-     * @return Whether the itemId field is set.
-     */
-    boolean hasItemId();
     /**
      * <code>uint32 item_id = 4;</code>
      * @return The itemId.
@@ -136,6 +116,10 @@ public final class CreateEntityInfoOuterClass {
     public emu.grasscutter.net.proto.CreateEntityInfoOuterClass.CreateEntityInfo.EntityCreateInfoCase getEntityCreateInfoCase();
   }
   /**
+   * <pre>
+   * Name: PDPKPDBANCA
+   * </pre>
+   *
    * Protobuf type {@code CreateEntityInfo}
    */
   public static final class CreateEntityInfo extends
@@ -475,14 +459,6 @@ public final class CreateEntityInfoOuterClass {
     public static final int MONSTER_ID_FIELD_NUMBER = 1;
     /**
      * <code>uint32 monster_id = 1;</code>
-     * @return Whether the monsterId field is set.
-     */
-    @java.lang.Override
-    public boolean hasMonsterId() {
-      return entityCase_ == 1;
-    }
-    /**
-     * <code>uint32 monster_id = 1;</code>
      * @return The monsterId.
      */
     @java.lang.Override
@@ -494,14 +470,6 @@ public final class CreateEntityInfoOuterClass {
     }
 
     public static final int NPC_ID_FIELD_NUMBER = 2;
-    /**
-     * <code>uint32 npc_id = 2;</code>
-     * @return Whether the npcId field is set.
-     */
-    @java.lang.Override
-    public boolean hasNpcId() {
-      return entityCase_ == 2;
-    }
     /**
      * <code>uint32 npc_id = 2;</code>
      * @return The npcId.
@@ -517,14 +485,6 @@ public final class CreateEntityInfoOuterClass {
     public static final int GADGET_ID_FIELD_NUMBER = 3;
     /**
      * <code>uint32 gadget_id = 3;</code>
-     * @return Whether the gadgetId field is set.
-     */
-    @java.lang.Override
-    public boolean hasGadgetId() {
-      return entityCase_ == 3;
-    }
-    /**
-     * <code>uint32 gadget_id = 3;</code>
      * @return The gadgetId.
      */
     @java.lang.Override
@@ -536,14 +496,6 @@ public final class CreateEntityInfoOuterClass {
     }
 
     public static final int ITEM_ID_FIELD_NUMBER = 4;
-    /**
-     * <code>uint32 item_id = 4;</code>
-     * @return Whether the itemId field is set.
-     */
-    @java.lang.Override
-    public boolean hasItemId() {
-      return entityCase_ == 4;
-    }
     /**
      * <code>uint32 item_id = 4;</code>
      * @return The itemId.
@@ -909,6 +861,10 @@ public final class CreateEntityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: PDPKPDBANCA
+     * </pre>
+     *
      * Protobuf type {@code CreateEntityInfo}
      */
     public static final class Builder extends
@@ -1550,13 +1506,6 @@ public final class CreateEntityInfoOuterClass {
 
       /**
        * <code>uint32 monster_id = 1;</code>
-       * @return Whether the monsterId field is set.
-       */
-      public boolean hasMonsterId() {
-        return entityCase_ == 1;
-      }
-      /**
-       * <code>uint32 monster_id = 1;</code>
        * @return The monsterId.
        */
       public int getMonsterId() {
@@ -1589,13 +1538,6 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
 
-      /**
-       * <code>uint32 npc_id = 2;</code>
-       * @return Whether the npcId field is set.
-       */
-      public boolean hasNpcId() {
-        return entityCase_ == 2;
-      }
       /**
        * <code>uint32 npc_id = 2;</code>
        * @return The npcId.
@@ -1632,13 +1574,6 @@ public final class CreateEntityInfoOuterClass {
 
       /**
        * <code>uint32 gadget_id = 3;</code>
-       * @return Whether the gadgetId field is set.
-       */
-      public boolean hasGadgetId() {
-        return entityCase_ == 3;
-      }
-      /**
-       * <code>uint32 gadget_id = 3;</code>
        * @return The gadgetId.
        */
       public int getGadgetId() {
@@ -1671,13 +1606,6 @@ public final class CreateEntityInfoOuterClass {
         return this;
       }
 
-      /**
-       * <code>uint32 item_id = 4;</code>
-       * @return Whether the itemId field is set.
-       */
-      public boolean hasItemId() {
-        return entityCase_ == 4;
-      }
       /**
        * <code>uint32 item_id = 4;</code>
        * @return The itemId.

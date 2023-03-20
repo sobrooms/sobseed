@@ -19,27 +19,21 @@ public final class AvatarChangeElementTypeReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 area_id = 12;</code>
+     * <code>uint32 area_id = 4;</code>
      * @return The areaId.
      */
     int getAreaId();
 
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 1779;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: FKDDKBKAMBO
+   * CmdId: 1790
    * </pre>
    *
    * Protobuf type {@code AvatarChangeElementTypeReq}
@@ -86,12 +80,12 @@ public final class AvatarChangeElementTypeReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 16: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 96: {
+            case 32: {
 
               areaId_ = input.readUInt32();
               break;
@@ -128,10 +122,10 @@ public final class AvatarChangeElementTypeReqOuterClass {
               emu.grasscutter.net.proto.AvatarChangeElementTypeReqOuterClass.AvatarChangeElementTypeReq.class, emu.grasscutter.net.proto.AvatarChangeElementTypeReqOuterClass.AvatarChangeElementTypeReq.Builder.class);
     }
 
-    public static final int AREA_ID_FIELD_NUMBER = 12;
+    public static final int AREA_ID_FIELD_NUMBER = 4;
     private int areaId_;
     /**
-     * <code>uint32 area_id = 12;</code>
+     * <code>uint32 area_id = 4;</code>
      * @return The areaId.
      */
     @java.lang.Override
@@ -139,10 +133,10 @@ public final class AvatarChangeElementTypeReqOuterClass {
       return areaId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    public static final int SCENE_ID_FIELD_NUMBER = 2;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 2;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -165,10 +159,10 @@ public final class AvatarChangeElementTypeReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneId_ != 0) {
-        output.writeUInt32(3, sceneId_);
+        output.writeUInt32(2, sceneId_);
       }
       if (areaId_ != 0) {
-        output.writeUInt32(12, areaId_);
+        output.writeUInt32(4, areaId_);
       }
       unknownFields.writeTo(output);
     }
@@ -181,11 +175,11 @@ public final class AvatarChangeElementTypeReqOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneId_);
+          .computeUInt32Size(2, sceneId_);
       }
       if (areaId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, areaId_);
+          .computeUInt32Size(4, areaId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -318,14 +312,8 @@ public final class AvatarChangeElementTypeReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 1779;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: FKDDKBKAMBO
+     * CmdId: 1790
      * </pre>
      *
      * Protobuf type {@code AvatarChangeElementTypeReq}
@@ -482,7 +470,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
 
       private int areaId_ ;
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 4;</code>
        * @return The areaId.
        */
       @java.lang.Override
@@ -490,7 +478,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
         return areaId_;
       }
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 4;</code>
        * @param value The areaId to set.
        * @return This builder for chaining.
        */
@@ -501,7 +489,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 area_id = 12;</code>
+       * <code>uint32 area_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearAreaId() {
@@ -513,7 +501,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -521,7 +509,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -532,7 +520,7 @@ public final class AvatarChangeElementTypeReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -609,8 +597,8 @@ public final class AvatarChangeElementTypeReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n AvatarChangeElementTypeReq.proto\"?\n\032Av" +
-      "atarChangeElementTypeReq\022\017\n\007area_id\030\014 \001(" +
-      "\r\022\020\n\010scene_id\030\003 \001(\rB\033\n\031emu.grasscutter.n" +
+      "atarChangeElementTypeReq\022\017\n\007area_id\030\004 \001(" +
+      "\r\022\020\n\010scene_id\030\002 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

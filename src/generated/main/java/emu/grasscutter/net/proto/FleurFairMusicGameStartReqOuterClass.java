@@ -26,14 +26,8 @@ public final class FleurFairMusicGameStartReqOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 2070;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: KNBJIEBJOML
+   * CmdId: 2150
    * </pre>
    *
    * Protobuf type {@code FleurFairMusicGameStartReq}
@@ -285,14 +279,8 @@ public final class FleurFairMusicGameStartReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 2070;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: KNBJIEBJOML
+     * CmdId: 2150
      * </pre>
      *
      * Protobuf type {@code FleurFairMusicGameStartReq}

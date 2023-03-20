@@ -308,6 +308,10 @@ public final class SceneAvatarInfoOuterClass {
     int getAnimHash();
   }
   /**
+   * <pre>
+   * Name: JIKGNBFBIGC
+   * </pre>
+   *
    * Protobuf type {@code SceneAvatarInfo}
    */
   public static final class SceneAvatarInfo extends
@@ -1665,6 +1669,10 @@ public final class SceneAvatarInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: JIKGNBFBIGC
+     * </pre>
+     *
      * Protobuf type {@code SceneAvatarInfo}
      */
     public static final class Builder extends

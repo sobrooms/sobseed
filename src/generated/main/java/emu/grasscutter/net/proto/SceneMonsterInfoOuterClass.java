@@ -260,6 +260,10 @@ public final class SceneMonsterInfoOuterClass {
     public emu.grasscutter.net.proto.SceneMonsterInfoOuterClass.SceneMonsterInfo.ContentCase getContentCase();
   }
   /**
+   * <pre>
+   * Name: AJPMIFGBPCH
+   * </pre>
+   *
    * Protobuf type {@code SceneMonsterInfo}
    */
   public static final class SceneMonsterInfo extends
@@ -1088,7 +1092,7 @@ public final class SceneMonsterInfoOuterClass {
       if (poseId_ != 0) {
         output.writeUInt32(11, poseId_);
       }
-      if (bornType_ != emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.MONSTER_BORN_TYPE_NONE.getNumber()) {
+      if (bornType_ != emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.MONSTER_BORN_NONE.getNumber()) {
         output.writeEnum(12, bornType_);
       }
       if (blockId_ != 0) {
@@ -1199,7 +1203,7 @@ public final class SceneMonsterInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(11, poseId_);
       }
-      if (bornType_ != emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.MONSTER_BORN_TYPE_NONE.getNumber()) {
+      if (bornType_ != emu.grasscutter.net.proto.MonsterBornTypeOuterClass.MonsterBornType.MONSTER_BORN_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(12, bornType_);
       }
@@ -1506,6 +1510,10 @@ public final class SceneMonsterInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: AJPMIFGBPCH
+     * </pre>
+     *
      * Protobuf type {@code SceneMonsterInfo}
      */
     public static final class Builder extends

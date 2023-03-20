@@ -43,6 +43,10 @@ public final class FurnitureMakeSlotOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Name: DIIKFAIPKGG
+   * </pre>
+   *
    * Protobuf type {@code FurnitureMakeSlot}
    */
   public static final class FurnitureMakeSlot extends
@@ -331,6 +335,10 @@ public final class FurnitureMakeSlotOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: DIIKFAIPKGG
+     * </pre>
+     *
      * Protobuf type {@code FurnitureMakeSlot}
      */
     public static final class Builder extends

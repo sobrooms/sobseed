@@ -19,45 +19,39 @@ public final class TowerTeamSelectReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>uint32 floor_id = 2;</code>
+     * @return The floorId.
+     */
+    int getFloorId();
+
+    /**
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> 
         getTowerTeamListList();
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam getTowerTeamList(int index);
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     int getTowerTeamListCount();
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder> 
         getTowerTeamListOrBuilderList();
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder getTowerTeamListOrBuilder(
         int index);
-
-    /**
-     * <code>uint32 floor_id = 10;</code>
-     * @return The floorId.
-     */
-    int getFloorId();
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 2443;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   *   IS_ALLOW_CLIENT = 1;
-   * }
+   * Name: KPDIMECADLO
+   * CmdId: 2434
    * </pre>
    *
    * Protobuf type {@code TowerTeamSelectReq}
@@ -106,18 +100,18 @@ public final class TowerTeamSelectReqOuterClass {
             case 0:
               done = true;
               break;
-            case 42: {
+            case 16: {
+
+              floorId_ = input.readUInt32();
+              break;
+            }
+            case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 towerTeamList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam>();
                 mutable_bitField0_ |= 0x00000001;
               }
               towerTeamList_.add(
                   input.readMessage(emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.parser(), extensionRegistry));
-              break;
-            }
-            case 80: {
-
-              floorId_ = input.readUInt32();
               break;
             }
             default: {
@@ -155,17 +149,28 @@ public final class TowerTeamSelectReqOuterClass {
               emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq.class, emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq.Builder.class);
     }
 
-    public static final int TOWER_TEAM_LIST_FIELD_NUMBER = 5;
+    public static final int FLOOR_ID_FIELD_NUMBER = 2;
+    private int floorId_;
+    /**
+     * <code>uint32 floor_id = 2;</code>
+     * @return The floorId.
+     */
+    @java.lang.Override
+    public int getFloorId() {
+      return floorId_;
+    }
+
+    public static final int TOWER_TEAM_LIST_FIELD_NUMBER = 8;
     private java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> towerTeamList_;
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> getTowerTeamListList() {
       return towerTeamList_;
     }
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder> 
@@ -173,37 +178,26 @@ public final class TowerTeamSelectReqOuterClass {
       return towerTeamList_;
     }
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     @java.lang.Override
     public int getTowerTeamListCount() {
       return towerTeamList_.size();
     }
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam getTowerTeamList(int index) {
       return towerTeamList_.get(index);
     }
     /**
-     * <code>repeated .TowerTeam tower_team_list = 5;</code>
+     * <code>repeated .TowerTeam tower_team_list = 8;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder getTowerTeamListOrBuilder(
         int index) {
       return towerTeamList_.get(index);
-    }
-
-    public static final int FLOOR_ID_FIELD_NUMBER = 10;
-    private int floorId_;
-    /**
-     * <code>uint32 floor_id = 10;</code>
-     * @return The floorId.
-     */
-    @java.lang.Override
-    public int getFloorId() {
-      return floorId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -220,11 +214,11 @@ public final class TowerTeamSelectReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < towerTeamList_.size(); i++) {
-        output.writeMessage(5, towerTeamList_.get(i));
-      }
       if (floorId_ != 0) {
-        output.writeUInt32(10, floorId_);
+        output.writeUInt32(2, floorId_);
+      }
+      for (int i = 0; i < towerTeamList_.size(); i++) {
+        output.writeMessage(8, towerTeamList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -235,13 +229,13 @@ public final class TowerTeamSelectReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < towerTeamList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(5, towerTeamList_.get(i));
-      }
       if (floorId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, floorId_);
+          .computeUInt32Size(2, floorId_);
+      }
+      for (int i = 0; i < towerTeamList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(8, towerTeamList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -258,10 +252,10 @@ public final class TowerTeamSelectReqOuterClass {
       }
       emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq other = (emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq) obj;
 
-      if (!getTowerTeamListList()
-          .equals(other.getTowerTeamListList())) return false;
       if (getFloorId()
           != other.getFloorId()) return false;
+      if (!getTowerTeamListList()
+          .equals(other.getTowerTeamListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -273,12 +267,12 @@ public final class TowerTeamSelectReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + FLOOR_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFloorId();
       if (getTowerTeamListCount() > 0) {
         hash = (37 * hash) + TOWER_TEAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getTowerTeamListList().hashCode();
       }
-      hash = (37 * hash) + FLOOR_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFloorId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -376,14 +370,8 @@ public final class TowerTeamSelectReqOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 2443;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     *   IS_ALLOW_CLIENT = 1;
-     * }
+     * Name: KPDIMECADLO
+     * CmdId: 2434
      * </pre>
      *
      * Protobuf type {@code TowerTeamSelectReq}
@@ -424,14 +412,14 @@ public final class TowerTeamSelectReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        floorId_ = 0;
+
         if (towerTeamListBuilder_ == null) {
           towerTeamList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           towerTeamListBuilder_.clear();
         }
-        floorId_ = 0;
-
         return this;
       }
 
@@ -459,6 +447,7 @@ public final class TowerTeamSelectReqOuterClass {
       public emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq buildPartial() {
         emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq result = new emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq(this);
         int from_bitField0_ = bitField0_;
+        result.floorId_ = floorId_;
         if (towerTeamListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             towerTeamList_ = java.util.Collections.unmodifiableList(towerTeamList_);
@@ -468,7 +457,6 @@ public final class TowerTeamSelectReqOuterClass {
         } else {
           result.towerTeamList_ = towerTeamListBuilder_.build();
         }
-        result.floorId_ = floorId_;
         onBuilt();
         return result;
       }
@@ -517,6 +505,9 @@ public final class TowerTeamSelectReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq other) {
         if (other == emu.grasscutter.net.proto.TowerTeamSelectReqOuterClass.TowerTeamSelectReq.getDefaultInstance()) return this;
+        if (other.getFloorId() != 0) {
+          setFloorId(other.getFloorId());
+        }
         if (towerTeamListBuilder_ == null) {
           if (!other.towerTeamList_.isEmpty()) {
             if (towerTeamList_.isEmpty()) {
@@ -542,9 +533,6 @@ public final class TowerTeamSelectReqOuterClass {
               towerTeamListBuilder_.addAllMessages(other.towerTeamList_);
             }
           }
-        }
-        if (other.getFloorId() != 0) {
-          setFloorId(other.getFloorId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -576,6 +564,37 @@ public final class TowerTeamSelectReqOuterClass {
       }
       private int bitField0_;
 
+      private int floorId_ ;
+      /**
+       * <code>uint32 floor_id = 2;</code>
+       * @return The floorId.
+       */
+      @java.lang.Override
+      public int getFloorId() {
+        return floorId_;
+      }
+      /**
+       * <code>uint32 floor_id = 2;</code>
+       * @param value The floorId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFloorId(int value) {
+        
+        floorId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 floor_id = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFloorId() {
+        
+        floorId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> towerTeamList_ =
         java.util.Collections.emptyList();
       private void ensureTowerTeamListIsMutable() {
@@ -589,7 +608,7 @@ public final class TowerTeamSelectReqOuterClass {
           emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder> towerTeamListBuilder_;
 
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> getTowerTeamListList() {
         if (towerTeamListBuilder_ == null) {
@@ -599,7 +618,7 @@ public final class TowerTeamSelectReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public int getTowerTeamListCount() {
         if (towerTeamListBuilder_ == null) {
@@ -609,7 +628,7 @@ public final class TowerTeamSelectReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam getTowerTeamList(int index) {
         if (towerTeamListBuilder_ == null) {
@@ -619,7 +638,7 @@ public final class TowerTeamSelectReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder setTowerTeamList(
           int index, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam value) {
@@ -636,7 +655,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder setTowerTeamList(
           int index, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder builderForValue) {
@@ -650,7 +669,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder addTowerTeamList(emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam value) {
         if (towerTeamListBuilder_ == null) {
@@ -666,7 +685,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder addTowerTeamList(
           int index, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam value) {
@@ -683,7 +702,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder addTowerTeamList(
           emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder builderForValue) {
@@ -697,7 +716,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder addTowerTeamList(
           int index, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder builderForValue) {
@@ -711,7 +730,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder addAllTowerTeamList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam> values) {
@@ -726,7 +745,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder clearTowerTeamList() {
         if (towerTeamListBuilder_ == null) {
@@ -739,7 +758,7 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public Builder removeTowerTeamList(int index) {
         if (towerTeamListBuilder_ == null) {
@@ -752,14 +771,14 @@ public final class TowerTeamSelectReqOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder getTowerTeamListBuilder(
           int index) {
         return getTowerTeamListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder getTowerTeamListOrBuilder(
           int index) {
@@ -769,7 +788,7 @@ public final class TowerTeamSelectReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeamOrBuilder> 
            getTowerTeamListOrBuilderList() {
@@ -780,14 +799,14 @@ public final class TowerTeamSelectReqOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder addTowerTeamListBuilder() {
         return getTowerTeamListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder addTowerTeamListBuilder(
           int index) {
@@ -795,7 +814,7 @@ public final class TowerTeamSelectReqOuterClass {
             index, emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerTeam tower_team_list = 5;</code>
+       * <code>repeated .TowerTeam tower_team_list = 8;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerTeamOuterClass.TowerTeam.Builder> 
            getTowerTeamListBuilderList() {
@@ -814,37 +833,6 @@ public final class TowerTeamSelectReqOuterClass {
           towerTeamList_ = null;
         }
         return towerTeamListBuilder_;
-      }
-
-      private int floorId_ ;
-      /**
-       * <code>uint32 floor_id = 10;</code>
-       * @return The floorId.
-       */
-      @java.lang.Override
-      public int getFloorId() {
-        return floorId_;
-      }
-      /**
-       * <code>uint32 floor_id = 10;</code>
-       * @param value The floorId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFloorId(int value) {
-        
-        floorId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 floor_id = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFloorId() {
-        
-        floorId_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -914,8 +902,8 @@ public final class TowerTeamSelectReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030TowerTeamSelectReq.proto\032\017TowerTeam.pr" +
-      "oto\"K\n\022TowerTeamSelectReq\022#\n\017tower_team_" +
-      "list\030\005 \003(\0132\n.TowerTeam\022\020\n\010floor_id\030\n \001(\r" +
+      "oto\"K\n\022TowerTeamSelectReq\022\020\n\010floor_id\030\002 " +
+      "\001(\r\022#\n\017tower_team_list\030\010 \003(\0132\n.TowerTeam" +
       "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -928,7 +916,7 @@ public final class TowerTeamSelectReqOuterClass {
     internal_static_TowerTeamSelectReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerTeamSelectReq_descriptor,
-        new java.lang.String[] { "TowerTeamList", "FloorId", });
+        new java.lang.String[] { "FloorId", "TowerTeamList", });
     emu.grasscutter.net.proto.TowerTeamOuterClass.getDescriptor();
   }
 

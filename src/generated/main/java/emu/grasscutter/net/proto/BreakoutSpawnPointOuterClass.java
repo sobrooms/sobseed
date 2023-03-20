@@ -55,6 +55,10 @@ public final class BreakoutSpawnPointOuterClass {
         int index);
   }
   /**
+   * <pre>
+   * Name: LIGEEIJEIOB
+   * </pre>
+   *
    * Protobuf type {@code BreakoutSpawnPoint}
    */
   public static final class BreakoutSpawnPoint extends
@@ -397,6 +401,10 @@ public final class BreakoutSpawnPointOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: LIGEEIJEIOB
+     * </pre>
+     *
      * Protobuf type {@code BreakoutSpawnPoint}
      */
     public static final class Builder extends

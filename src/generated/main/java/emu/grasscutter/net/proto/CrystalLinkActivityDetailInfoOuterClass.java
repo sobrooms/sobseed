@@ -43,12 +43,16 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         int index);
 
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <code>uint32 difficulty_id = 11;</code>
      * @return The difficultyId.
      */
     int getDifficultyId();
   }
   /**
+   * <pre>
+   * Name: AGMMNODNGMD
+   * </pre>
+   *
    * Protobuf type {@code CrystalLinkActivityDetailInfo}
    */
   public static final class CrystalLinkActivityDetailInfo extends
@@ -104,7 +108,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.CrystalLinkLevelInfoOuterClass.CrystalLinkLevelInfo.parser(), extensionRegistry));
               break;
             }
-            case 96: {
+            case 88: {
 
               difficultyId_ = input.readUInt32();
               break;
@@ -184,10 +188,10 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       return levelInfoList_.get(index);
     }
 
-    public static final int DIFFICULTY_ID_FIELD_NUMBER = 12;
+    public static final int DIFFICULTY_ID_FIELD_NUMBER = 11;
     private int difficultyId_;
     /**
-     * <code>uint32 difficulty_id = 12;</code>
+     * <code>uint32 difficulty_id = 11;</code>
      * @return The difficultyId.
      */
     @java.lang.Override
@@ -213,7 +217,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         output.writeMessage(5, levelInfoList_.get(i));
       }
       if (difficultyId_ != 0) {
-        output.writeUInt32(12, difficultyId_);
+        output.writeUInt32(11, difficultyId_);
       }
       unknownFields.writeTo(output);
     }
@@ -230,7 +234,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       }
       if (difficultyId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(12, difficultyId_);
+          .computeUInt32Size(11, difficultyId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -364,6 +368,10 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: AGMMNODNGMD
+     * </pre>
+     *
      * Protobuf type {@code CrystalLinkActivityDetailInfo}
      */
     public static final class Builder extends
@@ -796,7 +804,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
 
       private int difficultyId_ ;
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 11;</code>
        * @return The difficultyId.
        */
       @java.lang.Override
@@ -804,7 +812,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return difficultyId_;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 11;</code>
        * @param value The difficultyId to set.
        * @return This builder for chaining.
        */
@@ -815,7 +823,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 difficulty_id = 12;</code>
+       * <code>uint32 difficulty_id = 11;</code>
        * @return This builder for chaining.
        */
       public Builder clearDifficultyId() {
@@ -895,7 +903,7 @@ public final class CrystalLinkActivityDetailInfoOuterClass {
       "rystalLinkLevelInfo.proto\"f\n\035CrystalLink" +
       "ActivityDetailInfo\022.\n\017level_info_list\030\005 " +
       "\003(\0132\025.CrystalLinkLevelInfo\022\025\n\rdifficulty" +
-      "_id\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
+      "_id\030\013 \001(\rB\033\n\031emu.grasscutter.net.protob\006" +
       "proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

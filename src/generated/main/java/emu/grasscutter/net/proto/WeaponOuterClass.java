@@ -71,6 +71,10 @@ public final class WeaponOuterClass {
         int key);
   }
   /**
+   * <pre>
+   * Name: OCBPLJBJHLF
+   * </pre>
+   *
    * Protobuf type {@code Weapon}
    */
   public static final class Weapon extends
@@ -502,6 +506,10 @@ public final class WeaponOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: OCBPLJBJHLF
+     * </pre>
+     *
      * Protobuf type {@code Weapon}
      */
     public static final class Builder extends

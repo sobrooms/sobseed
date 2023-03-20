@@ -31,6 +31,10 @@ public final class CurVehicleInfoOuterClass {
     int getPos();
   }
   /**
+   * <pre>
+   * Name: ENGCDOBPPFC
+   * </pre>
+   *
    * Protobuf type {@code CurVehicleInfo}
    */
   public static final class CurVehicleInfo extends
@@ -306,6 +310,10 @@ public final class CurVehicleInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: ENGCDOBPPFC
+     * </pre>
+     *
      * Protobuf type {@code CurVehicleInfo}
      */
     public static final class Builder extends

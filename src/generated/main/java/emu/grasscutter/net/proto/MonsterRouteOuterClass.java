@@ -61,6 +61,10 @@ public final class MonsterRouteOuterClass {
     float getArriveRange();
   }
   /**
+   * <pre>
+   * Name: LHFDFKFLLDA
+   * </pre>
+   *
    * Protobuf type {@code MonsterRoute}
    */
   public static final class MonsterRoute extends
@@ -432,6 +436,10 @@ public final class MonsterRouteOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: LHFDFKFLLDA
+     * </pre>
+     *
      * Protobuf type {@code MonsterRoute}
      */
     public static final class Builder extends

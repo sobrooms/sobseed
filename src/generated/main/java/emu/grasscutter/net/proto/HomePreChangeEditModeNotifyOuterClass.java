@@ -26,13 +26,8 @@ public final class HomePreChangeEditModeNotifyOuterClass {
   }
   /**
    * <pre>
-   * enum CmdId {
-   *   option allow_alias = true;
-   *   NONE = 0;
-   *   CMD_ID = 4720;
-   *   ENET_CHANNEL_ID = 0;
-   *   ENET_IS_RELIABLE = 1;
-   * }
+   * Name: HJHOPDKGOHA
+   * CmdId: 4670
    * </pre>
    *
    * Protobuf type {@code HomePreChangeEditModeNotify}
@@ -285,13 +280,8 @@ public final class HomePreChangeEditModeNotifyOuterClass {
     }
     /**
      * <pre>
-     * enum CmdId {
-     *   option allow_alias = true;
-     *   NONE = 0;
-     *   CMD_ID = 4720;
-     *   ENET_CHANNEL_ID = 0;
-     *   ENET_IS_RELIABLE = 1;
-     * }
+     * Name: HJHOPDKGOHA
+     * CmdId: 4670
      * </pre>
      *
      * Protobuf type {@code HomePreChangeEditModeNotify}

@@ -19,33 +19,37 @@ public final class MPLevelEntityInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      * @return Whether the abilityInfo field is set.
      */
     boolean hasAbilityInfo();
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      * @return The abilityInfo.
      */
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo();
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      */
     emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder();
 
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     int getEntityId();
 
     /**
-     * <code>uint32 authority_peer_id = 5;</code>
+     * <code>uint32 authority_peer_id = 3;</code>
      * @return The authorityPeerId.
      */
     int getAuthorityPeerId();
   }
   /**
+   * <pre>
+   * Name: PHAIBCJLFDG
+   * </pre>
+   *
    * Protobuf type {@code MPLevelEntityInfo}
    */
   public static final class MPLevelEntityInfo extends
@@ -90,17 +94,17 @@ public final class MPLevelEntityInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
-
-              authorityPeerId_ = input.readUInt32();
-              break;
-            }
-            case 80: {
+            case 16: {
 
               entityId_ = input.readUInt32();
               break;
             }
-            case 122: {
+            case 24: {
+
+              authorityPeerId_ = input.readUInt32();
+              break;
+            }
+            case 106: {
               emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder subBuilder = null;
               if (abilityInfo_ != null) {
                 subBuilder = abilityInfo_.toBuilder();
@@ -145,10 +149,10 @@ public final class MPLevelEntityInfoOuterClass {
               emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.class, emu.grasscutter.net.proto.MPLevelEntityInfoOuterClass.MPLevelEntityInfo.Builder.class);
     }
 
-    public static final int ABILITY_INFO_FIELD_NUMBER = 15;
+    public static final int ABILITY_INFO_FIELD_NUMBER = 13;
     private emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo abilityInfo_;
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      * @return Whether the abilityInfo field is set.
      */
     @java.lang.Override
@@ -156,7 +160,7 @@ public final class MPLevelEntityInfoOuterClass {
       return abilityInfo_ != null;
     }
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      * @return The abilityInfo.
      */
     @java.lang.Override
@@ -164,17 +168,17 @@ public final class MPLevelEntityInfoOuterClass {
       return abilityInfo_ == null ? emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.getDefaultInstance() : abilityInfo_;
     }
     /**
-     * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+     * <code>.AbilitySyncStateInfo ability_info = 13;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
       return getAbilityInfo();
     }
 
-    public static final int ENTITY_ID_FIELD_NUMBER = 10;
+    public static final int ENTITY_ID_FIELD_NUMBER = 2;
     private int entityId_;
     /**
-     * <code>uint32 entity_id = 10;</code>
+     * <code>uint32 entity_id = 2;</code>
      * @return The entityId.
      */
     @java.lang.Override
@@ -182,10 +186,10 @@ public final class MPLevelEntityInfoOuterClass {
       return entityId_;
     }
 
-    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 5;
+    public static final int AUTHORITY_PEER_ID_FIELD_NUMBER = 3;
     private int authorityPeerId_;
     /**
-     * <code>uint32 authority_peer_id = 5;</code>
+     * <code>uint32 authority_peer_id = 3;</code>
      * @return The authorityPeerId.
      */
     @java.lang.Override
@@ -207,14 +211,14 @@ public final class MPLevelEntityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (authorityPeerId_ != 0) {
-        output.writeUInt32(5, authorityPeerId_);
-      }
       if (entityId_ != 0) {
-        output.writeUInt32(10, entityId_);
+        output.writeUInt32(2, entityId_);
+      }
+      if (authorityPeerId_ != 0) {
+        output.writeUInt32(3, authorityPeerId_);
       }
       if (abilityInfo_ != null) {
-        output.writeMessage(15, getAbilityInfo());
+        output.writeMessage(13, getAbilityInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -225,17 +229,17 @@ public final class MPLevelEntityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (authorityPeerId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, authorityPeerId_);
-      }
       if (entityId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(10, entityId_);
+          .computeUInt32Size(2, entityId_);
+      }
+      if (authorityPeerId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(3, authorityPeerId_);
       }
       if (abilityInfo_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getAbilityInfo());
+          .computeMessageSize(13, getAbilityInfo());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,6 +380,10 @@ public final class MPLevelEntityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: PHAIBCJLFDG
+     * </pre>
+     *
      * Protobuf type {@code MPLevelEntityInfo}
      */
     public static final class Builder extends
@@ -546,14 +554,14 @@ public final class MPLevelEntityInfoOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> abilityInfoBuilder_;
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        * @return Whether the abilityInfo field is set.
        */
       public boolean hasAbilityInfo() {
         return abilityInfoBuilder_ != null || abilityInfo_ != null;
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        * @return The abilityInfo.
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo getAbilityInfo() {
@@ -564,7 +572,7 @@ public final class MPLevelEntityInfoOuterClass {
         }
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public Builder setAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
         if (abilityInfoBuilder_ == null) {
@@ -580,7 +588,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public Builder setAbilityInfo(
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder builderForValue) {
@@ -594,7 +602,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public Builder mergeAbilityInfo(emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo value) {
         if (abilityInfoBuilder_ == null) {
@@ -612,7 +620,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public Builder clearAbilityInfo() {
         if (abilityInfoBuilder_ == null) {
@@ -626,7 +634,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder getAbilityInfoBuilder() {
         
@@ -634,7 +642,7 @@ public final class MPLevelEntityInfoOuterClass {
         return getAbilityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       public emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder getAbilityInfoOrBuilder() {
         if (abilityInfoBuilder_ != null) {
@@ -645,7 +653,7 @@ public final class MPLevelEntityInfoOuterClass {
         }
       }
       /**
-       * <code>.AbilitySyncStateInfo ability_info = 15;</code>
+       * <code>.AbilitySyncStateInfo ability_info = 13;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfo.Builder, emu.grasscutter.net.proto.AbilitySyncStateInfoOuterClass.AbilitySyncStateInfoOrBuilder> 
@@ -663,7 +671,7 @@ public final class MPLevelEntityInfoOuterClass {
 
       private int entityId_ ;
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return The entityId.
        */
       @java.lang.Override
@@ -671,7 +679,7 @@ public final class MPLevelEntityInfoOuterClass {
         return entityId_;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @param value The entityId to set.
        * @return This builder for chaining.
        */
@@ -682,7 +690,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 entity_id = 10;</code>
+       * <code>uint32 entity_id = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
@@ -694,7 +702,7 @@ public final class MPLevelEntityInfoOuterClass {
 
       private int authorityPeerId_ ;
       /**
-       * <code>uint32 authority_peer_id = 5;</code>
+       * <code>uint32 authority_peer_id = 3;</code>
        * @return The authorityPeerId.
        */
       @java.lang.Override
@@ -702,7 +710,7 @@ public final class MPLevelEntityInfoOuterClass {
         return authorityPeerId_;
       }
       /**
-       * <code>uint32 authority_peer_id = 5;</code>
+       * <code>uint32 authority_peer_id = 3;</code>
        * @param value The authorityPeerId to set.
        * @return This builder for chaining.
        */
@@ -713,7 +721,7 @@ public final class MPLevelEntityInfoOuterClass {
         return this;
       }
       /**
-       * <code>uint32 authority_peer_id = 5;</code>
+       * <code>uint32 authority_peer_id = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAuthorityPeerId() {
@@ -791,9 +799,9 @@ public final class MPLevelEntityInfoOuterClass {
     java.lang.String[] descriptorData = {
       "\n\027MPLevelEntityInfo.proto\032\032AbilitySyncSt" +
       "ateInfo.proto\"n\n\021MPLevelEntityInfo\022+\n\014ab" +
-      "ility_info\030\017 \001(\0132\025.AbilitySyncStateInfo\022" +
-      "\021\n\tentity_id\030\n \001(\r\022\031\n\021authority_peer_id\030" +
-      "\005 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "ility_info\030\r \001(\0132\025.AbilitySyncStateInfo\022" +
+      "\021\n\tentity_id\030\002 \001(\r\022\031\n\021authority_peer_id\030" +
+      "\003 \001(\rB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

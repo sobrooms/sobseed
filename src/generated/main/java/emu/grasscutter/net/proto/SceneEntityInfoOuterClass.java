@@ -318,6 +318,10 @@ public final class SceneEntityInfoOuterClass {
     public emu.grasscutter.net.proto.SceneEntityInfoOuterClass.SceneEntityInfo.EntityCase getEntityCase();
   }
   /**
+   * <pre>
+   * Name: HGJKEMEBOKC
+   * </pre>
+   *
    * Protobuf type {@code SceneEntityInfo}
    */
   public static final class SceneEntityInfo extends
@@ -1199,13 +1203,13 @@ public final class SceneEntityInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (entityType_ != emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.PROT_ENTITY_TYPE_NONE.getNumber()) {
+      if (entityType_ != emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.PROT_ENTITY_NONE.getNumber()) {
         output.writeEnum(1, entityType_);
       }
       if (entityId_ != 0) {
         output.writeUInt32(2, entityId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, name_);
       }
       if (motionInfo_ != null) {
@@ -1265,7 +1269,7 @@ public final class SceneEntityInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (entityType_ != emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.PROT_ENTITY_TYPE_NONE.getNumber()) {
+      if (entityType_ != emu.grasscutter.net.proto.ProtEntityTypeOuterClass.ProtEntityType.PROT_ENTITY_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, entityType_);
       }
@@ -1273,7 +1277,7 @@ public final class SceneEntityInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(2, entityId_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+      if (!getNameBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, name_);
       }
       if (motionInfo_ != null) {
@@ -1593,6 +1597,10 @@ public final class SceneEntityInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * Name: HGJKEMEBOKC
+     * </pre>
+     *
      * Protobuf type {@code SceneEntityInfo}
      */
     public static final class Builder extends
